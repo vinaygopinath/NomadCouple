@@ -1,0 +1,11 @@
+$screen-tablet-min: 768px;
+$screen-desktop-min: 1028px;
+$screen-lg-desktop-min: 1200px;
+
+$screen-phone-max: ($screen-tablet-min - 1);
+$screen-tablet-max: ($screen-desktop-min - 1);
+$screen-desktop-max: ($screen-lg-desktop-min - 1);
+
+$brand-font: 'Francois One', sans-serif;
+$content-font: 'Roboto', sans-serif;
+$heading-font: $content-font;
