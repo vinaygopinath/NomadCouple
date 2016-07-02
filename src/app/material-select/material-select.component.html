@@ -1,0 +1,8 @@
+<div id="dd-wrapper" class="dropdown-wrapper" (click)="toggleDropdownState($event)" [class.active]="isActive">
+  <span class="text" [class.active]="selectedItem">{{selectedItem || placeholderText}}</span>
+	<ul class="dropdown">
+    <li *ngFor="let item of items" (click)="notifyItemSelection(item)">
+      <span [class.active]="item === selectedItem">{{item}}</span>
+    </li>
+	</ul>
+</div>

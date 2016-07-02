@@ -1,0 +1,69 @@
+// Credit:
+// http://tympanus.net/Tutorials/CustomDropDownListStyling/index2.html
+// by Hugo Giraudel (http://hugogiraudel.com)
+.dropdown-wrapper {
+  position: relative;
+  width: 200px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 10px 15px;
+  background: #fff;
+  cursor: pointer;
+  outline: none;
+  &::after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    margin-top: -3px;
+    border-width: 6px 6px 0 6px;
+    border-style: solid;
+    border-color: grey transparent;
+  }
+  &.active:after {
+    display: none;
+  }
+  .text {
+    color: darken(#ebebeb, 35%);
+    &.active {
+      color: rgba(33,33,33,0.87);
+    }
+  }
+  .dropdown {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    background: white;
+    transition: all 0.3s ease-out;
+    list-style: none;
+    padding-left: 0;
+
+    opacity: 0;
+    pointer-events: none;
+    margin-top: 1em;
+    li span {
+      display: block;
+      text-decoration: none;
+      color: rgba(33,33,33,0.87);
+      padding: 10px;
+      transition: margin-top .15s cubic-bezier(0.4, 0.0, 0.2, 1), opacity .15s cubic-bezier(0.4, 0.0, 0.2, 1), top .15s cubic-bezier(0.4, 0.0, 0.2, 1);
+      &.active {
+        color: #03A9F4;
+      }
+      &:hover {
+        background: rgb(238,238,238);
+      }
+    }
+  }
+  &.active .dropdown {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    opacity: 1;
+    top: 100%;
+    pointer-events: auto;
+    margin-top: -40px;
+  }
+}
