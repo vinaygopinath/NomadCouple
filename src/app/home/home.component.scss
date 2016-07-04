@@ -1,0 +1,63 @@
+@import "variables";
+
+:host {
+  display: flex;
+  flex-flow: column nowrap;
+  // align-items: center;
+  box-sizing: border-box;
+  // justify-content: flex-start;
+  // align-self: stretch;
+  max-width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  color: darken(#FFFFFF, 8%);
+  background: #673AB7; /* fallback for old browsers */
+  background: linear-gradient(to left, #673AB7 , #512DA8);
+  transition: padding 0.25s ease-in;
+  .app-home {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+  }
+
+  .brand {
+    font-family: $brand-font;
+    letter-spacing: .1rem;
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .tagline {
+    font-family: $heading-font;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    text-align: center;
+    margin-top: 0.2rem;
+    letter-spacing: 0.02rem;
+  }
+
+  .home-button {
+    width: 250px;
+  }
+
+  @media screen and (min-width: $screen-desktop-min) {
+    padding-left: 30%;
+    padding-right: 30%;
+    padding-top: 5%;
+  }
+
+  @media screen and (min-width: $screen-tablet-min) and (max-width: $screen-tablet-max) {
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 3%;
+  }
+
+  @media screen and (max-width: $screen-phone-max) {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 3%;
+  }
+}

@@ -1,0 +1,13 @@
+<div class="app-home">
+  <h1 class="brand">Nomad Couple</h1>
+  <h3 class="tagline">Where can you and your partner travel without a visa?</h3>
+  <form (submit)="showResults($event)" novalidate>
+    <material-select placeholderText="Your Country" [items]="countries" (onItemSelected)="setCountrySelection($event, 0)">
+    </material-select>
+    <material-select placeholderText="Your partner's country" [items]="countries" (onItemSelected)="setCountrySelection($event, 1)">
+    </material-select>
+    <button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect home-button" [class.mdl-button--colored]="userNationality && partnerNationality" [disabled]="!(userNationality && partnerNationality)">
+      Let's Go!
+    </button>
+  </form>
+</div>
