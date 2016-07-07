@@ -2,7 +2,9 @@
   <span class="text" [class.active]="selectedItem">{{selectedItem || placeholderText}}</span>
 	<ul class="dropdown">
     <li *ngFor="let item of items" (click)="notifyItemSelection(item)">
-      <span [class.active]="item === selectedItem">{{item}}</span>
+      <span [class.active]="item === selectedItem">
+        {{item}}
+      </span>
     </li>
 	</ul>
 </div>

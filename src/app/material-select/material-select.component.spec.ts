@@ -32,7 +32,7 @@ describe('Component: MaterialSelect', () => {
       expect(component.isActive).toBeFalsy();
     });
 
-    it('should use '+DEFAULT_PLACEHOLDER+' as the default placeholder text', () => {
+    it('should use ' + DEFAULT_PLACEHOLDER + ' as the default placeholder text', () => {
       expect(component.placeholderText).toBe(DEFAULT_PLACEHOLDER);
     });
 
@@ -99,7 +99,7 @@ describe('Component: MaterialSelect', () => {
       expect(component.selectedItem).toBe(someItem);
     });
 
-    it('should notify the parent component with the selected item',() => {
+    it('should notify the parent component with the selected item', () => {
       component.items = SOME_ITEMS;
       let someItem = SOME_ITEMS[0];
       spyOn(component.onItemSelected, 'emit');
@@ -107,5 +107,5 @@ describe('Component: MaterialSelect', () => {
 
       expect(component.onItemSelected.emit).toHaveBeenCalledWith(someItem);
     });
-  })
+  });
 });
