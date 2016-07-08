@@ -12,8 +12,6 @@
   overflow-x: hidden;
   overflow-y: auto;
   color: darken(#FFFFFF, 8%);
-  background: #673AB7; /* fallback for old browsers */
-  background: linear-gradient(to left, #673AB7 , #512DA8);
   transition: padding 0.25s ease-in;
   .app-home {
     display: flex;
@@ -49,6 +47,26 @@
     padding-top: 5%;
   }
 
+  @media screen and (min-width: $screen-tablet-min) {
+    //TODO Co-ordinate text/input/button colors based on image
+    &.bg-payir {
+      background-image: url(app/shared/images/home/bg-payir.jpg);
+      background-size: cover;
+    }
+    &.bg-woods {
+      background-image: url(app/shared/images/home/bg-woods.jpg);
+      background-size: cover;
+    }
+    &.bg-kayak {
+      background-image: url(app/shared/images/home/bg-kayak.jpg);
+      background-size: cover;
+    }
+    &.bg-hike {
+      background-image: url(app/shared/images/home/bg-hike.jpg);
+      background-size: cover;
+    }
+  }
+
   @media screen and (min-width: $screen-tablet-min) and (max-width: $screen-tablet-max) {
     padding-left: 20%;
     padding-right: 20%;
@@ -59,5 +77,7 @@
     padding-left: 5%;
     padding-right: 5%;
     padding-top: 3%;
+    background: #673AB7; /* fallback for old browsers */
+    background: linear-gradient(to left, #673AB7 , #512DA8);
   }
 }

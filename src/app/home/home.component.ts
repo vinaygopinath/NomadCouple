@@ -1,7 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostBinding } from '@angular/core';
 import { MaterialSelectComponent } from '../material-select';
 import { VisaService } from '../visa.service';
 import { Router } from '@angular/router';
+
+//TODO Optimize images
+const BACKGROUND_TYPE = ['bg-payir','bg-hike','bg-kayak','bg-woods'];
 
 @Component({
   moduleId: module.id,
@@ -15,6 +18,10 @@ export class HomeComponent implements OnInit {
   userNationality: string;
   partnerNationality: string;
   countries: any[] = [];
+
+  @HostBinding('class')
+  backgroundType: string = BACKGROUND_TYPE[Math.floor(Math.random() * BACKGROUND_TYPE.length)];
+
   constructor(private visaService: VisaService, private router: Router) {}
 
   ngOnInit() {
