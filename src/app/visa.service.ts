@@ -4,6 +4,8 @@ import { Country } from './country';
 import { WikiData } from './wiki-data';
 import { VisaData } from './visa-data';
 import {Observable} from 'rxjs/Rx';
+import { Person } from './person.enum';
+import { Visa } from './visa.enum';
 
 @Injectable()
 export class VisaService {
@@ -12,8 +14,10 @@ export class VisaService {
   private countries: Array<string>;
   private visaData: VisaData;
   private visaDataObservable: Observable<VisaData>;
-  private visaDataCountries: Array<string> = ['A','B'];
+  private visaDataCountries: Array<string> = ['',''];
   private observable: Observable<Array<any>>;
+  private userVisas: Array<Country> = [];
+  private partnerVisas: Array<Country> = [];
   constructor(private http: Http) {}
 
   getUrlFriendlyName(input: string): string {
@@ -58,6 +62,70 @@ export class VisaService {
       .share();
       return this.observable;
     }
+  }
+
+  getVisaCountries(userCountry: string, partnerCountry: string): Observable<VisaData> {
+    // console.log('getVisaCountries called with %s and %s',userCountry, partnerCountry);
+    if (this.visaData && !(this.visaDataCountries[0] === userCountry && this.visaDataCountries[1] === partnerCountry)) {
+      // console.log('Returning cached data');
+      return Observable.of(this.visaData);
+    } else if (this.visaDataObservable) {
+      // console.log('Returning cached observable');
+      return this.visaDataObservable;
+    } else {
+      // console.log('Making HTTP call');
+      this.visaDataCountries[0] = userCountry;
+      this.visaDataCountries[1] = partnerCountry;
+      let userCountryURL = this._getCountryFileName(userCountry);
+      let partnerCountryURL = this._getCountryFileName(partnerCountry);
+      let userCountryHttp = this.http.get(userCountryURL).map((res: Response) => res.json());
+      let partnerCountryHttp = this.http.get(partnerCountryURL).map((res: Response) => res.json());
+      this.visaDataObservable = Observable.forkJoin(userCountryHttp, partnerCountryHttp)
+      .map(
+        data => {
+          let rawUserData = data[0];
+          let rawPartnerData = data[1];
+          this._generateVisaStatus(Person.USER, rawUserData);
+          this._generateVisaStatus(Person.PARTNER, rawPartnerData);
+          return [this._getWikiData(rawUserData), this._getWikiData(rawPartnerData)];
+        }
+      )
+      .map(
+        wikiArr => this._getVisaData(wikiArr[0], wikiArr[1])
+      )
+      .do(visaData => {
+        this.visaData = visaData;
+        this.visaDataObservable = null;
+      })
+      .share();
+      return this.visaDataObservable;
+    }
+  }
+
+  getUserVisaStatus(countryName) {
+    return this._getVisaStatus(Person.USER, countryName);
+  }
+
+  getPartnerVisaStatus(countryName) {
+    return this._getVisaStatus(Person.PARTNER, countryName);
+  }
+
+  getCountryFlagClass(countryName) {
+    if (!countryName) {
+      throw new Error('Undefined/null country name. Cannot find country flag class');
+    }
+    let countryStr = countryName.toLowerCase();
+    //Normalize inputs
+    switch (countryStr) {
+      case 'côte-d\'ivoire':
+      case 'ivory coast': countryStr = 'côte-divoire'; break;
+      case 'the gambia': countryStr = 'gambia'; break;
+      case 'republic of ireland': countryStr = 'ireland'; break;
+      case 'republic of macedonia': countryStr = 'macedonia'; break;
+      case 'federated states of micronesia': countryStr = 'micronesia'; break;
+      case 'east timor': countryStr = 'timor-leste'; break;
+    }
+    return countryStr.replace(/ /g, '-');
   }
 
   private _getCountryFileName(input: string): string {
@@ -121,8 +189,10 @@ export class VisaService {
   private _groupByVisa(userCountries, partnerCountries) {
     return {
       both: this._getIntersection(userCountries, partnerCountries),
-      user: this._getDifference(userCountries, partnerCountries),
-      partner: this._getDifference(partnerCountries, userCountries)
+      userOnly: this._getDifference(userCountries, partnerCountries),
+      partnerOnly: this._getDifference(partnerCountries, userCountries),
+      user: userCountries,
+      partner: partnerCountries
     };
   }
 
@@ -136,39 +206,58 @@ export class VisaService {
     return new VisaData(requiredGroups, notRequiredGroups, onArrivalGroups, unknownGroups);
   }
 
-  getVisaCountries(userCountry: string, partnerCountry: string): Observable<VisaData> {
-    console.log('getVisaCountries called with %s and %s',userCountry, partnerCountry);
-    if (this.visaData && !(this.visaDataCountries[0] === userCountry && this.visaDataCountries[1] === partnerCountry)) {
-      console.log('Returning cached data');
-      return Observable.of(this.visaData);
-    } else if (this.visaDataObservable) {
-      console.log('Returning cached observable');
-      return this.visaDataObservable;
+  private _convertVisaToEnum(visaStr: string): Visa {
+    if (visaStr) {
+      switch (visaStr) {
+        case 'not-required': return Visa.NOT_REQUIRED;
+        case 'required': return Visa.REQUIRED;
+        case 'on-arrival': return Visa.ON_ARRIVAL;
+        case 'unknown': return Visa.UNKNOWN;
+      }
     } else {
-      console.log('Making HTTP call');
-      this.visaDataCountries[0] = userCountry;
-      this.visaDataCountries[1] = partnerCountry;
-      let userCountryURL = this._getCountryFileName(userCountry);
-      let partnerCountryURL = this._getCountryFileName(partnerCountry);
-      let userCountryHttp = this.http.get(userCountryURL).map((res: Response) => res.json());
-      let partnerCountryHttp = this.http.get(partnerCountryURL).map((res: Response) => res.json());
-      this.visaDataObservable = Observable.forkJoin(userCountryHttp, partnerCountryHttp)
-      .map(
-        data => {
-          let rawUserData = data[0];
-          let rawPartnerData = data[1];
-          return [this._getWikiData(rawUserData), this._getWikiData(rawPartnerData)];
-        }
-      )
-      .map(
-        wikiArr => this._getVisaData(wikiArr[0], wikiArr[1])
-      )
-      .do(visaData => {
-        this.visaData = visaData;
-        this.visaDataObservable = null;
-      })
-      .share();
-      return this.visaDataObservable;
+      throw new Error('Invalid visa string. Attempt to convert '+visaStr+' to enum');
+    }
+  }
+
+  private _generateVisaStatus(person, rawData) {
+    let personType;
+    if (person === Person.USER) {
+      personType = 'user';
+    } else if (person === Person.PARTNER ) {
+      personType = 'partner';
+    } else {
+      throw new Error('Invalid person type in getVisaStatus. Must be partner or user');
+    }
+    this[personType+'Visas'] = [];
+    let visaTypes = ['not-required', 'required', 'on-arrival', 'unknown'];
+    visaTypes.forEach((visaType) => {
+      rawData[visaType].forEach( (country) => {
+        this[personType+'Visas'].push(Object.assign({}, country, {visa: visaType}));
+      });
+    });
+  }
+
+  private _lookupCountry(arr, countryName) {
+    return arr.find(function(country) {
+      return country.name === countryName;
+    });
+  }
+
+  private _getVisaStatus(person, countryName) {
+    let personType;
+    if (person === Person.USER) {
+      personType = 'user';
+    } else if (person === Person.PARTNER ) {
+      personType = 'partner';
+    } else {
+      throw new Error('Invalid person type in getVisaStatus. Must be partner or user');
+    }
+    let country = this._lookupCountry(this[personType+'Visas'], countryName);
+    if (country) {
+      return this._convertVisaToEnum(country.visa);
+    } else {
+       console.error('Attempt to find status of invalid/unlisted country %s',countryName);
+      return Visa.UNKNOWN;
     }
   }
 }
