@@ -9,3 +9,5 @@ $screen-desktop-max: ($screen-lg-desktop-min - 1);
 $brand-font: 'Francois One', sans-serif;
 $content-font: 'Roboto', sans-serif;
 $heading-font: $content-font;
+
+$md-ease-curve: cubic-bezier(0.4, 0.0, 0.2, 1);
