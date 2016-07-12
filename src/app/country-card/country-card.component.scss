@@ -1,0 +1,87 @@
+:host {
+  $countries: afghanistan albania algeria andorra angola antigua-and-barbuda argentina armenia australia austria azerbaijan bahamas bahrain bangladesh barbados belarus belgium belize benin bhutan bolivia bosnia-and-herzegovina botswana brazil brunei bulgaria burkina-faso burundi cambodia cameroon canada cape-verde central-african-republic chad chile china colombia comoros republic-of-the-congo democratic-republic-of-the-congo costa-rica côte-divoire croatia cuba cyprus czech-republic denmark djibouti dominica dominican-republic ecuador egypt el-salvador equatorial-guinea eritrea estonia ethiopia fiji finland france gabon gambia georgia germany ghana greece grenada guatemala guinea-bissau guinea guyana haiti honduras hong-kong hungary iceland india indonesia iran iraq ireland israel italy jamaica japan jordan kazakhstan kenya kiribati north-korea south-korea kuwait kyrgyzstan laos latvia lebanon lesotho liberia libya liechtenstein lithuania luxembourg macedonia madagascar malawi malaysia maldives mali malta marshall-islands mauritania mauritius mexico micronesia moldova monaco mongolia montenegro morocco mozambique myanmar namibia nauru nepal netherlands new-zealand nicaragua nigeria niger norway oman pakistan palau panama papua-new-guinea paraguay peru philippines poland portugal qatar romania russia rwanda saint-kitts-and-nevis saint-lucia saint-vincent-and-the-grenadines samoa san-marino sao-tome-and-principe saudi-arabia senegal serbia seychelles sierra-leone singapore slovakia slovenia solomon-islands somalia south-africa south-sudan spain sri-lanka sudan suriname swaziland sweden switzerland syria tajikistan tanzania thailand timor-leste togo tonga trinidad-and-tobago tunisia turkey turkmenistan tuvalu uganda ukraine united-arab-emirates united-kingdom united-states uruguay uzbekistan vanuatu vatican-city venezuela vietnam yemen zambia zimbabwe;
+  // background-color: rgb(251, 251, 251);
+  .flag-wrapper {
+    max-height: 50px;
+    max-width: 65px;
+    overflow: hidden;
+    img.flag {
+      max-width: 100%;
+      max-height: 100%;
+      box-sizing: border-box;
+      object-fit: contain;
+      object-position: 100%;
+      border: 1px solid #bababa;
+    }
+    // @each $country in $countries {
+    //   &.#{$country} {
+    //     background-image: url("app/shared/images/flags/#{$country}.png");
+    //     background-size: contain;
+    //   }
+    // }
+  }
+
+  .content {
+    padding: 10px 16px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    p {
+      margin-bottom: 0;
+    }
+    .name {
+      font-family: 'Roboto', sans-serif;
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 13px;
+      line-height: 13px;
+      min-width: 60px;
+      margin-top: 10px;
+    }
+    .not-required {
+      color: #00A2E8;
+    }
+    .required {
+      color: #FF9999;
+    }
+    .on-arrival {
+      color: #B5E61D;
+    }
+    .unknown {
+      color: #ABABAB;
+    }
+    .visa-status {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 300;
+      font-size: 13px;
+    }
+  }
+
+  width: 380px;
+  height: 196px;
+  margin: 20px 1.5vw;
+  & > .mdl-card__actions {
+    border-color: rgba(255, 255, 255, 0.2);
+  }
+  & > .mdl-card__title {
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  & > .mdl-card__title > h4 {
+    margin-top: 0;
+  }
+  & > .mdl-card__actions {
+    display: flex;
+    box-sizing:border-box;
+    align-items: flex-center;
+  }
+  & > .mdl-card__actions > .material-icons {
+    padding-right: 10px;
+  }
+  // & > .mdl-card__title,
+  // & > .mdl-card__actions,
+  // & > .mdl-card__actions > .mdl-button {
+    //   color: #fff;
+    // }
+  }

@@ -1,0 +1,37 @@
+<div class="mdl-card__title mdl-card--expand">
+  <h4>
+    {{country.name}}<br>
+  </h4>
+  <div class="flag-wrapper">
+    <img class="flag" [src]="'app/shared/images/flags/'+flagClass+'.png'" [alt]="'Flag of '+country.name"/>
+  </div>
+</div>
+<div class="content">
+  <div class="person" [ngClass]="userVisaClass">
+    <p class="name">You</p>
+    <p>
+      <span class="visa-status"  [ngSwitch]="userVisaStatus">
+        <template  [ngSwitchCase]="Visa.REQUIRED">Visa required</template>
+        <template [ngSwitchCase]="Visa.ON_ARRIVAL">Visa on arrival/eVisa</template>
+        <template [ngSwitchCase]="Visa.NOT_REQUIRED">Visa not required</template>
+      </span>
+    </p>
+  </div>
+  <div class="person" [ngClass]="partnerVisaClass">
+    <p class="name">Partner</p>
+    <p>
+      <span class="visa-status" [ngSwitch]="partnerVisaStatus">
+        <template [ngSwitchCase]="Visa.REQUIRED">Visa required</template>
+        <template [ngSwitchCase]="Visa.ON_ARRIVAL">Visa on arrival/eVisa</template>
+        <template [ngSwitchCase]="Visa.NOT_REQUIRED">Visa not required</template>
+      </span>
+    </p>
+  </div>
+</div>
+<div class="mdl-card__actions mdl-card--border">
+  <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+    Add to Calendar
+  </a>
+  <div class="mdl-layout-spacer"></div>
+  <i class="material-icons">event</i>
+</div>
