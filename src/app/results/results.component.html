@@ -1,0 +1,5 @@
+<div *ngIf="countries">
+  <div *ngIf="countries.length" class="countries">
+    <nomad-country-card [country]="country" *ngFor="let country of countries"></nomad-country-card>
+  </div>
+</div>
