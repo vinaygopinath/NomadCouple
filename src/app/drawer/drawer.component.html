@@ -1,0 +1,118 @@
+<!-- <div class="mdl-layout__header header">
+<span class="mdl-layout-title">Nomad Couple</span>
+<div class="mdl-layout__tab-bar mdl-js-ripple-effect">
+<a href="#scroll-tab-1" class="mdl-layout__tab is-active">Together</a>
+<a href="#scroll-tab-2" class="mdl-layout__tab">You</a>
+<a href="#scroll-tab-3" class="mdl-layout__tab">Your Partner</a>
+</div>
+</div>
+<div class="mdl-layout mdl-js-layout">
+<div class="mdl-layout__content">
+<section class="mdl-layout__tab-panel is-active" id="scroll-tab-1">
+<div class="page-content">Tab1 content</div>
+</section>
+<section class="mdl-layout__tab-panel" id="scroll-tab-2">
+<div class="page-content">Tab2 content</div>
+</section>
+<section class="mdl-layout__tab-panel" id="scroll-tab-3">
+<div class="page-content">Tab3 content</div>
+</section>
+</div>
+</div> -->
+<!-- Simple header with fixed tabs. -->
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+
+  <!-- All your template markup goes here -->
+  <header class="mdl-layout__header header">
+    <div class="mdl-layout__header-row header-row">
+      <span class="mdl-layout-title">Nomad Couple</span>
+      <span class="countries" *ngIf="user && partner">
+        {{user}} + {{partner}}
+      </span>
+    </div>
+    <!-- Tabs -->
+    <!-- <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
+    <a href="#fixed-tab-1" class="mdl-layout__tab is-active">Together</a>
+    <a href="#fixed-tab-2" class="mdl-layout__tab">You</a>
+    <a href="#fixed-tab-3" class="mdl-layout__tab">Your Partner</a>
+  </div> -->
+</header>
+<div class="mdl-layout__content">
+  <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+    <div class="mdl-tabs__tab-bar">
+      <a href="#together-panel" class="mdl-tabs__tab is-active">Together</a>
+      <a href="#you-panel" class="mdl-tabs__tab" *ngIf="user !== partner">You</a>
+      <a href="#partner-panel" class="mdl-tabs__tab" *ngIf="user !== partner">Partner</a>
+    </div>
+
+    <div class="mdl-tabs__panel is-active" id="together-panel">
+      <h4>Together</h4>
+      <div *ngIf="visaData">
+        <div>
+          <nomad-country-count [type]="Visa.NOT_REQUIRED" [array]="visaData.bothNotReqCountries" (click)="emitCountClick(Visa.NOT_REQUIRED, visaData.bothNotReqCountries)">
+          </nomad-country-count>
+          <nomad-country-count [type]="Visa.ON_ARRIVAL" [array]="visaData.bothOnArrCountries" (click)="emitCountClick(Visa.ON_ARRIVAL, visaData.bothOnArrCountries)">
+          </nomad-country-count>
+        </div>
+        <div>
+          <nomad-country-count [type]="Visa.REQUIRED" [array]="visaData.bothReqCountries" (click)="emitCountClick(Visa.REQUIRED, visaData.bothReqCountries)">
+          </nomad-country-count>
+          <nomad-country-count [type]="Visa.UNKNOWN" [array]="visaData.bothUnkCountries">
+          </nomad-country-count>
+        </div>
+      </div>
+    </div>
+    <div class="mdl-tabs__panel" id="you-panel">
+      <h4>You</h4>
+      <div *ngIf="visaData">
+        <nomad-country-count [type]="Visa.NOT_REQUIRED" [array]="visaData.userNotReqCountries"  (click)="emitCountClick(Visa.NOT_REQUIRED, visaData.userNotReqCountries)">
+        </nomad-country-count>
+        <nomad-country-count [type]="Visa.ON_ARRIVAL" [array]="visaData.userOnArrCountries" (click)="emitCountClick(Visa.ON_ARRIVAL, visaData.userOnArrCountries)">
+        </nomad-country-count>
+        <nomad-country-count [type]="Visa.REQUIRED" [array]="visaData.userReqCountries" (click)="emitCountClick(Visa.REQUIRED, visaData.userReqCountries)">
+        </nomad-country-count>
+        <nomad-country-count [type]="Visa.UNKNOWN" [array]="visaData.userUnkCountries" (click)="emitCountClick(Visa.UNKNOWN, visaData.userUnkCountries)">
+        </nomad-country-count>
+      </div>
+    </div>
+    <div class="mdl-tabs__panel" id="partner-panel">
+      <h4>Your partner</h4>
+      <div *ngIf="visaData">
+        <nomad-country-count [type]="Visa.NOT_REQUIRED" [array]="visaData.partnerNotReqCountries" (click)="emitCountClick(Visa.NOT_REQUIRED, visaData.partnerNotReqCountries)">
+        </nomad-country-count>
+        <nomad-country-count [type]="Visa.ON_ARRIVAL" [array]="visaData.partnerOnArrCountries" (click)="emitCountClick(Visa.ON_ARRIVAL, visaData.partnerOnArrCountries)">
+        </nomad-country-count>
+        <nomad-country-count [type]="Visa.REQUIRED" [array]="visaData.partnerReqCountries" (click)="emitCountClick(Visa.REQUIRED, visaData.partnerReqCountries)">
+        </nomad-country-count>
+        <nomad-country-count [type]="Visa.UNKNOWN" [array]="visaData.partnerUnkCountries" (click)="emitCountClick(Visa.UNKNOWN, visaData.partnerUnkCountries)">
+        </nomad-country-count>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- <main class="mdl-layout__content">
+
+  <section class="mdl-layout__tab-panel is-active" id="fixed-tab-1">
+  <div class="page-content">
+  content panel 1
+</div>
+</section>
+
+<section class="mdl-layout__tab-panel" id="fixed-tab-2">
+<div class="page-content">
+content panel 2
+</div>
+</section>
+
+<section class="mdl-layout__tab-panel" id="fixed-tab-3">
+<div class="page-content">
+content panel 3
+</div>
+</section>
+
+</main> -->
+
+</div>
+<!-- /.mdl-layout -->

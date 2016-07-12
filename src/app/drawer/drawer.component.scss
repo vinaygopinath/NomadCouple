@@ -1,0 +1,42 @@
+.header {
+  .header-row {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100px;
+    margin: 0;
+    padding: 10px 40px;
+    .mdl-layout-title {
+      line-height: 36px;
+    }
+    .countries {
+      font-family: "Roboto","Helvetica","Arial",sans-serif;
+      font-size: 14px;
+      line-height: 1;
+      white-space: nowrap;
+      letter-spacing: .07em;
+      font-weight: 600;
+      max-width: 100%;
+      text-overflow: ellipsis;
+    }
+  }
+}
+
+.mdl-layout__content {
+  padding: 10px 8px;
+}
+
+.mdl-layout__tab-bar {
+  height: 48px;
+  box-sizing: border-box;
+  margin: 0 36px;
+  width: calc(100%-72px);
+  padding: 0;
+  .mdl-layout__tab {
+    padding: 0 20px;
+    min-width: 80px;
+  }
+}
+.mdl-layout__tab-bar-button {
+  width: 36px;
+}
