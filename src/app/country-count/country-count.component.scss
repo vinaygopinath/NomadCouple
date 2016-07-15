@@ -12,18 +12,22 @@
     z-index:1000;
   }
   &.on-arrival .number {
-    color: #B5E61D;
+    color: $on-arrival-color;
   }
   &.not-required .number {
-    // color: #99FF99;
-    color: #00A2E8;
+    color: $not-required-color;
+  }
+  &.evisa .number {
+    color: $evisa-color;
   }
   &.required .number {
-    // color: #ABABAB;
-    color: #FF9999;
+    color: $required-color;
   }
   &.unknown .number {
-    color: #ABABAB;
+    color: $unknown-color;
+  }
+  &.refused .number {
+    color: $refused-color;
   }
   .number {
     margin-top: 0;
