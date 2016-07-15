@@ -2,6 +2,7 @@ import { Component, OnInit, HostBinding } from '@angular/core';
 import { MaterialSelectComponent } from '../material-select';
 import { VisaService } from '../visa.service';
 import { Router } from '@angular/router';
+import { StringUtils } from '../utils/string';
 
 //TODO Optimize images
 const BACKGROUND_TYPE = ['bg-payir','bg-hike','bg-kayak','bg-woods'];
@@ -42,8 +43,8 @@ export class HomeComponent implements OnInit {
 
   showResults(event) {
     console.log('showResults called');
-    let formattedUserCountry = this.visaService.getUrlFriendlyName(this.userNationality);
-    let formattedPartnerCountry = this.visaService.getUrlFriendlyName(this.partnerNationality);
+    let formattedUserCountry = StringUtils.getUrlFriendlyName(this.userNationality);
+    let formattedPartnerCountry = StringUtils.getUrlFriendlyName(this.partnerNationality);
     this.router.navigate(['/search', formattedUserCountry + '+' + formattedPartnerCountry]);
   }
 }

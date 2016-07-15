@@ -4,6 +4,9 @@ import { VisaService } from '../visa.service';
 import { VisaData } from '../visa-data';
 import { DrawerComponent } from '../drawer';
 import { ResultsComponent } from '../results';
+import { Visa } from '../visa.enum';
+import { Person } from '../person.enum';
+import { StringUtils } from '../utils/string';
 
 @Component({
   moduleId: module.id,
@@ -28,14 +31,14 @@ export class SearchComponent implements OnInit, OnDestroy {
       if (nationalities) {
         let nationalityArr = nationalities.split('+');
         if (nationalityArr.length === 2) {
-          this.userNationality = this.visaService.getUserFriendlyName(nationalityArr[0]);
-          this.partnerNationality = this.visaService.getUserFriendlyName(nationalityArr[1]);
+          this.userNationality = StringUtils.getUserFriendlyName(nationalityArr[0]);
+          this.partnerNationality = StringUtils.getUserFriendlyName(nationalityArr[1]);
           this.visaService.getVisaCountries(nationalityArr[0], nationalityArr[1])
           .subscribe(
             data => {
               console.log('Received data = ',data);
               this.visaData = data;
-              this.results = this.visaData.bothNotReqCountries;
+              this.results = this.visaData.bothNotRequired;
             },
             err => console.error('getVisaCountries error = ',err)
           );
@@ -45,8 +48,10 @@ export class SearchComponent implements OnInit, OnDestroy {
   }
 
   onFilter(filter) {
-    console.log('onFilter called with',filter);
-    this.results = filter.data;
+    let visaType: Visa = filter.visa;
+    let personType: Person = filter.person;
+    let str = StringUtils.toCamelCase(Person.toString(personType)+'-'+Visa.toString(visaType));
+    this.results = this.visaData[str];
   }
 
   ngOnDestroy() {
