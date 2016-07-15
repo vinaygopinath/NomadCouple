@@ -30,23 +30,33 @@ export class CountryCardComponent implements OnInit {
 
   constructor(private visaService: VisaService) {}
 
-  getVisaClass(visaEnum) {
-    switch(visaEnum) {
-      case Visa.NOT_REQUIRED: return 'not-required';
-      case Visa.REQUIRED: return 'required';
-      case Visa.ON_ARRIVAL: return 'on-arrival';
-      case Visa.UNKNOWN: return 'unknown';
+  getCountryFlagClass(countryName) {
+    if (!countryName) {
+      throw new Error('Undefined/null country name. Cannot find country flag class');
     }
+    let countryStr = countryName.toLowerCase();
+    //Normalize inputs
+    switch (countryStr) {
+      case 'côte-d\'ivoire':
+      case 'ivory coast': countryStr = 'côte-divoire'; break;
+      case 'the gambia': countryStr = 'gambia'; break;
+      case 'republic of ireland': countryStr = 'ireland'; break;
+      case 'republic of macedonia': countryStr = 'macedonia'; break;
+      case 'federated states of micronesia': countryStr = 'micronesia'; break;
+      case 'east timor': countryStr = 'timor-leste'; break;
+      case 'the bahamas': countryStr = 'bahamas'; break;
+      case 'georgia (country)': countryStr = 'georgia'; break;
+    }
+    return countryStr.replace(/ /g, '-');
   }
 
   ngOnInit() {
     this.userVisaStatus = this.visaService.getUserVisaStatus(this.country.name);
-    this.userVisaClass = this.getVisaClass(this.userVisaStatus);
     this.partnerVisaStatus = this.visaService.getPartnerVisaStatus(this.country.name);
-    this.partnerVisaClass = this.getVisaClass(this.partnerVisaStatus);
-    this.flagClass = this.visaService.getCountryFlagClass(this.country.name);
-    console.log('CCC userVisaStatus = %s',this.userVisaStatus);
-    console.log('CCC partnerVisaStatus = %s',this.partnerVisaStatus);
+    
+    this.userVisaClass = Visa.toString(this.userVisaStatus);
+    this.partnerVisaClass = Visa.toString(this.partnerVisaStatus);
+    this.flagClass = this.getCountryFlagClass(this.country.name);
   }
 
 }

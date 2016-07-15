@@ -110,24 +110,6 @@ export class VisaService {
     return this._getVisaStatus(Person.PARTNER, countryName);
   }
 
-  getCountryFlagClass(countryName) {
-    if (!countryName) {
-      throw new Error('Undefined/null country name. Cannot find country flag class');
-    }
-    let countryStr = countryName.toLowerCase();
-    //Normalize inputs
-    switch (countryStr) {
-      case 'côte-d\'ivoire':
-      case 'ivory coast': countryStr = 'côte-divoire'; break;
-      case 'the gambia': countryStr = 'gambia'; break;
-      case 'republic of ireland': countryStr = 'ireland'; break;
-      case 'republic of macedonia': countryStr = 'macedonia'; break;
-      case 'federated states of micronesia': countryStr = 'micronesia'; break;
-      case 'east timor': countryStr = 'timor-leste'; break;
-    }
-    return countryStr.replace(/ /g, '-');
-  }
-
   private _getCountryFileName(input: string): string {
     if (!input) {
       throw new Error('Invalid input - Country name cannot be undefined or null');
@@ -162,20 +144,11 @@ export class VisaService {
   }
 
   private _getIntersection(arr1: Array<Country>, arr2: Array<Country>): Array<Country> {
-    // console.log('List of all countries in arr2');
-    // for ( let country of arr2) {
-    //   console.log(country.name);
-    // }
-
     return arr1.filter(arr1Country => {
       return arr2.filter(arr2Country => {
         return arr2Country.name === arr1Country.name;
       }).length === 1;
     });
-
-    // return arr1.filter(arr1Country => {
-    //   return arr2.indexOf(arr1Country.name) !== -1;
-    // });
   }
 
   private _getDifference(arr1: Array<Country>, arr2: Array<Country>): Array<Country> {
@@ -204,19 +177,6 @@ export class VisaService {
     let onArrivalGroups = this._groupByVisa(userData.onArrival, partnerData.onArrival);
     let unknownGroups = this._groupByVisa(userData.unknown, partnerData.unknown);
     return new VisaData(requiredGroups, notRequiredGroups, onArrivalGroups, unknownGroups);
-  }
-
-  private _convertVisaToEnum(visaStr: string): Visa {
-    if (visaStr) {
-      switch (visaStr) {
-        case 'not-required': return Visa.NOT_REQUIRED;
-        case 'required': return Visa.REQUIRED;
-        case 'on-arrival': return Visa.ON_ARRIVAL;
-        case 'unknown': return Visa.UNKNOWN;
-      }
-    } else {
-      throw new Error('Invalid visa string. Attempt to convert '+visaStr+' to enum');
-    }
   }
 
   private _generateVisaStatus(person, rawData) {
@@ -254,7 +214,7 @@ export class VisaService {
     }
     let country = this._lookupCountry(this[personType+'Visas'], countryName);
     if (country) {
-      return this._convertVisaToEnum(country.visa);
+      return Visa.parse(country.visa);
     } else {
        console.error('Attempt to find status of invalid/unlisted country %s',countryName);
       return Visa.UNKNOWN;
