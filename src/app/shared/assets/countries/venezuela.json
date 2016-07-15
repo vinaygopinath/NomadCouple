@@ -25,6 +25,9 @@
       "name": "Burundi"
     },
     {
+      "name": "Cameroon"
+    },
+    {
       "name": "Canada"
     },
     {
@@ -44,6 +47,9 @@
     },
     {
       "name": "Ivory Coast"
+    },
+    {
+      "name": "Cuba"
     },
     {
       "name": "El Salvador"
@@ -521,6 +527,42 @@
     },
     {
       "name": "Vatican City"
+    },
+    {
+      "name": "Venezuela",
+      "note": "home"
+    }
+  ],
+  "evisa": [
+    {
+      "name": "Australia",
+      "note": "May apply online."
+    },
+    {
+      "name": "Gabon",
+      "note": "Electronic visa holders must arrive via Libreville International Airport."
+    },
+    {
+      "name": "Georgia (country)"
+    },
+    {
+      "name": "India",
+      "note": "30 days"
+    },
+    {
+      "name": "Kenya",
+      "note": "3 months"
+    },
+    {
+      "name": "Myanmar",
+      "note": "28 days, eVisa holders must arrive via Yangon, Nay Pyi Taw or Mandalay airports."
+    },
+    {
+      "name": "Sri Lanka",
+      "note": "30 days"
+    },
+    {
+      "name": "Zimbabwe"
     }
   ],
   "on-arrival": [
@@ -554,6 +596,10 @@
     {
       "name": "Djibouti",
       "note": "Not available at all entry points."
+    },
+    {
+      "name": "Dominican Republic",
+      "note": "30 days"
     },
     {
       "name": "Egypt",
@@ -591,7 +637,8 @@
       "note": "30 days"
     },
     {
-      "name": "Mauritania"
+      "name": "Mauritania",
+      "note": "Available at Nouakchott–Oumtounsy International Airport."
     },
     {
       "name": "Mauritius",
@@ -614,6 +661,18 @@
       "note": "30 days"
     },
     {
+      "name": "Samoa",
+      "note": "60 days"
+    },
+    {
+      "name": "Seychelles",
+      "note": "3 months"
+    },
+    {
+      "name": "Solomon Islands",
+      "note": "3 months"
+    },
+    {
       "name": "Somalia",
       "note": "30 days, must hold an invitation letter issued at least 2 days before arrival."
     },
@@ -622,7 +681,7 @@
     },
     {
       "name": "Tajikistan",
-      "note": "45 days at Dushanbe International Airport. Visa also available online for those arriving via Dushanbe or Khujand airports."
+      "note": "45 days at Dushanbe International Airport. Visa also available online. E-visa holders can enter through all border points."
     },
     {
       "name": "Tanzania"
@@ -648,72 +707,6 @@
       "note": "up to 90 days"
     }
   ],
-  "unknown": [
-    {
-      "name": "Australia",
-      "note": "May apply online.",
-      "visa": "Online Visitor e600 visa"
-    },
-    {
-      "name": "Cameroon",
-      "visa": "Visa required<"
-    },
-    {
-      "name": "Cuba",
-      "visa": "Visa required !Tourist Card required"
-    },
-    {
-      "name": "Dominican Republic",
-      "note": "30 days",
-      "visa": "Visa on arrival !Tourist Card on arrival"
-    },
-    {
-      "name": "Gabon",
-      "note": "Electronic visa holders must arrive via Libreville International Airport.",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Georgia (country)",
-      "visa": "eVisa"
-    },
-    {
-      "name": "India",
-      "note": "30 days",
-      "visa": "e-Tourist Visa"
-    },
-    {
-      "name": "Kenya",
-      "note": "3 months",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Myanmar",
-      "note": "28 days, eVisa holders must arrive via Yangon, Nay Pyi Taw or Mandalay airports.",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Samoa",
-      "note": "60 days",
-      "visa": "Visa on arrival !Entry Permit on arrival"
-    },
-    {
-      "name": "Seychelles",
-      "note": "3 months",
-      "visa": "Visa on arrival !Visitor's Permit on arrival"
-    },
-    {
-      "name": "Solomon Islands",
-      "note": "3 months",
-      "visa": "Visa on arrival !Visitor's permit on arrival"
-    },
-    {
-      "name": "Sri Lanka",
-      "note": "30 days",
-      "visa": "Electronic Travel Authorization"
-    },
-    {
-      "name": "Zimbabwe",
-      "visa": "eVisa"
-    }
-  ]
+  "refused": [],
+  "unknown": []
 }

@@ -530,6 +530,45 @@
     {
       "name": "Zimbabwe",
       "note": "3 months"
+    },
+    {
+      "name": "Belize",
+      "note": "home"
+    }
+  ],
+  "evisa": [
+    {
+      "name": "Australia",
+      "note": "May apply online."
+    },
+    {
+      "name": "Bahrain",
+      "note": "eVisa from October 2014."
+    },
+    {
+      "name": "Ivory Coast"
+    },
+    {
+      "name": "Gabon",
+      "note": "Electronic visa holders must arrive via Libreville International Airport."
+    },
+    {
+      "name": "India",
+      "note": "30 days"
+    },
+    {
+      "name": "Myanmar",
+      "note": "28 days"
+    },
+    {
+      "name": "Rwanda"
+    },
+    {
+      "name": "São Tomé and Príncipe"
+    },
+    {
+      "name": "Sri Lanka",
+      "note": "30 days; must hold return or onward ticket"
     }
   ],
   "on-arrival": [
@@ -580,7 +619,8 @@
       "name": "Marshall Islands"
     },
     {
-      "name": "Mauritania"
+      "name": "Mauritania",
+      "note": "Available at Nouakchott–Oumtounsy International Airport."
     },
     {
       "name": "Mozambique",
@@ -595,8 +635,16 @@
       "note": "30 days"
     },
     {
+      "name": "Samoa",
+      "note": "60 days"
+    },
+    {
       "name": "Senegal",
       "note": "3 months"
+    },
+    {
+      "name": "Seychelles",
+      "note": "1 month"
     },
     {
       "name": "Tanzania",
@@ -615,58 +663,6 @@
       "note": "1 month"
     }
   ],
-  "unknown": [
-    {
-      "name": "Australia",
-      "note": "May apply online.",
-      "visa": "Online Visitor e600 visa"
-    },
-    {
-      "name": "Bahrain",
-      "note": "eVisa from October 2014.",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Ivory Coast",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Gabon",
-      "note": "Electronic visa holders must arrive via Libreville International Airport.",
-      "visa": "eVisa"
-    },
-    {
-      "name": "India",
-      "note": "30 days",
-      "visa": "e-Tourist Visa"
-    },
-    {
-      "name": "Myanmar",
-      "note": "28 days",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Rwanda",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Samoa",
-      "note": "60 days",
-      "visa": "Visa on arrival !Entry Permit on arrival"
-    },
-    {
-      "name": "São Tomé and Príncipe",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Seychelles",
-      "note": "1 month",
-      "visa": "Visa on arrival !Visitor's Permit on arrival"
-    },
-    {
-      "name": "Sri Lanka",
-      "note": "30 days; must hold return or onward ticket",
-      "visa": "Electronic Travel Authorization"
-    }
-  ]
+  "refused": [],
+  "unknown": []
 }

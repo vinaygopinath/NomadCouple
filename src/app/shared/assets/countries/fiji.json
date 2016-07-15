@@ -10,6 +10,9 @@
       "name": "Algeria"
     },
     {
+      "name": "Andorra"
+    },
+    {
       "name": "Angola"
     },
     {
@@ -85,6 +88,9 @@
     },
     {
       "name": "Croatia"
+    },
+    {
+      "name": "Cuba"
     },
     {
       "name": "Cyprus"
@@ -513,6 +519,24 @@
     {
       "name": "Zimbabwe",
       "note": "3 months"
+    },
+    {
+      "name": "Fiji",
+      "note": "home"
+    }
+  ],
+  "evisa": [
+    {
+      "name": "Georgia (country)",
+      "note": "up to 90 days"
+    },
+    {
+      "name": "India",
+      "note": "30 days"
+    },
+    {
+      "name": "Myanmar",
+      "note": "28 days"
     }
   ],
   "on-arrival": [
@@ -573,7 +597,7 @@
     },
     {
       "name": "Mauritania",
-      "note": "60 days"
+      "note": "Available at Nouakchott–Oumtounsy International Airport."
     },
     {
       "name": "Mozambique",
@@ -594,7 +618,15 @@
       "name": "Papua New Guinea"
     },
     {
+      "name": "Samoa",
+      "note": "60 days"
+    },
+    {
       "name": "Senegal"
+    },
+    {
+      "name": "Seychelles",
+      "note": "1 month"
     },
     {
       "name": "Solomon Islands"
@@ -622,39 +654,6 @@
       "note": "1 month"
     }
   ],
-  "unknown": [
-    {
-      "name": "Andorra",
-      "visa": "Visa de facto required"
-    },
-    {
-      "name": "Cuba",
-      "visa": "Tourist Card required"
-    },
-    {
-      "name": "Georgia (country)",
-      "note": "up to 90 days",
-      "visa": "eVisa"
-    },
-    {
-      "name": "India",
-      "note": "30 days",
-      "visa": "e-Tourist Visa"
-    },
-    {
-      "name": "Myanmar",
-      "note": "28 days",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Samoa",
-      "note": "60 days",
-      "visa": "Entry Permit on arrival"
-    },
-    {
-      "name": "Seychelles",
-      "note": "1 month",
-      "visa": "Visitor's Permit on arrival"
-    }
-  ]
+  "refused": [],
+  "unknown": []
 }

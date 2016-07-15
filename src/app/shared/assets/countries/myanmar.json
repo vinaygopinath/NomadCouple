@@ -16,9 +16,6 @@
       "name": "Angola"
     },
     {
-      "name": "Antigua and Barbuda"
-    },
-    {
       "name": "Argentina"
     },
     {
@@ -109,6 +106,9 @@
     },
     {
       "name": "Croatia"
+    },
+    {
+      "name": "Cuba"
     },
     {
       "name": "Cyprus"
@@ -459,10 +459,6 @@
       "note": "14 days"
     },
     {
-      "name": "Cambodia",
-      "note": "14 days"
-    },
-    {
       "name": "Dominica",
       "note": "21 days"
     },
@@ -501,6 +497,41 @@
     {
       "name": "Vietnam",
       "note": "14 days"
+    },
+    {
+      "name": "Myanmar",
+      "note": "home"
+    }
+  ],
+  "evisa": [
+    {
+      "name": "Antigua and Barbuda"
+    },
+    {
+      "name": "Australia",
+      "note": "May apply online."
+    },
+    {
+      "name": "Gabon",
+      "note": "Electronic visa holders must arrive via Libreville International Airport."
+    },
+    {
+      "name": "Georgia (country)"
+    },
+    {
+      "name": "India",
+      "note": "30 days"
+    },
+    {
+      "name": "Kenya",
+      "note": "3 months"
+    },
+    {
+      "name": "Singapore",
+      "note": "Visa-free for 30 days from 1 Dec 2016."
+    },
+    {
+      "name": "Zimbabwe"
     }
   ],
   "on-arrival": [
@@ -511,6 +542,10 @@
     {
       "name": "Bolivia",
       "note": "90 days"
+    },
+    {
+      "name": "Cambodia",
+      "note": "30 days"
     },
     {
       "name": "Cape Verde"
@@ -546,7 +581,7 @@
     },
     {
       "name": "Mauritania",
-      "note": "60 days"
+      "note": "Available at Nouakchott–Oumtounsy International Airport."
     },
     {
       "name": "Mauritius",
@@ -562,6 +597,14 @@
     },
     {
       "name": "Nicaragua"
+    },
+    {
+      "name": "Samoa",
+      "note": "60 days"
+    },
+    {
+      "name": "Seychelles",
+      "note": "1 month"
     },
     {
       "name": "Sri Lanka"
@@ -591,53 +634,6 @@
       "note": "90 days"
     }
   ],
-  "unknown": [
-    {
-      "name": "Australia",
-      "note": "May apply online.",
-      "visa": "Online Visitor e600 visa"
-    },
-    {
-      "name": "Cuba",
-      "visa": "Tourist Card required"
-    },
-    {
-      "name": "Gabon",
-      "note": "Electronic visa holders must arrive via Libreville International Airport.",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Georgia (country)",
-      "visa": "eVisa"
-    },
-    {
-      "name": "India",
-      "note": "30 days",
-      "visa": "e-Tourist Visa"
-    },
-    {
-      "name": "Kenya",
-      "note": "3 months",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Samoa",
-      "note": "60 days",
-      "visa": "Entry Permit on arrival"
-    },
-    {
-      "name": "Seychelles",
-      "note": "1 month",
-      "visa": "Visitor's Permit on arrival"
-    },
-    {
-      "name": "Singapore",
-      "note": "Visa-free for 30 days from 1 Dec 2016.",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Zimbabwe",
-      "visa": "eVisa"
-    }
-  ]
+  "refused": [],
+  "unknown": []
 }

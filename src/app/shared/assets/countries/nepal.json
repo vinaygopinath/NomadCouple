@@ -16,17 +16,10 @@
       "name": "Angola"
     },
     {
-      "name": "Antigua and Barbuda"
-    },
-    {
       "name": "Argentina"
     },
     {
       "name": "Armenia"
-    },
-    {
-      "name": "Australia",
-      "note": "May apply online."
     },
     {
       "name": "Austria"
@@ -163,9 +156,6 @@
     },
     {
       "name": "France"
-    },
-    {
-      "name": "Gabon"
     },
     {
       "name": "Germany"
@@ -470,12 +460,6 @@
     },
     {
       "name": "Yemen"
-    },
-    {
-      "name": "Zambia"
-    },
-    {
-      "name": "Zimbabwe"
     }
   ],
   "not-required": [
@@ -490,6 +474,10 @@
     {
       "name": "Haiti",
       "note": "3 months"
+    },
+    {
+      "name": "India",
+      "note": "Nepalese citizens may live and work freely in India under the 1950 Indo-Nepal Treaty of Peace and Friendship."
     },
     {
       "name": "Indonesia",
@@ -522,6 +510,45 @@
     {
       "name": "Singapore",
       "note": "30 days"
+    },
+    {
+      "name": "Nepal",
+      "note": "home"
+    }
+  ],
+  "evisa": [
+    {
+      "name": "Antigua and Barbuda"
+    },
+    {
+      "name": "Australia",
+      "note": "May apply online."
+    },
+    {
+      "name": "Gabon",
+      "note": "Electronic visa holders must arrive via Libreville International Airport."
+    },
+    {
+      "name": "Georgia (country)",
+      "note": "Visa required and eVisa can be applied online. Visa not required for Nepalese citizen up to 90 days who are holders of valid visa or residence permit issued by USA, UK, Japan, Canada, Australia, New Zealand, Israel, South Korea, Schengen and GCC countries."
+    },
+    {
+      "name": "Kenya",
+      "note": "3 months; also visa on arrival until 1 September 2015"
+    },
+    {
+      "name": "Myanmar",
+      "note": "28 days. eVisa holders must arrive via Yangon, Nay Pyi Taw or Mandalay airports."
+    },
+    {
+      "name": "Sri Lanka",
+      "note": "30 days; must hold return or onward ticket"
+    },
+    {
+      "name": "Zambia"
+    },
+    {
+      "name": "Zimbabwe"
     }
   ],
   "on-arrival": [
@@ -566,7 +593,8 @@
       "note": "30 days"
     },
     {
-      "name": "Mauritania"
+      "name": "Mauritania",
+      "note": "Available at Nouakchott–Oumtounsy International Airport."
     },
     {
       "name": "Mozambique",
@@ -575,6 +603,14 @@
     {
       "name": "Palau",
       "note": "30 days"
+    },
+    {
+      "name": "Samoa",
+      "note": "60 days"
+    },
+    {
+      "name": "Seychelles",
+      "note": "1 month"
     },
     {
       "name": "Tanzania",
@@ -596,41 +632,6 @@
       "name": "Uganda"
     }
   ],
-  "unknown": [
-    {
-      "name": "Georgia (country)",
-      "note": "Visa required and eVisa can be applied online. Visa not required for Nepalese citizen up to 90 days who are holders of valid visa or residence permit issued by USA, UK, Japan, Canada, Australia, New Zealand, Israel, South Korea, Schengen and GCC countries.",
-      "visa": "eVisa"
-    },
-    {
-      "name": "India",
-      "note": "Nepalese citizens may live and work freely in India under the 1950 Indo-Nepal Treaty of Peace and Friendship.",
-      "visa": "Freedom of movement"
-    },
-    {
-      "name": "Kenya",
-      "note": "3 months; also visa on arrival until 1 September 2015",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Myanmar",
-      "note": "28 days. eVisa holders must arrive via Yangon, Nay Pyi Taw or Mandalay airports.",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Samoa",
-      "note": "60 days",
-      "visa": "Visa on arrival !Entry Permit on arrival"
-    },
-    {
-      "name": "Seychelles",
-      "note": "1 month",
-      "visa": "Visa on arrival !Visitor's Permit on arrival"
-    },
-    {
-      "name": "Sri Lanka",
-      "note": "30 days; must hold return or onward ticket",
-      "visa": "Electronic Travel Authorization"
-    }
-  ]
+  "refused": [],
+  "unknown": []
 }

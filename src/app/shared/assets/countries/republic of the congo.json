@@ -16,9 +16,6 @@
       "name": "Angola"
     },
     {
-      "name": "Antigua and Barbuda"
-    },
-    {
       "name": "Argentina"
     },
     {
@@ -508,6 +505,37 @@
     {
       "name": "Singapore",
       "note": "30 days"
+    },
+    {
+      "name": "Republic of the Congo",
+      "note": "home"
+    }
+  ],
+  "evisa": [
+    {
+      "name": "Antigua and Barbuda"
+    },
+    {
+      "name": "Australia",
+      "note": "May apply online."
+    },
+    {
+      "name": "Gabon"
+    },
+    {
+      "name": "Georgia (country)"
+    },
+    {
+      "name": "Kenya",
+      "note": "3 months; also visa on arrival until 1 September 2015"
+    },
+    {
+      "name": "Myanmar",
+      "note": "28 days. eVisa holders must arrive via Yangon, Nay Pyi Taw or Mandalay airports."
+    },
+    {
+      "name": "Sri Lanka",
+      "note": "30 days"
     }
   ],
   "on-arrival": [
@@ -547,7 +575,8 @@
       "note": "30 days"
     },
     {
-      "name": "Mauritania"
+      "name": "Mauritania",
+      "note": "Available at Nouakchott–Oumtounsy International Airport."
     },
     {
       "name": "Mozambique"
@@ -562,6 +591,14 @@
     {
       "name": "Rwanda",
       "note": "30 days"
+    },
+    {
+      "name": "Samoa",
+      "note": "60 days"
+    },
+    {
+      "name": "Seychelles",
+      "note": "1 month"
     },
     {
       "name": "Somalia",
@@ -590,44 +627,6 @@
       "note": "3 months"
     }
   ],
-  "unknown": [
-    {
-      "name": "Australia",
-      "note": "May apply online.",
-      "visa": "Online Visitor e600 visa"
-    },
-    {
-      "name": "Gabon",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Georgia (country)",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Kenya",
-      "note": "3 months; also visa on arrival until 1 September 2015",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Myanmar",
-      "note": "28 days. eVisa holders must arrive via Yangon, Nay Pyi Taw or Mandalay airports.",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Samoa",
-      "note": "60 days",
-      "visa": "Visa on arrival !Entry Permit on arrival"
-    },
-    {
-      "name": "Seychelles",
-      "note": "1 month",
-      "visa": "Visa on arrival !Visitor's Permit on arrival"
-    },
-    {
-      "name": "Sri Lanka",
-      "note": "30 days",
-      "visa": "Electronic Travel Authorization"
-    }
-  ]
+  "refused": [],
+  "unknown": []
 }

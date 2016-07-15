@@ -22,10 +22,6 @@
       "name": "Armenia"
     },
     {
-      "name": "Australia",
-      "note": "May apply online."
-    },
-    {
       "name": "Austria"
     },
     {
@@ -107,6 +103,10 @@
       "name": "Croatia"
     },
     {
+      "name": "Cuba",
+      "note": "Tourist Cards (Tarjeta de Turista) must be obtained prior to arrival in Cuba for a maximum stay of 30 days."
+    },
+    {
       "name": "Cyprus"
     },
     {
@@ -146,12 +146,6 @@
       "name": "France"
     },
     {
-      "name": "Gabon"
-    },
-    {
-      "name": "Georgia (country)"
-    },
-    {
       "name": "Germany"
     },
     {
@@ -171,9 +165,6 @@
     },
     {
       "name": "Honduras"
-    },
-    {
-      "name": "Hong Kong"
     },
     {
       "name": "Hungary"
@@ -468,12 +459,6 @@
     },
     {
       "name": "Yemen"
-    },
-    {
-      "name": "Zambia"
-    },
-    {
-      "name": "Zimbabwe"
     }
   ],
   "not-required": [
@@ -533,6 +518,44 @@
     {
       "name": "Vanuatu",
       "note": "30 days"
+    },
+    {
+      "name": "Bangladesh",
+      "note": "home"
+    }
+  ],
+  "evisa": [
+    {
+      "name": "Antigua and Barbuda"
+    },
+    {
+      "name": "Australia",
+      "note": "May apply online."
+    },
+    {
+      "name": "Gabon",
+      "note": "Electronic visa holders must arrive via Libreville International Airport."
+    },
+    {
+      "name": "Georgia (country)"
+    },
+    {
+      "name": "Kenya",
+      "note": "3 months"
+    },
+    {
+      "name": "Myanmar",
+      "note": "28 days. eVisa holders must arrive via Yangon, Nay Pyi Taw or Mandalay airports."
+    },
+    {
+      "name": "Sri Lanka",
+      "note": "30 days"
+    },
+    {
+      "name": "Zambia"
+    },
+    {
+      "name": "Zimbabwe"
     }
   ],
   "on-arrival": [
@@ -565,7 +588,8 @@
       "note": "30 days"
     },
     {
-      "name": "Mauritania"
+      "name": "Mauritania",
+      "note": "Available at Nouakchott–Oumtounsy International Airport."
     },
     {
       "name": "Mozambique",
@@ -578,6 +602,14 @@
     {
       "name": "Nicaragua",
       "note": "90 days"
+    },
+    {
+      "name": "Samoa",
+      "note": "60 days"
+    },
+    {
+      "name": "Seychelles",
+      "note": "3 months"
     },
     {
       "name": "East Timor",
@@ -595,49 +627,14 @@
       "name": "Uganda"
     }
   ],
-  "unknown": [
-    {
-      "name": "Antigua and Barbuda",
-      "visa": "Electronic Entry Visa"
-    },
-    {
-      "name": "Cuba",
-      "note": "Tourist Cards (Tarjeta de Turista) must be obtained prior to arrival in Cuba for a maximum stay of 30 days.",
-      "visa": "Tourist card required"
-    },
+  "refused": [
     {
       "name": "Israel",
-      "note": "Ordinary passport holders are barred from traveling to Israel.",
-      "visa": "Invalid passport"
+      "note": "Ordinary passport holders are barred from traveling to Israel."
     },
     {
-      "name": "Kenya",
-      "note": "3 months; also visa on arrival until 1 September 2015",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Myanmar",
-      "note": "28 days. eVisa holders must arrive via Yangon, Nay Pyi Taw or Mandalay airports.",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Samoa",
-      "note": "60 days",
-      "visa": "Visa on arrival !Entry Permit on arrival"
-    },
-    {
-      "name": "Seychelles",
-      "note": "1 month",
-      "visa": "Visa on arrival !Visitor's Permit on arrival"
-    },
-    {
-      "name": "Sri Lanka",
-      "note": "30 days",
-      "visa": "Electronic Travel Authorization"
-    },
-    {
-      "name": "Sudan",
-      "visa": "Admission refused"
+      "name": "Sudan"
     }
-  ]
+  ],
+  "unknown": []
 }

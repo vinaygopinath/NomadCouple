@@ -55,6 +55,9 @@
       "name": "Ivory Coast"
     },
     {
+      "name": "Cuba"
+    },
+    {
       "name": "Equatorial Guinea"
     },
     {
@@ -546,6 +549,32 @@
     {
       "name": "Venezuela",
       "note": "90 days"
+    },
+    {
+      "name": "Monaco",
+      "note": "home"
+    }
+  ],
+  "evisa": [
+    {
+      "name": "Australia",
+      "note": "90 days on each visit in 12-month period if granted"
+    },
+    {
+      "name": "Gabon",
+      "note": "Electronic visa holders must arrive via Libreville International Airport."
+    },
+    {
+      "name": "India",
+      "note": "30 days"
+    },
+    {
+      "name": "Myanmar",
+      "note": "28 days"
+    },
+    {
+      "name": "Sri Lanka",
+      "note": "30 days"
     }
   ],
   "on-arrival": [
@@ -611,7 +640,8 @@
       "note": "30 days"
     },
     {
-      "name": "Mauritania"
+      "name": "Mauritania",
+      "note": "Available at Nouakchott–Oumtounsy International Airport."
     },
     {
       "name": "Mozambique",
@@ -637,15 +667,27 @@
       "note": "1 month"
     },
     {
+      "name": "Samoa",
+      "note": "60 days"
+    },
+    {
       "name": "Senegal",
       "note": "3 months. Must hold an invitation letter. Visa available online."
+    },
+    {
+      "name": "Seychelles",
+      "note": "1 month"
+    },
+    {
+      "name": "Solomon Islands",
+      "note": "3 months"
     },
     {
       "name": "Somalia"
     },
     {
       "name": "Tajikistan",
-      "note": "45 days"
+      "note": "45 days. Visa also available online. E-visa holders can enter through all border points."
     },
     {
       "name": "Tanzania"
@@ -678,50 +720,6 @@
       "note": "3 months; also eligible for a universal visa allowing access to Zambia."
     }
   ],
-  "unknown": [
-    {
-      "name": "Australia",
-      "note": "90 days on each visit in 12-month period if granted",
-      "visa": "eVisitor"
-    },
-    {
-      "name": "Cuba",
-      "visa": "Tourist Card required"
-    },
-    {
-      "name": "Gabon",
-      "note": "Electronic visa holders must arrive via Libreville International Airport.",
-      "visa": "eVisa"
-    },
-    {
-      "name": "India",
-      "note": "30 days",
-      "visa": "e-Tourist Visa"
-    },
-    {
-      "name": "Myanmar",
-      "note": "28 days",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Samoa",
-      "note": "60 days",
-      "visa": "Entry Permit on arrival"
-    },
-    {
-      "name": "Seychelles",
-      "note": "1 month",
-      "visa": "Visitor's Permit on arrival"
-    },
-    {
-      "name": "Solomon Islands",
-      "note": "3 months",
-      "visa": "Visitor's permit on arrival"
-    },
-    {
-      "name": "Sri Lanka",
-      "note": "30 days",
-      "visa": "Electronic Travel Authorization"
-    }
-  ]
+  "refused": [],
+  "unknown": []
 }

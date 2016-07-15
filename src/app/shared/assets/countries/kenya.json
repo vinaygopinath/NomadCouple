@@ -93,6 +93,10 @@
       "name": "Croatia"
     },
     {
+      "name": "Cuba",
+      "note": "Tourist card must be obtained in advance via travel agency, airline or at the embassy."
+    },
+    {
       "name": "Cyprus"
     },
     {
@@ -512,6 +516,35 @@
     {
       "name": "Zimbabwe",
       "note": "3 months"
+    },
+    {
+      "name": "Kenya",
+      "note": "home"
+    }
+  ],
+  "evisa": [
+    {
+      "name": "Australia",
+      "note": "May apply online."
+    },
+    {
+      "name": "Bahrain",
+      "note": "14 days"
+    },
+    {
+      "name": "Gabon",
+      "note": "Electronic visa holders must arrive via Libreville International Airport."
+    },
+    {
+      "name": "Georgia (country)"
+    },
+    {
+      "name": "India",
+      "note": "30 days"
+    },
+    {
+      "name": "Sri Lanka",
+      "note": "30 days"
     }
   ],
   "on-arrival": [
@@ -561,7 +594,8 @@
       "name": "Mali"
     },
     {
-      "name": "Mauritania"
+      "name": "Mauritania",
+      "note": "Available at Nouakchott–Oumtounsy International Airport."
     },
     {
       "name": "Nepal"
@@ -580,6 +614,14 @@
     {
       "name": "Saint Lucia",
       "note": "6 weeks"
+    },
+    {
+      "name": "Samoa",
+      "note": "60 days"
+    },
+    {
+      "name": "Seychelles",
+      "note": "1 month"
     },
     {
       "name": "Sierra Leone"
@@ -603,50 +645,6 @@
       "note": "1 month"
     }
   ],
-  "unknown": [
-    {
-      "name": "Australia",
-      "note": "May apply online.",
-      "visa": "Online Visitor e600 visa"
-    },
-    {
-      "name": "Bahrain",
-      "note": "14 days",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Cuba",
-      "note": "Tourist card must be obtained in advance via travel agency, airline or at the embassy.",
-      "visa": "Tourist card required"
-    },
-    {
-      "name": "Gabon",
-      "note": "Electronic visa holders must arrive via Libreville International Airport.",
-      "visa": "e-Visa"
-    },
-    {
-      "name": "Georgia (country)",
-      "visa": "eVisa"
-    },
-    {
-      "name": "India",
-      "note": "30 days",
-      "visa": "e-Tourist Visa"
-    },
-    {
-      "name": "Samoa",
-      "note": "60 days",
-      "visa": "Visa on arrival !Entry Permit on arrival"
-    },
-    {
-      "name": "Seychelles",
-      "note": "1 month",
-      "visa": "Visa on arrival !Visitor's Permit on arrival"
-    },
-    {
-      "name": "Sri Lanka",
-      "note": "30 days",
-      "visa": "Electronic Travel Authorization"
-    }
-  ]
+  "refused": [],
+  "unknown": []
 }

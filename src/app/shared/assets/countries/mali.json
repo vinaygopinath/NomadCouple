@@ -13,9 +13,6 @@
       "name": "Angola"
     },
     {
-      "name": "Antigua and Barbuda"
-    },
-    {
       "name": "Argentina"
     },
     {
@@ -77,7 +74,7 @@
     },
     {
       "name": "China",
-      "note": " Hong Kong visa-free 14 days.  Macao visa-free 90 days."
+      "note": " Hong Kong visa-free for 14 days.  Macao visa-free for 90 days."
     },
     {
       "name": "Colombia",
@@ -502,10 +499,51 @@
       "note": "90 days"
     },
     {
+      "name": "Sierra Leone"
+    },
+    {
       "name": "Togo"
     },
     {
       "name": "Tunisia"
+    },
+    {
+      "name": "Mali",
+      "note": "home"
+    }
+  ],
+  "evisa": [
+    {
+      "name": "Antigua and Barbuda"
+    },
+    {
+      "name": "Australia",
+      "note": "May apply online."
+    },
+    {
+      "name": "Gabon",
+      "note": "Electronic visa holders must arrive via Libreville International Airport."
+    },
+    {
+      "name": "Georgia (country)"
+    },
+    {
+      "name": "India"
+    },
+    {
+      "name": "Saint Kitts and Nevis"
+    },
+    {
+      "name": "São Tomé and Príncipe"
+    },
+    {
+      "name": "Sri Lanka"
+    },
+    {
+      "name": "Zambia"
+    },
+    {
+      "name": "Zimbabwe"
     }
   ],
   "on-arrival": [
@@ -568,6 +606,14 @@
       "note": "6 weeks"
     },
     {
+      "name": "Samoa",
+      "note": "60 days"
+    },
+    {
+      "name": "Seychelles",
+      "note": "3 month"
+    },
+    {
       "name": "East Timor",
       "note": "30 days"
     },
@@ -579,58 +625,6 @@
       "name": "Uganda"
     }
   ],
-  "unknown": [
-    {
-      "name": "Australia",
-      "note": "May apply online.",
-      "visa": "Online Visitor e600 visa"
-    },
-    {
-      "name": "Gabon",
-      "note": "Electronic visa holders must arrive via Libreville International Airport.",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Georgia (country)",
-      "visa": "eVisa"
-    },
-    {
-      "name": "India",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Saint Kitts and Nevis",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Samoa",
-      "note": "60 days",
-      "visa": "Visa on arrival !Entry Permit on arrival"
-    },
-    {
-      "name": "São Tomé and Príncipe",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Seychelles",
-      "note": "3 month",
-      "visa": "Visa not  !Visitor's Permit on arrival"
-    },
-    {
-      "name": "Sierra Leone",
-      "visa": "Visa notrequired"
-    },
-    {
-      "name": "Sri Lanka",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Zambia",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Zimbabwe",
-      "visa": "eVisa"
-    }
-  ]
+  "refused": [],
+  "unknown": []
 }

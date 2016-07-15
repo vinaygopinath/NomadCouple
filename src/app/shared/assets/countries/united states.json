@@ -171,7 +171,8 @@
       "note": "90 days per year"
     },
     {
-      "name": "Brazil"
+      "name": "Brazil",
+      "note": "90 days"
     },
     {
       "name": "Brunei",
@@ -530,6 +531,42 @@
     },
     {
       "name": "Vatican City"
+    },
+    {
+      "name": "United States",
+      "note": "home"
+    }
+  ],
+  "evisa": [
+    {
+      "name": "Australia",
+      "note": "90 days on each visit in 12-month period if granted"
+    },
+    {
+      "name": "Ivory Coast"
+    },
+    {
+      "name": "Gabon"
+    },
+    {
+      "name": "India",
+      "note": "30 days"
+    },
+    {
+      "name": "Kenya",
+      "note": "3 months"
+    },
+    {
+      "name": "Myanmar",
+      "note": "28 days."
+    },
+    {
+      "name": "Sri Lanka",
+      "note": "30 days"
+    },
+    {
+      "name": "Turkey",
+      "note": "3 months"
     }
   ],
   "on-arrival": [
@@ -563,10 +600,18 @@
       "name": "Djibouti"
     },
     {
+      "name": "Dominican Republic",
+      "note": "30 days, extendable up to 90 days"
+    },
+    {
       "name": "Egypt"
     },
     {
       "name": "Ethiopia"
+    },
+    {
+      "name": "Fiji",
+      "note": "4 months"
     },
     {
       "name": "Guinea-Bissau",
@@ -627,8 +672,24 @@
       "note": "30 days"
     },
     {
+      "name": "Samoa",
+      "note": "60 days"
+    },
+    {
+      "name": "Seychelles",
+      "note": "3 months, extendable up to a year"
+    },
+    {
+      "name": "Solomon Islands",
+      "note": "3 months within 12 months"
+    },
+    {
       "name": "Somalia",
       "note": "30 days"
+    },
+    {
+      "name": "Suriname",
+      "note": "90 days"
     },
     {
       "name": "Tajikistan",
@@ -670,74 +731,6 @@
       "note": "3 months"
     }
   ],
-  "unknown": [
-    {
-      "name": "Australia",
-      "note": "90 days on each visit in 12-month period if granted",
-      "visa": "Electronic Travel Authority"
-    },
-    {
-      "name": "Ivory Coast",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Dominican Republic",
-      "note": "30 days, extendable up to 90 days",
-      "visa": "Visa on arrival !Tourist Card on arrival"
-    },
-    {
-      "name": "Fiji",
-      "note": "4 months",
-      "visa": "Visa on arrival !Visitor's Permit on arrival"
-    },
-    {
-      "name": "Gabon",
-      "visa": "e-Visa"
-    },
-    {
-      "name": "India",
-      "note": "30 days",
-      "visa": "e-Tourist Visa"
-    },
-    {
-      "name": "Kenya",
-      "note": "3 months",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Myanmar",
-      "note": "28 days.",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Samoa",
-      "note": "60 days",
-      "visa": "Visa on arrival !Entry Permit on arrival"
-    },
-    {
-      "name": "Seychelles",
-      "note": "3 months, extendable up to a year",
-      "visa": "Visa on arrival !Visitor's Permit on arrival"
-    },
-    {
-      "name": "Solomon Islands",
-      "note": "3 months within 12 months",
-      "visa": "Visa on arrival !Visitor's permit on arrival"
-    },
-    {
-      "name": "Sri Lanka",
-      "note": "30 days",
-      "visa": "Electronic Travel Authorization"
-    },
-    {
-      "name": "Suriname",
-      "note": "90 days",
-      "visa": "Visa on arrival !Tourist Card on arrival"
-    },
-    {
-      "name": "Turkey",
-      "note": "3 months",
-      "visa": "eVisa"
-    }
-  ]
+  "refused": [],
+  "unknown": []
 }

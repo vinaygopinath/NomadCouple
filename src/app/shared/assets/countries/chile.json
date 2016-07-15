@@ -51,6 +51,9 @@
       "name": "Ivory Coast"
     },
     {
+      "name": "Cuba"
+    },
+    {
       "name": "Equatorial Guinea"
     },
     {
@@ -526,6 +529,10 @@
       "note": "6 months"
     },
     {
+      "name": "United States",
+      "note": "90 days on arrival from overseas; ESTA (valid for 2 years when issued) required if arriving by air or cruise ship. Biometric passport holders only."
+    },
+    {
       "name": "Uruguay",
       "note": "3 months"
     },
@@ -539,6 +546,36 @@
     {
       "name": "Venezuela",
       "note": "90 days"
+    },
+    {
+      "name": "Chile",
+      "note": "home"
+    }
+  ],
+  "evisa": [
+    {
+      "name": "Australia",
+      "note": "May apply online. Transit visa is not required."
+    },
+    {
+      "name": "Gabon",
+      "note": "Electronic visa holders must arrive via Libreville International Airport."
+    },
+    {
+      "name": "India",
+      "note": "30 days"
+    },
+    {
+      "name": "Kenya",
+      "note": "3 months; also visa on arrival until 1 September 2015"
+    },
+    {
+      "name": "Myanmar",
+      "note": "28 days, eVisa holders must arrive via Yangon International Airport."
+    },
+    {
+      "name": "Sri Lanka",
+      "note": "30 days"
     }
   ],
   "on-arrival": [
@@ -617,7 +654,8 @@
       "note": "90 days"
     },
     {
-      "name": "Mauritania"
+      "name": "Mauritania",
+      "note": "Available at Nouakchott–Oumtounsy International Airport."
     },
     {
       "name": "Mozambique",
@@ -640,6 +678,18 @@
       "note": "60 days"
     },
     {
+      "name": "Samoa",
+      "note": "60 days"
+    },
+    {
+      "name": "Seychelles",
+      "note": "1 month"
+    },
+    {
+      "name": "Solomon Islands",
+      "note": "3 months"
+    },
+    {
       "name": "Somalia",
       "note": "30 days, must hold an invitation letter issued at least 2 days before arrival."
     },
@@ -648,7 +698,7 @@
     },
     {
       "name": "Tajikistan",
-      "note": "45 days at Dushanbe International Airport. Visa also available online for those arriving via Dushanbe or Khujand airports."
+      "note": "45 days at Dushanbe International Airport. Visa also available online. E-visa holders can enter through all border points."
     },
     {
       "name": "Tanzania"
@@ -674,60 +724,6 @@
       "note": "up to 90 days"
     }
   ],
-  "unknown": [
-    {
-      "name": "Australia",
-      "note": "May apply online. Transit visa is not required.",
-      "visa": "Online Visitor e600 visa"
-    },
-    {
-      "name": "Cuba",
-      "visa": "Visa required !Tourist Card required"
-    },
-    {
-      "name": "Gabon",
-      "note": "Electronic visa holders must arrive via Libreville International Airport.",
-      "visa": "eVisa"
-    },
-    {
-      "name": "India",
-      "note": "30 days",
-      "visa": "e-Tourist Visa"
-    },
-    {
-      "name": "Kenya",
-      "note": "3 months; also visa on arrival until 1 September 2015",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Myanmar",
-      "note": "28 days, eVisa holders must arrive via Yangon International Airport.",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Samoa",
-      "note": "60 days",
-      "visa": "Visa on arrival !Entry Permit on arrival"
-    },
-    {
-      "name": "Seychelles",
-      "note": "1 month",
-      "visa": "Visa on arrival !Visitor's Permit on arrival"
-    },
-    {
-      "name": "Solomon Islands",
-      "note": "3 months",
-      "visa": "Visa on arrival !Visitor's permit on arrival"
-    },
-    {
-      "name": "Sri Lanka",
-      "note": "30 days",
-      "visa": "Electronic Travel Authorization"
-    },
-    {
-      "name": "United States",
-      "note": "90 days on arrival from overseas; ESTA (valid for 2 years when issued) required if arriving by air or cruise ship. Biometric passport holders only.",
-      "visa": "Visa not required !Visa Waiver Program"
-    }
-  ]
+  "refused": [],
+  "unknown": []
 }

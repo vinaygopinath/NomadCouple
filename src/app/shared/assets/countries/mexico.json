@@ -36,7 +36,8 @@
       "name": "Cameroon"
     },
     {
-      "name": "Canada"
+      "name": "Canada",
+      "note": "Visa-free from 1 December 2016."
     },
     {
       "name": "Central African Republic"
@@ -53,6 +54,9 @@
     },
     {
       "name": "Democratic Republic of the Congo"
+    },
+    {
+      "name": "Cuba"
     },
     {
       "name": "Equatorial Guinea"
@@ -525,6 +529,56 @@
     {
       "name": "Venezuela",
       "note": "90 days"
+    },
+    {
+      "name": "Mexico",
+      "note": "home"
+    }
+  ],
+  "evisa": [
+    {
+      "name": "Australia",
+      "note": "May apply online. Transit visa is not required."
+    },
+    {
+      "name": "Ivory Coast"
+    },
+    {
+      "name": "Gabon",
+      "note": "Electronic visa holders must arrive via Libreville International Airport."
+    },
+    {
+      "name": "India",
+      "note": "30 days"
+    },
+    {
+      "name": "Kenya",
+      "note": "3 months"
+    },
+    {
+      "name": "Moldova"
+    },
+    {
+      "name": "Myanmar",
+      "note": "28 days, eVisa holders must arrive via Yangon, Nay Pyi Taw or Mandalay airports."
+    },
+    {
+      "name": "Rwanda"
+    },
+    {
+      "name": "São Tomé and Príncipe",
+      "note": "Visa is obtained online."
+    },
+    {
+      "name": "Sri Lanka",
+      "note": "30 days"
+    },
+    {
+      "name": "Turkey",
+      "note": "Free for 30 days"
+    },
+    {
+      "name": "Zimbabwe"
     }
   ],
   "on-arrival": [
@@ -619,12 +673,28 @@
       "note": "60 days"
     },
     {
+      "name": "Samoa",
+      "note": "60 days"
+    },
+    {
+      "name": "Seychelles",
+      "note": "3 months"
+    },
+    {
+      "name": "Solomon Islands",
+      "note": "3 months"
+    },
+    {
       "name": "Somalia",
       "note": "30 days, provided an invitation letter issued by the sponsor has been submitted\nto the Airport Immigration Department at least 2 days before arrival."
     },
     {
+      "name": "Suriname",
+      "note": "90 days, available at Johan Adolf Pengel International Airport"
+    },
+    {
       "name": "Tajikistan",
-      "note": "45 days at Dushanbe International Airport. Visa also available online for those arriving via Dushanbe or Khujand airports."
+      "note": "45 days at Dushanbe International Airport. Visa also available online. E-visa holders can enter through all border points."
     },
     {
       "name": "Tanzania"
@@ -649,86 +719,6 @@
       "note": "90 days"
     }
   ],
-  "unknown": [
-    {
-      "name": "Australia",
-      "note": "May apply online. Transit visa is not required.",
-      "visa": "Online Visitor e600 visa"
-    },
-    {
-      "name": "Ivory Coast",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Cuba",
-      "visa": "Visa required !Tourist Card required"
-    },
-    {
-      "name": "Gabon",
-      "note": "Electronic visa holders must arrive via Libreville International Airport.",
-      "visa": "e-Visa"
-    },
-    {
-      "name": "India",
-      "note": "30 days",
-      "visa": "e-Tourist Visa"
-    },
-    {
-      "name": "Kenya",
-      "note": "3 months",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Moldova",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Myanmar",
-      "note": "28 days, eVisa holders must arrive via Yangon, Nay Pyi Taw or Mandalay airports.",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Rwanda",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Samoa",
-      "note": "60 days",
-      "visa": "Visa on arrival !Entry Permit on arrival"
-    },
-    {
-      "name": "São Tomé and Príncipe",
-      "note": "Visa is obtained online.",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Seychelles",
-      "note": "3 months",
-      "visa": "Visa on arrival !Visitor's Permit on arrival"
-    },
-    {
-      "name": "Solomon Islands",
-      "note": "3 months",
-      "visa": "Visa on arrival !Visitor's permit on arrival"
-    },
-    {
-      "name": "Sri Lanka",
-      "note": "30 days",
-      "visa": "Electronic Travel Authorization"
-    },
-    {
-      "name": "Suriname",
-      "note": "90 days, available at Johan Adolf Pengel International Airport",
-      "visa": "Tourist Card on arrival"
-    },
-    {
-      "name": "Turkey",
-      "note": "Free for 30 days",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Zimbabwe",
-      "visa": "eVisa"
-    }
-  ]
+  "refused": [],
+  "unknown": []
 }

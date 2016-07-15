@@ -10,6 +10,9 @@
       "name": "Algeria"
     },
     {
+      "name": "Andorra"
+    },
+    {
       "name": "Angola"
     },
     {
@@ -93,6 +96,9 @@
     },
     {
       "name": "Croatia"
+    },
+    {
+      "name": "Cuba"
     },
     {
       "name": "Cyprus"
@@ -515,6 +521,24 @@
     {
       "name": "Zimbabwe",
       "note": "3 months"
+    },
+    {
+      "name": "Nauru",
+      "note": "home"
+    }
+  ],
+  "evisa": [
+    {
+      "name": "Georgia (country)",
+      "note": "up to 90 days"
+    },
+    {
+      "name": "India",
+      "note": "30 days"
+    },
+    {
+      "name": "Myanmar",
+      "note": "28 days"
     }
   ],
   "on-arrival": [
@@ -540,6 +564,10 @@
     },
     {
       "name": "Djibouti"
+    },
+    {
+      "name": "Dominican Republic",
+      "note": "30 days"
     },
     {
       "name": "Egypt"
@@ -569,7 +597,7 @@
     },
     {
       "name": "Mauritania",
-      "note": "60 days"
+      "note": "Available at Nouakchott–Oumtounsy International Airport."
     },
     {
       "name": "Mozambique",
@@ -589,6 +617,10 @@
     },
     {
       "name": "Papua New Guinea"
+    },
+    {
+      "name": "Seychelles",
+      "note": "1 month"
     },
     {
       "name": "Solomon Islands"
@@ -617,39 +649,6 @@
       "note": "3 months"
     }
   ],
-  "unknown": [
-    {
-      "name": "Andorra",
-      "visa": "Visa de facto required"
-    },
-    {
-      "name": "Cuba",
-      "visa": "Tourist Card required"
-    },
-    {
-      "name": "Dominican Republic",
-      "note": "30 days",
-      "visa": "Tourist card on arrival"
-    },
-    {
-      "name": "Georgia (country)",
-      "note": "up to 90 days",
-      "visa": "eVisa"
-    },
-    {
-      "name": "India",
-      "note": "30 days",
-      "visa": "e-Tourist Visa"
-    },
-    {
-      "name": "Myanmar",
-      "note": "28 days",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Seychelles",
-      "note": "1 month",
-      "visa": "Visitor's Permit on arrival"
-    }
-  ]
+  "refused": [],
+  "unknown": []
 }

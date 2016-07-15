@@ -163,6 +163,9 @@
       "name": "The Gambia"
     },
     {
+      "name": "Georgia (country)"
+    },
+    {
       "name": "Germany"
     },
     {
@@ -483,9 +486,6 @@
     },
     {
       "name": "Yemen"
-    },
-    {
-      "name": "Zambia"
     }
   ],
   "not-required": [
@@ -512,6 +512,45 @@
     {
       "name": "Vanuatu",
       "note": "30 days"
+    },
+    {
+      "name": "Pakistan",
+      "note": "home"
+    }
+  ],
+  "evisa": [
+    {
+      "name": "Antigua and Barbuda"
+    },
+    {
+      "name": "Australia",
+      "note": "May apply online."
+    },
+    {
+      "name": "Bahrain",
+      "note": "14 days."
+    },
+    {
+      "name": "Gabon",
+      "note": "Electronic visa holders must arrive via Libreville International Airport."
+    },
+    {
+      "name": "Kenya",
+      "note": "3 months"
+    },
+    {
+      "name": "Myanmar",
+      "note": "28 days. eVisa holders must arrive via Yangon, Nay Pyi Taw or Mandalay airports."
+    },
+    {
+      "name": "Tajikistan",
+      "note": "E-visa holders can enter through all border points."
+    },
+    {
+      "name": "Zambia"
+    },
+    {
+      "name": "Zimbabwe"
     }
   ],
   "on-arrival": [
@@ -537,7 +576,8 @@
       "note": "30 days"
     },
     {
-      "name": "Mauritania"
+      "name": "Mauritania",
+      "note": "Available at Nouakchott–Oumtounsy International Airport."
     },
     {
       "name": "Mozambique",
@@ -549,6 +589,14 @@
     {
       "name": "Palau",
       "note": "30 days"
+    },
+    {
+      "name": "Samoa",
+      "note": "60 days"
+    },
+    {
+      "name": "Seychelles",
+      "note": "1 month"
     },
     {
       "name": "Tanzania"
@@ -569,58 +617,6 @@
       "name": "Uganda"
     }
   ],
-  "unknown": [
-    {
-      "name": "Antigua and Barbuda",
-      "visa": "Electronic Entry Visa"
-    },
-    {
-      "name": "Australia",
-      "note": "May apply online.",
-      "visa": "Online Visitor e600 visa"
-    },
-    {
-      "name": "Bahrain",
-      "note": "14 days.",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Gabon",
-      "note": "Electronic visa holders must arrive via Libreville International Airport.",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Georgia (country)",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Kenya",
-      "note": "3 months; also visa on arrival until 1 September 2015",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Myanmar",
-      "note": "28 days. eVisa holders must arrive via Yangon, Nay Pyi Taw or Mandalay airports.",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Samoa",
-      "note": "60 days",
-      "visa": "Visa on arrival !Entry Permit on arrival"
-    },
-    {
-      "name": "Seychelles",
-      "note": "1 month",
-      "visa": "Visa on arrival !Visitor's Permit on arrival"
-    },
-    {
-      "name": "Tajikistan",
-      "note": "Electronic visa holders must arrive via Dushanbe International Airport and international airport of Khujand.",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Zimbabwe",
-      "visa": "eVisa"
-    }
-  ]
+  "refused": [],
+  "unknown": []
 }

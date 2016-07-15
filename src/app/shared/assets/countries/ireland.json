@@ -44,6 +44,9 @@
       "name": "Democratic Republic of the Congo"
     },
     {
+      "name": "Cuba"
+    },
+    {
       "name": "Equatorial Guinea"
     },
     {
@@ -154,12 +157,20 @@
       "note": "180 days"
     },
     {
+      "name": "Austria",
+      "note": "\nFreedom of movement\n"
+    },
+    {
       "name": "The Bahamas",
       "note": "3 months"
     },
     {
       "name": "Barbados",
       "note": "6 months"
+    },
+    {
+      "name": "Belgium",
+      "note": "\nFreedom of movement\n"
     },
     {
       "name": "Belize",
@@ -186,6 +197,10 @@
       "note": "90 days"
     },
     {
+      "name": "Bulgaria",
+      "note": "\nFreedom of movement\n"
+    },
+    {
       "name": "Canada",
       "note": "6 months; eTA required if arriving by air from 15 March 2016."
     },
@@ -200,6 +215,22 @@
     {
       "name": "Costa Rica",
       "note": "90 days"
+    },
+    {
+      "name": "Croatia",
+      "note": "\nFreedom of movement\n"
+    },
+    {
+      "name": "Cyprus",
+      "note": "\nFreedom of movement\n"
+    },
+    {
+      "name": "Czech Republic",
+      "note": "\nFreedom of movement\n"
+    },
+    {
+      "name": "Denmark",
+      "note": "\nFreedom of movement (DK)\n"
     },
     {
       "name": "Dominica",
@@ -218,8 +249,20 @@
       "note": "3 months"
     },
     {
+      "name": "Estonia",
+      "note": "\nFreedom of movement\n"
+    },
+    {
       "name": "Fiji",
       "note": "4 months"
+    },
+    {
+      "name": "Finland",
+      "note": "\nFreedom of movement\n"
+    },
+    {
+      "name": "France",
+      "note": "\nFreedom of movement\n"
     },
     {
       "name": "The Gambia",
@@ -228,6 +271,14 @@
     {
       "name": "Georgia (country)",
       "note": "90 days within 180 days"
+    },
+    {
+      "name": "Germany",
+      "note": "\nFreedom of movement\n"
+    },
+    {
+      "name": "Greece",
+      "note": "\nFreedom of movement\n"
     },
     {
       "name": "Grenada",
@@ -250,12 +301,24 @@
       "note": "3 months"
     },
     {
+      "name": "Hungary",
+      "note": "\nFreedom of movement\n"
+    },
+    {
+      "name": "Iceland",
+      "note": "\nFreedom of movement\n"
+    },
+    {
       "name": "Indonesia",
       "note": "30 days. Not available at all entry points."
     },
     {
       "name": "Israel",
       "note": "3 months"
+    },
+    {
+      "name": "Italy",
+      "note": "\nFreedom of movement\n"
     },
     {
       "name": "Jamaica",
@@ -278,8 +341,24 @@
       "note": "60 days"
     },
     {
+      "name": "Latvia",
+      "note": "\nFreedom of movement\n"
+    },
+    {
       "name": "Lesotho",
       "note": "90 days"
+    },
+    {
+      "name": "Liechtenstein",
+      "note": "\nFreedom of movement\n"
+    },
+    {
+      "name": "Lithuania",
+      "note": "\nFreedom of movement\n"
+    },
+    {
+      "name": "Luxembourg",
+      "note": "\nFreedom of movement\n"
     },
     {
       "name": "Republic of Macedonia",
@@ -292,6 +371,10 @@
     {
       "name": "Malaysia",
       "note": "3 months"
+    },
+    {
+      "name": "Malta",
+      "note": "\nFreedom of movement\n"
     },
     {
       "name": "Mauritius",
@@ -325,12 +408,20 @@
       "note": "3 months"
     },
     {
+      "name": "Netherlands",
+      "note": "\nFreedom of movement (European Netherlands)\n"
+    },
+    {
       "name": "New Zealand",
       "note": "3 months"
     },
     {
       "name": "Nicaragua",
       "note": "90 days"
+    },
+    {
+      "name": "Norway",
+      "note": "\nFreedom of movement\n"
     },
     {
       "name": "Panama",
@@ -347,6 +438,18 @@
     {
       "name": "Philippines",
       "note": "30 days"
+    },
+    {
+      "name": "Poland",
+      "note": "\nFreedom of movement\n"
+    },
+    {
+      "name": "Portugal",
+      "note": "\nFreedom of movement\n"
+    },
+    {
+      "name": "Romania",
+      "note": "\nFreedom of movement\n"
     },
     {
       "name": "Saint Kitts and Nevis",
@@ -380,12 +483,32 @@
       "note": "90 days"
     },
     {
+      "name": "Slovakia",
+      "note": "\nFreedom of movement\n"
+    },
+    {
+      "name": "Slovenia",
+      "note": "\nFreedom of movement\n"
+    },
+    {
       "name": "South Africa",
       "note": "90 days"
     },
     {
+      "name": "Spain",
+      "note": "\nFreedom of movement\n"
+    },
+    {
       "name": "Swaziland",
       "note": "30 days"
+    },
+    {
+      "name": "Sweden",
+      "note": "\nFreedom of movement\n"
+    },
+    {
+      "name": "Switzerland",
+      "note": "\nFreedom of movement\n"
     },
     {
       "name": "Thailand",
@@ -408,6 +531,14 @@
       "note": "90 days within 180 days"
     },
     {
+      "name": "United Kingdom",
+      "note": "\nFreedom of movement (in Constituent countries)\n"
+    },
+    {
+      "name": "United States",
+      "note": "90 days on arrival from overseas; ESTA (valid for 2 years when issued) required if arriving by air or cruise ship."
+    },
+    {
       "name": "Uruguay",
       "note": "90 days"
     },
@@ -425,6 +556,48 @@
     {
       "name": "Zambia",
       "note": "90 days as tourists, 30 days for business"
+    },
+    {
+      "name": "Ireland",
+      "note": "home"
+    }
+  ],
+  "evisa": [
+    {
+      "name": "Australia",
+      "note": "90 days on each visit in 12-month period if granted"
+    },
+    {
+      "name": "Ivory Coast",
+      "note": "3 months; eVisa holders must arrive via Port Bouet Airport."
+    },
+    {
+      "name": "Gabon",
+      "note": "Electronic visa holders must arrive via Libreville International Airport."
+    },
+    {
+      "name": "India",
+      "note": "30 days"
+    },
+    {
+      "name": "Kenya",
+      "note": "3 months; also visa on arrival until 1 September 2015"
+    },
+    {
+      "name": "Myanmar",
+      "note": "28 days, eVisa holders must arrive via Yangon, Nay Pyi Taw or Mandalay airports."
+    },
+    {
+      "name": "Rwanda",
+      "note": "90 days"
+    },
+    {
+      "name": "Sri Lanka",
+      "note": "30 days"
+    },
+    {
+      "name": "Turkey",
+      "note": "3 months"
     }
   ],
   "on-arrival": [
@@ -476,6 +649,10 @@
       "note": "30 days"
     },
     {
+      "name": "Jordan",
+      "note": "Conditions apply. Not available at all entry points."
+    },
+    {
       "name": "Kuwait",
       "note": "3 months"
     },
@@ -488,11 +665,20 @@
       "note": "1 month extendable for 2 additional months; granted free of charge at Beirut International Airport or any other port of entry if there is no Israeli visa or seal, holding a telephone number, an address in Lebanon, and a non refundable return or circle trip ticket."
     },
     {
+      "name": "Madagascar",
+      "note": "30 days"
+    },
+    {
       "name": "Maldives",
       "note": "30 days"
     },
     {
-      "name": "Mauritania"
+      "name": "Marshall Islands",
+      "note": "90 days"
+    },
+    {
+      "name": "Mauritania",
+      "note": "Available at Nouakchott–Oumtounsy International Airport."
     },
     {
       "name": "Mozambique",
@@ -511,8 +697,24 @@
       "note": "30 days"
     },
     {
+      "name": "Papua New Guinea",
+      "note": "60 days"
+    },
+    {
       "name": "Qatar",
       "note": "1 month. Not available at all entry points."
+    },
+    {
+      "name": "Samoa",
+      "note": "60 days"
+    },
+    {
+      "name": "Seychelles",
+      "note": "1 month"
+    },
+    {
+      "name": "Solomon Islands",
+      "note": "3 months"
     },
     {
       "name": "Somalia",
@@ -520,7 +722,7 @@
     },
     {
       "name": "Tajikistan",
-      "note": "45 days at Dushanbe International Airport. Visa also available online for those arriving via Dushanbe or Khujand airports."
+      "note": "45 days at Dushanbe International Airport. Visa also available online. E-visa holders can enter through all border points."
     },
     {
       "name": "Tanzania"
@@ -534,269 +736,22 @@
       "note": "7 days"
     },
     {
+      "name": "Tonga",
+      "note": "31 days"
+    },
+    {
+      "name": "Tuvalu",
+      "note": "1 month"
+    },
+    {
+      "name": "United Arab Emirates",
+      "note": "30 days"
+    },
+    {
       "name": "Zimbabwe",
       "note": "3 months. Strictly tourism purposes only."
     }
   ],
-  "unknown": [
-    {
-      "name": "Australia",
-      "note": "90 days on each visit in 12-month period if granted",
-      "visa": "eVisitor"
-    },
-    {
-      "name": "Austria",
-      "note": "\nFreedom of movement\n",
-      "visa": "EU !Visa not required"
-    },
-    {
-      "name": "Belgium",
-      "note": "\nFreedom of movement\n",
-      "visa": "EU !Visa not required"
-    },
-    {
-      "name": "Bulgaria",
-      "note": "\nFreedom of movement\n",
-      "visa": "EU !Visa not required"
-    },
-    {
-      "name": "Ivory Coast",
-      "note": "3 months; eVisa holders must arrive via Port Bouet Airport.",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Croatia",
-      "note": "\nFreedom of movement\n",
-      "visa": "EU !Visa not required"
-    },
-    {
-      "name": "Cuba",
-      "visa": "Tourist Card required"
-    },
-    {
-      "name": "Cyprus",
-      "note": "\nFreedom of movement\n",
-      "visa": "EU !Visa not required"
-    },
-    {
-      "name": "Czech Republic",
-      "note": "\nFreedom of movement\n",
-      "visa": "EU !Visa not required"
-    },
-    {
-      "name": "Denmark",
-      "note": "\nFreedom of movement (DK)\n",
-      "visa": "EU !Visa not required"
-    },
-    {
-      "name": "Estonia",
-      "note": "\nFreedom of movement\n",
-      "visa": "EU !Visa not required"
-    },
-    {
-      "name": "Finland",
-      "note": "\nFreedom of movement\n",
-      "visa": "EU !Visa not required"
-    },
-    {
-      "name": "France",
-      "note": "\nFreedom of movement\n",
-      "visa": "EU !Visa not required"
-    },
-    {
-      "name": "Gabon",
-      "note": "Electronic visa holders must arrive via Libreville International Airport.",
-      "visa": "e-Visa"
-    },
-    {
-      "name": "Germany",
-      "note": "\nFreedom of movement\n",
-      "visa": "EU !Visa not required"
-    },
-    {
-      "name": "Greece",
-      "note": "\nFreedom of movement\n",
-      "visa": "EU !Visa not required"
-    },
-    {
-      "name": "Hungary",
-      "note": "\nFreedom of movement\n",
-      "visa": "EU !Visa not required"
-    },
-    {
-      "name": "Iceland",
-      "note": "\nFreedom of movement\n",
-      "visa": "EU !Visa not required"
-    },
-    {
-      "name": "India",
-      "note": "30 days",
-      "visa": "e-Tourist Visa"
-    },
-    {
-      "name": "Italy",
-      "note": "\nFreedom of movement\n",
-      "visa": "EU !Visa not required"
-    },
-    {
-      "name": "Jordan",
-      "note": "Conditions apply. Not available at all entry points.",
-      "visa": "Visa on arrival !Free visa on arrival"
-    },
-    {
-      "name": "Kenya",
-      "note": "3 months; also visa on arrival until 1 September 2015",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Latvia",
-      "note": "\nFreedom of movement\n",
-      "visa": "EU !Visa not required"
-    },
-    {
-      "name": "Liechtenstein",
-      "note": "\nFreedom of movement\n",
-      "visa": "EU !Visa not required"
-    },
-    {
-      "name": "Lithuania",
-      "note": "\nFreedom of movement\n",
-      "visa": "EU !Visa not required"
-    },
-    {
-      "name": "Luxembourg",
-      "note": "\nFreedom of movement\n",
-      "visa": "EU !Visa not required"
-    },
-    {
-      "name": "Madagascar",
-      "note": "30 days",
-      "visa": "Visa on arrival !Free visa on arrival"
-    },
-    {
-      "name": "Malta",
-      "note": "\nFreedom of movement\n",
-      "visa": "EU !Visa not required"
-    },
-    {
-      "name": "Marshall Islands",
-      "note": "90 days",
-      "visa": "Visa on arrival !Free visa on arrival"
-    },
-    {
-      "name": "Myanmar",
-      "note": "28 days, eVisa holders must arrive via Yangon, Nay Pyi Taw or Mandalay airports.",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Netherlands",
-      "note": "\nFreedom of movement (European Netherlands)\n",
-      "visa": "EU !Visa not required"
-    },
-    {
-      "name": "Norway",
-      "note": "\nFreedom of movement\n",
-      "visa": "EU !Visa not required"
-    },
-    {
-      "name": "Papua New Guinea",
-      "note": "60 days",
-      "visa": "Visa on arrival !Free visa on arrival"
-    },
-    {
-      "name": "Poland",
-      "note": "\nFreedom of movement\n",
-      "visa": "EU !Visa not required"
-    },
-    {
-      "name": "Portugal",
-      "note": "\nFreedom of movement\n",
-      "visa": "EU !Visa not required"
-    },
-    {
-      "name": "Romania",
-      "note": "\nFreedom of movement\n",
-      "visa": "EU !Visa not required"
-    },
-    {
-      "name": "Rwanda",
-      "note": "90 days",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Samoa",
-      "note": "60 days",
-      "visa": "Visa on arrival !Free Entry Permit on arrival"
-    },
-    {
-      "name": "Seychelles",
-      "note": "1 month",
-      "visa": "Visa on arrival !Free Visitor's Permit on arrival"
-    },
-    {
-      "name": "Slovakia",
-      "note": "\nFreedom of movement\n",
-      "visa": "EU !Visa not required"
-    },
-    {
-      "name": "Slovenia",
-      "note": "\nFreedom of movement\n",
-      "visa": "EU !Visa not required"
-    },
-    {
-      "name": "Solomon Islands",
-      "note": "3 months",
-      "visa": "Visa on arrival !Free Visitor's permit on arrival"
-    },
-    {
-      "name": "Spain",
-      "note": "\nFreedom of movement\n",
-      "visa": "EU !Visa not required"
-    },
-    {
-      "name": "Sri Lanka",
-      "note": "30 days",
-      "visa": "Electronic Travel Authorization"
-    },
-    {
-      "name": "Sweden",
-      "note": "\nFreedom of movement\n",
-      "visa": "EU !Visa not required"
-    },
-    {
-      "name": "Switzerland",
-      "note": "\nFreedom of movement\n",
-      "visa": "EU !Visa not required"
-    },
-    {
-      "name": "Tonga",
-      "note": "31 days",
-      "visa": "Visa on arrival !Free visa on arrival"
-    },
-    {
-      "name": "Turkey",
-      "note": "3 months",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Tuvalu",
-      "note": "1 month",
-      "visa": "Visa on arrival !Free visa on arrival"
-    },
-    {
-      "name": "United Arab Emirates",
-      "note": "30 days",
-      "visa": "Visa on arrival !Free visa on arrival"
-    },
-    {
-      "name": "United Kingdom",
-      "note": "\nFreedom of movement (in Constituent countries)\n",
-      "visa": "EU !Visa not required"
-    },
-    {
-      "name": "United States",
-      "note": "90 days on arrival from overseas; ESTA (valid for 2 years when issued) required if arriving by air or cruise ship.",
-      "visa": "Visa not required !Visa Waiver Program"
-    }
-  ]
+  "refused": [],
+  "unknown": []
 }

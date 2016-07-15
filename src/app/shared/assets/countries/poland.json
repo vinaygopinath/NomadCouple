@@ -44,6 +44,9 @@
       "name": "Democratic Republic of the Congo"
     },
     {
+      "name": "Cuba"
+    },
+    {
       "name": "Equatorial Guinea"
     },
     {
@@ -168,12 +171,20 @@
       "note": "180 days"
     },
     {
+      "name": "Austria",
+      "note": "Freedom of movement; ID card valid"
+    },
+    {
       "name": "The Bahamas",
       "note": "3 months"
     },
     {
       "name": "Barbados",
       "note": "3 months"
+    },
+    {
+      "name": "Belgium",
+      "note": "Freedom of movement; ID card valid"
     },
     {
       "name": "Belize",
@@ -200,6 +211,10 @@
       "note": "90 days"
     },
     {
+      "name": "Bulgaria",
+      "note": "Freedom of movement; ID card valid"
+    },
+    {
       "name": "Canada",
       "note": "6 months; eTA required if arriving by air from March 15, 2016."
     },
@@ -214,6 +229,22 @@
     {
       "name": "Costa Rica",
       "note": "90 days"
+    },
+    {
+      "name": "Croatia",
+      "note": "Freedom of movement; ID card valid"
+    },
+    {
+      "name": "Cyprus",
+      "note": "Freedom of movement; ID card valid"
+    },
+    {
+      "name": "Czech Republic",
+      "note": "Freedom of movement; ID card valid"
+    },
+    {
+      "name": "Denmark",
+      "note": "Freedom of movement (DK); ID card valid"
     },
     {
       "name": "Dominica",
@@ -232,8 +263,20 @@
       "note": "3 months"
     },
     {
+      "name": "Estonia",
+      "note": "Freedom of movement; ID card valid"
+    },
+    {
       "name": "Fiji",
       "note": "4 months"
+    },
+    {
+      "name": "Finland",
+      "note": "Freedom of movement; ID card valid"
+    },
+    {
+      "name": "France",
+      "note": "Freedom of movement (in Regions of France); ID card valid"
     },
     {
       "name": "The Gambia",
@@ -242,6 +285,14 @@
     {
       "name": "Georgia (country)",
       "note": "360 days; ID card valid"
+    },
+    {
+      "name": "Germany",
+      "note": "Freedom of movement; ID card valid"
+    },
+    {
+      "name": "Greece",
+      "note": "Freedom of movement; ID card valid"
     },
     {
       "name": "Grenada",
@@ -260,12 +311,28 @@
       "note": "3 months"
     },
     {
+      "name": "Hungary",
+      "note": "Freedom of movement; ID card valid"
+    },
+    {
+      "name": "Iceland",
+      "note": "Freedom of movement; ID card valid"
+    },
+    {
       "name": "Indonesia",
       "note": "30 days; valid only at several specified points of entry, otherwise a 30-day visa on arrival (VOA) can be obtained for a fee of USD 35"
     },
     {
+      "name": "Republic of Ireland",
+      "note": "Freedom of movement; ID card valid"
+    },
+    {
       "name": "Israel",
       "note": "3 months"
+    },
+    {
+      "name": "Italy",
+      "note": "Freedom of movement; ID card valid"
     },
     {
       "name": "Jamaica",
@@ -277,7 +344,7 @@
     },
     {
       "name": "Kiribati",
-      "note": "30 days"
+      "note": "90 days"
     },
     {
       "name": "South Korea",
@@ -288,12 +355,36 @@
       "note": "60 days"
     },
     {
+      "name": "Latvia",
+      "note": "Freedom of movement; ID card valid"
+    },
+    {
+      "name": "Liechtenstein",
+      "note": "Freedom of movement; ID card valid"
+    },
+    {
+      "name": "Lithuania",
+      "note": "Freedom of movement; ID card valid"
+    },
+    {
+      "name": "Luxembourg",
+      "note": "Freedom of movement; ID card valid"
+    },
+    {
       "name": "Republic of Macedonia",
       "note": "90 days within 180 days; ID card valid"
     },
     {
       "name": "Malaysia",
       "note": "3 months"
+    },
+    {
+      "name": "Malta",
+      "note": "Freedom of movement; ID card valid"
+    },
+    {
+      "name": "Marshall Islands",
+      "note": "90 days"
     },
     {
       "name": "Mauritius",
@@ -324,12 +415,20 @@
       "note": "90 days"
     },
     {
+      "name": "Netherlands",
+      "note": "Freedom of movement (European Netherlands); ID card valid"
+    },
+    {
       "name": "New Zealand",
       "note": "3 months"
     },
     {
       "name": "Nicaragua",
       "note": "90 days; all visitors are required to obtain a Tourist Card on arrival. Fee: USD 10.-"
+    },
+    {
+      "name": "Norway",
+      "note": "Freedom of movement; ID card valid"
     },
     {
       "name": "Palau",
@@ -350,6 +449,14 @@
     {
       "name": "Philippines",
       "note": "30 days"
+    },
+    {
+      "name": "Portugal",
+      "note": "Freedom of movement; ID card valid"
+    },
+    {
+      "name": "Romania",
+      "note": "Freedom of movement; ID card valid"
     },
     {
       "name": "Saint Kitts and Nevis",
@@ -392,12 +499,32 @@
       "note": "90 days"
     },
     {
+      "name": "Slovakia",
+      "note": "Freedom of movement; ID card valid"
+    },
+    {
+      "name": "Slovenia",
+      "note": "Freedom of movement; ID card valid"
+    },
+    {
       "name": "South Africa",
       "note": "30 days"
     },
     {
+      "name": "Spain",
+      "note": "Freedom of movement; ID card valid"
+    },
+    {
       "name": "Swaziland",
       "note": "30 days"
+    },
+    {
+      "name": "Sweden",
+      "note": "Freedom of movement; ID card valid"
+    },
+    {
+      "name": "Switzerland",
+      "note": "Freedom of movement; ID card valid"
     },
     {
       "name": "Thailand",
@@ -420,12 +547,20 @@
       "note": "3 months"
     },
     {
+      "name": "Tuvalu",
+      "note": "90 days"
+    },
+    {
       "name": "Ukraine",
       "note": "90 days within 180 days"
     },
     {
       "name": "United Arab Emirates",
       "note": "90 days within 180 days"
+    },
+    {
+      "name": "United Kingdom",
+      "note": "Freedom of movement (in Constituent countries); ID card valid"
     },
     {
       "name": "Uruguay",
@@ -442,6 +577,48 @@
     {
       "name": "Venezuela",
       "note": "90 days"
+    },
+    {
+      "name": "Poland",
+      "note": "home"
+    }
+  ],
+  "evisa": [
+    {
+      "name": "Australia",
+      "note": "90 days on each visit in 12-month period if granted"
+    },
+    {
+      "name": "Ivory Coast",
+      "note": "3 months; eVisa holders must arrive via Port Bouet Airport."
+    },
+    {
+      "name": "Gabon",
+      "note": "Electronic visa holders must arrive via Libreville International Airport."
+    },
+    {
+      "name": "India",
+      "note": "30 days"
+    },
+    {
+      "name": "Kenya",
+      "note": "3 months; also visa on arrival until 1 September 2015"
+    },
+    {
+      "name": "Myanmar",
+      "note": "28 days, eVisa holders must arrive via Yangon, Nay Pyi Taw or Mandalay airports."
+    },
+    {
+      "name": "Rwanda",
+      "note": "90 days"
+    },
+    {
+      "name": "Sri Lanka",
+      "note": "30 days"
+    },
+    {
+      "name": "Turkey",
+      "note": "3 months"
     }
   ],
   "on-arrival": [
@@ -494,6 +671,10 @@
       "note": "30 days"
     },
     {
+      "name": "Jordan",
+      "note": "Conditions apply. Not available at all entry points."
+    },
+    {
       "name": "Kuwait",
       "note": "3 months"
     },
@@ -506,11 +687,19 @@
       "note": "1 month extendable for 2 additional months; granted free of charge at Beirut International Airport or any other port of entry if there is no Israeli visa or seal, holding a telephone number, an address in Lebanon, and a non refundable return or circle trip ticket."
     },
     {
+      "name": "Madagascar",
+      "note": "30 days"
+    },
+    {
       "name": "Malawi"
     },
     {
+      "name": "Maldives",
+      "note": "30 days"
+    },
+    {
       "name": "Mauritania",
-      "note": "3 months"
+      "note": "Available at Nouakchott–Oumtounsy International Airport."
     },
     {
       "name": "Mozambique",
@@ -525,8 +714,16 @@
       "note": "1 month"
     },
     {
+      "name": "Papua New Guinea",
+      "note": "60 days. Free of charge."
+    },
+    {
       "name": "Qatar",
       "note": "1 month"
+    },
+    {
+      "name": "Solomon Islands",
+      "note": "3 months"
     },
     {
       "name": "Somalia",
@@ -534,7 +731,7 @@
     },
     {
       "name": "Tajikistan",
-      "note": "45 days at Dushanbe International Airport. Visa also available online for those arriving via Dushanbe or Khujand airports."
+      "note": "45 days at Dushanbe International Airport. Visa also available online. E-visa holders can enter through all border points."
     },
     {
       "name": "Tanzania",
@@ -557,245 +754,6 @@
       "note": "3 months. Strictly tourism purposes only. Also eligible for a universal visa allowing access to Zambia."
     }
   ],
-  "unknown": [
-    {
-      "name": "Australia",
-      "note": "90 days on each visit in 12-month period if granted",
-      "visa": "eVisitor"
-    },
-    {
-      "name": "Austria",
-      "note": "Freedom of movement; ID card valid",
-      "visa": "EU !Visa not required"
-    },
-    {
-      "name": "Belgium",
-      "note": "Freedom of movement; ID card valid",
-      "visa": "EU !Visa not required"
-    },
-    {
-      "name": "Bulgaria",
-      "note": "Freedom of movement; ID card valid",
-      "visa": "EU !Visa not required"
-    },
-    {
-      "name": "Ivory Coast",
-      "note": "3 months; eVisa holders must arrive via Port Bouet Airport.",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Croatia",
-      "note": "Freedom of movement; ID card valid",
-      "visa": "EU !Visa not required"
-    },
-    {
-      "name": "Cuba",
-      "visa": "Visa required !Tourist Card required"
-    },
-    {
-      "name": "Cyprus",
-      "note": "Freedom of movement; ID card valid",
-      "visa": "EU !Visa not required"
-    },
-    {
-      "name": "Czech Republic",
-      "note": "Freedom of movement; ID card valid",
-      "visa": "EU !Visa not required"
-    },
-    {
-      "name": "Denmark",
-      "note": "Freedom of movement (DK); ID card valid",
-      "visa": "EU !Visa not required"
-    },
-    {
-      "name": "Estonia",
-      "note": "Freedom of movement; ID card valid",
-      "visa": "EU !Visa not required"
-    },
-    {
-      "name": "Finland",
-      "note": "Freedom of movement; ID card valid",
-      "visa": "EU !Visa not required"
-    },
-    {
-      "name": "France",
-      "note": "Freedom of movement (in Regions of France); ID card valid",
-      "visa": "EU !Visa not required"
-    },
-    {
-      "name": "Gabon",
-      "note": "Electronic visa holders must arrive via Libreville International Airport.",
-      "visa": "e-Visa"
-    },
-    {
-      "name": "Germany",
-      "note": "Freedom of movement; ID card valid",
-      "visa": "EU !Visa not required"
-    },
-    {
-      "name": "Greece",
-      "note": "Freedom of movement; ID card valid",
-      "visa": "EU !Visa not required"
-    },
-    {
-      "name": "Hungary",
-      "note": "Freedom of movement; ID card valid",
-      "visa": "EU !Visa not required"
-    },
-    {
-      "name": "Iceland",
-      "note": "Freedom of movement; ID card valid",
-      "visa": "EU !Visa not required"
-    },
-    {
-      "name": "India",
-      "note": "30 days",
-      "visa": "e-Tourist Visa"
-    },
-    {
-      "name": "Republic of Ireland",
-      "note": "Freedom of movement; ID card valid",
-      "visa": "EU !Visa not required"
-    },
-    {
-      "name": "Italy",
-      "note": "Freedom of movement; ID card valid",
-      "visa": "EU !Visa not required"
-    },
-    {
-      "name": "Jordan",
-      "note": "Conditions apply. Not available at all entry points.",
-      "visa": "Visa on arrival !Free visa on arrival"
-    },
-    {
-      "name": "Kenya",
-      "note": "3 months; also visa on arrival until 1 September 2015",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Latvia",
-      "note": "Freedom of movement; ID card valid",
-      "visa": "EU !Visa not required"
-    },
-    {
-      "name": "Liechtenstein",
-      "note": "Freedom of movement; ID card valid",
-      "visa": "EU !Visa not required"
-    },
-    {
-      "name": "Lithuania",
-      "note": "Freedom of movement; ID card valid",
-      "visa": "EU !Visa not required"
-    },
-    {
-      "name": "Luxembourg",
-      "note": "Freedom of movement; ID card valid",
-      "visa": "EU !Visa not required"
-    },
-    {
-      "name": "Madagascar",
-      "note": "30 days",
-      "visa": "Visa on arrival !Free visa on arrival"
-    },
-    {
-      "name": "Maldives",
-      "note": "30 days",
-      "visa": "Visa on arrival !Free visa on arrival"
-    },
-    {
-      "name": "Malta",
-      "note": "Freedom of movement; ID card valid",
-      "visa": "EU !Visa not required"
-    },
-    {
-      "name": "Marshall Islands",
-      "note": "90 days",
-      "visa": "Visa on arrival !Free visa on arrival"
-    },
-    {
-      "name": "Myanmar",
-      "note": "28 days, eVisa holders must arrive via Yangon, Nay Pyi Taw or Mandalay airports.",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Netherlands",
-      "note": "Freedom of movement (European Netherlands); ID card valid",
-      "visa": "EU !Visa not required"
-    },
-    {
-      "name": "Norway",
-      "note": "Freedom of movement; ID card valid",
-      "visa": "EU !Visa not required"
-    },
-    {
-      "name": "Papua New Guinea",
-      "note": "60 days. Free of charge.",
-      "visa": "Visa on arrival !Free visa on arrival"
-    },
-    {
-      "name": "Portugal",
-      "note": "Freedom of movement; ID card valid",
-      "visa": "EU !Visa not required"
-    },
-    {
-      "name": "Romania",
-      "note": "Freedom of movement; ID card valid",
-      "visa": "EU !Visa not required"
-    },
-    {
-      "name": "Rwanda",
-      "note": "90 days",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Slovakia",
-      "note": "Freedom of movement; ID card valid",
-      "visa": "EU !Visa not required"
-    },
-    {
-      "name": "Slovenia",
-      "note": "Freedom of movement; ID card valid",
-      "visa": "EU !Visa not required"
-    },
-    {
-      "name": "Solomon Islands",
-      "note": "3 months",
-      "visa": "Visa on arrival !Free Visitor's permit on arrival"
-    },
-    {
-      "name": "Spain",
-      "note": "Freedom of movement; ID card valid",
-      "visa": "EU !Visa not required"
-    },
-    {
-      "name": "Sri Lanka",
-      "note": "30 days",
-      "visa": "Electronic Travel Authorization"
-    },
-    {
-      "name": "Sweden",
-      "note": "Freedom of movement; ID card valid",
-      "visa": "EU !Visa not required"
-    },
-    {
-      "name": "Switzerland",
-      "note": "Freedom of movement; ID card valid",
-      "visa": "EU !Visa not required"
-    },
-    {
-      "name": "Turkey",
-      "note": "3 months",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Tuvalu",
-      "note": "1 month",
-      "visa": "Visa on arrival !Free visa on arrival"
-    },
-    {
-      "name": "United Kingdom",
-      "note": "Freedom of movement (in Constituent countries); ID card valid",
-      "visa": "EU !Visa not required"
-    }
-  ]
+  "refused": [],
+  "unknown": []
 }

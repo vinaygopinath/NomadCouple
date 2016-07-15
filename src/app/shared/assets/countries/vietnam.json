@@ -22,10 +22,6 @@
       "name": "Armenia"
     },
     {
-      "name": "Australia",
-      "note": "May apply online."
-    },
-    {
       "name": "Austria"
     },
     {
@@ -181,9 +177,6 @@
       "name": "Honduras"
     },
     {
-      "name": "Hong Kong"
-    },
-    {
       "name": "Hungary"
     },
     {
@@ -249,9 +242,6 @@
       "name": "Luxembourg"
     },
     {
-      "name": "Macau"
-    },
-    {
       "name": "Republic of Macedonia"
     },
     {
@@ -265,7 +255,7 @@
     },
     {
       "name": "Mexico",
-      "note": "Starting May 1, 2010, all those foreign nationals, regardless of their nationality, visiting Mexico for tourist, business or transit matters won't need a Mexican visa as long as they have with them a valid and not expired USA visa in the passport. In this context, if you have a valid US visa in the passport you do not need to obtain a Mexican visa."
+      "note": "Visa-free for holders of valid US visa."
     },
     {
       "name": "Moldova"
@@ -343,19 +333,7 @@
       "name": "Russia"
     },
     {
-      "name": "Rwanda",
-      "note": "Visa is obtained online."
-    },
-    {
-      "name": "Saint Kitts and Nevis",
-      "note": "Visa obtainable online."
-    },
-    {
       "name": "San Marino"
-    },
-    {
-      "name": "São Tomé and Príncipe",
-      "note": "Visa is obtained online."
     },
     {
       "name": "Saudi Arabia"
@@ -407,10 +385,6 @@
       "name": "Syria"
     },
     {
-      "name": "Taiwan",
-      "note": "30 days for passport holders who hold valid visa of Canada, USA, Shengen States, UK, Japan, New Zealand or Australia. Required to register personal data using the “Advance Online Registration System for the Visitors of Nationals from Five Southeast Asian Countries to Taiwan” "
-    },
-    {
       "name": "Tonga"
     },
     {
@@ -454,9 +428,6 @@
     },
     {
       "name": "Yemen"
-    },
-    {
-      "name": "Zimbabwe"
     }
   ],
   "not-required": [
@@ -526,6 +497,50 @@
     {
       "name": "Thailand",
       "note": "30 days"
+    },
+    {
+      "name": "Vietnam",
+      "note": "home"
+    }
+  ],
+  "evisa": [
+    {
+      "name": "Antigua and Barbuda"
+    },
+    {
+      "name": "Australia",
+      "note": "May apply online."
+    },
+    {
+      "name": "Gabon",
+      "note": "Electronic visa holders must arrive via Libreville International Airport."
+    },
+    {
+      "name": "Georgia (country)"
+    },
+    {
+      "name": "India",
+      "note": "30 days"
+    },
+    {
+      "name": "Kenya",
+      "note": "3 months"
+    },
+    {
+      "name": "Rwanda"
+    },
+    {
+      "name": "Saint Kitts and Nevis"
+    },
+    {
+      "name": "São Tomé and Príncipe"
+    },
+    {
+      "name": "Sri Lanka",
+      "note": "30 days"
+    },
+    {
+      "name": "Zimbabwe"
     }
   ],
   "on-arrival": [
@@ -574,7 +589,8 @@
       "note": "90 days"
     },
     {
-      "name": "Mauritania"
+      "name": "Mauritania",
+      "note": "Available at Nouakchott–Oumtounsy International Airport."
     },
     {
       "name": "Nepal",
@@ -589,12 +605,20 @@
       "note": "6 weeks"
     },
     {
+      "name": "Samoa",
+      "note": "60 days"
+    },
+    {
+      "name": "Seychelles",
+      "note": "3 months"
+    },
+    {
       "name": "Somalia",
       "note": "30 days, provided an invitation letter issued by the sponsor has been submitted\nto the Airport Immigration Department at least 2 days before arrival."
     },
     {
       "name": "Tajikistan",
-      "note": "45 days at Dushanbe International Airport. Visa also available online for those arriving via Dushanbe or Khujand airports."
+      "note": "45 days at Dushanbe International Airport. Visa also available online. E-visa holders can enter through all border points."
     },
     {
       "name": "Tanzania"
@@ -619,45 +643,6 @@
       "note": "90 days"
     }
   ],
-  "unknown": [
-    {
-      "name": "Antigua and Barbuda",
-      "visa": "Electronic Entry Visa"
-    },
-    {
-      "name": "Gabon",
-      "note": "Electronic visa holders must arrive via Libreville International Airport.",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Georgia (country)",
-      "note": "up to 90 days",
-      "visa": "eVisa"
-    },
-    {
-      "name": "India",
-      "note": "30 days",
-      "visa": "e-Tourist Visa"
-    },
-    {
-      "name": "Kenya",
-      "note": "3 months; also visa on arrival until 1 September 2015",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Samoa",
-      "note": "60 days",
-      "visa": "Visa on arrival !Entry Permit on arrival"
-    },
-    {
-      "name": "Seychelles",
-      "note": "1 month",
-      "visa": "Visa on arrival !Visitor's Permit on arrival"
-    },
-    {
-      "name": "Sri Lanka",
-      "note": "30 days",
-      "visa": "Electronic Travel Authorization"
-    }
-  ]
+  "refused": [],
+  "unknown": []
 }

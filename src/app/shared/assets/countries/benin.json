@@ -16,9 +16,6 @@
       "name": "Angola"
     },
     {
-      "name": "Antigua and Barbuda"
-    },
-    {
       "name": "Argentina"
     },
     {
@@ -515,6 +512,30 @@
     },
     {
       "name": "Togo"
+    },
+    {
+      "name": "Benin",
+      "note": "home"
+    }
+  ],
+  "evisa": [
+    {
+      "name": "Antigua and Barbuda"
+    },
+    {
+      "name": "Australia",
+      "note": "May apply online."
+    },
+    {
+      "name": "Gabon",
+      "note": "Electronic visa holders must arrive via Libreville International Airport."
+    },
+    {
+      "name": "Georgia (country)"
+    },
+    {
+      "name": "Kenya",
+      "note": "3 months"
     }
   ],
   "on-arrival": [
@@ -563,7 +584,8 @@
       "note": "30 days"
     },
     {
-      "name": "Mauritania"
+      "name": "Mauritania",
+      "note": "Available at Nouakchott–Oumtounsy International Airport."
     },
     {
       "name": "Mauritius",
@@ -594,6 +616,10 @@
       "note": "6 weeks"
     },
     {
+      "name": "Samoa",
+      "note": "60 days. Free of charge."
+    },
+    {
       "name": "Sri Lanka",
       "note": "30 days"
     },
@@ -605,38 +631,13 @@
       "note": "30 days. Not available at all entry points."
     },
     {
+      "name": "Tuvalu",
+      "note": "1 month. Free of charge."
+    },
+    {
       "name": "Uganda"
     }
   ],
-  "unknown": [
-    {
-      "name": "Australia",
-      "note": "May apply online.",
-      "visa": "Online Visitor e600 visa"
-    },
-    {
-      "name": "Gabon",
-      "note": "Electronic visa holders must arrive via Libreville International Airport.",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Georgia (country)",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Kenya",
-      "note": "3 months",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Samoa",
-      "note": "60 days. Free of charge.",
-      "visa": "Visa on arrival !Free Entry Permit on arrival"
-    },
-    {
-      "name": "Tuvalu",
-      "note": "1 month. Free of charge.",
-      "visa": "Visa on arrival !Free visa on arrival"
-    }
-  ]
+  "refused": [],
+  "unknown": []
 }

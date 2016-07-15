@@ -453,6 +453,10 @@
       "note": "183 days"
     },
     {
+      "name": "Russia",
+      "note": "Freedom of movement"
+    },
+    {
       "name": "Saint Vincent and the Grenadines",
       "note": "1 month"
     },
@@ -489,6 +493,45 @@
     {
       "name": "Vietnam",
       "note": "15 days — effective 1 July 2015"
+    },
+    {
+      "name": "Belarus",
+      "note": "home"
+    }
+  ],
+  "evisa": [
+    {
+      "name": "Australia"
+    },
+    {
+      "name": "Ivory Coast",
+      "note": "3 months; eVisa holders must arrive via Port Bouet Airport."
+    },
+    {
+      "name": "Gabon",
+      "note": "Electronic visa holders must arrive via Libreville International Airport."
+    },
+    {
+      "name": "Kenya",
+      "note": "3 months; visa on arrival until 1 September 2015"
+    },
+    {
+      "name": "Myanmar",
+      "note": "28 days"
+    },
+    {
+      "name": "Rwanda"
+    },
+    {
+      "name": "Saint Kitts and Nevis",
+      "note": "Cruise ship passengers can enter and stay for up to 24 hours without a visa."
+    },
+    {
+      "name": "São Tomé and Príncipe"
+    },
+    {
+      "name": "Sri Lanka",
+      "note": "30 days"
     }
   ],
   "on-arrival": [
@@ -555,7 +598,8 @@
       "note": "30 days"
     },
     {
-      "name": "Mauritania"
+      "name": "Mauritania",
+      "note": "Available at Nouakchott–Oumtounsy International Airport."
     },
     {
       "name": "Mauritius",
@@ -576,6 +620,14 @@
     {
       "name": "Qatar",
       "note": "Must hold a credit card or at least USD 1,000, a return ticket and a hotel reservation or staying with someone residing in Qatar."
+    },
+    {
+      "name": "Samoa",
+      "note": "60 days"
+    },
+    {
+      "name": "Seychelles",
+      "note": "1 month"
     },
     {
       "name": "Tanzania"
@@ -604,62 +656,6 @@
       "note": "3 months"
     }
   ],
-  "unknown": [
-    {
-      "name": "Australia",
-      "visa": "Online Visitor e600 visa"
-    },
-    {
-      "name": "Ivory Coast",
-      "note": "3 months; eVisa holders must arrive via Port Bouet Airport.",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Gabon",
-      "note": "Electronic visa holders must arrive via Libreville International Airport.",
-      "visa": "e-Visa"
-    },
-    {
-      "name": "Kenya",
-      "note": "3 months; visa on arrival until 1 September 2015",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Myanmar",
-      "note": "28 days",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Russia",
-      "visa": "Freedom of movement"
-    },
-    {
-      "name": "Rwanda",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Saint Kitts and Nevis",
-      "note": "Cruise ship passengers can enter and stay for up to 24 hours without a visa.",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Samoa",
-      "note": "60 days",
-      "visa": "Visa on arrival !Entry Permit on arrival"
-    },
-    {
-      "name": "São Tomé and Príncipe",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Seychelles",
-      "note": "1 month",
-      "visa": "Visa on arrival !Visitor's Permit on arrival"
-    },
-    {
-      "name": "Sri Lanka",
-      "note": "30 days",
-      "visa": "Electronic Travel Authorization"
-    }
-  ]
+  "refused": [],
+  "unknown": []
 }

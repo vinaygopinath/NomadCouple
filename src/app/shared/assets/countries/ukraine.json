@@ -81,6 +81,10 @@
       "name": "Croatia"
     },
     {
+      "name": "Cuba",
+      "note": "No visa required, tourist card prior to arrival for a max. stay of 30 days"
+    },
+    {
       "name": "Cyprus",
       "note": "Pro-visa for single stays of 90 days is available over the Internet."
     },
@@ -505,7 +509,7 @@
     },
     {
       "name": "Turkey",
-      "note": "60 days"
+      "note": "90 days"
     },
     {
       "name": "Uzbekistan",
@@ -513,6 +517,54 @@
     },
     {
       "name": "Vanuatu",
+      "note": "30 days"
+    },
+    {
+      "name": "Ukraine",
+      "note": "home"
+    }
+  ],
+  "evisa": [
+    {
+      "name": "Australia",
+      "note": "May apply online."
+    },
+    {
+      "name": "Ivory Coast",
+      "note": "3 months; eVisa holders must arrive via Port Bouet Airport."
+    },
+    {
+      "name": "Gabon",
+      "note": "Electronic visa holders must arrive via Libreville International Airport."
+    },
+    {
+      "name": "Guinea-Bissau",
+      "note": "30 days"
+    },
+    {
+      "name": "India",
+      "note": "30 days"
+    },
+    {
+      "name": "Kenya",
+      "note": "3 months; visa on arrival until 1 September 2015"
+    },
+    {
+      "name": "Myanmar",
+      "note": "28 days"
+    },
+    {
+      "name": "Rwanda",
+      "note": "90 days"
+    },
+    {
+      "name": "Saint Kitts and Nevis"
+    },
+    {
+      "name": "São Tomé and Príncipe"
+    },
+    {
+      "name": "Sri Lanka",
       "note": "30 days"
     }
   ],
@@ -577,7 +629,8 @@
       "note": "90 days"
     },
     {
-      "name": "Mauritania"
+      "name": "Mauritania",
+      "note": "Available at Nouakchott–Oumtounsy International Airport."
     },
     {
       "name": "Mauritius",
@@ -598,6 +651,14 @@
     {
       "name": "Saint Lucia",
       "note": "6 weeks"
+    },
+    {
+      "name": "Samoa",
+      "note": "60 days"
+    },
+    {
+      "name": "Seychelles",
+      "note": "1 month"
     },
     {
       "name": "Somalia",
@@ -639,75 +700,8 @@
       "note": "3 months"
     }
   ],
+  "refused": [],
   "unknown": [
-    {
-      "name": "Australia",
-      "note": "May apply online.",
-      "visa": "Online Visitor e600 visa"
-    },
-    {
-      "name": "Ivory Coast",
-      "note": "3 months; eVisa holders must arrive via Port Bouet Airport.",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Cuba",
-      "note": "No visa required, tourist card prior to arrival for a max. stay of 30 days",
-      "visa": "Tourist card required"
-    },
-    {
-      "name": "Gabon",
-      "note": "Electronic visa holders must arrive via Libreville International Airport.",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Guinea-Bissau",
-      "note": "30 days",
-      "visa": "e-Visa"
-    },
-    {
-      "name": "India",
-      "note": "30 days",
-      "visa": "e-Tourist Visa"
-    },
-    {
-      "name": "Kenya",
-      "note": "3 months; visa on arrival until 1 September 2015",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Myanmar",
-      "note": "28 days",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Rwanda",
-      "note": "90 days",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Saint Kitts and Nevis",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Samoa",
-      "note": "60 days",
-      "visa": "Visa on arrival !Entry Permit on arrival"
-    },
-    {
-      "name": "São Tomé and Príncipe",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Seychelles",
-      "note": "1 month",
-      "visa": "Visa on arrival !Visitor's Permit on arrival"
-    },
-    {
-      "name": "Sri Lanka",
-      "note": "30 days",
-      "visa": "Electronic Travel Authorization"
-    },
     {
       "name": "Syria",
       "note": "According to the IATA database, visa may be obtained on arrival and is valid for 15 days. According to the media, Syria passed a new law that requires all foreign citizens to obtain a visa in advance.",

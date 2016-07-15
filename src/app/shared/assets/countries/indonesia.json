@@ -85,7 +85,7 @@
     },
     {
       "name": "China",
-      "note": "Indonesian citizens may travel without a visa to Hainan,  Hong Kong and  Macau.\nReciprocal visa-waiver is currently under consideration.\n"
+      "note": "Reciprocal visa-waiver is currently under consideration."
     },
     {
       "name": "Republic of the Congo"
@@ -98,6 +98,10 @@
     },
     {
       "name": "Croatia"
+    },
+    {
+      "name": "Cuba",
+      "note": "30 days"
     },
     {
       "name": "Cyprus"
@@ -427,15 +431,15 @@
     },
     {
       "name": "Guyana",
-      "note": "30 days "
+      "note": "30 days"
     },
     {
       "name": "Haiti",
       "note": "90 days"
     },
     {
-      "name": "Hong Kong",
-      "note": "30 days"
+      "name": "Japan",
+      "note": "15 days ; only if passport is endorsed with a Visa Waiver Registration Certificate. The certificate can only be issued for biometric passport (electronic passport) holders."
     },
     {
       "name": "Laos",
@@ -479,6 +483,67 @@
     },
     {
       "name": "Vietnam",
+      "note": "30 days"
+    },
+    {
+      "name": "Indonesia",
+      "note": "home"
+    }
+  ],
+  "evisa": [
+    {
+      "name": "Antigua and Barbuda",
+      "note": "30 days"
+    },
+    {
+      "name": "Bahrain",
+      "note": "14 days"
+    },
+    {
+      "name": "Ivory Coast",
+      "note": "May obtain online  and must arrive at Port Bouet Airport"
+    },
+    {
+      "name": "Gabon",
+      "note": "Electronic visa holders must arrive via Libreville International Airport."
+    },
+    {
+      "name": "Georgia (country)"
+    },
+    {
+      "name": "India",
+      "note": "30 days"
+    },
+    {
+      "name": "Kenya",
+      "note": "90 days"
+    },
+    {
+      "name": "Moldova",
+      "note": "90 days"
+    },
+    {
+      "name": "Rwanda",
+      "note": "30 days"
+    },
+    {
+      "name": "Saint Kitts and Nevis",
+      "note": "30 days"
+    },
+    {
+      "name": "São Tomé and Príncipe",
+      "note": "15 days"
+    },
+    {
+      "name": "Sri Lanka",
+      "note": "30 days"
+    },
+    {
+      "name": "Turkey",
+      "note": "30 days"
+    },
+    {
+      "name": "Zambia",
       "note": "30 days"
     }
   ],
@@ -532,7 +597,8 @@
       "note": "90 days"
     },
     {
-      "name": "Mauritania"
+      "name": "Mauritania",
+      "note": "Available at Nouakchott–Oumtounsy International Airport."
     },
     {
       "name": "Nepal",
@@ -551,12 +617,28 @@
       "note": "30 days"
     },
     {
+      "name": "Papua New Guinea",
+      "note": "Free visa on arrival for 60 days. Extension is possible with a fee"
+    },
+    {
+      "name": "Samoa",
+      "note": "60 days"
+    },
+    {
+      "name": "Seychelles",
+      "note": "3 Months"
+    },
+    {
       "name": "Somalia",
       "note": "30 days"
     },
     {
+      "name": "Suriname",
+      "note": "90 days"
+    },
+    {
       "name": "Tajikistan",
-      "note": "45 days at Dushanbe International Airport. Visa also available online for those arriving via Dushanbe or Khujand airports."
+      "note": "45 days at Dushanbe International Airport. Visa also available online. E-visa holders can enter through all border points."
     },
     {
       "name": "Tanzania"
@@ -581,106 +663,6 @@
       "note": "90 days"
     }
   ],
-  "unknown": [
-    {
-      "name": "Antigua and Barbuda",
-      "note": "30 days",
-      "visa": "Electronic Entry Visa"
-    },
-    {
-      "name": "Bahrain",
-      "note": "14 days",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Ivory Coast",
-      "note": "May obtain online  and must arrive at Port Bouet Airport",
-      "visa": "Electronic visa"
-    },
-    {
-      "name": "Cuba",
-      "note": "30 days",
-      "visa": "Tourist Card Required"
-    },
-    {
-      "name": "Gabon",
-      "note": "Electronic visa holders must arrive via Libreville International Airport.",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Georgia (country)",
-      "note": "90 days",
-      "visa": "eVisa"
-    },
-    {
-      "name": "India",
-      "note": "30 days",
-      "visa": "e-Tourist Visa"
-    },
-    {
-      "name": "Japan",
-      "note": "15 days ; only if passport is endorsed with a Visa Waiver Registration Certificate. The certificate can only be issued for biometric passport (electronic passport) holders.",
-      "visa": "Visa not required (conditional)"
-    },
-    {
-      "name": "Kenya",
-      "note": "90 days",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Moldova",
-      "note": "90 days",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Papua New Guinea",
-      "note": "Free visa on arrival for 60 days. Extension is possible with a fee",
-      "visa": "Free visa on arrival"
-    },
-    {
-      "name": "Rwanda",
-      "note": "30 days",
-      "visa": "Electronic visa"
-    },
-    {
-      "name": "Saint Kitts and Nevis",
-      "note": "30 days",
-      "visa": "Electronic visa"
-    },
-    {
-      "name": "Samoa",
-      "note": "60 days",
-      "visa": "Visa on arrival !Entry Permit on arrival"
-    },
-    {
-      "name": "São Tomé and Príncipe",
-      "note": "15 days",
-      "visa": "Electronic visa"
-    },
-    {
-      "name": "Seychelles",
-      "note": "30 days",
-      "visa": "Visa on arrival !Visitor's Permit on arrival"
-    },
-    {
-      "name": "Sri Lanka",
-      "note": "30 days",
-      "visa": "Electronic Travel Authorization"
-    },
-    {
-      "name": "Suriname",
-      "note": "90 days",
-      "visa": "Tourist Card on arrival"
-    },
-    {
-      "name": "Turkey",
-      "note": "30 days",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Zambia",
-      "note": "30 days",
-      "visa": "eVisa"
-    }
-  ]
+  "refused": [],
+  "unknown": []
 }

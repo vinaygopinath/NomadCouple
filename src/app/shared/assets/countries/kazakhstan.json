@@ -69,7 +69,7 @@
     },
     {
       "name": "China",
-      "note": "Can visit Hainan Island without a visa for 15 days. Can visit Tacheng and Jeminay County (East Kazakhstan Region residents) in Xinjiang without a visa for three days.\n Hong Kong visa-free for 14 days"
+      "note": "Visa not required to Hainan for 15 days for traveling as part of a tourist group (5 or more people)\nCan visit Tacheng and Jeminay County (East Kazakhstan Region residents) in Xinjiang without a visa for three days.\n Hong Kong — Visa not required for 14 days"
     },
     {
       "name": "Republic of the Congo"
@@ -498,6 +498,35 @@
     {
       "name": "Vietnam",
       "note": "30 days"
+    },
+    {
+      "name": "Kazakhstan",
+      "note": "home"
+    }
+  ],
+  "evisa": [
+    {
+      "name": "Australia",
+      "note": "May apply online."
+    },
+    {
+      "name": "Gabon",
+      "note": "eVisa holders must arrive via Libreville International Airport."
+    },
+    {
+      "name": "Kenya",
+      "note": "3 months"
+    },
+    {
+      "name": "Myanmar",
+      "note": "28 days"
+    },
+    {
+      "name": "Singapore"
+    },
+    {
+      "name": "Sri Lanka",
+      "note": "30 days"
     }
   ],
   "on-arrival": [
@@ -566,7 +595,8 @@
       "note": "30 days"
     },
     {
-      "name": "Mauritania"
+      "name": "Mauritania",
+      "note": "Available at Nouakchott–Oumtounsy International Airport."
     },
     {
       "name": "Mauritius",
@@ -587,6 +617,14 @@
     {
       "name": "Palau",
       "note": "30 days"
+    },
+    {
+      "name": "Samoa",
+      "note": "60 days"
+    },
+    {
+      "name": "Seychelles",
+      "note": "3 months"
     },
     {
       "name": "Somalia",
@@ -620,45 +658,6 @@
       "note": "3 months"
     }
   ],
-  "unknown": [
-    {
-      "name": "Australia",
-      "note": "May apply online.",
-      "visa": "Online Visitor e600 visa"
-    },
-    {
-      "name": "Gabon",
-      "note": "eVisa holders must arrive via Libreville International Airport.",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Kenya",
-      "note": "3 months",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Myanmar",
-      "note": "28 days",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Samoa",
-      "note": "60 days",
-      "visa": "Visa on arrival !Entry Permit on arrival"
-    },
-    {
-      "name": "Seychelles",
-      "note": "3 months",
-      "visa": "Visa on arrival !Visitor's Permit on arrival"
-    },
-    {
-      "name": "Singapore",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Sri Lanka",
-      "note": "30 days",
-      "visa": "Electronic Travel Authorization"
-    }
-  ]
+  "refused": [],
+  "unknown": []
 }

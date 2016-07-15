@@ -75,6 +75,9 @@
       "name": "Croatia"
     },
     {
+      "name": "Cuba"
+    },
+    {
       "name": "Cyprus"
     },
     {
@@ -113,10 +116,6 @@
     {
       "name": "Germany",
       "note": "Schengen Visa required"
-    },
-    {
-      "name": "Ghana",
-      "note": "Pre-approved visa can be picked up on arrival."
     },
     {
       "name": "Greece",
@@ -561,6 +560,39 @@
     {
       "name": "Zimbabwe",
       "note": "3 months"
+    },
+    {
+      "name": "South Africa",
+      "note": "home"
+    }
+  ],
+  "evisa": [
+    {
+      "name": "Australia",
+      "note": "May apply online. Transit visa is not required."
+    },
+    {
+      "name": "Bahrain"
+    },
+    {
+      "name": "Ivory Coast",
+      "note": "3 months. eVisa holders must arrive via Port Bouet Airport."
+    },
+    {
+      "name": "India",
+      "note": "30 days, eTV holders must arrive via 16 designated airports."
+    },
+    {
+      "name": "Myanmar",
+      "note": "28 days"
+    },
+    {
+      "name": "Sri Lanka",
+      "note": "30 days"
+    },
+    {
+      "name": "Turkey",
+      "note": "3 months"
     }
   ],
   "on-arrival": [
@@ -597,6 +629,10 @@
       "note": "30 days. Visa not required for children under 16."
     },
     {
+      "name": "Ghana",
+      "note": "30 days"
+    },
+    {
       "name": "Guinea-Bissau",
       "note": "90 days"
     },
@@ -629,7 +665,8 @@
       "note": "90 days"
     },
     {
-      "name": "Mauritania"
+      "name": "Mauritania",
+      "note": "Available at Nouakchott–Oumtounsy International Airport."
     },
     {
       "name": "Nepal",
@@ -647,12 +684,20 @@
       "note": "30 days"
     },
     {
+      "name": "Samoa",
+      "note": "60 days"
+    },
+    {
+      "name": "Seychelles",
+      "note": "1 month"
+    },
+    {
       "name": "Somalia",
       "note": "30 days, provided an invitation letter issued by the sponsor has been submitted\nto the Airport Immigration Department at least 2 days before arrival."
     },
     {
       "name": "Tajikistan",
-      "note": "45 days at Dushanbe International Airport. Visa also available online for those arriving via Dushanbe or Khujand airports."
+      "note": "45 days at Dushanbe International Airport. Visa also available online. E-visa holders can enter through all border points."
     },
     {
       "name": "East Timor",
@@ -670,54 +715,6 @@
       "name": "Uganda"
     }
   ],
-  "unknown": [
-    {
-      "name": "Australia",
-      "note": "May apply online. Transit visa is not required.",
-      "visa": "Online Visitor e600 visa"
-    },
-    {
-      "name": "Bahrain",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Ivory Coast",
-      "note": "3 months. eVisa holders must arrive via Port Bouet Airport.",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Cuba",
-      "visa": "Tourist card required"
-    },
-    {
-      "name": "India",
-      "note": "30 days, eTV holders must arrive via 16 designated airports.",
-      "visa": "e-Tourist Visa"
-    },
-    {
-      "name": "Myanmar",
-      "note": "28 days",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Samoa",
-      "note": "60 days",
-      "visa": "Visa on arrival !Entry Permit on arrival"
-    },
-    {
-      "name": "Seychelles",
-      "note": "1 month",
-      "visa": "Visa on arrival !Visitor's Permit on arrival"
-    },
-    {
-      "name": "Sri Lanka",
-      "note": "30 days",
-      "visa": "Electronic Travel Authorisation"
-    },
-    {
-      "name": "Turkey",
-      "note": "3 months",
-      "visa": "eVisa"
-    }
-  ]
+  "refused": [],
+  "unknown": []
 }

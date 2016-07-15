@@ -16,9 +16,6 @@
       "name": "Angola"
     },
     {
-      "name": "Antigua and Barbuda"
-    },
-    {
       "name": "Argentina"
     },
     {
@@ -536,6 +533,19 @@
     {
       "name": "Federated States of Micronesia",
       "note": "30 days"
+    },
+    {
+      "name": "Iraq",
+      "note": "home"
+    }
+  ],
+  "evisa": [
+    {
+      "name": "Antigua and Barbuda"
+    },
+    {
+      "name": "Sri Lanka",
+      "note": "30 days; must hold return or onward ticket"
     }
   ],
   "on-arrival": [
@@ -565,7 +575,8 @@
       "note": "30 days"
     },
     {
-      "name": "Mauritania"
+      "name": "Mauritania",
+      "note": "Available at Nouakchott–Oumtounsy International Airport."
     },
     {
       "name": "Mozambique",
@@ -574,6 +585,14 @@
     {
       "name": "Palau",
       "note": "30 days"
+    },
+    {
+      "name": "Samoa",
+      "note": "60 days"
+    },
+    {
+      "name": "Seychelles",
+      "note": "3 months"
     },
     {
       "name": "Tanzania",
@@ -599,21 +618,6 @@
       "note": "3 months"
     }
   ],
-  "unknown": [
-    {
-      "name": "Samoa",
-      "note": "60 days",
-      "visa": "Visa on arrival !Entry Permit on arrival"
-    },
-    {
-      "name": "Seychelles",
-      "note": "3 months",
-      "visa": "Visa on arrival !Visitor's Permit on arrival"
-    },
-    {
-      "name": "Sri Lanka",
-      "note": "30 days; must hold return or onward ticket",
-      "visa": "Electronic Travel Authorization"
-    }
-  ]
+  "refused": [],
+  "unknown": []
 }

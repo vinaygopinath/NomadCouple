@@ -19,10 +19,6 @@
       "name": "Argentina"
     },
     {
-      "name": "Australia",
-      "note": "May apply online."
-    },
-    {
       "name": "Austria"
     },
     {
@@ -101,6 +97,9 @@
       "name": "Croatia"
     },
     {
+      "name": "Cuba"
+    },
+    {
       "name": "Cyprus"
     },
     {
@@ -162,9 +161,6 @@
     },
     {
       "name": "Honduras"
-    },
-    {
-      "name": "Hong Kong"
     },
     {
       "name": "Hungary"
@@ -408,9 +404,6 @@
     },
     {
       "name": "Yemen"
-    },
-    {
-      "name": "Zambia"
     }
   ],
   "not-required": [
@@ -441,7 +434,7 @@
     },
     {
       "name": "Georgia (country)",
-      "note": "360 days"
+      "note": "1 year"
     },
     {
       "name": "Haiti",
@@ -504,6 +497,31 @@
     {
       "name": "Vietnam",
       "note": "30 days"
+    },
+    {
+      "name": "Kyrgyzstan",
+      "note": "home"
+    }
+  ],
+  "evisa": [
+    {
+      "name": "Australia",
+      "note": "May apply online."
+    },
+    {
+      "name": "Gabon",
+      "note": "Electronic visa holders must arrive via Libreville International Airport."
+    },
+    {
+      "name": "Kenya",
+      "note": "3 months"
+    },
+    {
+      "name": "Sri Lanka",
+      "note": "30 days"
+    },
+    {
+      "name": "Zambia"
     }
   ],
   "on-arrival": [
@@ -537,7 +555,8 @@
       "note": "90 days"
     },
     {
-      "name": "Iran"
+      "name": "Iran",
+      "note": "30 days"
     },
     {
       "name": "Jamaica"
@@ -566,7 +585,8 @@
       "note": "30 days"
     },
     {
-      "name": "Mauritania"
+      "name": "Mauritania",
+      "note": "Available at Nouakchott–Oumtounsy International Airport."
     },
     {
       "name": "Mauritius",
@@ -593,6 +613,14 @@
       "note": "6 weeks"
     },
     {
+      "name": "Samoa",
+      "note": "60 days"
+    },
+    {
+      "name": "Seychelles",
+      "note": "3 months"
+    },
+    {
       "name": "Somalia",
       "note": "30 days, provided an invitation letter issued by the sponsor has been submitted\nto the Airport Immigration Department at least 2 days before arrival."
     },
@@ -616,35 +644,6 @@
       "note": "3 months"
     }
   ],
-  "unknown": [
-    {
-      "name": "Cuba",
-      "visa": "Tourist card required"
-    },
-    {
-      "name": "Gabon",
-      "note": "Electronic visa holders must arrive via Libreville International Airport.",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Kenya",
-      "note": "3 months; also visa on arrival until 1 September 2015",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Samoa",
-      "note": "60 days",
-      "visa": "Visa on arrival !Entry Permit on arrival"
-    },
-    {
-      "name": "Seychelles",
-      "note": "1 month",
-      "visa": "Visa on arrival !Visitor's Permit on arrival"
-    },
-    {
-      "name": "Sri Lanka",
-      "note": "30 days",
-      "visa": "Electronic Travel Authorization"
-    }
-  ]
+  "refused": [],
+  "unknown": []
 }

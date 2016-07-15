@@ -16,9 +16,6 @@
       "name": "Angola"
     },
     {
-      "name": "Antigua and Barbuda"
-    },
-    {
       "name": "Argentina"
     },
     {
@@ -536,6 +533,15 @@
     {
       "name": "Sudan",
       "note": "1 month"
+    },
+    {
+      "name": "Syria",
+      "note": "home"
+    }
+  ],
+  "evisa": [
+    {
+      "name": "Antigua and Barbuda"
     }
   ],
   "on-arrival": [
@@ -570,6 +576,14 @@
       "note": "30 days"
     },
     {
+      "name": "Samoa",
+      "note": "60 days"
+    },
+    {
+      "name": "Seychelles",
+      "note": "1 month"
+    },
+    {
       "name": "Tajikistan",
       "note": "45 days"
     },
@@ -597,20 +611,10 @@
       "note": "3 months"
     }
   ],
-  "unknown": [
+  "refused": [
     {
-      "name": "Kuwait",
-      "visa": "Admission refused"
-    },
-    {
-      "name": "Samoa",
-      "note": "60 days",
-      "visa": "Visa on arrival !Entry Permit on arrival"
-    },
-    {
-      "name": "Seychelles",
-      "note": "1 month",
-      "visa": "Visa on arrival !Visitor's Permit on arrival"
+      "name": "Kuwait"
     }
-  ]
+  ],
+  "unknown": []
 }

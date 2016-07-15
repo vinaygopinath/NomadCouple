@@ -16,9 +16,6 @@
       "name": "Argentina"
     },
     {
-      "name": "Australia"
-    },
-    {
       "name": "Austria"
     },
     {
@@ -89,6 +86,10 @@
       "name": "Croatia"
     },
     {
+      "name": "Cuba",
+      "note": "30 days"
+    },
+    {
       "name": "Cyprus"
     },
     {
@@ -153,9 +154,6 @@
     },
     {
       "name": "Honduras"
-    },
-    {
-      "name": "Hong Kong"
     },
     {
       "name": "Hungary"
@@ -290,22 +288,10 @@
       "name": "Romania"
     },
     {
-      "name": "Rwanda",
-      "note": "Visa is obtained online."
-    },
-    {
-      "name": "Saint Kitts and Nevis",
-      "note": "Visa obtainable online."
-    },
-    {
       "name": "Saint Lucia"
     },
     {
       "name": "San Marino"
-    },
-    {
-      "name": "São Tomé and Príncipe",
-      "note": "Visa is obtained online."
     },
     {
       "name": "Saudi Arabia"
@@ -398,9 +384,6 @@
     },
     {
       "name": "Yemen"
-    },
-    {
-      "name": "Zambia"
     }
   ],
   "not-required": [
@@ -444,7 +427,7 @@
     },
     {
       "name": "Georgia (country)",
-      "note": "360 days"
+      "note": "1 year"
     },
     {
       "name": "Haiti",
@@ -514,6 +497,36 @@
     {
       "name": "Vanuatu",
       "note": "30 days"
+    },
+    {
+      "name": "Azerbaijan",
+      "note": "home"
+    }
+  ],
+  "evisa": [
+    {
+      "name": "Australia",
+      "note": "May apply online."
+    },
+    {
+      "name": "Gabon",
+      "note": "Electronic visa holders must arrive via Libreville International Airport."
+    },
+    {
+      "name": "Rwanda"
+    },
+    {
+      "name": "Saint Kitts and Nevis"
+    },
+    {
+      "name": "São Tomé and Príncipe"
+    },
+    {
+      "name": "Sri Lanka",
+      "note": "30 days"
+    },
+    {
+      "name": "Zambia"
     }
   ],
   "on-arrival": [
@@ -573,7 +586,8 @@
       "note": "90 days"
     },
     {
-      "name": "Mauritania"
+      "name": "Mauritania",
+      "note": "Available at Nouakchott–Oumtounsy International Airport."
     },
     {
       "name": "Mauritius",
@@ -594,6 +608,14 @@
     {
       "name": "Palau",
       "note": "30 days"
+    },
+    {
+      "name": "Samoa",
+      "note": "60 days"
+    },
+    {
+      "name": "Seychelles",
+      "note": "3 months"
     },
     {
       "name": "Somalia",
@@ -622,31 +644,6 @@
       "note": "3 months"
     }
   ],
-  "unknown": [
-    {
-      "name": "Cuba",
-      "note": "30 days",
-      "visa": "Tourist card required"
-    },
-    {
-      "name": "Gabon",
-      "note": "Electronic visa holders must arrive via Libreville International Airport.",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Samoa",
-      "note": "60 days",
-      "visa": "Visa on arrival !Entry Permit on arrival"
-    },
-    {
-      "name": "Seychelles",
-      "note": "1 month",
-      "visa": "Visa on arrival !Visitor's Permit on arrival"
-    },
-    {
-      "name": "Sri Lanka",
-      "note": "30 days",
-      "visa": "Electronic Travel Authorization"
-    }
-  ]
+  "refused": [],
+  "unknown": []
 }

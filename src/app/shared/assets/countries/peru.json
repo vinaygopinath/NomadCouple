@@ -64,6 +64,10 @@
       "name": "Ivory Coast"
     },
     {
+      "name": "Cuba",
+      "note": "Tourist Cards grant a max. stay of 30 days to nationals of Peru."
+    },
+    {
       "name": "El Salvador",
       "note": "Except for passengers with a valid visa issued by Canada, the USA, or a Schengen Member State."
     },
@@ -267,6 +271,10 @@
     {
       "name": "Bulgaria",
       "note": "90 days within 180 days"
+    },
+    {
+      "name": "Chile",
+      "note": "90 days"
     },
     {
       "name": "Colombia",
@@ -480,6 +488,10 @@
       "note": "90 days within 180 days"
     },
     {
+      "name": "South Africa",
+      "note": "30 days"
+    },
+    {
       "name": "Spain",
       "note": "90 days within 180 days"
     },
@@ -518,6 +530,42 @@
     {
       "name": "Venezuela",
       "note": "90 days. Extension of stay possible for additional 90 days."
+    },
+    {
+      "name": "Peru",
+      "note": "home"
+    }
+  ],
+  "evisa": [
+    {
+      "name": "Australia",
+      "note": "May apply online."
+    },
+    {
+      "name": "Gabon",
+      "note": "eVisa holders must arrive at Libreville International Airport."
+    },
+    {
+      "name": "Georgia (country)",
+      "note": "90 days"
+    },
+    {
+      "name": "India",
+      "note": "30 days"
+    },
+    {
+      "name": "Myanmar",
+      "note": "28 days. eVisa holders must arrive via Yangon, Nay Pyi Taw or Mandalay airports."
+    },
+    {
+      "name": "São Tomé and Príncipe"
+    },
+    {
+      "name": "Sri Lanka",
+      "note": "30 days. Fees vary and must be paid in USD. Extension of stay possible for additional 150 days. May apply online."
+    },
+    {
+      "name": "Zimbabwe"
     }
   ],
   "on-arrival": [
@@ -598,7 +646,8 @@
       "note": "90 days"
     },
     {
-      "name": "Mauritania"
+      "name": "Mauritania",
+      "note": "Available at Nouakchott–Oumtounsy International Airport."
     },
     {
       "name": "Mauritius",
@@ -629,8 +678,24 @@
       "note": "6 weeks. Fee: USD 50.-."
     },
     {
+      "name": "Samoa",
+      "note": "60 days. Extension of stay possible."
+    },
+    {
+      "name": "Seychelles",
+      "note": "3 months. Free of charge. Extensions possible for further periods of 3 months, up to a max. stay of 12 months. Fee: SCR 5,000.- per extension."
+    },
+    {
+      "name": "Solomon Islands",
+      "note": "3 months"
+    },
+    {
       "name": "Somalia",
       "note": "30 days. Provided an invitation letter issued by the sponsor has been submitted to the Airport Immigration Department at least 2 days before arrival. Fee: USD 50.-. Extension of stay possible for additional 30 days."
+    },
+    {
+      "name": "Suriname",
+      "note": "90 days. Obtainable on arrival at Paramaribo International Airport (PBM). Fee: USD 35.- for a single entry."
     },
     {
       "name": "Tanzania",
@@ -657,79 +722,6 @@
       "note": "90 days within 1 year. Fee: USD 50.- (single entry) and USD 80.- (multiple entry)."
     }
   ],
-  "unknown": [
-    {
-      "name": "Australia",
-      "note": "May apply online.",
-      "visa": "Online Visitor e600 visa"
-    },
-    {
-      "name": "Chile",
-      "note": "90 days",
-      "visa": "Visa not required<"
-    },
-    {
-      "name": "Cuba",
-      "note": "Tourist Cards grant a max. stay of 30 days to nationals of Peru.",
-      "visa": "Visa required !Tourist Card required"
-    },
-    {
-      "name": "Gabon",
-      "note": "eVisa holders must arrive at Libreville International Airport.",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Georgia (country)",
-      "note": "90 days",
-      "visa": "eVisa"
-    },
-    {
-      "name": "India",
-      "note": "30 days",
-      "visa": "e-Tourist Visa"
-    },
-    {
-      "name": "Myanmar",
-      "note": "28 days. eVisa holders must arrive via Yangon, Nay Pyi Taw or Mandalay airports.",
-      "visa": "e-Tourist Visa"
-    },
-    {
-      "name": "Samoa",
-      "note": "60 days. Extension of stay possible.",
-      "visa": "Visa on arrival !Entry Permit on arrival"
-    },
-    {
-      "name": "São Tomé and Príncipe",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Seychelles",
-      "note": "3 months. Free of charge. Extensions possible for further periods of 3 months, up to a max. stay of 12 months. Fee: SCR 5,000.- per extension.",
-      "visa": "Visa on arrival !Visitor's Permit on arrival"
-    },
-    {
-      "name": "Solomon Islands",
-      "note": "3 months",
-      "visa": "Visa on arrival !Visitor's permit on arrival"
-    },
-    {
-      "name": "South Africa",
-      "note": "30 days",
-      "visa": "Visa not required<"
-    },
-    {
-      "name": "Sri Lanka",
-      "note": "30 days. Fees vary and must be paid in USD. Extension of stay possible for additional 150 days. May apply online.",
-      "visa": "Electronic Travel Authorization on arrival"
-    },
-    {
-      "name": "Suriname",
-      "note": "90 days. Obtainable on arrival at Paramaribo International Airport (PBM). Fee: USD 35.- for a single entry.",
-      "visa": "Tourist Card on arrival"
-    },
-    {
-      "name": "Zimbabwe",
-      "visa": "eVisa"
-    }
-  ]
+  "refused": [],
+  "unknown": []
 }

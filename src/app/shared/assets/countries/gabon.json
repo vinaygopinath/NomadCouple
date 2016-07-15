@@ -16,9 +16,6 @@
       "name": "Angola"
     },
     {
-      "name": "Antigua and Barbuda"
-    },
-    {
       "name": "Argentina"
     },
     {
@@ -151,9 +148,6 @@
     },
     {
       "name": "Germany"
-    },
-    {
-      "name": "Ghana"
     },
     {
       "name": "Greece"
@@ -454,6 +448,10 @@
       "note": "30 days"
     },
     {
+      "name": "Mauritius",
+      "note": "90 days"
+    },
+    {
       "name": "Federated States of Micronesia",
       "note": "30 days"
     },
@@ -491,6 +489,47 @@
     {
       "name": "Tunisia",
       "note": "3 months"
+    },
+    {
+      "name": "Gabon",
+      "note": "home"
+    }
+  ],
+  "evisa": [
+    {
+      "name": "Antigua and Barbuda"
+    },
+    {
+      "name": "Australia",
+      "note": "May apply online."
+    },
+    {
+      "name": "Bahrain",
+      "note": "14 days"
+    },
+    {
+      "name": "Georgia (country)"
+    },
+    {
+      "name": "India",
+      "note": "30 days, eTV holders must arrive via 16 designated airports."
+    },
+    {
+      "name": "Kenya",
+      "note": "3 months"
+    },
+    {
+      "name": "Saint Kitts and Nevis"
+    },
+    {
+      "name": "Sri Lanka",
+      "note": "30 days"
+    },
+    {
+      "name": "Zambia"
+    },
+    {
+      "name": "Zimbabwe"
     }
   ],
   "on-arrival": [
@@ -513,6 +552,10 @@
     },
     {
       "name": "Djibouti"
+    },
+    {
+      "name": "Ghana",
+      "note": "30 days"
     },
     {
       "name": "Guinea-Bissau",
@@ -540,7 +583,7 @@
     },
     {
       "name": "Mauritania",
-      "note": "Must arrive via Nouakchott International Airport."
+      "note": "Available at Nouakchott–Oumtounsy International Airport."
     },
     {
       "name": "Mozambique",
@@ -567,6 +610,14 @@
       "note": "6 weeks"
     },
     {
+      "name": "Samoa",
+      "note": "60 days"
+    },
+    {
+      "name": "Seychelles",
+      "note": "3 month"
+    },
+    {
       "name": "Tanzania"
     },
     {
@@ -585,62 +636,6 @@
       "name": "Uganda"
     }
   ],
-  "unknown": [
-    {
-      "name": "Australia",
-      "note": "May apply online.",
-      "visa": "Online Visitor e600 visa"
-    },
-    {
-      "name": "Bahrain",
-      "note": "14 days",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Georgia (country)",
-      "visa": "eVisa"
-    },
-    {
-      "name": "India",
-      "note": "30 days, eTV holders must arrive via 16 designated airports.",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Kenya",
-      "note": "3 months",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Mauritius",
-      "note": "90 days",
-      "visa": "Visa not requiredl"
-    },
-    {
-      "name": "Saint Kitts and Nevis",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Samoa",
-      "note": "60 days",
-      "visa": "Visa on arrival !Entry Permit on arrival"
-    },
-    {
-      "name": "Seychelles",
-      "note": "3 month",
-      "visa": "Visa not  !Visitor's Permit on arrival"
-    },
-    {
-      "name": "Sri Lanka",
-      "note": "30 days",
-      "visa": "Electronic Travel Authorization"
-    },
-    {
-      "name": "Zambia",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Zimbabwe",
-      "visa": "eVisa"
-    }
-  ]
+  "refused": [],
+  "unknown": []
 }

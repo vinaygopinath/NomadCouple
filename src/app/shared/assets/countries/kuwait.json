@@ -101,6 +101,10 @@
       "name": "Denmark"
     },
     {
+      "name": "Dominican Republic",
+      "note": "Visa not required but a tourist card must be purchased on arrival."
+    },
+    {
       "name": "Equatorial Guinea"
     },
     {
@@ -352,6 +356,10 @@
       "note": "3 months"
     },
     {
+      "name": "Bahrain",
+      "note": "Freedom of movement; ID card valid"
+    },
+    {
       "name": "Bosnia and Herzegovina",
       "note": "90 days"
     },
@@ -440,6 +448,10 @@
       "note": "90 days"
     },
     {
+      "name": "Oman",
+      "note": "Freedom of movement; ID card valid"
+    },
+    {
       "name": "Panama",
       "note": "90 days"
     },
@@ -448,12 +460,20 @@
       "note": "30 days"
     },
     {
+      "name": "Qatar",
+      "note": "Freedom of movement; ID card valid"
+    },
+    {
       "name": "Saint Lucia",
       "note": "6 weeks"
     },
     {
       "name": "Saint Vincent and the Grenadines",
       "note": "1 month"
+    },
+    {
+      "name": "Saudi Arabia",
+      "note": "Freedom of movement; ID card valid"
     },
     {
       "name": "Serbia",
@@ -476,8 +496,47 @@
       "note": "3 months"
     },
     {
+      "name": "United Arab Emirates",
+      "note": "Freedom of movement; ID card valid"
+    },
+    {
       "name": "Vanuatu",
       "note": "30 days"
+    },
+    {
+      "name": "Kuwait",
+      "note": "home"
+    }
+  ],
+  "evisa": [
+    {
+      "name": "Antigua and Barbuda"
+    },
+    {
+      "name": "Gabon",
+      "note": "Electronic visa holders must arrive via Libreville International Airport."
+    },
+    {
+      "name": "Kenya",
+      "note": "3 months; also visa on arrival until 1 September 2015"
+    },
+    {
+      "name": "Myanmar",
+      "note": "28 days"
+    },
+    {
+      "name": "Saint Kitts and Nevis"
+    },
+    {
+      "name": "Sri Lanka",
+      "note": "30 days"
+    },
+    {
+      "name": "Turkey",
+      "note": "3 months"
+    },
+    {
+      "name": "United Kingdom"
     }
   ],
   "on-arrival": [
@@ -545,7 +604,8 @@
       "note": "90 days"
     },
     {
-      "name": "Mauritania"
+      "name": "Mauritania",
+      "note": "Available at Nouakchott–Oumtounsy International Airport."
     },
     {
       "name": "Mozambique",
@@ -560,14 +620,22 @@
       "note": "30 days"
     },
     {
+      "name": "Samoa",
+      "note": "60 days"
+    },
+    {
       "name": "Senegal"
+    },
+    {
+      "name": "Seychelles",
+      "note": "1 month"
     },
     {
       "name": "Solomon Islands"
     },
     {
       "name": "Tajikistan",
-      "note": "45 days at Dushanbe International Airport. Visa also available online for those arriving via Dushanbe or Khujand airports."
+      "note": "45 days at Dushanbe International Airport. Visa also available online. E-visa holders can enter through all border points."
     },
     {
       "name": "Tanzania",
@@ -597,83 +665,6 @@
       "note": "3 months"
     }
   ],
-  "unknown": [
-    {
-      "name": "Antigua and Barbuda",
-      "visa": "Electronic Entry Visa"
-    },
-    {
-      "name": "Bahrain",
-      "note": "Freedom of movement; ID card valid",
-      "visa": "GCC !Visa not required"
-    },
-    {
-      "name": "Dominican Republic",
-      "note": "Visa not required but a tourist card must be purchased on arrival.",
-      "visa": "Tourist card required"
-    },
-    {
-      "name": "Gabon",
-      "note": "Electronic visa holders must arrive via Libreville International Airport.",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Kenya",
-      "note": "3 months; also visa on arrival until 1 September 2015",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Myanmar",
-      "note": "28 days",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Oman",
-      "note": "Freedom of movement; ID card valid",
-      "visa": "GCC !Visa not required"
-    },
-    {
-      "name": "Qatar",
-      "note": "Freedom of movement; ID card valid",
-      "visa": "GCC !Visa not required"
-    },
-    {
-      "name": "Saint Kitts and Nevis",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Samoa",
-      "note": "60 days",
-      "visa": "Visa on arrival !Entry Permit on arrival"
-    },
-    {
-      "name": "Saudi Arabia",
-      "note": "Freedom of movement; ID card valid",
-      "visa": "GCC !Visa not required"
-    },
-    {
-      "name": "Seychelles",
-      "note": "1 month",
-      "visa": "Visa on arrival !Visitor's Permit on arrival"
-    },
-    {
-      "name": "Sri Lanka",
-      "note": "30 days",
-      "visa": "Electronic Travel Authorization"
-    },
-    {
-      "name": "Turkey",
-      "note": "3 months",
-      "visa": "eVisa"
-    },
-    {
-      "name": "United Arab Emirates",
-      "note": "Freedom of movement; ID card valid",
-      "visa": "GCC !Visa not required"
-    },
-    {
-      "name": "United Kingdom",
-      "visa": "Electronic Visa Waiver"
-    }
-  ]
+  "refused": [],
+  "unknown": []
 }

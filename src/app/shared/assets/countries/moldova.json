@@ -498,6 +498,28 @@
     },
     {
       "name": "Vatican City"
+    },
+    {
+      "name": "Moldova",
+      "note": "home"
+    }
+  ],
+  "evisa": [
+    {
+      "name": "Gabon",
+      "note": "eVisa holders must arrive via Libreville International Airport."
+    },
+    {
+      "name": "India",
+      "note": "30 days, eTV holders must arrive via 16 designated airports."
+    },
+    {
+      "name": "Kenya",
+      "note": "3 months; also visa on arrival until 1 September 2015\nCan also be entered on an East Africa Tourist Visa issued by Rwanda or Uganda."
+    },
+    {
+      "name": "Sri Lanka",
+      "note": "30 days"
     }
   ],
   "on-arrival": [
@@ -557,7 +579,8 @@
       "note": "30 days"
     },
     {
-      "name": "Mauritania"
+      "name": "Mauritania",
+      "note": "Available at Nouakchott–Oumtounsy International Airport."
     },
     {
       "name": "Mauritius",
@@ -581,6 +604,10 @@
     {
       "name": "Saint Lucia",
       "note": "6 weeks"
+    },
+    {
+      "name": "Seychelles",
+      "note": "1 month"
     },
     {
       "name": "Somalia",
@@ -610,31 +637,6 @@
       "note": "3 months"
     }
   ],
-  "unknown": [
-    {
-      "name": "Gabon",
-      "note": "eVisa holders must arrive via Libreville International Airport.",
-      "visa": "eVisa"
-    },
-    {
-      "name": "India",
-      "note": "30 days, eTV holders must arrive via 16 designated airports.",
-      "visa": "e-Tourist Visa"
-    },
-    {
-      "name": "Kenya",
-      "note": "3 months; also visa on arrival until 1 September 2015\nCan also be entered on an East Africa Tourist Visa issued by Rwanda or Uganda.",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Seychelles",
-      "note": "1 month",
-      "visa": "Visa on arrival !Visitor's Permit on arrival"
-    },
-    {
-      "name": "Sri Lanka",
-      "note": "30 days",
-      "visa": "Electronic Travel Authorization"
-    }
-  ]
+  "refused": [],
+  "unknown": []
 }

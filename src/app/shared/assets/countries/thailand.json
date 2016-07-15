@@ -16,10 +16,6 @@
       "name": "Angola"
     },
     {
-      "name": "Australia",
-      "note": "May apply online. Transit visa is not required."
-    },
-    {
       "name": "Austria"
     },
     {
@@ -75,8 +71,7 @@
       "name": "Chad"
     },
     {
-      "name": "China",
-      "note": "Thai citizens may travel without a visa to Hong Kong and Macao. Visa on arrival (15 days) may be available to tourists travelling in a group to Hainan."
+      "name": "China"
     },
     {
       "name": "Colombia",
@@ -227,7 +222,7 @@
     },
     {
       "name": "Mexico",
-      "note": "no visa required for holders of valid US visas arriving from the US"
+      "note": "No visa required for holders of valid US visas arriving from the US"
     },
     {
       "name": "Moldova"
@@ -264,7 +259,7 @@
     },
     {
       "name": "Pakistan",
-      "note": "Visa on arrival when travelling on business valid for 30 days. Conditions apply. Visa on arrival when travelling as part of a group through a designated tour operator."
+      "note": "Visa on arrival when travelling on business valid for 30 days. Conditions apply.\nVisa on arrival when travelling as part of a group through a designated tour operator."
     },
     {
       "name": "Paraguay"
@@ -282,19 +277,7 @@
       "name": "Romania"
     },
     {
-      "name": "Rwanda",
-      "note": "Visa is obtained online."
-    },
-    {
-      "name": "Saint Kitts and Nevis",
-      "note": "Visa obtainable online."
-    },
-    {
       "name": "San Marino"
-    },
-    {
-      "name": "São Tomé and Príncipe",
-      "note": "Visa is obtained online."
     },
     {
       "name": "Saudi Arabia"
@@ -375,9 +358,6 @@
     },
     {
       "name": "Yemen"
-    },
-    {
-      "name": "Zimbabwe"
     }
   ],
   "not-required": [
@@ -419,7 +399,7 @@
     },
     {
       "name": "Georgia (country)",
-      "note": "Max stay of 1 year."
+      "note": "1 year"
     },
     {
       "name": "Haiti",
@@ -504,6 +484,47 @@
     {
       "name": "Vietnam",
       "note": "30 days"
+    },
+    {
+      "name": "Thailand",
+      "note": "home"
+    }
+  ],
+  "evisa": [
+    {
+      "name": "Antigua and Barbuda"
+    },
+    {
+      "name": "Australia",
+      "note": "May apply online."
+    },
+    {
+      "name": "Gabon",
+      "note": "Electronic visa holders must arrive via Libreville International Airport."
+    },
+    {
+      "name": "India",
+      "note": "30 days"
+    },
+    {
+      "name": "Kenya",
+      "note": "3 months"
+    },
+    {
+      "name": "Rwanda"
+    },
+    {
+      "name": "Saint Kitts and Nevis"
+    },
+    {
+      "name": "São Tomé and Príncipe"
+    },
+    {
+      "name": "Sri Lanka",
+      "note": "30 days"
+    },
+    {
+      "name": "Zimbabwe"
     }
   ],
   "on-arrival": [
@@ -553,7 +574,7 @@
     },
     {
       "name": "Madagascar",
-      "note": "30 days free of charge"
+      "note": "30 days free of charge."
     },
     {
       "name": "Malawi"
@@ -567,7 +588,8 @@
       "note": "90 days"
     },
     {
-      "name": "Mauritania"
+      "name": "Mauritania",
+      "note": "Available at Nouakchott–Oumtounsy International Airport."
     },
     {
       "name": "Mauritius",
@@ -602,12 +624,20 @@
       "note": "42 days"
     },
     {
+      "name": "Samoa",
+      "note": "60 days"
+    },
+    {
+      "name": "Seychelles",
+      "note": "3 months"
+    },
+    {
       "name": "Somalia",
-      "note": "30 days, provided an invitation letter issued by the sponsor has been submitted\nto the Airport Immigration Department at least 2 days before arrival."
+      "note": "30 days, provided an invitation letter issued by the sponsor has been submitted to the Airport Immigration Department at least 2 days before arrival."
     },
     {
       "name": "Tajikistan",
-      "note": "45 days at Dushanbe International Airport. Visa also available online for those arriving via Dushanbe or Khujand airports."
+      "note": "45 days at Dushanbe International Airport. Visa also available online. E-visa holders can enter through all border points."
     },
     {
       "name": "Tanzania",
@@ -634,40 +664,6 @@
       "note": "90 days"
     }
   ],
-  "unknown": [
-    {
-      "name": "Antigua and Barbuda",
-      "visa": "Electronic Entry Visa"
-    },
-    {
-      "name": "Gabon",
-      "note": "Electronic visa holders must arrive via Libreville International Airport.",
-      "visa": "eVisa"
-    },
-    {
-      "name": "India",
-      "note": "30 days",
-      "visa": "e-Tourist Visa"
-    },
-    {
-      "name": "Kenya",
-      "note": "3 months",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Samoa",
-      "note": "60 days",
-      "visa": "Visa on arrival !Entry Permit on arrival"
-    },
-    {
-      "name": "Seychelles",
-      "note": "1 month",
-      "visa": "Visa on arrival !Visitor's Permit on arrival"
-    },
-    {
-      "name": "Sri Lanka",
-      "note": "30 days",
-      "visa": "Electronic Travel Authorization"
-    }
-  ]
+  "refused": [],
+  "unknown": []
 }

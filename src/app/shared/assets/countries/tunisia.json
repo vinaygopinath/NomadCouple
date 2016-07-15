@@ -316,6 +316,10 @@
       "name": "Saint Lucia"
     },
     {
+      "name": "San Marino",
+      "note": "Same rules as for Italy. No border control but accessible only via Italy."
+    },
+    {
       "name": "Saudi Arabia"
     },
     {
@@ -531,6 +535,40 @@
     {
       "name": "Vanuatu",
       "note": "30 days"
+    },
+    {
+      "name": "Tunisia",
+      "note": "home"
+    }
+  ],
+  "evisa": [
+    {
+      "name": "Antigua and Barbuda"
+    },
+    {
+      "name": "Georgia (country)",
+      "note": "up to 90 days"
+    },
+    {
+      "name": "Kenya",
+      "note": "3 months"
+    },
+    {
+      "name": "Saint Kitts and Nevis",
+      "note": "With a printed approval visitors are issued a visa on arrival by an Immigration Officer for a fee of USD 100. The maximum length of stay is 30 days."
+    },
+    {
+      "name": "São Tomé and Príncipe"
+    },
+    {
+      "name": "Sri Lanka",
+      "note": "30 days"
+    },
+    {
+      "name": "Zambia"
+    },
+    {
+      "name": "Zimbabwe"
     }
   ],
   "on-arrival": [
@@ -606,8 +644,16 @@
       "note": "3 months"
     },
     {
+      "name": "Samoa",
+      "note": "60 days"
+    },
+    {
+      "name": "Seychelles",
+      "note": "1 month"
+    },
+    {
       "name": "Tajikistan",
-      "note": "45 days"
+      "note": "45 days. Visa also available online. E-visa holders can enter through all border points."
     },
     {
       "name": "Tanzania",
@@ -629,62 +675,12 @@
       "name": "Uganda"
     }
   ],
+  "refused": [],
   "unknown": [
-    {
-      "name": "Antigua and Barbuda",
-      "visa": "Electronic Entry Visa"
-    },
     {
       "name": "Australia",
       "note": "May apply online.",
-      "visa": "e600Visa"
-    },
-    {
-      "name": "Georgia (country)",
-      "note": "up to 90 days",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Kenya",
-      "note": "3 months",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Saint Kitts and Nevis",
-      "note": "With a printed approval visitors are issued a visa on arrival by an Immigration Officer for a fee of USD 100. The maximum length of stay is 30 days.",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Samoa",
-      "note": "60 days",
-      "visa": "Visa on arrival !Entry Permit on arrival"
-    },
-    {
-      "name": "San Marino",
-      "note": "Same rules as for Italy. No border control but accessible only via Italy.",
-      "visa": "Visa for Italy required"
-    },
-    {
-      "name": "São Tomé and Príncipe",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Seychelles",
-      "note": "1 month",
-      "visa": "Visa on arrival !Visitor's Permit on arrival"
-    },
-    {
-      "name": "Sri Lanka",
-      "note": "30 days",
-      "visa": "Electronic Travel Authorization"
-    },
-    {
-      "name": "Zambia",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Zimbabwe",
-      "visa": "eVisa"
+      "visa": "e600Visa[11]"
     }
   ]
 }

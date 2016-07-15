@@ -503,6 +503,71 @@
     {
       "name": "Vanuatu",
       "note": "30 days"
+    },
+    {
+      "name": "China",
+      "note": "home"
+    }
+  ],
+  "evisa": [
+    {
+      "name": "Ivory Coast",
+      "note": "3 months; eVisa holders must arrive via Port Bouet Airport."
+    },
+    {
+      "name": "Gabon",
+      "note": "Electronic visa holders must arrive via Libreville International Airport."
+    },
+    {
+      "name": "Georgia (country)",
+      "note": "up to 30 days"
+    },
+    {
+      "name": "India",
+      "note": "30 days"
+    },
+    {
+      "name": "Kenya",
+      "note": "3 months"
+    },
+    {
+      "name": "Malaysia",
+      "note": "Between March 1, 2016 to December 31, 2016, Chinese citizens do not require a visa for Malaysia for a stay of up to 15 days, online registration prior to arrival required"
+    },
+    {
+      "name": "Myanmar",
+      "note": "28 days. eVisa holders must arrive via Yangon, Nay Pyi Taw or Mandalay airports."
+    },
+    {
+      "name": "Rwanda",
+      "note": "90 days"
+    },
+    {
+      "name": "Saint Kitts and Nevis",
+      "note": "30 days"
+    },
+    {
+      "name": "São Tomé and Príncipe",
+      "note": "30 days. Holders of a visa issued by the United States or a Schengen area member state do not require a visa for stays up to 15 days."
+    },
+    {
+      "name": "Singapore",
+      "note": "Visa free for 30 days for holders of passport for public affairs."
+    },
+    {
+      "name": "Sri Lanka",
+      "note": "30 days"
+    },
+    {
+      "name": "Turkey",
+      "note": "30 days, visa fee US $60."
+    },
+    {
+      "name": "Zambia"
+    },
+    {
+      "name": "Zimbabwe",
+      "note": "Approved tour groups may obtain visa on arrival."
     }
   ],
   "on-arrival": [
@@ -578,7 +643,8 @@
       "note": "30 days"
     },
     {
-      "name": "Mauritania"
+      "name": "Mauritania",
+      "note": "Available at Nouakchott–Oumtounsy International Airport."
     },
     {
       "name": "Nepal"
@@ -588,12 +654,20 @@
       "note": "30 days"
     },
     {
+      "name": "Samoa",
+      "note": "60 days"
+    },
+    {
       "name": "Somalia",
       "note": "30 days, provided an invitation letter issued by the sponsor has been submitted to the Airport Immigration Department at least 2 days before arrival."
     },
     {
+      "name": "Suriname",
+      "note": "90 days; available at Johan Adolf Pengel International Airport."
+    },
+    {
       "name": "Tajikistan",
-      "note": "45 days; Visa free for passports for public affairs. Visa also available online for those arriving via Dushanbe or Khujand airports."
+      "note": "45 days; Visa free for passports for public affairs. Visa also available online. E-visa holders can enter through all border points."
     },
     {
       "name": "Tanzania"
@@ -618,90 +692,6 @@
       "name": "Uganda"
     }
   ],
-  "unknown": [
-    {
-      "name": "Ivory Coast",
-      "note": "3 months; eVisa holders must arrive via Port Bouet Airport.",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Gabon",
-      "note": "Electronic visa holders must arrive via Libreville International Airport.",
-      "visa": "e-Visa"
-    },
-    {
-      "name": "Georgia (country)",
-      "note": "up to 30 days",
-      "visa": "eVisa"
-    },
-    {
-      "name": "India",
-      "note": "30 days",
-      "visa": "e-Tourist Visa"
-    },
-    {
-      "name": "Kenya",
-      "note": "3 months",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Malaysia",
-      "note": "Between March 1, 2016 to December 31, 2016, Chinese citizens do not require a visa for Malaysia for a stay of up to 15 days, online registration prior to arrival required",
-      "visa": "Online registration or eVisa"
-    },
-    {
-      "name": "Myanmar",
-      "note": "28 days. eVisa holders must arrive via Yangon, Nay Pyi Taw or Mandalay airports.",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Rwanda",
-      "note": "90 days",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Saint Kitts and Nevis",
-      "note": "30 days",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Samoa",
-      "note": "60 days",
-      "visa": "Visa on arrival !Entry Permit on arrival"
-    },
-    {
-      "name": "São Tomé and Príncipe",
-      "note": "30 days. Holders of a visa issued by the United States or a Schengen area member state do not require a visa for stays up to 15 days.",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Singapore",
-      "note": "Visa free for 30 days for holders of passport for public affairs.",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Sri Lanka",
-      "note": "30 days",
-      "visa": "Electronic Travel Authorization"
-    },
-    {
-      "name": "Suriname",
-      "note": "90 days; available at Johan Adolf Pengel International Airport.",
-      "visa": "Visa on arrival !Tourist Card on arrival"
-    },
-    {
-      "name": "Turkey",
-      "note": "30 days, visa fee US $60.",
-      "visa": "E-visa"
-    },
-    {
-      "name": "Zambia",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Zimbabwe",
-      "note": "Approved tour groups may obtain visa on arrival.",
-      "visa": "eVisa"
-    }
-  ]
+  "refused": [],
+  "unknown": []
 }

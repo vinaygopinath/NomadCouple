@@ -163,9 +163,6 @@
       "name": "Honduras"
     },
     {
-      "name": "Hong Kong"
-    },
-    {
       "name": "Hungary"
     },
     {
@@ -335,10 +332,6 @@
       "name": "Sierra Leone"
     },
     {
-      "name": "Singapore",
-      "note": "May obtain online. 96 hour Transit Visa can be obtained on arrival provided that holding confirmed onward plane tickets to a third country and a visa for the third country, passport validity for 6 months and in flights departing within 96 hours."
-    },
-    {
       "name": "Slovakia"
     },
     {
@@ -417,9 +410,6 @@
     },
     {
       "name": "Yemen"
-    },
-    {
-      "name": "Zambia"
     }
   ],
   "not-required": [
@@ -501,6 +491,35 @@
     },
     {
       "name": "Ukraine"
+    },
+    {
+      "name": "Uzbekistan",
+      "note": "home"
+    }
+  ],
+  "evisa": [
+    {
+      "name": "Australia",
+      "note": "May apply online."
+    },
+    {
+      "name": "Gabon",
+      "note": "Electronic visa holders must arrive via Libreville International Airport."
+    },
+    {
+      "name": "Singapore",
+      "note": "96 hour Transit Visa can be obtained on arrival provided that holding confirmed onward plane tickets to a third country and a visa for the third country, passport validity for 6 months and in flights departing within 96 hours."
+    },
+    {
+      "name": "Sri Lanka",
+      "note": "30 days"
+    },
+    {
+      "name": "Tajikistan",
+      "note": "Electronic visa holders must arrive via Dushanbe International Airport and international airport of Khujand."
+    },
+    {
+      "name": "Zambia"
     }
   ],
   "on-arrival": [
@@ -534,13 +553,18 @@
       "note": "90 days"
     },
     {
-      "name": "Iran"
+      "name": "Iran",
+      "note": "30 days"
     },
     {
       "name": "Jamaica"
     },
     {
       "name": "Jordan",
+      "note": "3 months"
+    },
+    {
+      "name": "Kenya",
       "note": "3 months"
     },
     {
@@ -560,7 +584,8 @@
       "note": "30 days"
     },
     {
-      "name": "Mauritania"
+      "name": "Mauritania",
+      "note": "Available at Nouakchott–Oumtounsy International Airport."
     },
     {
       "name": "Mauritius",
@@ -581,6 +606,14 @@
     {
       "name": "Palau",
       "note": "30 days"
+    },
+    {
+      "name": "Samoa",
+      "note": "60 days"
+    },
+    {
+      "name": "Seychelles",
+      "note": "3 months"
     },
     {
       "name": "Somalia",
@@ -610,41 +643,6 @@
       "note": "3 months"
     }
   ],
-  "unknown": [
-    {
-      "name": "Australia",
-      "note": "May apply online.",
-      "visa": "Online Visitor e600 visa"
-    },
-    {
-      "name": "Gabon",
-      "note": "Electronic visa holders must arrive via Libreville International Airport.",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Kenya",
-      "note": "3 months",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Samoa",
-      "note": "60 days",
-      "visa": "Visa on arrival !Entry Permit on arrival"
-    },
-    {
-      "name": "Seychelles",
-      "note": "1 month",
-      "visa": "Visa on arrival !Visitor's Permit on arrival"
-    },
-    {
-      "name": "Sri Lanka",
-      "note": "30 days",
-      "visa": "Electronic Travel Authorization"
-    },
-    {
-      "name": "Tajikistan",
-      "note": "Electronic visa holders must arrive via Dushanbe International Airport and international airport of Khujand.",
-      "visa": "eVisa"
-    }
-  ]
+  "refused": [],
+  "unknown": []
 }

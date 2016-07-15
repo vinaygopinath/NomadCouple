@@ -34,7 +34,7 @@
     },
     {
       "name": "Republic of the Congo",
-      "note": "Not required for holders of a VIP Invitation Letter"
+      "note": "Except Passengers with VIP invitation"
     },
     {
       "name": "Democratic Republic of the Congo"
@@ -542,6 +542,10 @@
       "note": "6 months"
     },
     {
+      "name": "United States",
+      "note": "90 days on arrival from overseas; ESTA (valid for 2 years when issued) required if arriving by air or cruise ship."
+    },
+    {
       "name": "Uruguay",
       "note": "3 months"
     },
@@ -563,6 +567,40 @@
     {
       "name": "Zimbabwe",
       "note": "3 months"
+    },
+    {
+      "name": "Singapore",
+      "note": "home"
+    }
+  ],
+  "evisa": [
+    {
+      "name": "Australia",
+      "note": "90 days on each visit in 12-month period if granted. May enter using SmartGate on arrival in Australia "
+    },
+    {
+      "name": "Canada",
+      "note": "6 months for overland or cruise ship arrivals. eTA required for air arrivals."
+    },
+    {
+      "name": "Ivory Coast",
+      "note": "Must be arriving at Port Bouet Airport and hold an International Certificate of Vaccination. The E Visa can be acquired on http://www.snedai.com/"
+    },
+    {
+      "name": "Gabon",
+      "note": "Passengers arriving at Libreville International Airport do not need a visa if they have filled out the online Electronic Authorization Form. Approval process takes up to 72 hours following submission of the visa waiver request."
+    },
+    {
+      "name": "India",
+      "note": "30 days"
+    },
+    {
+      "name": "Myanmar",
+      "note": "28 days. eVisa holders must arrive via Yangon, Nay Pyi Taw or Mandalay airports. Starting from 1 December 2016, Singaporean Citizens will be able to visit Myanmar without a visa for up to 30 Days."
+    },
+    {
+      "name": "São Tomé and Príncipe",
+      "note": "Visa is obtained online at http://www.smf.st/virtualvisa/."
     }
   ],
   "on-arrival": [
@@ -573,6 +611,10 @@
     {
       "name": "Azerbaijan",
       "note": "30 days; available at airports"
+    },
+    {
+      "name": "Bahrain",
+      "note": "14 days. May also be obtained online in the form of an E-Visa"
     },
     {
       "name": "Bangladesh",
@@ -588,6 +630,10 @@
     {
       "name": "Djibouti",
       "note": "Not available at all entry points."
+    },
+    {
+      "name": "Dominican Republic",
+      "note": "30 days (USD10 Tourist Card must be purchased upon arrival)"
     },
     {
       "name": "Egypt",
@@ -610,6 +656,14 @@
       "note": "3 months"
     },
     {
+      "name": "Lebanon",
+      "note": "1 month extendible for 2 additional months; granted free of charge at Beirut International Airport or any other port of entry if there is no Israeli visa or stamp in the passport, and in possession of phone number & address to be visited in Lebanon, and a non-refundable onward ticket."
+    },
+    {
+      "name": "Madagascar",
+      "note": "30 days free of charge; extension possible for a fee."
+    },
+    {
       "name": "Malawi"
     },
     {
@@ -621,7 +675,8 @@
       "note": "90 days"
     },
     {
-      "name": "Mauritania"
+      "name": "Mauritania",
+      "note": "Available at Nouakchott–Oumtounsy International Airport."
     },
     {
       "name": "Mozambique",
@@ -652,8 +707,16 @@
       "note": "6 weeks"
     },
     {
+      "name": "Samoa",
+      "note": "60 days"
+    },
+    {
       "name": "Seychelles",
       "note": "1 month, issued to all travellers free of charge."
+    },
+    {
+      "name": "Solomon Islands",
+      "note": "3 months"
     },
     {
       "name": "Somalia",
@@ -665,7 +728,7 @@
     },
     {
       "name": "Tajikistan",
-      "note": "45 days at Dushanbe International Airport. Visa also available online for those arriving via Dushanbe or Khujand airports."
+      "note": "45 days at Dushanbe International Airport. Visa also available online. E-visa holders can enter through all border points."
     },
     {
       "name": "East Timor",
@@ -688,76 +751,6 @@
       "note": "Visa on Arrival is issued free of charge for stays not exceeding 30 Days, extension is possible for a fee."
     }
   ],
-  "unknown": [
-    {
-      "name": "Australia",
-      "note": "90 days on each visit in 12-month period if granted. May enter using SmartGate on arrival in Australia ",
-      "visa": "Electronic Travel Authority"
-    },
-    {
-      "name": "Bahrain",
-      "note": "14 days. May also be obtained online in the form of an E-Visa",
-      "visa": "Visa on arrival or E-Visa"
-    },
-    {
-      "name": "Canada",
-      "note": "eTA to be introduced on 29 September 2016.",
-      "visa": "Electronic Travel Authorization required"
-    },
-    {
-      "name": "Ivory Coast",
-      "note": "Must be arriving at Port Bouet Airport and hold an International Certificate of Vaccination. The E Visa can be acquired on http://www.snedai.com/",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Dominican Republic",
-      "note": "30 days (USD10 Tourist Card must be purchased upon arrival)",
-      "visa": "Visa on arrival !Tourist card on arrival"
-    },
-    {
-      "name": "Gabon",
-      "note": "Passengers arriving at Libreville International Airport do not need a visa if they have filled out the online Electronic Authorization Form. Approval process takes up to 72 hours following submission of the visa waiver request.",
-      "visa": "eVisa"
-    },
-    {
-      "name": "India",
-      "note": "30 days",
-      "visa": "e-Tourist Visa"
-    },
-    {
-      "name": "Lebanon",
-      "note": "1 month extendible for 2 additional months; granted free of charge at Beirut International Airport or any other port of entry if there is no Israeli visa or stamp in the passport, and in possession of phone number & address to be visited in Lebanon, and a non-refundable onward ticket.",
-      "visa": "Visa on arrival !Visa on arrival"
-    },
-    {
-      "name": "Madagascar",
-      "note": "30 days free of charge; extension possible for a fee.",
-      "visa": "Visa on arrival !Visa on arrival"
-    },
-    {
-      "name": "Myanmar",
-      "note": "28 days. eVisa holders must arrive via Yangon, Nay Pyi Taw or Mandalay airports. Starting from 1 December 2016, Singaporean Citizens will be able to visit Myanmar without a visa for up to 30 Days.",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Samoa",
-      "note": "60 days",
-      "visa": "Visa on arrival !Entry Permit on arrival"
-    },
-    {
-      "name": "São Tomé and Príncipe",
-      "note": "Visa is obtained online at http://www.smf.st/virtualvisa/.",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Solomon Islands",
-      "note": "3 months",
-      "visa": "Visa on arrival !Visitor's permit on arrival"
-    },
-    {
-      "name": "United States",
-      "note": "90 days on arrival from overseas; ESTA (valid for 2 years when issued) required if arriving by air or cruise ship.",
-      "visa": "Visa not required !Visa Waiver Program"
-    }
-  ]
+  "refused": [],
+  "unknown": []
 }

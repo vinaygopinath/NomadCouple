@@ -16,17 +16,10 @@
       "name": "Angola"
     },
     {
-      "name": "Antigua and Barbuda"
-    },
-    {
       "name": "Argentina"
     },
     {
       "name": "Armenia"
-    },
-    {
-      "name": "Australia",
-      "note": "May apply online."
     },
     {
       "name": "Austria"
@@ -159,12 +152,6 @@
       "name": "France"
     },
     {
-      "name": "Gabon"
-    },
-    {
-      "name": "Georgia (country)"
-    },
-    {
       "name": "Germany"
     },
     {
@@ -189,9 +176,6 @@
       "name": "Honduras"
     },
     {
-      "name": "Hong Kong"
-    },
-    {
       "name": "Hungary"
     },
     {
@@ -204,8 +188,7 @@
       "name": "Indonesia"
     },
     {
-      "name": "Iraq",
-      "note": "Visa on arrival for 15 days at Erbil and Sulaymaniyah airports."
+      "name": "Iraq"
     },
     {
       "name": "Republic of Ireland"
@@ -230,6 +213,9 @@
     },
     {
       "name": "Kiribati"
+    },
+    {
+      "name": "South Korea"
     },
     {
       "name": "Kuwait"
@@ -415,9 +401,6 @@
       "name": "Syria"
     },
     {
-      "name": "Taiwan"
-    },
-    {
       "name": "Tajikistan"
     },
     {
@@ -471,12 +454,6 @@
     },
     {
       "name": "Yemen"
-    },
-    {
-      "name": "Zambia"
-    },
-    {
-      "name": "Zimbabwe"
     }
   ],
   "not-required": [
@@ -515,6 +492,40 @@
     {
       "name": "Singapore",
       "note": "30 days"
+    },
+    {
+      "name": "North Korea",
+      "note": "home"
+    }
+  ],
+  "evisa": [
+    {
+      "name": "Antigua and Barbuda"
+    },
+    {
+      "name": "Australia",
+      "note": "May apply online."
+    },
+    {
+      "name": "Gabon",
+      "note": "Electronic visa holders must arrive via Libreville International Airport."
+    },
+    {
+      "name": "Georgia (country)"
+    },
+    {
+      "name": "Myanmar",
+      "note": "28 days. eVisa holders must arrive via Yangon, Nay Pyi Taw or Mandalay airports."
+    },
+    {
+      "name": "Sri Lanka",
+      "note": "30 days"
+    },
+    {
+      "name": "Zambia"
+    },
+    {
+      "name": "Zimbabwe"
     }
   ],
   "on-arrival": [
@@ -544,7 +555,7 @@
     },
     {
       "name": "Iran",
-      "note": "15 days"
+      "note": "30 days"
     },
     {
       "name": "Jordan",
@@ -566,7 +577,8 @@
       "note": "30 days"
     },
     {
-      "name": "Mauritania"
+      "name": "Mauritania",
+      "note": "Available at Nouakchott–Oumtounsy International Airport."
     },
     {
       "name": "Mozambique",
@@ -582,6 +594,14 @@
     {
       "name": "Palau",
       "note": "30 days"
+    },
+    {
+      "name": "Samoa",
+      "note": "60 days"
+    },
+    {
+      "name": "Seychelles",
+      "note": "3 months"
     },
     {
       "name": "Somalia",
@@ -606,30 +626,6 @@
       "name": "Uganda"
     }
   ],
-  "unknown": [
-    {
-      "name": "South Korea",
-      "visa": "Visa required."
-    },
-    {
-      "name": "Myanmar",
-      "note": "28 days. eVisa holders must arrive via Yangon, Nay Pyi Taw or Mandalay airports.",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Samoa",
-      "note": "60 days",
-      "visa": "Visa on arrival !Entry Permit on arrival"
-    },
-    {
-      "name": "Seychelles",
-      "note": "1 month",
-      "visa": "Visa on arrival !Visitor's Permit on arrival"
-    },
-    {
-      "name": "Sri Lanka",
-      "note": "30 days",
-      "visa": "Electronic Travel Authorization"
-    }
-  ]
+  "refused": [],
+  "unknown": []
 }

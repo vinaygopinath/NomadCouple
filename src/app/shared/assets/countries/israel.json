@@ -44,6 +44,9 @@
       "name": "Ivory Coast"
     },
     {
+      "name": "Cuba"
+    },
+    {
       "name": "Egypt",
       "note": "Visa not required for visits to Sinai resorts for up to 14 days if entering only through Taba border crossing or Sharm-ash-Sheikh airport."
     },
@@ -80,6 +83,10 @@
     },
     {
       "name": "Liberia"
+    },
+    {
+      "name": "Malaysia",
+      "note": "Admission is allowed if holding a clearance permit from the Ministry of Home Affairs prior to arrival in Malaysia."
     },
     {
       "name": "Mali"
@@ -508,6 +515,35 @@
     },
     {
       "name": "Vatican City"
+    },
+    {
+      "name": "Israel",
+      "note": "home"
+    }
+  ],
+  "evisa": [
+    {
+      "name": "Antigua and Barbuda"
+    },
+    {
+      "name": "Gabon",
+      "note": "Electronic visa holders must arrive via Libreville International Airport."
+    },
+    {
+      "name": "India",
+      "note": "30 days"
+    },
+    {
+      "name": "Kenya",
+      "note": "3 months; also visa on arrival until 1 September 2015"
+    },
+    {
+      "name": "Myanmar",
+      "note": "28 days. eVisa holders must arrive via Yangon, Nay Pyi Taw or Mandalay airports."
+    },
+    {
+      "name": "Sri Lanka",
+      "note": "30 days"
     }
   ],
   "on-arrival": [
@@ -568,7 +604,8 @@
       "name": "Marshall Islands"
     },
     {
-      "name": "Mauritania"
+      "name": "Mauritania",
+      "note": "Available at Nouakchott–Oumtounsy International Airport."
     },
     {
       "name": "Mozambique",
@@ -587,12 +624,24 @@
       "note": "30 days"
     },
     {
+      "name": "Samoa",
+      "note": "60 days"
+    },
+    {
       "name": "Senegal",
       "note": "3 months"
     },
     {
+      "name": "Seychelles",
+      "note": "1 month"
+    },
+    {
+      "name": "Solomon Islands",
+      "note": "3 months"
+    },
+    {
       "name": "Tajikistan",
-      "note": "45 days"
+      "note": "45 days. Visa also available online. E-visa holders can enter through all border points."
     },
     {
       "name": "Tanzania"
@@ -626,133 +675,66 @@
       "note": "3 months; also eligible for a universal visa allowing access to Zambia."
     }
   ],
-  "unknown": [
+  "refused": [
     {
       "name": "Algeria",
-      "note": "Part of the Arab League boycott of Israel",
-      "visa": "Admission refused"
-    },
-    {
-      "name": "Antigua and Barbuda",
-      "visa": "Electronic Entry Visa"
+      "note": "Part of the Arab League boycott of Israel"
     },
     {
       "name": "Bangladesh",
-      "note": "Part of the Arab League boycott of Israel",
-      "visa": "Admission refused"
+      "note": "Part of the Arab League boycott of Israel"
     },
     {
       "name": "Brunei",
-      "note": "Part of the Arab League boycott of Israel",
-      "visa": "Admission refused"
+      "note": "Part of the Arab League boycott of Israel"
     },
     {
-      "name": "Cuba",
-      "visa": "Visa required !Tourist Card required"
-    },
-    {
-      "name": "Gabon",
-      "note": "Electronic visa holders must arrive via Libreville International Airport.",
-      "visa": "e-Visa"
-    },
-    {
-      "name": "India",
-      "note": "30 days",
-      "visa": "e-Tourist Visa"
-    },
-    {
-      "name": "Iran",
-      "visa": "Admission refused"
+      "name": "Iran"
     },
     {
       "name": "Iraq",
-      "note": "Except for Iraqi Kurdistan, part of the Arab League boycott of Israel",
-      "visa": "Admission refused"
-    },
-    {
-      "name": "Kenya",
-      "note": "3 months; also visa on arrival until 1 September 2015",
-      "visa": "eVisa"
+      "note": "Except for Iraqi Kurdistan, part of the Arab League boycott of Israel"
     },
     {
       "name": "Kuwait",
-      "note": "Part of the Arab League boycott of Israel",
-      "visa": "Admission refused"
+      "note": "Part of the Arab League boycott of Israel"
     },
     {
       "name": "Lebanon",
-      "note": "Part of the Arab League boycott of Israel",
-      "visa": "Admission refused"
+      "note": "Part of the Arab League boycott of Israel"
     },
     {
       "name": "Libya",
-      "note": "Part of the Arab League boycott of Israel",
-      "visa": "Admission refused"
-    },
-    {
-      "name": "Malaysia",
-      "note": "Admission is allowed if holding a clearance permit from the Ministry of Home Affairs prior to arrival in Malaysia.",
-      "visa": "Admission partially refused / partially allowed"
-    },
-    {
-      "name": "Myanmar",
-      "note": "28 days. eVisa holders must arrive via Yangon, Nay Pyi Taw or Mandalay airports.",
-      "visa": "eVisa"
+      "note": "Part of the Arab League boycott of Israel"
     },
     {
       "name": "Oman",
-      "note": "Part of the Arab League boycott of Israel",
-      "visa": "Admission refused"
+      "note": "Part of the Arab League boycott of Israel"
     },
     {
       "name": "Pakistan",
-      "note": "Part of the Arab League boycott of Israel",
-      "visa": "Admission refused"
-    },
-    {
-      "name": "Samoa",
-      "note": "60 days",
-      "visa": "Visa on arrival !Entry Permit on arrival"
+      "note": "Part of the Arab League boycott of Israel"
     },
     {
       "name": "Saudi Arabia",
-      "note": "Part of the Arab League boycott of Israel",
-      "visa": "Admission refused"
-    },
-    {
-      "name": "Seychelles",
-      "note": "1 month",
-      "visa": "Visa on arrival !Visitor's Permit on arrival"
-    },
-    {
-      "name": "Solomon Islands",
-      "note": "3 months",
-      "visa": "Visa on arrival !Visitor's permit on arrival"
-    },
-    {
-      "name": "Sri Lanka",
-      "note": "30 days",
-      "visa": "Electronic Travel Authorization"
+      "note": "Part of the Arab League boycott of Israel"
     },
     {
       "name": "Sudan",
-      "note": "Part of the Arab League boycott of Israel",
-      "visa": "Admission refused"
+      "note": "Part of the Arab League boycott of Israel"
     },
     {
       "name": "Syria",
-      "note": "Part of the Arab League boycott of Israel",
-      "visa": "Admission refused"
+      "note": "Part of the Arab League boycott of Israel"
     },
     {
       "name": "United Arab Emirates",
-      "note": "Part of the Arab League boycott of Israel, Admission is allowed if holding a clearance permit from the Ministry of Home Affairs. Transit through an airport is permitted",
-      "visa": "Admission refused"
+      "note": "Part of the Arab League boycott of Israel, Admission is allowed if holding a clearance permit from the Ministry of Home Affairs. Transit through an airport is permitted"
     },
     {
       "name": "Yemen",
-      "note": "Part of the Arab League boycott of Israel",
-      "visa": "Admission refused"
+      "note": "Part of the Arab League boycott of Israel"
     }
-  ]
+  ],
+  "unknown": []
 }

@@ -42,6 +42,9 @@
       "name": "Democratic Republic of the Congo"
     },
     {
+      "name": "Cuba"
+    },
+    {
       "name": "Equatorial Guinea"
     },
     {
@@ -77,7 +80,8 @@
       "name": "Mali"
     },
     {
-      "name": "Nauru"
+      "name": "Nauru",
+      "note": "Criminal record and medical fitness certificates are not required for Canadian citizens."
     },
     {
       "name": "Niger"
@@ -109,7 +113,8 @@
       "name": "Syria"
     },
     {
-      "name": "Turkmenistan"
+      "name": "Turkmenistan",
+      "note": "Diplomatic passports can obtain a free visa on arrival."
     },
     {
       "name": "Uzbekistan"
@@ -134,6 +139,10 @@
     {
       "name": "Antigua and Barbuda",
       "note": "1 month"
+    },
+    {
+      "name": "Argentina",
+      "note": "Visa is not required for visits up to 90 days but a reciprocity fee USD $92 for multiple entries valid for the duration of the passport must be paid online in advance."
     },
     {
       "name": "Austria",
@@ -181,6 +190,10 @@
     {
       "name": "Chile",
       "note": "90 days"
+    },
+    {
+      "name": "Colombia",
+      "note": "Visa free for up to 90 days but a reciprocity fee of USD $50 must be paid on arrival; tourists whose final destination is San Andrés, Providencia and Santa Catalina are excluded from the fee."
     },
     {
       "name": "Costa Rica",
@@ -252,7 +265,7 @@
     },
     {
       "name": "Grenada",
-      "note": "3 months"
+      "note": "3 months; may enter on an ID card if not departing from the United States."
     },
     {
       "name": "Guatemala",
@@ -517,6 +530,48 @@
     {
       "name": "Venezuela",
       "note": "90 days"
+    },
+    {
+      "name": "Canada",
+      "note": "home"
+    }
+  ],
+  "evisa": [
+    {
+      "name": "Australia",
+      "note": "90 days on each visit in 12-month period"
+    },
+    {
+      "name": "Ivory Coast",
+      "note": "3 months; eVisa holders must arrive via Port Bouet Airport."
+    },
+    {
+      "name": "Gabon",
+      "note": "Electronic visa holders must arrive via Libreville International Airport."
+    },
+    {
+      "name": "India",
+      "note": "30 days"
+    },
+    {
+      "name": "Kenya",
+      "note": "3 months; also visa on arrival until 1 September 2015"
+    },
+    {
+      "name": "Myanmar",
+      "note": "28 days. eVisa holders must arrive via Yangon, Nay Pyi Taw or Mandalay airports."
+    },
+    {
+      "name": "Rwanda",
+      "note": "90 days"
+    },
+    {
+      "name": "Sri Lanka",
+      "note": "30 days"
+    },
+    {
+      "name": "Turkey",
+      "note": "3 months Cruise ship passengers cruising in and out of a Turkish port within a single day do not require a tourist visa."
     }
   ],
   "on-arrival": [
@@ -596,7 +651,8 @@
       "note": "90 days"
     },
     {
-      "name": "Mauritania"
+      "name": "Mauritania",
+      "note": "Available at Nouakchott–Oumtounsy International Airport."
     },
     {
       "name": "Mozambique",
@@ -626,12 +682,28 @@
       "note": "1 month"
     },
     {
+      "name": "Samoa",
+      "note": "60 days"
+    },
+    {
+      "name": "Seychelles",
+      "note": "1 month"
+    },
+    {
+      "name": "Solomon Islands",
+      "note": "3 months"
+    },
+    {
       "name": "Somalia",
       "note": "30 days, provided an invitation letter issued by the sponsor has been submitted\nto the Airport Immigration Department at least 2 days before arrival."
     },
     {
+      "name": "Suriname",
+      "note": "90 days"
+    },
+    {
       "name": "Tajikistan",
-      "note": "45 days at Dushanbe International Airport. Visa also available online for those arriving via Dushanbe or Khujand airports."
+      "note": "45 days at Dushanbe International Airport. Visa also available online. E-visa holders can enter through all border points."
     },
     {
       "name": "Tanzania"
@@ -668,85 +740,6 @@
       "note": "3 months; also eligible for a universal visa allowing access to Zambia."
     }
   ],
-  "unknown": [
-    {
-      "name": "Argentina",
-      "note": "Visa is not required for visits up to 90 days but a reciprocity fee USD $92 for multiple entries valid for the duration of the passport must be paid online in advance.",
-      "visa": "Online reciprocity fee"
-    },
-    {
-      "name": "Australia",
-      "note": "90 days on each visit in 12-month period",
-      "visa": "Electronic Travel Authority"
-    },
-    {
-      "name": "Colombia",
-      "note": "Visa free for up to 90 days but a reciprocity fee of USD $50 must be paid on arrival; tourists whose final destination is San Andrés, Providencia and Santa Catalina are excluded from the fee.",
-      "visa": "Reciprocity fee"
-    },
-    {
-      "name": "Ivory Coast",
-      "note": "3 months; eVisa holders must arrive via Port Bouet Airport.",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Cuba",
-      "visa": "Visa required !Tourist Card required"
-    },
-    {
-      "name": "Gabon",
-      "note": "Electronic visa holders must arrive via Libreville International Airport.",
-      "visa": "e-Visa"
-    },
-    {
-      "name": "India",
-      "note": "30 days",
-      "visa": "e-Tourist Visa"
-    },
-    {
-      "name": "Kenya",
-      "note": "3 months; also visa on arrival until 1 September 2015",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Myanmar",
-      "note": "28 days. eVisa holders must arrive via Yangon, Nay Pyi Taw or Mandalay airports.",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Rwanda",
-      "note": "90 days",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Samoa",
-      "note": "60 days",
-      "visa": "Visa on arrival !Entry Permit on arrival"
-    },
-    {
-      "name": "Seychelles",
-      "note": "1 month",
-      "visa": "Visa on arrival !Visitor's Permit on arrival"
-    },
-    {
-      "name": "Solomon Islands",
-      "note": "3 months",
-      "visa": "Visa on arrival !Visitor's permit on arrival"
-    },
-    {
-      "name": "Sri Lanka",
-      "note": "30 days",
-      "visa": "Electronic Travel Authorization"
-    },
-    {
-      "name": "Suriname",
-      "note": "90 days",
-      "visa": "Visa on arrival !Tourist Card on arrival"
-    },
-    {
-      "name": "Turkey",
-      "note": "3 months Cruise ship passengers cruising in and out of a Turkish port within a single day do not require a tourist visa.",
-      "visa": "eVisa"
-    }
-  ]
+  "refused": [],
+  "unknown": []
 }

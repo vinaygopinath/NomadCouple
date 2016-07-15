@@ -18,10 +18,6 @@
       "name": "Angola"
     },
     {
-      "name": "Antigua and Barbuda",
-      "note": "Visa waiver for passengers with valid visa issued by Canada, USA, UK or Schengen Member State. Visa fee: USD-100, for max. of 30 days."
-    },
-    {
       "name": "Argentina"
     },
     {
@@ -115,6 +111,10 @@
       "name": "Croatia"
     },
     {
+      "name": "Cuba",
+      "note": "No visa required, tourist card for maximum 30 days on arrival/prior to arrival"
+    },
+    {
       "name": "Cyprus"
     },
     {
@@ -153,6 +153,9 @@
     },
     {
       "name": "France"
+    },
+    {
+      "name": "The Gambia"
     },
     {
       "name": "Germany"
@@ -509,6 +512,46 @@
     {
       "name": "Trinidad and Tobago",
       "note": "90 days"
+    },
+    {
+      "name": "Dominican Republic",
+      "note": "home"
+    }
+  ],
+  "evisa": [
+    {
+      "name": "Antigua and Barbuda",
+      "note": "Visa waiver for passengers with valid visa issued by Canada, USA, UK or Schengen Member State. Visa fee: USD-100, for max. of 30 days."
+    },
+    {
+      "name": "Australia",
+      "note": "May apply online."
+    },
+    {
+      "name": "Bahrain"
+    },
+    {
+      "name": "Gabon",
+      "note": "Electronic visa holders must arrive via Libreville International Airport."
+    },
+    {
+      "name": "India",
+      "note": "30 days"
+    },
+    {
+      "name": "Kenya",
+      "note": "3 months"
+    },
+    {
+      "name": "Sri Lanka",
+      "note": "30 days"
+    },
+    {
+      "name": "Turkey",
+      "note": "e-Visa on arrival at e-Visa kiosks available as well. 30 days"
+    },
+    {
+      "name": "Zambia"
     }
   ],
   "on-arrival": [
@@ -572,7 +615,8 @@
       "note": "30 days"
     },
     {
-      "name": "Mauritania"
+      "name": "Mauritania",
+      "note": "Available at Nouakchott–Oumtounsy International Airport."
     },
     {
       "name": "Mauritius",
@@ -595,11 +639,26 @@
       "note": "30 days"
     },
     {
+      "name": "Samoa",
+      "note": "60 days"
+    },
+    {
       "name": "Senegal"
+    },
+    {
+      "name": "Seychelles",
+      "note": "3 months"
+    },
+    {
+      "name": "Solomon Islands",
+      "note": "3 months"
     },
     {
       "name": "Somalia",
       "note": "30 days, must hold an invitation letter issued at least 2 days before arrival."
+    },
+    {
+      "name": "Suriname"
     },
     {
       "name": "Tanzania"
@@ -624,72 +683,6 @@
       "name": "Zimbabwe"
     }
   ],
-  "unknown": [
-    {
-      "name": "Australia",
-      "note": "May apply online.",
-      "visa": "Online Visitor e600 visa"
-    },
-    {
-      "name": "Bahrain",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Cuba",
-      "note": "No visa required, tourist card for maximum 30 days on arrival/prior to arrival",
-      "visa": "Visa required !Tourist Card required"
-    },
-    {
-      "name": "Gabon",
-      "note": "Electronic visa holders must arrive via Libreville International Airport.",
-      "visa": "eVisa"
-    },
-    {
-      "name": "The Gambia",
-      "visa": "Entry clearance required"
-    },
-    {
-      "name": "India",
-      "note": "30 days",
-      "visa": "e-Tourist Visa"
-    },
-    {
-      "name": "Kenya",
-      "note": "3 months",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Samoa",
-      "note": "60 days",
-      "visa": "Visa on arrival !Entry Permit on arrival"
-    },
-    {
-      "name": "Seychelles",
-      "note": "3 months",
-      "visa": "Visa on arrival !Visitor's Permit on arrival"
-    },
-    {
-      "name": "Solomon Islands",
-      "note": "3 months",
-      "visa": "Visa on arrival !Visitor's permit on arrival"
-    },
-    {
-      "name": "Sri Lanka",
-      "note": "30 days",
-      "visa": "Electronic Travel Authorization"
-    },
-    {
-      "name": "Suriname",
-      "visa": "Tourist Card on arrival"
-    },
-    {
-      "name": "Turkey",
-      "note": "e-Visa on arrival at e-Visa kiosks available as well. 30 days",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Zambia",
-      "visa": "eVisa"
-    }
-  ]
+  "refused": [],
+  "unknown": []
 }

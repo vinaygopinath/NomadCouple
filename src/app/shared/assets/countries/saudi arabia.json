@@ -375,6 +375,10 @@
       "note": "90 days. Temporarily exempt from 15 May to 1 November 2016"
     },
     {
+      "name": "Bahrain",
+      "note": "Freedom of movement."
+    },
+    {
       "name": "Botswana",
       "note": "90 days"
     },
@@ -427,6 +431,10 @@
       "note": "30 days"
     },
     {
+      "name": "Kuwait",
+      "note": "Freedom of movement."
+    },
+    {
       "name": "Kyrgyzstan",
       "note": "60 days"
     },
@@ -459,12 +467,20 @@
       "note": "90 days"
     },
     {
+      "name": "Oman",
+      "note": "Freedom of movement."
+    },
+    {
       "name": "Panama",
       "note": "180 days"
     },
     {
       "name": "Philippines",
       "note": "30 days"
+    },
+    {
+      "name": "Qatar",
+      "note": "Freedom of movement."
     },
     {
       "name": "Saint Kitts and Nevis",
@@ -479,8 +495,41 @@
       "note": "90 days"
     },
     {
+      "name": "United Arab Emirates",
+      "note": "Freedom of movement."
+    },
+    {
       "name": "Vanuatu",
       "note": "30 days"
+    },
+    {
+      "name": "Saudi Arabia",
+      "note": "home"
+    }
+  ],
+  "evisa": [
+    {
+      "name": "Antigua and Barbuda"
+    },
+    {
+      "name": "Gabon",
+      "note": "Electronic visa holders must arrive via Libreville International Airport."
+    },
+    {
+      "name": "Kenya",
+      "note": "3 months; also visa on arrival until 1 September 2015"
+    },
+    {
+      "name": "Myanmar",
+      "note": "28 days. eVisa holders must arrive via Yangon International Airport."
+    },
+    {
+      "name": "Sri Lanka",
+      "note": "30 days"
+    },
+    {
+      "name": "Turkey",
+      "note": "3 months"
     }
   ],
   "on-arrival": [
@@ -541,7 +590,8 @@
       "note": "30 days"
     },
     {
-      "name": "Mauritania"
+      "name": "Mauritania",
+      "note": "Available at Nouakchott–Oumtounsy International Airport."
     },
     {
       "name": "Mozambique",
@@ -556,6 +606,14 @@
       "note": "30 days"
     },
     {
+      "name": "Samoa",
+      "note": "60 days"
+    },
+    {
+      "name": "Seychelles",
+      "note": "1 month"
+    },
+    {
       "name": "Somalia",
       "note": "30 days, provided an invitation letter issued by the sponsor has been submitted\nto the Airport Immigration Department at least 2 days before arrival."
     },
@@ -565,7 +623,7 @@
     },
     {
       "name": "Tajikistan",
-      "note": "45 days at Dushanbe International Airport. Visa also available online for those arriving via Dushanbe or Khujand airports."
+      "note": "45 days at Dushanbe International Airport. Visa also available online. E-visa holders can enter through all border points."
     },
     {
       "name": "Tanzania"
@@ -602,70 +660,6 @@
       "note": "90 days"
     }
   ],
-  "unknown": [
-    {
-      "name": "Antigua and Barbuda",
-      "visa": "Electronic Entry Visa"
-    },
-    {
-      "name": "Bahrain",
-      "note": "Freedom of movement.",
-      "visa": "GCC !Visa not required"
-    },
-    {
-      "name": "Gabon",
-      "note": "Electronic visa holders must arrive via Libreville International Airport.",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Kenya",
-      "note": "3 months; also visa on arrival until 1 September 2015",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Kuwait",
-      "note": "Freedom of movement.",
-      "visa": "GCC !Visa not required"
-    },
-    {
-      "name": "Myanmar",
-      "note": "28 days. eVisa holders must arrive via Yangon International Airport.",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Oman",
-      "note": "Freedom of movement.",
-      "visa": "GCC !Visa not required"
-    },
-    {
-      "name": "Qatar",
-      "note": "Freedom of movement.",
-      "visa": "GCC !Visa not required"
-    },
-    {
-      "name": "Samoa",
-      "note": "60 days",
-      "visa": "Visa on arrival !Entry Permit on arrival"
-    },
-    {
-      "name": "Seychelles",
-      "note": "1 month",
-      "visa": "Visa on arrival !Visitor's Permit on arrival"
-    },
-    {
-      "name": "Sri Lanka",
-      "note": "30 days",
-      "visa": "Electronic Travel Authorization"
-    },
-    {
-      "name": "Turkey",
-      "note": "3 months",
-      "visa": "eVisa"
-    },
-    {
-      "name": "United Arab Emirates",
-      "note": "Freedom of movement.",
-      "visa": "GCC !Visa not required"
-    }
-  ]
+  "refused": [],
+  "unknown": []
 }

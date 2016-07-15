@@ -43,16 +43,27 @@
       "name": "Ivory Coast"
     },
     {
+      "name": "Cuba"
+    },
+    {
       "name": "Equatorial Guinea"
     },
     {
       "name": "Eritrea"
     },
     {
+      "name": "The Gambia",
+      "note": "Visa not required for 90 days but an entry clearance from the Gambian Immigration prior to travel must be obtained."
+    },
+    {
       "name": "Ghana"
     },
     {
       "name": "Guinea"
+    },
+    {
+      "name": "North Korea",
+      "note": "In addition to a visa, special authorization from the South Korean government is also required to visit North Korea."
     },
     {
       "name": "Mali"
@@ -225,7 +236,7 @@
     },
     {
       "name": "Georgia (country)",
-      "note": "360 days"
+      "note": "1 year"
     },
     {
       "name": "Germany",
@@ -497,6 +508,10 @@
       "note": "6 months"
     },
     {
+      "name": "United States",
+      "note": "90 days on arrival from overseas; ESTA (valid for 2 years when issued) required if arriving by air or cruise ship."
+    },
+    {
       "name": "Uruguay",
       "note": "30 days"
     },
@@ -514,6 +529,40 @@
     {
       "name": "Vietnam",
       "note": "15 days"
+    },
+    {
+      "name": "South Korea",
+      "note": "home"
+    }
+  ],
+  "evisa": [
+    {
+      "name": "Australia",
+      "note": "90 days on each visit in 12-month period if granted"
+    },
+    {
+      "name": "Canada",
+      "note": "6 months on arrival; eTA required if arriving by air."
+    },
+    {
+      "name": "Gabon",
+      "note": "Electronic visa holders must arrive via Libreville International Airport."
+    },
+    {
+      "name": "India",
+      "note": "30 days"
+    },
+    {
+      "name": "Kenya",
+      "note": "3 months"
+    },
+    {
+      "name": "Myanmar",
+      "note": "28 days. eVisa holders must arrive via Yangon, Nay Pyi Taw or Mandalay airports."
+    },
+    {
+      "name": "Sri Lanka",
+      "note": "30 days"
     }
   ],
   "on-arrival": [
@@ -595,7 +644,8 @@
       "note": "90 days"
     },
     {
-      "name": "Mauritania"
+      "name": "Mauritania",
+      "note": "Available at Nouakchott–Oumtounsy International Airport."
     },
     {
       "name": "Mozambique",
@@ -622,8 +672,20 @@
       "note": "1 month"
     },
     {
+      "name": "Samoa",
+      "note": "60 days"
+    },
+    {
+      "name": "Seychelles",
+      "note": "3 months"
+    },
+    {
+      "name": "Solomon Islands",
+      "note": "3 months"
+    },
+    {
       "name": "Tajikistan",
-      "note": "45 days at Dushanbe International Airport. Visa also available online for those arriving via Dushanbe or Khujand airports."
+      "note": "45 days at Dushanbe International Airport. Visa also available online. E-visa holders can enter through all border points."
     },
     {
       "name": "Tanzania"
@@ -661,105 +723,31 @@
       "note": "3 months"
     }
   ],
-  "unknown": [
+  "refused": [
     {
       "name": "Afghanistan",
-      "note": "As of 2014, due to safety concerns, South Korean government bans its citizens from visiting Afghanistan.",
-      "visa": "Travel banned"
-    },
-    {
-      "name": "Australia",
-      "note": "90 days on each visit in 12-month period if granted",
-      "visa": "Electronic Travel Authority"
-    },
-    {
-      "name": "Canada",
-      "note": "6 months on arrival; eTA required if arriving by air.",
-      "visa": "eTA"
-    },
-    {
-      "name": "Cuba",
-      "visa": "Visa required !Tourist Card required"
-    },
-    {
-      "name": "Gabon",
-      "note": "Electronic visa holders must arrive via Libreville International Airport.",
-      "visa": "e-Visa"
-    },
-    {
-      "name": "The Gambia",
-      "note": "Visa not required for 90 days but an entry clearance from the Gambian Immigration prior to travel must be obtained.",
-      "visa": "Entry Clearance Required"
-    },
-    {
-      "name": "India",
-      "note": "30 days",
-      "visa": "e-Tourist Visa"
+      "note": "As of 2014, due to safety concerns, South Korean government bans its citizens from visiting Afghanistan."
     },
     {
       "name": "Iraq",
-      "note": "As of 2014, due to safety concerns, South Korean government bans its citizens from visiting Iraq.",
-      "visa": "Travel banned"
-    },
-    {
-      "name": "Kenya",
-      "note": "3 months; also visa on arrival until 1 September 2015",
-      "visa": "eVisa"
-    },
-    {
-      "name": "North Korea",
-      "note": "In addition to a visa, special authorization from the South Korean government is also required to visit North Korea.",
-      "visa": "Special authorization required"
+      "note": "As of 2014, due to safety concerns, South Korean government bans its citizens from visiting Iraq."
     },
     {
       "name": "Libya",
-      "note": "As of 2014, due to safety concerns, South Korean government bans its citizens from visiting Libya.",
-      "visa": "Travel banned"
-    },
-    {
-      "name": "Myanmar",
-      "note": "28 days. eVisa holders must arrive via Yangon, Nay Pyi Taw or Mandalay airports.",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Samoa",
-      "note": "60 days",
-      "visa": "Visa on arrival !Entry Permit on arrival"
-    },
-    {
-      "name": "Seychelles",
-      "note": "1 month",
-      "visa": "Visa on arrival !Visitor's Permit on arrival"
-    },
-    {
-      "name": "Solomon Islands",
-      "note": "3 months",
-      "visa": "Visa on arrival !Visitor's permit on arrival"
+      "note": "As of 2014, due to safety concerns, South Korean government bans its citizens from visiting Libya."
     },
     {
       "name": "Somalia",
-      "note": "As of 2014, due to safety concerns, South Korean government bans its citizens from visiting Somalia.",
-      "visa": "Travel banned"
-    },
-    {
-      "name": "Sri Lanka",
-      "note": "30 days",
-      "visa": "Electronic Travel Authorization"
+      "note": "As of 2014, due to safety concerns, South Korean government bans its citizens from visiting Somalia."
     },
     {
       "name": "Syria",
-      "note": "As of 2014, due to safety concerns, South Korean government bans its citizens from visiting Syria.",
-      "visa": "Travel banned"
-    },
-    {
-      "name": "United States",
-      "note": "90 days on arrival from overseas; ESTA (valid for 2 years when issued) required if arriving by air or cruise ship.",
-      "visa": "Visa not required !Visa Waiver Program"
+      "note": "As of 2014, due to safety concerns, South Korean government bans its citizens from visiting Syria."
     },
     {
       "name": "Yemen",
-      "note": "As of 2014, due to safety concerns, South Korean government bans its citizens from visiting Yemen.",
-      "visa": "Travel banned"
+      "note": "As of 2014, due to safety concerns, South Korean government bans its citizens from visiting Yemen."
     }
-  ]
+  ],
+  "unknown": []
 }

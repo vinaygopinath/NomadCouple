@@ -48,6 +48,9 @@
       "name": "Democratic Republic of the Congo"
     },
     {
+      "name": "Cuba"
+    },
+    {
       "name": "Equatorial Guinea"
     },
     {
@@ -75,9 +78,6 @@
     },
     {
       "name": "Kazakhstan"
-    },
-    {
-      "name": "Kiribati"
     },
     {
       "name": "North Korea"
@@ -347,6 +347,10 @@
       "note": "90 days"
     },
     {
+      "name": "Kiribati",
+      "note": "90 days"
+    },
+    {
       "name": "South Korea",
       "note": "90 days"
     },
@@ -381,6 +385,10 @@
     {
       "name": "Malta",
       "note": "Free movement rights - Transitional restrictions on the free movement of workers may apply.; ID card valid"
+    },
+    {
+      "name": "Marshall Islands",
+      "note": "90 days"
     },
     {
       "name": "Mauritius",
@@ -539,6 +547,10 @@
       "note": "3 months"
     },
     {
+      "name": "Tuvalu",
+      "note": "90 days"
+    },
+    {
       "name": "Ukraine",
       "note": "90 days within 180 days"
     },
@@ -565,6 +577,48 @@
     {
       "name": "Venezuela",
       "note": "90 days"
+    },
+    {
+      "name": "Croatia",
+      "note": "home"
+    }
+  ],
+  "evisa": [
+    {
+      "name": "Australia",
+      "note": "90 days on each visit in 12-month period if granted. The European Commission ruled that the eVisitor is not an equivalent of a visa."
+    },
+    {
+      "name": "Ivory Coast",
+      "note": "3 months; eVisa holders must arrive via Port Bouet Airport."
+    },
+    {
+      "name": "Gabon",
+      "note": "Electronic visa holders must arrive via Libreville International Airport."
+    },
+    {
+      "name": "India",
+      "note": "30 days, eTV holders must arrive via 16 designated airports."
+    },
+    {
+      "name": "Kenya",
+      "note": "3 months"
+    },
+    {
+      "name": "Myanmar",
+      "note": "28 days, eVisa holders must arrive via Yangon, Nay Pyi Taw or Mandalay airports."
+    },
+    {
+      "name": "Rwanda",
+      "note": "90 days"
+    },
+    {
+      "name": "Sri Lanka",
+      "note": "30 days"
+    },
+    {
+      "name": "Turkey",
+      "note": "3 months"
     }
   ],
   "on-arrival": [
@@ -605,12 +659,20 @@
       "name": "Jamaica"
     },
     {
+      "name": "Jordan",
+      "note": "Conditions apply"
+    },
+    {
       "name": "Laos",
       "note": "30 days"
     },
     {
       "name": "Lebanon",
       "note": "1 month extendable for 2 additional months; granted free of charge at Beirut International Airport or any other port of entry if there is no Israeli visa or seal, holding a telephone number, an address in Lebanon, and a non refundable return or circle trip ticket."
+    },
+    {
+      "name": "Madagascar",
+      "note": "30 days"
     },
     {
       "name": "Malawi"
@@ -620,7 +682,8 @@
       "note": "30 days"
     },
     {
-      "name": "Mauritania"
+      "name": "Mauritania",
+      "note": "Available at Nouakchott–Oumtounsy International Airport."
     },
     {
       "name": "Mozambique",
@@ -634,8 +697,16 @@
       "name": "Oman"
     },
     {
+      "name": "Papua New Guinea",
+      "note": "60 days. Free of charge."
+    },
+    {
+      "name": "Solomon Islands",
+      "note": "3 months"
+    },
+    {
       "name": "Tajikistan",
-      "note": "45 days at Dushanbe International Airport. Visa also available online for those arriving via Dushanbe or Khujand airports."
+      "note": "45 days at Dushanbe International Airport. Visa also available online. E-visa holders can enter through all border points."
     },
     {
       "name": "Tanzania"
@@ -656,85 +727,6 @@
       "note": "3 months"
     }
   ],
-  "unknown": [
-    {
-      "name": "Australia",
-      "note": "90 days on each visit in 12-month period if granted. The European Commission ruled that the eVisitor is not an equivalent of a visa.",
-      "visa": "eVisitor"
-    },
-    {
-      "name": "Ivory Coast",
-      "note": "3 months; eVisa holders must arrive via Port Bouet Airport.",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Cuba",
-      "visa": "Tourist Card required"
-    },
-    {
-      "name": "Gabon",
-      "note": "Electronic visa holders must arrive via Libreville International Airport.",
-      "visa": "eVisa"
-    },
-    {
-      "name": "India",
-      "note": "30 days, eTV holders must arrive via 16 designated airports.",
-      "visa": "e-Tourist Visa"
-    },
-    {
-      "name": "Jordan",
-      "note": "Conditions apply",
-      "visa": "Visa on arrival !Free visa on arrival"
-    },
-    {
-      "name": "Kenya",
-      "note": "3 months",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Madagascar",
-      "note": "30 days",
-      "visa": "Visa on arrival !Free visa on arrival"
-    },
-    {
-      "name": "Marshall Islands",
-      "note": "30 days",
-      "visa": "Visa on arrival !Free visa on arrival"
-    },
-    {
-      "name": "Myanmar",
-      "note": "28 days, eVisa holders must arrive via Yangon, Nay Pyi Taw or Mandalay airports.",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Papua New Guinea",
-      "note": "60 days. Free of charge.",
-      "visa": "Visa on arrival !Free visa on arrival"
-    },
-    {
-      "name": "Rwanda",
-      "note": "90 days",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Solomon Islands",
-      "note": "3 months",
-      "visa": "Visa on arrival !Free Visitor's permit on arrival"
-    },
-    {
-      "name": "Sri Lanka",
-      "note": "30 days",
-      "visa": "Electronic Travel Authorization"
-    },
-    {
-      "name": "Turkey",
-      "note": "3 months",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Tuvalu",
-      "note": "1 month",
-      "visa": "Visa on arrival !Free visa on arrival"
-    }
-  ]
+  "refused": [],
+  "unknown": []
 }

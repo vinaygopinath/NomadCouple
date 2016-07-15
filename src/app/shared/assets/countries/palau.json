@@ -13,9 +13,6 @@
       "name": "Angola"
     },
     {
-      "name": "Antigua and Barbuda"
-    },
-    {
       "name": "Argentina"
     },
     {
@@ -84,6 +81,9 @@
     },
     {
       "name": "Ivory Coast"
+    },
+    {
+      "name": "Cuba"
     },
     {
       "name": "Dominican Republic"
@@ -528,6 +528,27 @@
     {
       "name": "Vanuatu",
       "note": "90 days"
+    },
+    {
+      "name": "Palau",
+      "note": "home"
+    }
+  ],
+  "evisa": [
+    {
+      "name": "Antigua and Barbuda"
+    },
+    {
+      "name": "Georgia (country)",
+      "note": "up to 90 days"
+    },
+    {
+      "name": "India",
+      "note": "30 days"
+    },
+    {
+      "name": "Myanmar",
+      "note": "28 days"
     }
   ],
   "on-arrival": [
@@ -595,7 +616,7 @@
     },
     {
       "name": "Mauritius",
-      "note": "60 days"
+      "note": "Available at Nouakchott–Oumtounsy International Airport."
     },
     {
       "name": "Mozambique",
@@ -618,6 +639,10 @@
     {
       "name": "Saint Lucia",
       "note": "6 weeks"
+    },
+    {
+      "name": "Seychelles",
+      "note": "1 month"
     },
     {
       "name": "Solomon Islands"
@@ -653,30 +678,6 @@
       "note": "Visa on arrival valid for 15 days is available only at the Boryspil International Airport."
     }
   ],
-  "unknown": [
-    {
-      "name": "Cuba",
-      "visa": "Tourist Card required"
-    },
-    {
-      "name": "Georgia (country)",
-      "note": "up to 90 days",
-      "visa": "eVisa"
-    },
-    {
-      "name": "India",
-      "note": "30 days",
-      "visa": "e-Tourist Visa"
-    },
-    {
-      "name": "Myanmar",
-      "note": "28 days",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Seychelles",
-      "note": "1 month",
-      "visa": "Visitor's Permit on arrival"
-    }
-  ]
+  "refused": [],
+  "unknown": []
 }

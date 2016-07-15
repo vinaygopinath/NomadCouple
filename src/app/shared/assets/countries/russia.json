@@ -546,6 +546,60 @@
     {
       "name": "Vietnam",
       "note": "15 days; 30 day visa free on Phú Quốc"
+    },
+    {
+      "name": "Russia",
+      "note": "home"
+    }
+  ],
+  "evisa": [
+    {
+      "name": "Australia",
+      "note": "May apply online."
+    },
+    {
+      "name": "Ivory Coast",
+      "note": "3 months; eVisa holders must arrive via Port Bouet Airport."
+    },
+    {
+      "name": "Gabon",
+      "note": "Electronic visa holders must arrive via Libreville International Airport."
+    },
+    {
+      "name": "Guinea-Bissau",
+      "note": "30 days"
+    },
+    {
+      "name": "India",
+      "note": "30 days; eTV holders must arrive via 16 designated airports."
+    },
+    {
+      "name": "Kenya",
+      "note": "3 months"
+    },
+    {
+      "name": "Mexico",
+      "note": "180 days. Electronic permit gives the right to enter the country only by air.\nNo Electronic Authorization System required for holders of valid US visa."
+    },
+    {
+      "name": "Myanmar",
+      "note": "28 days. eVisa holders must arrive via Yangon, Nay Pyi Taw or Mandalay airports."
+    },
+    {
+      "name": "Rwanda",
+      "note": "90 days"
+    },
+    {
+      "name": "São Tomé and Príncipe",
+      "note": "Holders of a visa issued by the United States or a Schengen area member state do not require a visa for stays up to 15 days."
+    },
+    {
+      "name": "Singapore",
+      "note": "Some provisions for 96 hours visa-free transit."
+    },
+    {
+      "name": "Sri Lanka",
+      "note": "30 days"
     }
   ],
   "on-arrival": [
@@ -610,7 +664,7 @@
     },
     {
       "name": "Mauritania",
-      "note": "Available at Nouakchott International Airport."
+      "note": "Available at Nouakchott–Oumtounsy International Airport."
     },
     {
       "name": "Nepal",
@@ -619,6 +673,10 @@
     {
       "name": "Palau",
       "note": "30 days"
+    },
+    {
+      "name": "Samoa",
+      "note": "60 days"
     },
     {
       "name": "Somalia",
@@ -655,71 +713,6 @@
       "note": "3 months; also eligible for a universal visa allowing access to Zambia; also eligible for e-Visa."
     }
   ],
-  "unknown": [
-    {
-      "name": "Australia",
-      "note": "May apply online.",
-      "visa": "Online Visitor e600 visa"
-    },
-    {
-      "name": "Ivory Coast",
-      "note": "3 months; eVisa holders must arrive via Port Bouet Airport.",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Gabon",
-      "note": "Electronic visa holders must arrive via Libreville International Airport.",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Guinea-Bissau",
-      "note": "30 days",
-      "visa": "e-Visa"
-    },
-    {
-      "name": "India",
-      "note": "30 days; eTV holders must arrive via 16 designated airports.",
-      "visa": "e-Tourist Visa"
-    },
-    {
-      "name": "Kenya",
-      "note": "3 months",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Mexico",
-      "note": "180 days. Electronic permit gives the right to enter the country only by air.\nNo Electronic Authorization System required for holders of valid US visa.",
-      "visa": "Electronic Authorization"
-    },
-    {
-      "name": "Myanmar",
-      "note": "28 days. eVisa holders must arrive via Yangon, Nay Pyi Taw or Mandalay airports.",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Rwanda",
-      "note": "90 days",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Samoa",
-      "note": "60 days",
-      "visa": "Visa on arrival !Entry Permit on arrival"
-    },
-    {
-      "name": "São Tomé and Príncipe",
-      "note": "Holders of a visa issued by the United States or a Schengen area member state do not require a visa for stays up to 15 days.",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Singapore",
-      "note": "Some provisions for 96 hours visa-free transit.",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Sri Lanka",
-      "note": "30 days",
-      "visa": "Electronic Travel Authorization"
-    }
-  ]
+  "refused": [],
+  "unknown": []
 }

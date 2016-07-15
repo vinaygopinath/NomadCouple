@@ -50,6 +50,9 @@
       "name": "Democratic Republic of the Congo"
     },
     {
+      "name": "Cuba"
+    },
+    {
       "name": "Equatorial Guinea"
     },
     {
@@ -172,12 +175,20 @@
       "note": "180 days"
     },
     {
+      "name": "Austria",
+      "note": "Freedom of movement ; ID card valid"
+    },
+    {
       "name": "The Bahamas",
       "note": "3 months"
     },
     {
       "name": "Barbados",
       "note": "3 months"
+    },
+    {
+      "name": "Belgium",
+      "note": "Freedom of movement ; ID card valid"
     },
     {
       "name": "Belize",
@@ -200,6 +211,10 @@
       "note": "90 days"
     },
     {
+      "name": "Bulgaria",
+      "note": "Freedom of movement; ID card valid"
+    },
+    {
       "name": "Chile",
       "note": "90 days"
     },
@@ -210,6 +225,22 @@
     {
       "name": "Costa Rica",
       "note": "90 days"
+    },
+    {
+      "name": "Croatia",
+      "note": "Freedom of movement ; ID card valid"
+    },
+    {
+      "name": "Cyprus",
+      "note": "Freedom of movement ; ID card valid"
+    },
+    {
+      "name": "Czech Republic",
+      "note": "Freedom of movement ; ID card valid"
+    },
+    {
+      "name": "Denmark",
+      "note": "Freedom of movement ; ID card valid"
     },
     {
       "name": "Dominica",
@@ -228,8 +259,20 @@
       "note": "3 months"
     },
     {
+      "name": "Estonia",
+      "note": "Freedom of movement ; ID card valid"
+    },
+    {
       "name": "Fiji",
       "note": "4 months"
+    },
+    {
+      "name": "Finland",
+      "note": "Freedom of movement ; ID card valid"
+    },
+    {
+      "name": "France",
+      "note": "Freedom of movement ; ID card valid"
     },
     {
       "name": "The Gambia",
@@ -238,6 +281,14 @@
     {
       "name": "Georgia (country)",
       "note": "360 days; ID card valid"
+    },
+    {
+      "name": "Germany",
+      "note": "Freedom of movement ; ID card valid"
+    },
+    {
+      "name": "Greece",
+      "note": "Freedom of movement ; ID card valid"
     },
     {
       "name": "Grenada",
@@ -256,12 +307,28 @@
       "note": "3 months"
     },
     {
+      "name": "Hungary",
+      "note": "Freedom of movement ; ID card valid"
+    },
+    {
+      "name": "Iceland",
+      "note": "Freedom of movement ; ID card valid"
+    },
+    {
       "name": "Indonesia",
       "note": "30 days"
     },
     {
+      "name": "Republic of Ireland",
+      "note": "Freedom of movement ; ID card valid"
+    },
+    {
       "name": "Israel",
       "note": "3 months"
+    },
+    {
+      "name": "Italy",
+      "note": "Freedom of movement ; ID card valid"
     },
     {
       "name": "Japan",
@@ -269,11 +336,27 @@
     },
     {
       "name": "Kiribati",
-      "note": "30 days"
+      "note": "90 days"
     },
     {
       "name": "South Korea",
       "note": "90 days"
+    },
+    {
+      "name": "Latvia",
+      "note": "Freedom of movement ; ID card valid"
+    },
+    {
+      "name": "Liechtenstein",
+      "note": "Freedom of movement ; ID card valid"
+    },
+    {
+      "name": "Lithuania",
+      "note": "Freedom of movement ; ID card valid"
+    },
+    {
+      "name": "Luxembourg",
+      "note": "Freedom of movement ; ID card valid"
     },
     {
       "name": "Republic of Macedonia",
@@ -281,6 +364,14 @@
     },
     {
       "name": "Malaysia",
+      "note": "90 days"
+    },
+    {
+      "name": "Malta",
+      "note": "Freedom of movement ; ID card valid"
+    },
+    {
+      "name": "Marshall Islands",
       "note": "90 days"
     },
     {
@@ -312,12 +403,20 @@
       "note": "3 months"
     },
     {
+      "name": "Netherlands",
+      "note": "Freedom of movement; ID card valid"
+    },
+    {
       "name": "New Zealand",
       "note": "3 months"
     },
     {
       "name": "Nicaragua",
       "note": "90 days"
+    },
+    {
+      "name": "Norway",
+      "note": "Freedom of movement ; ID card valid"
     },
     {
       "name": "Palau",
@@ -338,6 +437,14 @@
     {
       "name": "Philippines",
       "note": "30 days"
+    },
+    {
+      "name": "Poland",
+      "note": "Freedom of movement ; ID card valid"
+    },
+    {
+      "name": "Portugal",
+      "note": "Freedom of movement ; ID card valid"
     },
     {
       "name": "Saint Kitts and Nevis",
@@ -380,8 +487,28 @@
       "note": "90 days"
     },
     {
+      "name": "Slovakia",
+      "note": "Freedom of movement ; ID card valid"
+    },
+    {
+      "name": "Slovenia",
+      "note": "Freedom of movement ; ID card valid"
+    },
+    {
+      "name": "Spain",
+      "note": "Freedom of movement ; ID card valid"
+    },
+    {
       "name": "Swaziland",
       "note": "30 days"
+    },
+    {
+      "name": "Sweden",
+      "note": "Freedom of movement ; ID card valid"
+    },
+    {
+      "name": "Switzerland",
+      "note": "Freedom of movement ; ID card valid"
     },
     {
       "name": "East Timor",
@@ -404,12 +531,20 @@
       "note": "3 months"
     },
     {
+      "name": "Tuvalu",
+      "note": "90 days"
+    },
+    {
       "name": "Ukraine",
       "note": "90 days within 180 days"
     },
     {
       "name": "United Arab Emirates",
       "note": "90 days within 180 days"
+    },
+    {
+      "name": "United Kingdom",
+      "note": "Freedom of movement ; ID card valid"
     },
     {
       "name": "Uruguay",
@@ -430,6 +565,47 @@
     {
       "name": "Zambia",
       "note": "90 days"
+    },
+    {
+      "name": "Romania",
+      "note": "home"
+    }
+  ],
+  "evisa": [
+    {
+      "name": "Australia",
+      "note": "90 days on each visit in 12-month period if granted. Romanian Government officially considers that Australia maintains a visa regime towards its citizens. This was dismissed by the European Commission."
+    },
+    {
+      "name": "Ivory Coast",
+      "note": "3 months; eVisa holders must arrive via Port Bouet Airport."
+    },
+    {
+      "name": "Gabon",
+      "note": "Electronic visa holders must arrive via Libreville International Airport."
+    },
+    {
+      "name": "India",
+      "note": "30 days"
+    },
+    {
+      "name": "Kenya",
+      "note": "3 months"
+    },
+    {
+      "name": "Myanmar",
+      "note": "28 days, eVisa holders must arrive via Yangon, Nay Pyi Taw or Mandalay airports."
+    },
+    {
+      "name": "Rwanda",
+      "note": "90 days"
+    },
+    {
+      "name": "Sri Lanka",
+      "note": "30 days"
+    },
+    {
+      "name": "Zimbabwe"
     }
   ],
   "on-arrival": [
@@ -473,6 +649,10 @@
       "name": "Jamaica"
     },
     {
+      "name": "Jordan",
+      "note": "Conditions apply"
+    },
+    {
       "name": "Kuwait",
       "note": "3 months"
     },
@@ -489,6 +669,10 @@
       "note": "1 month extendable for 2 additional months; granted free of charge at Beirut International Airport or any other port of entry if there is no Israeli visa or seal, holding a telephone number, an address in Lebanon, and a non refundable return or circle trip ticket."
     },
     {
+      "name": "Madagascar",
+      "note": "30 days"
+    },
+    {
       "name": "Malawi"
     },
     {
@@ -496,7 +680,8 @@
       "note": "30 days"
     },
     {
-      "name": "Mauritania"
+      "name": "Mauritania",
+      "note": "Available at Nouakchott–Oumtounsy International Airport."
     },
     {
       "name": "Mozambique",
@@ -510,12 +695,20 @@
       "name": "Oman"
     },
     {
+      "name": "Papua New Guinea",
+      "note": "60 days. Free of charge."
+    },
+    {
+      "name": "Solomon Islands",
+      "note": "3 months"
+    },
+    {
       "name": "Somalia",
       "note": "30 days, provided an invitation letter issued by the sponsor has been submitted\nto the Airport Immigration Department at least 2 days before arrival."
     },
     {
       "name": "Tajikistan",
-      "note": "45 days at Dushanbe International Airport. Visa also available online for those arriving via Dushanbe or Khujand airports."
+      "note": "45 days at Dushanbe International Airport. Visa also available online. E-visa holders can enter through all border points."
     },
     {
       "name": "Tanzania"
@@ -532,239 +725,6 @@
       "name": "Uganda"
     }
   ],
-  "unknown": [
-    {
-      "name": "Australia",
-      "note": "90 days on each visit in 12-month period if granted. Romanian Government officially considers that Australia maintains a visa regime towards its citizens. This was dismissed by the European Commission.",
-      "visa": "eVisitor"
-    },
-    {
-      "name": "Austria",
-      "note": "Freedom of movement ; ID card valid",
-      "visa": "EU !Visa not required"
-    },
-    {
-      "name": "Belgium",
-      "note": "Freedom of movement ; ID card valid",
-      "visa": "EU !Visa not required"
-    },
-    {
-      "name": "Bulgaria",
-      "note": "Freedom of movement; ID card valid",
-      "visa": "EU !Visa not required"
-    },
-    {
-      "name": "Ivory Coast",
-      "note": "3 months; eVisa holders must arrive via Port Bouet Airport.",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Croatia",
-      "note": "Freedom of movement ; ID card valid",
-      "visa": "EU !Visa not required"
-    },
-    {
-      "name": "Cuba",
-      "visa": "Tourist Card required"
-    },
-    {
-      "name": "Cyprus",
-      "note": "Freedom of movement ; ID card valid",
-      "visa": "EU !Visa not required"
-    },
-    {
-      "name": "Czech Republic",
-      "note": "Freedom of movement ; ID card valid",
-      "visa": "EU !Visa not required"
-    },
-    {
-      "name": "Denmark",
-      "note": "Freedom of movement ; ID card valid",
-      "visa": "EU !Visa not required"
-    },
-    {
-      "name": "Estonia",
-      "note": "Freedom of movement ; ID card valid",
-      "visa": "EU !Visa not required"
-    },
-    {
-      "name": "Finland",
-      "note": "Freedom of movement ; ID card valid",
-      "visa": "EU !Visa not required"
-    },
-    {
-      "name": "France",
-      "note": "Freedom of movement ; ID card valid",
-      "visa": "EU !Visa not required"
-    },
-    {
-      "name": "Gabon",
-      "note": "Electronic visa holders must arrive via Libreville International Airport.",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Germany",
-      "note": "Freedom of movement ; ID card valid",
-      "visa": "EU !Visa not required"
-    },
-    {
-      "name": "Greece",
-      "note": "Freedom of movement ; ID card valid",
-      "visa": "EU !Visa not required"
-    },
-    {
-      "name": "Hungary",
-      "note": "Freedom of movement ; ID card valid",
-      "visa": "EU !Visa not required"
-    },
-    {
-      "name": "Iceland",
-      "note": "Freedom of movement ; ID card valid",
-      "visa": "EU !Visa not required"
-    },
-    {
-      "name": "India",
-      "note": "30 days",
-      "visa": "e-Tourist Visa"
-    },
-    {
-      "name": "Republic of Ireland",
-      "note": "Freedom of movement ; ID card valid",
-      "visa": "EU !Visa not required"
-    },
-    {
-      "name": "Italy",
-      "note": "Freedom of movement ; ID card valid",
-      "visa": "EU !Visa not required"
-    },
-    {
-      "name": "Jordan",
-      "note": "Conditions apply",
-      "visa": "Visa on arrival !Free visa on arrival"
-    },
-    {
-      "name": "Kenya",
-      "note": "3 months",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Latvia",
-      "note": "Freedom of movement ; ID card valid",
-      "visa": "EU !Visa not required"
-    },
-    {
-      "name": "Liechtenstein",
-      "note": "Freedom of movement ; ID card valid",
-      "visa": "EU !Visa not required"
-    },
-    {
-      "name": "Lithuania",
-      "note": "Freedom of movement ; ID card valid",
-      "visa": "EU !Visa not required"
-    },
-    {
-      "name": "Luxembourg",
-      "note": "Freedom of movement ; ID card valid",
-      "visa": "EU !Visa not required"
-    },
-    {
-      "name": "Madagascar",
-      "note": "30 days",
-      "visa": "Visa on arrival !Free visa on arrival"
-    },
-    {
-      "name": "Malta",
-      "note": "Freedom of movement ; ID card valid",
-      "visa": "EU !Visa not required"
-    },
-    {
-      "name": "Marshall Islands",
-      "note": "90 days",
-      "visa": "Visa on arrival !Free visa on arrival"
-    },
-    {
-      "name": "Myanmar",
-      "note": "28 days, eVisa holders must arrive via Yangon, Nay Pyi Taw or Mandalay airports.",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Netherlands",
-      "note": "Freedom of movement; ID card valid",
-      "visa": "EU !Visa not required"
-    },
-    {
-      "name": "Norway",
-      "note": "Freedom of movement ; ID card valid",
-      "visa": "EU !Visa not required"
-    },
-    {
-      "name": "Papua New Guinea",
-      "note": "60 days. Free of charge.",
-      "visa": "Visa on arrival !Free visa on arrival"
-    },
-    {
-      "name": "Poland",
-      "note": "Freedom of movement ; ID card valid",
-      "visa": "EU !Visa not required"
-    },
-    {
-      "name": "Portugal",
-      "note": "Freedom of movement ; ID card valid",
-      "visa": "EU !Visa not required"
-    },
-    {
-      "name": "Rwanda",
-      "note": "90 days",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Slovakia",
-      "note": "Freedom of movement ; ID card valid",
-      "visa": "EU !Visa not required"
-    },
-    {
-      "name": "Slovenia",
-      "note": "Freedom of movement ; ID card valid",
-      "visa": "EU !Visa not required"
-    },
-    {
-      "name": "Solomon Islands",
-      "note": "3 months",
-      "visa": "Visa on arrival !Free Visitor's permit on arrival"
-    },
-    {
-      "name": "Spain",
-      "note": "Freedom of movement ; ID card valid",
-      "visa": "EU !Visa not required"
-    },
-    {
-      "name": "Sri Lanka",
-      "note": "30 days",
-      "visa": "Electronic Travel Authorization"
-    },
-    {
-      "name": "Sweden",
-      "note": "Freedom of movement ; ID card valid",
-      "visa": "EU !Visa not required"
-    },
-    {
-      "name": "Switzerland",
-      "note": "Freedom of movement ; ID card valid",
-      "visa": "EU !Visa not required"
-    },
-    {
-      "name": "Tuvalu",
-      "note": "1 month",
-      "visa": "Visa on arrival !Free visa on arrival"
-    },
-    {
-      "name": "United Kingdom",
-      "note": "Freedom of movement ; ID card valid",
-      "visa": "EU !Visa not required"
-    },
-    {
-      "name": "Zimbabwe",
-      "visa": "eVisa"
-    }
-  ]
+  "refused": [],
+  "unknown": []
 }

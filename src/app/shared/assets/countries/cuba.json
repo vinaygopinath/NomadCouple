@@ -292,13 +292,7 @@
       "name": "Romania"
     },
     {
-      "name": "Rwanda"
-    },
-    {
       "name": "San Marino"
-    },
-    {
-      "name": "São Tomé and Príncipe"
     },
     {
       "name": "Saudi Arabia"
@@ -430,7 +424,7 @@
     },
     {
       "name": "Kyrgyzstan",
-      "note": "unlimited"
+      "note": "Unlimited"
     },
     {
       "name": "Republic of Macedonia",
@@ -486,6 +480,43 @@
     },
     {
       "name": "Vanuatu",
+      "note": "30 days"
+    },
+    {
+      "name": "Cuba",
+      "note": "home"
+    }
+  ],
+  "evisa": [
+    {
+      "name": "Australia"
+    },
+    {
+      "name": "Bahrain"
+    },
+    {
+      "name": "Gabon"
+    },
+    {
+      "name": "Georgia (country)",
+      "note": "up to 90 days"
+    },
+    {
+      "name": "India",
+      "note": "30 days"
+    },
+    {
+      "name": "Kenya",
+      "note": "3 months"
+    },
+    {
+      "name": "Rwanda"
+    },
+    {
+      "name": "São Tomé and Príncipe"
+    },
+    {
+      "name": "Sri Lanka",
       "note": "30 days"
     }
   ],
@@ -564,12 +595,23 @@
       "note": "30 days"
     },
     {
+      "name": "Samoa",
+      "note": "60 days"
+    },
+    {
+      "name": "Seychelles",
+      "note": "3 months"
+    },
+    {
       "name": "Somalia",
       "note": "30 days"
     },
     {
+      "name": "Suriname"
+    },
+    {
       "name": "Tajikistan",
-      "note": "45 days"
+      "note": "45 days."
     },
     {
       "name": "Tanzania"
@@ -598,52 +640,6 @@
       "note": "3 months"
     }
   ],
-  "unknown": [
-    {
-      "name": "Australia",
-      "visa": "Online Visitor e600 visa"
-    },
-    {
-      "name": "Bahrain",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Gabon",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Georgia (country)",
-      "note": "up to 90 days",
-      "visa": "eVisa"
-    },
-    {
-      "name": "India",
-      "note": "30 days",
-      "visa": "e-Tourist Visa"
-    },
-    {
-      "name": "Kenya",
-      "note": "3 months",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Samoa",
-      "note": "60 days",
-      "visa": "Visa on arrival !Entry Permit on arrival"
-    },
-    {
-      "name": "Seychelles",
-      "note": "3 months",
-      "visa": "Visa on arrival !Visitor's Permit on arrival"
-    },
-    {
-      "name": "Sri Lanka",
-      "note": "30 days",
-      "visa": "Electronic Travel Authorization"
-    },
-    {
-      "name": "Suriname",
-      "visa": "Tourist card on arrival"
-    }
-  ]
+  "refused": [],
+  "unknown": []
 }

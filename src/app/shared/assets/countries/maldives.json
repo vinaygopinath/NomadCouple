@@ -19,9 +19,6 @@
       "name": "Argentina"
     },
     {
-      "name": "Australia"
-    },
-    {
       "name": "Austria"
     },
     {
@@ -88,6 +85,9 @@
       "name": "Croatia"
     },
     {
+      "name": "Cuba"
+    },
+    {
       "name": "Cyprus"
     },
     {
@@ -119,12 +119,6 @@
     },
     {
       "name": "France"
-    },
-    {
-      "name": "Gabon"
-    },
-    {
-      "name": "Georgia (country)"
     },
     {
       "name": "Germany"
@@ -520,6 +514,34 @@
     {
       "name": "Zimbabwe",
       "note": "3 months"
+    },
+    {
+      "name": "Maldives",
+      "note": "home"
+    }
+  ],
+  "evisa": [
+    {
+      "name": "Australia",
+      "note": "May apply online."
+    },
+    {
+      "name": "Cambodia"
+    },
+    {
+      "name": "Gabon",
+      "note": "Electronic visa holders must arrive via Libreville International Airport."
+    },
+    {
+      "name": "Georgia (country)"
+    },
+    {
+      "name": "Myanmar",
+      "note": "28 days. eVisa holders must arrive via Yangon International Airport."
+    },
+    {
+      "name": "Turkey",
+      "note": "Visa on arrival also available under certain conditions."
     }
   ],
   "on-arrival": [
@@ -571,7 +593,8 @@
       "note": "90 days"
     },
     {
-      "name": "Mauritania"
+      "name": "Mauritania",
+      "note": "Available at Nouakchott–Oumtounsy International Airport."
     },
     {
       "name": "Mozambique",
@@ -594,7 +617,15 @@
       "note": "60 days"
     },
     {
+      "name": "Samoa",
+      "note": "60 days"
+    },
+    {
       "name": "Senegal"
+    },
+    {
+      "name": "Seychelles",
+      "note": "3 months"
     },
     {
       "name": "Solomon Islands",
@@ -625,34 +656,6 @@
       "note": "3 months"
     }
   ],
-  "unknown": [
-    {
-      "name": "Cambodia",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Cuba",
-      "visa": "Tourist Card required"
-    },
-    {
-      "name": "Myanmar",
-      "note": "28 days. eVisa holders must arrive via Yangon International Airport.",
-      "visa": "eVisa"
-    },
-    {
-      "name": "Samoa",
-      "note": "60 days",
-      "visa": "Entry Permit on arrival"
-    },
-    {
-      "name": "Seychelles",
-      "note": "3 months",
-      "visa": "Visitor's Permit on arrival"
-    },
-    {
-      "name": "Turkey",
-      "note": "Visa on arrival also available under certain conditions.",
-      "visa": "eVisa"
-    }
-  ]
+  "refused": [],
+  "unknown": []
 }
