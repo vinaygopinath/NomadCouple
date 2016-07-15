@@ -15,4 +15,8 @@ export module Person {
     }
     return Person[personType.toUpperCase()];
   }
+
+  export function getValues() {
+    return ['both', 'user', 'partner'];
+  }
 }

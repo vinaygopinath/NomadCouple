@@ -18,4 +18,19 @@ export module Visa {
     }
     return Visa[visaType.toUpperCase().replace(/-/g, '_')];
   }
+
+  export function getValues() {
+        return ['required', 'not-required', 'evisa', 'on-arrival', 'refused', 'unknown'];
+    }
+
+  export function toDescriptionString(visaType: Visa) {
+    switch (visaType) {
+      case Visa.REQUIRED: return 'Visa required';
+      case Visa.NOT_REQUIRED: return 'Visa not required';
+      case Visa.EVISA: return 'Electronic visa';
+      case Visa.ON_ARRIVAL: return 'Visa on arrival';
+      case Visa.REFUSED: return 'Travel banned/admission refused';
+      case Visa.UNKNOWN: return 'Visa status unknown. Please report a bug';
+    }
+  }
 }
