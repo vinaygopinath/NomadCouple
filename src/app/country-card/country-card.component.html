@@ -9,23 +9,19 @@
 <div class="content">
   <div class="person" [ngClass]="userVisaClass">
     <p class="name">You</p>
-    <p>
-      <span class="visa-status"  [ngSwitch]="userVisaStatus">
-        <template  [ngSwitchCase]="Visa.REQUIRED">Visa required</template>
-        <template [ngSwitchCase]="Visa.ON_ARRIVAL">Visa on arrival/eVisa</template>
-        <template [ngSwitchCase]="Visa.NOT_REQUIRED">Visa not required</template>
-      </span>
-    </p>
+    <img width="24px" [src]="'app/shared/images/country-card/'+Visa.toString(userVisaStatus)+'.svg'" [alt]="Visa.toDescriptionString(userVisaStatus)"/>
   </div>
+  <!-- [id]="country.name+'user'+userVisaStatus+partnerVisaStatus" -->
+  <!-- [id]="country.name+'partner'+userVisaStatus+partnerVisaStatus" -->
+  <!-- <div class="mdl-tooltip mdl-tooltip--large" [attr.for]="country.name+'user'+userVisaStatus+partnerVisaStatus">
+    {{Visa.toDescriptionString(userVisaStatus)}}
+  </div>
+  <div class="mdl-tooltip mdl-tooltip--large" [attr.for]="country.name+'partner'+userVisaStatus+partnerVisaStatus">
+      {{Visa.toDescriptionString(partnerVisaStatus)}}
+  </div> -->
   <div class="person" [ngClass]="partnerVisaClass">
     <p class="name">Partner</p>
-    <p>
-      <span class="visa-status" [ngSwitch]="partnerVisaStatus">
-        <template [ngSwitchCase]="Visa.REQUIRED">Visa required</template>
-        <template [ngSwitchCase]="Visa.ON_ARRIVAL">Visa on arrival/eVisa</template>
-        <template [ngSwitchCase]="Visa.NOT_REQUIRED">Visa not required</template>
-      </span>
-    </p>
+    <img width="24px" [src]="'app/shared/images/country-card/'+Visa.toString(partnerVisaStatus)+'.svg'" [alt]="Visa.toDescriptionString(partnerVisaStatus)"/>
   </div>
 </div>
 <div class="mdl-card__actions mdl-card--border">

@@ -45,6 +45,7 @@ export class CountryCardComponent implements OnInit {
       case 'federated states of micronesia': countryStr = 'micronesia'; break;
       case 'east timor': countryStr = 'timor-leste'; break;
       case 'the bahamas': countryStr = 'bahamas'; break;
+      case 'são tomé and príncipe': countryStr = 'sao-tome-and-principe'; break;
       case 'georgia (country)': countryStr = 'georgia'; break;
     }
     return countryStr.replace(/ /g, '-');
