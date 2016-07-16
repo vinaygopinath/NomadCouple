@@ -13,6 +13,8 @@ export class CountryCountComponent implements OnInit {
   arr: Array<any> = [1,2,3];
   @Input()
   type: Visa;
+  @Input()
+  selected: boolean;
   //Make Visa enum available in template
   Visa = Visa;
 

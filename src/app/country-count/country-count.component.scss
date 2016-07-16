@@ -41,6 +41,9 @@
   .text {
     margin-top: 0;
   }
+  &.selected .text {
+    font-weight: bold;
+  }
   @media screen and (min-width: $screen-desktop-min) {
     width: 50%;
   }

@@ -1,4 +1,4 @@
-<div class="nomad-country-count" [ngClass]="Visa.toString(type)" *ngIf="arr">
+<div class="nomad-country-count" [ngClass]="Visa.toString(type)" *ngIf="arr" [class.selected]="selected">
   <h1 class="number">{{arr.length}}</h1>
   <h6 class="text" [ngSwitch]="type">
     <template [ngSwitchCase]="Visa.ON_ARRIVAL">Visa on arrival</template>

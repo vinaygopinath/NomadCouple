@@ -16,6 +16,9 @@ declare var componentHandler: any;
   directives: [CountryCountComponent]
 })
 export class DrawerComponent implements OnInit {
+  private selectedTab: Person = Person.BOTH;
+  private selectedVisaSection: Visa = Visa.NOT_REQUIRED;
+
   @Input()
   private user: string;
   @Input()
@@ -47,6 +50,8 @@ export class DrawerComponent implements OnInit {
   }
 
   emitCountClick(person: Person, visa: Visa) {
+    this.selectedTab = person;
+    this.selectedVisaSection = visa;
     this.onCountClick.emit({
       person,
       visa
