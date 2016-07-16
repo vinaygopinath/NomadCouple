@@ -1,10 +1,11 @@
-<div class="nomad-country-count" [ngClass]="getClassFromType()" *ngIf="arr">
+<div class="nomad-country-count" [ngClass]="Visa.toString(type)" *ngIf="arr">
   <h1 class="number">{{arr.length}}</h1>
   <h6 class="text" [ngSwitch]="type">
     <template [ngSwitchCase]="Visa.ON_ARRIVAL">Visa on arrival</template>
     <template [ngSwitchCase]="Visa.REQUIRED">Visa required</template>
     <template [ngSwitchCase]="Visa.NOT_REQUIRED">Visa not required</template>
-    <template [ngSwitchCase]="Visa.UNKNOWN">Visa Unknown</template>
+    <template [ngSwitchCase]="Visa.EVISA">E-visa</template>
+    <template [ngSwitchCase]="Visa.REFUSED">Travel banned</template>
+    <template [ngSwitchCase]="Visa.UNKNOWN">Visa unknown</template>
   </h6>
-  <!-- <h6 class="text">{{message}}</h6> -->
 </div>

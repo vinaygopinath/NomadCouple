@@ -1,8 +1,6 @@
 import { Component, OnInit, ViewEncapsulation, Input } from '@angular/core';
 import { Visa } from '../visa.enum';
 
-declare var componentHandler: any;
-
 @Component({
   moduleId: module.id,
   selector: 'nomad-country-count',
@@ -23,18 +21,4 @@ export class CountryCountComponent implements OnInit {
   ngOnInit() {
 
   }
-
-  ngAfterViewInit() {
-    componentHandler.upgradeDom();
-  }
-
-  getClassFromType() {
-    return {
-      required: this.type === Visa.REQUIRED,
-      'not-required': this.type === Visa.NOT_REQUIRED,
-      'on-arrival': this.type === Visa.ON_ARRIVAL,
-      'unknown': this.type === Visa.UNKNOWN
-    };
-  }
-
 }
