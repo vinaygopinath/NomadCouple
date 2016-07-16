@@ -49,15 +49,21 @@
       <h4>Together</h4>
       <div *ngIf="visaData">
         <div>
-          <nomad-country-count [type]="Visa.NOT_REQUIRED" [array]="visaData.bothNotReqCountries" (click)="emitCountClick(Visa.NOT_REQUIRED, visaData.bothNotReqCountries)">
+          <nomad-country-count [type]="Visa.NOT_REQUIRED" [array]="visaData.bothNotRequired" (click)="emitCountClick(Person.BOTH, Visa.NOT_REQUIRED)">
           </nomad-country-count>
-          <nomad-country-count [type]="Visa.ON_ARRIVAL" [array]="visaData.bothOnArrCountries" (click)="emitCountClick(Visa.ON_ARRIVAL, visaData.bothOnArrCountries)">
+          <nomad-country-count [type]="Visa.ON_ARRIVAL" [array]="visaData.bothOnArrival" (click)="emitCountClick(Person.BOTH, Visa.ON_ARRIVAL)">
           </nomad-country-count>
         </div>
         <div>
-          <nomad-country-count [type]="Visa.REQUIRED" [array]="visaData.bothReqCountries" (click)="emitCountClick(Visa.REQUIRED, visaData.bothReqCountries)">
+          <nomad-country-count [type]="Visa.EVISA" [array]="visaData.bothEvisa" (click)="emitCountClick(Person.BOTH, Visa.EVISA)">
           </nomad-country-count>
-          <nomad-country-count [type]="Visa.UNKNOWN" [array]="visaData.bothUnkCountries">
+          <nomad-country-count [type]="Visa.REQUIRED" [array]="visaData.bothRequired" (click)="emitCountClick(Person.BOTH, Visa.REQUIRED)">
+          </nomad-country-count>
+        </div>
+        <div *ngIf="visaData.bothRefused.length > 0 || visaData.bothUnknown.length > 0">
+          <nomad-country-count *ngIf="visaData.bothRefused.length > 0" [type]="Visa.REFUSED" [array]="visaData.bothRefused" (click)="emitCountClick(Person.BOTH, Visa.REFUSED)">
+          </nomad-country-count>
+          <nomad-country-count *ngIf="visaData.bothUnknown.length > 0" [type]="Visa.UNKNOWN" [array]="visaData.bothUnknown" (click)="emitCountClick(Person.BOTH, Visa.UNKNOWN)">
           </nomad-country-count>
         </div>
       </div>
@@ -65,27 +71,47 @@
     <div class="mdl-tabs__panel" id="you-panel">
       <h4>You</h4>
       <div *ngIf="visaData">
-        <nomad-country-count [type]="Visa.NOT_REQUIRED" [array]="visaData.userNotReqCountries"  (click)="emitCountClick(Visa.NOT_REQUIRED, visaData.userNotReqCountries)">
-        </nomad-country-count>
-        <nomad-country-count [type]="Visa.ON_ARRIVAL" [array]="visaData.userOnArrCountries" (click)="emitCountClick(Visa.ON_ARRIVAL, visaData.userOnArrCountries)">
-        </nomad-country-count>
-        <nomad-country-count [type]="Visa.REQUIRED" [array]="visaData.userReqCountries" (click)="emitCountClick(Visa.REQUIRED, visaData.userReqCountries)">
-        </nomad-country-count>
-        <nomad-country-count [type]="Visa.UNKNOWN" [array]="visaData.userUnkCountries" (click)="emitCountClick(Visa.UNKNOWN, visaData.userUnkCountries)">
-        </nomad-country-count>
+        <div>
+          <nomad-country-count [type]="Visa.NOT_REQUIRED" [array]="visaData.userNotRequired" (click)="emitCountClick(Person.USER, Visa.NOT_REQUIRED)">
+          </nomad-country-count>
+          <nomad-country-count [type]="Visa.ON_ARRIVAL" [array]="visaData.userOnArrival" (click)="emitCountClick(Person.USER, Visa.ON_ARRIVAL)">
+          </nomad-country-count>
+        </div>
+        <div>
+          <nomad-country-count [type]="Visa.EVISA" [array]="visaData.userEvisa" (click)="emitCountClick(Person.USER, Visa.EVISA)">
+          </nomad-country-count>
+          <nomad-country-count [type]="Visa.REQUIRED" [array]="visaData.userRequired" (click)="emitCountClick(Person.USER, Visa.REQUIRED)">
+          </nomad-country-count>
+        </div>
+        <div *ngIf="visaData.userRefused.length > 0 || visaData.userUnknown.length > 0">
+          <nomad-country-count *ngIf="visaData.userRefused.length > 0" [type]="Visa.REFUSED" [array]="visaData.userRefused" (click)="emitCountClick(Person.USER, Visa.REFUSED)">
+          </nomad-country-count>
+          <nomad-country-count *ngIf="visaData.userUnknown.length > 0" [type]="Visa.UNKNOWN" [array]="visaData.userUnknown" (click)="emitCountClick(Person.USER, Visa.UNKNOWN)">
+          </nomad-country-count>
+        </div>
       </div>
     </div>
     <div class="mdl-tabs__panel" id="partner-panel">
       <h4>Your partner</h4>
       <div *ngIf="visaData">
-        <nomad-country-count [type]="Visa.NOT_REQUIRED" [array]="visaData.partnerNotReqCountries" (click)="emitCountClick(Visa.NOT_REQUIRED, visaData.partnerNotReqCountries)">
-        </nomad-country-count>
-        <nomad-country-count [type]="Visa.ON_ARRIVAL" [array]="visaData.partnerOnArrCountries" (click)="emitCountClick(Visa.ON_ARRIVAL, visaData.partnerOnArrCountries)">
-        </nomad-country-count>
-        <nomad-country-count [type]="Visa.REQUIRED" [array]="visaData.partnerReqCountries" (click)="emitCountClick(Visa.REQUIRED, visaData.partnerReqCountries)">
-        </nomad-country-count>
-        <nomad-country-count [type]="Visa.UNKNOWN" [array]="visaData.partnerUnkCountries" (click)="emitCountClick(Visa.UNKNOWN, visaData.partnerUnkCountries)">
-        </nomad-country-count>
+        <div>
+          <nomad-country-count [type]="Visa.NOT_REQUIRED" [array]="visaData.partnerNotRequired" (click)="emitCountClick(Person.PARTNER, Visa.NOT_REQUIRED)">
+          </nomad-country-count>
+          <nomad-country-count [type]="Visa.ON_ARRIVAL" [array]="visaData.partnerOnArrival" (click)="emitCountClick(Person.PARTNER, Visa.ON_ARRIVAL)">
+          </nomad-country-count>
+        </div>
+        <div>
+          <nomad-country-count [type]="Visa.EVISA" [array]="visaData.partnerEvisa" (click)="emitCountClick(Person.PARTNER, Visa.EVISA)">
+          </nomad-country-count>
+          <nomad-country-count [type]="Visa.REQUIRED" [array]="visaData.partnerRequired" (click)="emitCountClick(Person.PARTNER, Visa.REQUIRED)">
+          </nomad-country-count>
+        </div>
+        <div *ngIf="visaData.partnerRefused.length > 0 || visaData.partnerUnknown.length > 0">
+          <nomad-country-count *ngIf="visaData.partnerRefused.length > 0" [type]="Visa.REFUSED" [array]="visaData.partnerRefused" (click)="emitCountClick(Person.PARTNER, Visa.REFUSED)">
+          </nomad-country-count>
+          <nomad-country-count *ngIf="visaData.partnerUnknown.length > 0" [type]="Visa.UNKNOWN" [array]="visaData.partnerUnknown" (click)="emitCountClick(Person.PARTNER, Visa.UNKNOWN)">
+          </nomad-country-count>
+        </div>
       </div>
     </div>
   </div>

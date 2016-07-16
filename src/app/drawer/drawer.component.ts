@@ -3,6 +3,7 @@ import { VisaService } from '../visa.service';
 import { VisaData } from '../visa-data';
 import { CountryCountComponent } from '../country-count';
 import { Visa } from '../visa.enum';
+import { Person } from '../person.enum';
 
 declare var componentHandler: any;
 
@@ -23,8 +24,9 @@ export class DrawerComponent implements OnInit {
   private onCountClick: EventEmitter<any> = new EventEmitter();
 
   private visaData: VisaData;
-  //Make Visa enum available in template
+  //Make Visa and Person enums available in template
   Visa = Visa;
+  Person = Person;
 
   constructor(private visaService: VisaService) {
   }
@@ -44,11 +46,10 @@ export class DrawerComponent implements OnInit {
     );
   }
 
-  emitCountClick(type, arr) {
-    console.log('emitCountClick called with %s and %d items',type,arr.length);
+  emitCountClick(person: Person, visa: Visa) {
     this.onCountClick.emit({
-      type,
-      data: arr
+      person,
+      visa
     });
   }
 
