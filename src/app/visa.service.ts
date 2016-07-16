@@ -20,23 +20,6 @@ export class VisaService {
   private partnerVisas: Array<Country> = [];
   constructor(private http: Http) {}
 
-  getUrlFriendlyName(input: string): string {
-    if (!input) {
-      throw new Error('Invalid input - Country name cannot be undefined or null');
-    } else {
-      return input.toLowerCase().replace(/ /g, '_');
-    }
-  }
-
-  getUserFriendlyName(input: string): string {
-    if (!input) {
-      throw new Error('Invalid input - Cannot format undefined/null country string');
-    } else {
-      let str = input.replace(/_/g, ' ');
-      return str.charAt(0).toUpperCase() + str.slice(1);
-    }
-  }
-
   // Credit: http://stackoverflow.com/a/36294012/293847
   getDropdownCountries(): Observable<Array<any>> {
     if (this.countries) {
@@ -133,14 +116,13 @@ export class VisaService {
   private _getWikiData(rawWikiData): WikiData {
     if (!rawWikiData) {
       console.error('Http wiki data was empty');
-      return new WikiData(undefined, undefined, undefined, undefined);
+      return new WikiData(undefined);
     }
-    let requiredCountries: Array<Country> = this._getCountries(rawWikiData.required);
-    let notRequiredCountries: Array<Country> = this._getCountries(rawWikiData['not-required']);
-    let onArrivalCountries: Array<Country> = this._getCountries(rawWikiData['on-arrival']);
-    let unknownCountries: Array<Country> = this._getCountries(rawWikiData.unknown);
-
-    return new WikiData(requiredCountries, notRequiredCountries, onArrivalCountries, unknownCountries);
+    let data = {};
+    for(let visaType of Visa.getValues()) {
+      data[visaType] = this._getCountries(rawWikiData[visaType]);
+    }
+    return new WikiData(data);
   }
 
   private _getIntersection(arr1: Array<Country>, arr2: Array<Country>): Array<Country> {
@@ -162,35 +144,25 @@ export class VisaService {
   private _groupByVisa(userCountries, partnerCountries) {
     return {
       both: this._getIntersection(userCountries, partnerCountries),
-      userOnly: this._getDifference(userCountries, partnerCountries),
-      partnerOnly: this._getDifference(partnerCountries, userCountries),
+      // userOnly: this._getDifference(userCountries, partnerCountries),
+      // partnerOnly: this._getDifference(partnerCountries, userCountries),
       user: userCountries,
       partner: partnerCountries
     };
   }
 
   private _getVisaData(userData: WikiData, partnerData: WikiData): VisaData {
-    // console.log('\n\n\n\n*******\nNot required');
-    let notRequiredGroups = this._groupByVisa(userData.notRequired, partnerData.notRequired);
-    let requiredGroups = this._groupByVisa(userData.required, partnerData.required);
-    // console.log('\n\n\n\n*******\nOn Arrival');
-    let onArrivalGroups = this._groupByVisa(userData.onArrival, partnerData.onArrival);
-    let unknownGroups = this._groupByVisa(userData.unknown, partnerData.unknown);
-    return new VisaData(requiredGroups, notRequiredGroups, onArrivalGroups, unknownGroups);
+    let data = {};
+    for(let visaType of Visa.getValues()) {
+      data[visaType] = this._groupByVisa(userData[visaType], partnerData[visaType]);
+    }
+    return new VisaData(data);
   }
 
   private _generateVisaStatus(person, rawData) {
-    let personType;
-    if (person === Person.USER) {
-      personType = 'user';
-    } else if (person === Person.PARTNER ) {
-      personType = 'partner';
-    } else {
-      throw new Error('Invalid person type in getVisaStatus. Must be partner or user');
-    }
+    let personType = Person.toString(person);
     this[personType+'Visas'] = [];
-    let visaTypes = ['not-required', 'required', 'on-arrival', 'unknown'];
-    visaTypes.forEach((visaType) => {
+    Visa.getValues().forEach((visaType) => {
       rawData[visaType].forEach( (country) => {
         this[personType+'Visas'].push(Object.assign({}, country, {visa: visaType}));
       });
@@ -204,14 +176,7 @@ export class VisaService {
   }
 
   private _getVisaStatus(person, countryName) {
-    let personType;
-    if (person === Person.USER) {
-      personType = 'user';
-    } else if (person === Person.PARTNER ) {
-      personType = 'partner';
-    } else {
-      throw new Error('Invalid person type in getVisaStatus. Must be partner or user');
-    }
+    let personType = Person.toString(person);
     let country = this._lookupCountry(this[personType+'Visas'], countryName);
     if (country) {
       return Visa.parse(country.visa);

@@ -1,39 +1,19 @@
 import { Country } from './country';
+import { Visa } from './visa.enum';
+import { Person } from './person.enum';
+import { StringUtils } from './utils/string';
 
 export class VisaData {
 
-  bothReqCountries: Array<Country>;
-  userReqCountries: Array<Country>;
-  partnerReqCountries: Array<Country>;
+  bothNotRequired: Array<Country>;
 
-  bothNotReqCountries: Array<Country>;
-  userNotReqCountries: Array<Country>;
-  partnerNotReqCountries: Array<Country>;
-
-  bothOnArrCountries: Array<Country>;
-  userOnArrCountries: Array<Country>;
-  partnerOnArrCountries: Array<Country>;
-
-  bothUnkCountries: Array<Country>;
-  userUnkCountries: Array<Country>;
-  partnerUnkCountries: Array<Country>;
-
-  constructor(reqGroups, notReqGroups, onArrGroups, unkGroups) {
-    console.log(notReqGroups);
-      this.bothReqCountries = reqGroups.both;
-      this.userReqCountries = reqGroups.user;
-      this.partnerReqCountries = reqGroups.partner;
-
-      this.bothNotReqCountries = notReqGroups.both;
-      this.userNotReqCountries = notReqGroups.user;
-      this.partnerNotReqCountries = notReqGroups.partner;
-
-      this.bothOnArrCountries = onArrGroups.both;
-      this.userOnArrCountries = onArrGroups.user;
-      this.partnerOnArrCountries = onArrGroups.partner;
-
-      this.bothUnkCountries = unkGroups.both;
-      this.userUnkCountries = unkGroups.user;
-      this.partnerUnkCountries = unkGroups.partner;
+  constructor(data) {
+    for (let visaType of Visa.getValues()) {
+      for (let personType of Person.getValues()) {
+        this[StringUtils.toCamelCase(personType+'-'+visaType)] = data[visaType][personType];
+      }
+      // this[StringUtils.toCamelCase('only-user-'+visaType)] = data[visaType].userOnly;
+      // this[StringUtils.toCamelCase('only-partner-'+visaType)] = data[visaType].partnerOnly;
+    }
   }
 }
