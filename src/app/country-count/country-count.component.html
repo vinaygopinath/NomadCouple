@@ -1,4 +1,4 @@
-<div class="nomad-country-count" [ngClass]="Visa.toString(type)" *ngIf="arr" [class.selected]="selected">
+<div class="nomad-country-count mdl-js-ripple-effect" [ngClass]="Visa.toString(type)" *ngIf="arr" [class.selected]="selected">
   <h1 class="number">{{arr.length}}</h1>
   <h6 class="text" [ngSwitch]="type">
     <template [ngSwitchCase]="Visa.ON_ARRIVAL">Visa on arrival</template>
@@ -8,4 +8,5 @@
     <template [ngSwitchCase]="Visa.REFUSED">Travel banned</template>
     <template [ngSwitchCase]="Visa.UNKNOWN">Visa unknown</template>
   </h6>
+  <span class="mdl-ripple is-animating ripple-workaround"></span>
 </div>
