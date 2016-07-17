@@ -23,4 +23,14 @@ export class StringUtils {
       return str.charAt(0).toUpperCase() + str.slice(1);
     }
   }
+
+  public static getWikiUrl(country: string): string {
+    if (!country) {
+      throw new Error('Invalid country - Cannot generate wiki URL for undefined/null country');
+    } else {
+      let str = country.replace(/ /g,'_');
+      // return 'https://en.wikipedia.org/wiki/'+str;
+      return 'https://en.wikivoyage.org/wiki/'+str;
+    }
+  }
 }

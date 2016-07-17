@@ -82,7 +82,7 @@
   & > .mdl-card__actions {
     display: flex;
     box-sizing:border-box;
-    align-items: flex-center;
+    align-items: center;
   }
   & > .mdl-card__actions > .material-icons {
     padding-right: 10px;
@@ -90,6 +90,9 @@
   // & > .mdl-card__title,
   // & > .mdl-card__actions,
   // & > .mdl-card__actions > .mdl-button {
-    //   color: #fff;
-    // }
+  //   color: #fff;
+  // }
+  a {
+    color: inherit;
   }
+}

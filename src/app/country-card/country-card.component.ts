@@ -2,6 +2,7 @@ import { Component, OnInit, Input, HostBinding } from '@angular/core';
 import { Country } from '../country';
 import { VisaService } from '../visa.service';
 import { Visa } from '../visa.enum';
+import { StringUtils } from '../utils/string';
 
 @Component({
   moduleId: module.id,
@@ -18,6 +19,8 @@ export class CountryCardComponent implements OnInit {
 
   userVisaClass: string;
   partnerVisaClass: string;
+
+  wikiUrl: string;
 
   Visa = Visa;
 
@@ -54,10 +57,11 @@ export class CountryCardComponent implements OnInit {
   ngOnInit() {
     this.userVisaStatus = this.visaService.getUserVisaStatus(this.country.name);
     this.partnerVisaStatus = this.visaService.getPartnerVisaStatus(this.country.name);
-    
+
     this.userVisaClass = Visa.toString(this.userVisaStatus);
     this.partnerVisaClass = Visa.toString(this.partnerVisaStatus);
     this.flagClass = this.getCountryFlagClass(this.country.name);
+    this.wikiUrl = StringUtils.getWikiUrl(this.country.name);
   }
 
 }

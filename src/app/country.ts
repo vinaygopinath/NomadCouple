@@ -1,8 +1,8 @@
 export class Country {
-  name: String;
-  note: String;
+  name: string;
+  note: string;
 
-  constructor(name: String, note: String) {
+  constructor(name: string, note: string) {
     this.name = name;
     this.note = note;
   }
