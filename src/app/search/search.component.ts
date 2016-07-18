@@ -22,6 +22,7 @@ export class SearchComponent implements OnInit, OnDestroy {
   partnerNationality: string;
   paramSub: any;
   results: Array<any>;
+  pageTitle: string = 'Loading...';
 
   constructor(private visaService: VisaService, private route: ActivatedRoute) {}
 
@@ -39,6 +40,7 @@ export class SearchComponent implements OnInit, OnDestroy {
               console.log('Received data = ',data);
               this.visaData = data;
               this.results = this.visaData.bothNotRequired;
+              this.pageTitle = Person.toDescriptionString(Person.BOTH) + ' - ' + Visa.toDescriptionString(Visa.NOT_REQUIRED);
             },
             err => console.error('getVisaCountries error = ',err)
           );
@@ -51,6 +53,7 @@ export class SearchComponent implements OnInit, OnDestroy {
     let visaType: Visa = filter.visa;
     let personType: Person = filter.person;
     let str = StringUtils.toCamelCase(Person.toString(personType)+'-'+Visa.toString(visaType));
+    this.pageTitle = Person.toDescriptionString(personType) + ' - ' + Visa.toDescriptionString(visaType);
     this.results = this.visaData[str];
   }
 

@@ -1,20 +1,16 @@
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer" style="min-height: 100vh">
   <header class="mdl-layout__header">
-  <div class="mdl-layout-icon"></div>
-  <div class="mdl-layout__header-row">
-  <span class="mdl-layout__title">Nomad Couple</span>
-  <div class="mdl-layout-spacer"></div>
-  <nav class="mdl-navigation">
-  <a class="mdl-navigation__link" href="#">Hello</a>
-  <a class="mdl-navigation__link" href="#">World.</a>
-  <a class="mdl-navigation__link" href="#">How</a>
-  <a class="mdl-navigation__link" href="#">Are</a>
-  <a class="mdl-navigation__link" href="#">You?</a>
-</nav>
-</div>
-</header>
-<nomad-drawer class="mdl-layout__drawer" [user]="userNationality" [partner]="partnerNationality" (on-filter)="onFilter($event)"></nomad-drawer>
-<main class="mdl-layout__content" *ngIf="visaData">
-  <nomad-results [countries]="results"></nomad-results>
-</main>
+    <div class="mdl-layout-icon"></div>
+    <div class="mdl-layout__header-row">
+      <span class="mdl-layout__title">{{pageTitle}}</span>
+      <div class="mdl-layout-spacer"></div>
+      <!-- <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" href="#">Hello</a>
+      </nav> -->
+    </div>
+  </header>
+  <nomad-drawer class="mdl-layout__drawer" [user]="userNationality" [partner]="partnerNationality" (on-filter)="onFilter($event)"></nomad-drawer>
+  <main class="mdl-layout__content" *ngIf="visaData">
+    <nomad-results [countries]="results"></nomad-results>
+  </main>
 </div>

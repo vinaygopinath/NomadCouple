@@ -19,4 +19,12 @@ export module Person {
   export function getValues() {
     return ['both', 'user', 'partner'];
   }
+
+  export function toDescriptionString(personType: Person): string {
+    switch (personType) {
+      case Person.BOTH: return 'Together';
+      case Person.USER: return 'You';
+      case Person.PARTNER: return 'Partner';
+    }
+  }
 }
