@@ -58,7 +58,6 @@
       }
     }
 
-
     .visa-status {
       font-family: 'Roboto', sans-serif;
       font-weight: 300;
@@ -78,6 +77,8 @@
   }
   & > .mdl-card__title > h4 {
     margin-top: 0;
+    font-weight: 600;
+    font-size: 21px;
   }
   & > .mdl-card__actions {
     display: flex;
@@ -94,5 +95,8 @@
   // }
   a {
     color: inherit;
+  }
+  .link {
+    font-size: 17px;
   }
 }
