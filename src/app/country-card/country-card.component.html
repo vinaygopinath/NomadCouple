@@ -9,7 +9,7 @@
 <div class="content">
   <div class="person" [ngClass]="userVisaClass">
     <p class="name">You</p>
-    <img width="24px" [src]="'app/shared/images/country-card/'+Visa.toString(userVisaStatus)+'.svg'" [alt]="Visa.toDescriptionString(userVisaStatus)"/>
+    <img width="24px" [src]="'app/shared/images/country-card/'+Visa.toString(userVisaStatus)+'.svg'" [alt]="Visa.toDescriptionString(userVisaStatus)" [title]="Visa.toDescriptionString(userVisaStatus)"/>
   </div>
   <!-- [id]="country.name+'user'+userVisaStatus+partnerVisaStatus" -->
   <!-- [id]="country.name+'partner'+userVisaStatus+partnerVisaStatus" -->
@@ -21,7 +21,7 @@
   </div> -->
   <div class="person" [ngClass]="partnerVisaClass">
     <p class="name">Partner</p>
-    <img width="24px" [src]="'app/shared/images/country-card/'+Visa.toString(partnerVisaStatus)+'.svg'" [alt]="Visa.toDescriptionString(partnerVisaStatus)"/>
+    <img width="24px" [src]="'app/shared/images/country-card/'+Visa.toString(partnerVisaStatus)+'.svg'" [alt]="Visa.toDescriptionString(partnerVisaStatus)" [title]="Visa.toDescriptionString(partnerVisaStatus)"/>
   </div>
 </div>
 <div class="mdl-card__actions mdl-card--border">
