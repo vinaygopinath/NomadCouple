@@ -77,7 +77,6 @@
     padding-left: 5%;
     padding-right: 5%;
     padding-top: 3%;
-    background: #673AB7; /* fallback for old browsers */
-    background: linear-gradient(to left, #673AB7 , #512DA8);
+    background: $header-color;
   }
 }

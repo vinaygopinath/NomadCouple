@@ -1,11 +1,15 @@
+@import "variables";
+
 .header {
+  background-color: $header-color;
   .header-row {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    height: 100px;
+    //TODO Add dropdowns to drawer and adjust height of header
+    // height: 100px;
+    // padding: 10px 40px;
     margin: 0;
-    padding: 10px 40px;
     .mdl-layout-title {
       line-height: 36px;
     }

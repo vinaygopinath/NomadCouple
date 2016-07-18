@@ -1,7 +1,25 @@
 @import "variables";
 
 .mdl-layout__content {
-  background-color: #fafafa;
+  background-color: $body-color;
+}
+
+.mdl-layout__drawer {
+  border-right: 0;
+}
+
+.mdl-layout__header {
+  background-color: $header-color;
+}
+
+.mdl-layout__title {
+  text-transform: capitalize;
+}
+
+@media screen and (max-width: $screen-tablet-max) {
+  .mdl-layout--fixed-drawer>.mdl-layout__content {
+    padding-top: 24px;
+  }
 }
 
 @media screen and (min-width: $screen-desktop-min) {
