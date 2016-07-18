@@ -1,4 +1,4 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnInit, OnDestroy, AfterViewInit, ElementRef } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { VisaService } from '../visa.service';
 import { VisaData } from '../visa-data';
@@ -7,6 +7,7 @@ import { ResultsComponent } from '../results';
 import { Visa } from '../visa.enum';
 import { Person } from '../person.enum';
 import { StringUtils } from '../utils/string';
+declare const window: Window;
 
 @Component({
   moduleId: module.id,
@@ -14,17 +15,21 @@ import { StringUtils } from '../utils/string';
   templateUrl: 'search.component.html',
   styleUrls: ['search.component.css'],
   providers: [VisaService],
-  directives: [DrawerComponent, ResultsComponent]
+  directives: [DrawerComponent, ResultsComponent],
+  host: {
+    '(window:resize)': 'updateScreenWidth($event)'
+  }
 })
-export class SearchComponent implements OnInit, OnDestroy {
+export class SearchComponent implements OnInit, AfterViewInit, OnDestroy {
   visaData: VisaData;
   userNationality: string;
   partnerNationality: string;
   paramSub: any;
   results: Array<any>;
   pageTitle: string = 'Loading...';
+  width: number;
 
-  constructor(private visaService: VisaService, private route: ActivatedRoute) {}
+  constructor(private element: ElementRef, private visaService: VisaService, private route: ActivatedRoute) {}
 
   ngOnInit() {
     this.paramSub = this.route.params.subscribe(params => {
@@ -49,7 +54,16 @@ export class SearchComponent implements OnInit, OnDestroy {
     });
   }
 
+  ngAfterViewInit() {
+    this.width = window.innerWidth;
+  }
+
   onFilter(filter) {
+    //Close drawer on filter on mobile and tablet devices
+    if (this.width < 1028) {
+      let drawer = this.element.nativeElement.querySelector('.mdl-layout');
+      drawer.MaterialLayout.toggleDrawer();
+    }
     let visaType: Visa = filter.visa;
     let personType: Person = filter.person;
     let str = StringUtils.toCamelCase(Person.toString(personType)+'-'+Visa.toString(visaType));
@@ -61,4 +75,7 @@ export class SearchComponent implements OnInit, OnDestroy {
     this.paramSub.unsubscribe();
   }
 
+  updateScreenWidth(event) {
+    this.width = event.target.innerWidth;
+  }
 }
