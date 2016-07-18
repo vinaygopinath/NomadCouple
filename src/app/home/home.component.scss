@@ -37,8 +37,9 @@
     letter-spacing: 0.02rem;
   }
 
-  .home-button {
+  .home-button, .mdl-button--raised[disabled][disabled], .mdl-button--raised.mdl-button--disabled.mdl-button--disabled {
     width: 250px;
+    color: darken(#FFFFFF, 8%);
   }
 
   @media screen and (min-width: $screen-desktop-min) {

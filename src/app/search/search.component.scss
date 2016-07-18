@@ -20,6 +20,9 @@
   .mdl-layout--fixed-drawer>.mdl-layout__content {
     padding-top: 24px;
   }
+  .mdl-layout__title {
+    font-size: 17px;
+  }
 }
 
 @media screen and (min-width: $screen-desktop-min) {

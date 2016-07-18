@@ -1,7 +1,9 @@
 @import "variables";
 
 .header {
-  background-color: $header-color;
+  background: #fafafa;
+  color: #424242;
+  box-shadow: none;
   .header-row {
     flex-direction: column;
     align-items: center;

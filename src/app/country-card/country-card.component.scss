@@ -1,5 +1,11 @@
 @import "variables";
 :host {
+  width: 380px;
+  height: 196px;
+  max-width: 90vw;
+  margin: 20px 1.5vw;
+  margin-left: auto;
+  margin-right: auto;
   .flag-wrapper {
     max-height: 50px;
     max-width: 65px;
@@ -65,9 +71,6 @@
     }
   }
 
-  width: 380px;
-  height: 196px;
-  margin: 20px 1.5vw;
   & > .mdl-card__actions {
     border-color: rgba(255, 255, 255, 0.2);
   }
