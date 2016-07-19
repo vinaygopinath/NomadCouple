@@ -1,6 +1,8 @@
 # Nomad Couple
 
-![Image](demo.gif)
+<p align="center">
+  <img src="demo.gif" alt="Demo GIF of Nomad Couple" title="Demo GIF of Nomad Couple"/>
+</p>
 
 ## Development
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.8.
