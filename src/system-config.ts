@@ -7,10 +7,14 @@
  **********************************************************************************************/
 /** Map relative paths to URLs. */
 const map: any = {
+  'ng2-meta': 'vendor/ng2-meta/dist/meta.service.js'
 };
 
 /** User packages configuration. */
 const packages: any = {
+  'ng2-meta': {
+    format: 'cjs'
+  }
 };
 
 ////////////////////////////////////////////////////////////////////////////////////////////////
