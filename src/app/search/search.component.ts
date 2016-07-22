@@ -7,6 +7,7 @@ import { ResultsComponent } from '../results';
 import { Visa } from '../visa.enum';
 import { Person } from '../person.enum';
 import { StringUtils } from '../utils/string';
+import { MetaService } from 'ng2-meta';
 declare const window: Window;
 
 @Component({
@@ -14,7 +15,7 @@ declare const window: Window;
   selector: 'app-search',
   templateUrl: 'search.component.html',
   styleUrls: ['search.component.css'],
-  providers: [VisaService],
+  providers: [VisaService, MetaService],
   directives: [DrawerComponent, ResultsComponent],
   host: {
     '(window:resize)': 'updateScreenWidth($event)'
@@ -29,7 +30,7 @@ export class SearchComponent implements OnInit, AfterViewInit, OnDestroy {
   pageTitle: string = 'Loading...';
   width: number;
 
-  constructor(private element: ElementRef, private visaService: VisaService, private route: ActivatedRoute) {}
+  constructor(private element: ElementRef, private visaService: VisaService, private route: ActivatedRoute, private metaService: MetaService) {}
 
   ngOnInit() {
     this.paramSub = this.route.params.subscribe(params => {
@@ -42,10 +43,11 @@ export class SearchComponent implements OnInit, AfterViewInit, OnDestroy {
           this.visaService.getVisaCountries(nationalityArr[0], nationalityArr[1])
           .subscribe(
             data => {
-              console.log('Received data = ',data);
               this.visaData = data;
               this.results = this.visaData.bothNotRequired;
               this.pageTitle = Person.toDescriptionString(Person.BOTH) + ' - ' + Visa.toDescriptionString(Visa.NOT_REQUIRED);
+              this.metaService.setTitle(`${this.userNationality} and ${this.partnerNationality} - Visa requirements`);
+              this.metaService.setTag('title', `Couples from ${this.userNationality} and ${this.partnerNationality} can visit ${this.visaData.bothNotRequired.length} countries visa-free and ${this.visaData.bothOnArrival.length} countries with visa on arrival. Find out more!`)
             },
             err => console.error('getVisaCountries error = ',err)
           );

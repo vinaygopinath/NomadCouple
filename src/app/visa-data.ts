@@ -6,7 +6,8 @@ import { StringUtils } from './utils/string';
 export class VisaData {
 
   bothNotRequired: Array<Country>;
-
+  bothOnArrival: Array<Country>;
+  
   constructor(data) {
     for (let visaType of Visa.getValues()) {
       for (let personType of Person.getValues()) {
