@@ -47,7 +47,7 @@ export class SearchComponent implements OnInit, AfterViewInit, OnDestroy {
               this.results = this.visaData.bothNotRequired;
               this.pageTitle = Person.toDescriptionString(Person.BOTH) + ' - ' + Visa.toDescriptionString(Visa.NOT_REQUIRED);
               this.metaService.setTitle(`${this.userNationality} and ${this.partnerNationality} - Visa requirements`);
-              this.metaService.setTag('title', `Couples from ${this.userNationality} and ${this.partnerNationality} can visit ${this.visaData.bothNotRequired.length} countries visa-free and ${this.visaData.bothOnArrival.length} countries with visa on arrival. Find out more!`)
+              this.metaService.setTag('description', `Couples from ${this.userNationality} and ${this.partnerNationality} can visit ${this.visaData.bothNotRequired.length} countries visa-free and ${this.visaData.bothOnArrival.length} countries with visa on arrival. Find out more!`)
             },
             err => console.error('getVisaCountries error = ',err)
           );
