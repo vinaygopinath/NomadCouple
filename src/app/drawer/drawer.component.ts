@@ -42,7 +42,6 @@ export class DrawerComponent implements OnInit {
     this.visaService.getVisaCountries(this.user, this.partner)
     .subscribe(
       data => {
-        console.log('Received data in drawer = ',data);
         this.visaData = data;
       },
       err => console.error('getVisaCountries error = ',err)
