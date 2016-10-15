@@ -92,7 +92,7 @@
     },
     {
       "name": "Russia",
-      "note": "In the area within a radius of 30 kilometers of the border residents may travel without a visa.\nA certificate of the border resident are issued for three years, and give the right to stay for 15 days."
+      "note": "15 days for holders of border traffic permit."
     },
     {
       "name": "Rwanda",
@@ -384,7 +384,7 @@
     },
     {
       "name": "Federated States of Micronesia",
-      "note": "30 days"
+      "note": "90 days"
     },
     {
       "name": "Moldova",
@@ -459,10 +459,6 @@
     {
       "name": "Saint Vincent and the Grenadines",
       "note": "1 month"
-    },
-    {
-      "name": "Samoa",
-      "note": "90 days"
     },
     {
       "name": "San Marino"
@@ -590,7 +586,11 @@
     },
     {
       "name": "Kenya",
-      "note": "3 months; also visa on arrival until 1 September 2015"
+      "note": "3 months"
+    },
+    {
+      "name": "Kuwait",
+      "note": "3 months"
     },
     {
       "name": "Myanmar",
@@ -655,10 +655,6 @@
       "note": "Conditions apply"
     },
     {
-      "name": "Kuwait",
-      "note": "3 months"
-    },
-    {
       "name": "Laos",
       "note": "15 days"
     },
@@ -701,6 +697,10 @@
       "note": "1 month"
     },
     {
+      "name": "Samoa",
+      "note": "60 days"
+    },
+    {
       "name": "Solomon Islands",
       "note": "3 months"
     },
@@ -724,7 +724,8 @@
       "note": "7 days"
     },
     {
-      "name": "Uganda"
+      "name": "Uganda",
+      "note": "May apply online."
     },
     {
       "name": "Zambia",

@@ -80,10 +80,14 @@
       "name": "Iraq"
     },
     {
-      "name": "Kazakhstan"
+      "name": "Kazakhstan",
+      "note": "Visa-free from 1 January 2017"
     },
     {
       "name": "Kiribati"
+    },
+    {
+      "name": "North Korea"
     },
     {
       "name": "Kuwait"
@@ -114,9 +118,6 @@
     },
     {
       "name": "Nigeria"
-    },
-    {
-      "name": "North Korea"
     },
     {
       "name": "Oman"
@@ -364,6 +365,10 @@
       "note": "90 days, extendable up to 180 days"
     },
     {
+      "name": "South Korea",
+      "note": "3 months"
+    },
+    {
       "name": "Latvia",
       "note": "90 days within 180 days"
     },
@@ -422,10 +427,6 @@
     {
       "name": "Nicaragua",
       "note": "90 days"
-    },
-    {
-      "name": "South Korea",
-      "note": "3 months"
     },
     {
       "name": "Norway",
@@ -712,7 +713,8 @@
       "note": "1 month"
     },
     {
-      "name": "Uganda"
+      "name": "Uganda",
+      "note": "May apply online."
     },
     {
       "name": "Zambia",

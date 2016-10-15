@@ -89,7 +89,8 @@
       "name": "Croatia"
     },
     {
-      "name": "Cuba"
+      "name": "Cuba",
+      "note": "Visa must be obtained in advance lieu of a tourist card."
     },
     {
       "name": "Cyprus"
@@ -128,7 +129,8 @@
       "name": "France"
     },
     {
-      "name": "Georgia (country)"
+      "name": "Georgia (country)",
+      "note": "eVisa available for holders of a valid Schengen visa or a valid visa from any of the OECD member countries; or a valid residence permit of a Schengen or OECD country."
     },
     {
       "name": "Germany"
@@ -624,7 +626,7 @@
     },
     {
       "name": "Seychelles",
-      "note": "1 month"
+      "note": "3 months"
     },
     {
       "name": "East Timor",

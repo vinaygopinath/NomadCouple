@@ -139,6 +139,10 @@
       "name": "Grenada"
     },
     {
+      "name": "Guatemala",
+      "note": "Visa not required if holding a valid Canadian, U.S. or Schengen Visa."
+    },
+    {
       "name": "Guinea"
     },
     {
@@ -280,10 +284,6 @@
       "name": "Romania"
     },
     {
-      "name": "Russia",
-      "note": "Visa-free agreement was signed on 13 April 2016 but has not yet been ratified."
-    },
-    {
       "name": "Rwanda"
     },
     {
@@ -417,10 +417,6 @@
       "note": "90 days"
     },
     {
-      "name": "Guatemala",
-      "note": "90 days"
-    },
-    {
       "name": "Haiti",
       "note": "3 months"
     },
@@ -433,7 +429,8 @@
       "note": "30 days"
     },
     {
-      "name": "Republic of Ireland"
+      "name": "Republic of Ireland",
+      "note": "90 days"
     },
     {
       "name": "Jamaica",
@@ -462,6 +459,10 @@
     {
       "name": "Philippines",
       "note": "30 days"
+    },
+    {
+      "name": "Russia",
+      "note": "90 days within any 180 day period"
     },
     {
       "name": "Saint Kitts and Nevis",
@@ -624,7 +625,7 @@
     },
     {
       "name": "Seychelles",
-      "note": "1 month"
+      "note": "3 months"
     },
     {
       "name": "Somalia",
@@ -651,7 +652,7 @@
     },
     {
       "name": "Uganda",
-      "note": "Determined at the port of entry."
+      "note": "Determined at the port of entry. May apply online."
     },
     {
       "name": "Zambia",

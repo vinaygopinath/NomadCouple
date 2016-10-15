@@ -13,6 +13,9 @@
       "name": "Azerbaijan"
     },
     {
+      "name": "Bangladesh"
+    },
+    {
       "name": "Belarus",
       "note": "Visas are issued on arrival at the Minsk International Airport\nif the support documents were submitted not later than 3 business days before expected date of arrival."
     },
@@ -381,7 +384,7 @@
     },
     {
       "name": "Federated States of Micronesia",
-      "note": "30 days"
+      "note": "90 days"
     },
     {
       "name": "Moldova",
@@ -506,7 +509,7 @@
     },
     {
       "name": "Thailand",
-      "note": "30 days if arriving on a international flight, 15 days of arriving by land or sea"
+      "note": "30 days if arriving on an international flight, 15 days of arriving by land or sea"
     },
     {
       "name": "Tonga",
@@ -579,7 +582,11 @@
     },
     {
       "name": "Kenya",
-      "note": "3 months; also visa on arrival until 1 September 2015"
+      "note": "3 months"
+    },
+    {
+      "name": "Kuwait",
+      "note": "3 months"
     },
     {
       "name": "Myanmar",
@@ -602,10 +609,6 @@
     {
       "name": "Bahrain",
       "note": "14 days"
-    },
-    {
-      "name": "Bangladesh",
-      "note": "30 days"
     },
     {
       "name": "Burkina Faso",
@@ -646,10 +649,6 @@
     {
       "name": "Jordan",
       "note": "Conditions apply"
-    },
-    {
-      "name": "Kuwait",
-      "note": "3 months"
     },
     {
       "name": "Lebanon",
@@ -721,7 +720,8 @@
       "note": "7 days"
     },
     {
-      "name": "Uganda"
+      "name": "Uganda",
+      "note": "May apply online."
     },
     {
       "name": "Zambia",

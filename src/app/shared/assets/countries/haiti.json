@@ -23,6 +23,10 @@
       "name": "Azerbaijan"
     },
     {
+      "name": "The Bahamas",
+      "note": "3 months"
+    },
+    {
       "name": "Bahrain"
     },
     {
@@ -453,10 +457,6 @@
       "note": "90 days"
     },
     {
-      "name": "The Bahamas",
-      "note": "3 months"
-    },
-    {
       "name": "Chile",
       "note": "90 days"
     },
@@ -638,7 +638,7 @@
     },
     {
       "name": "Uganda",
-      "note": "Determined at the port of entry."
+      "note": "Determined at the port of entry. May apply online."
     },
     {
       "name": "Zambia"

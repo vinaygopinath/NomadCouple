@@ -324,7 +324,7 @@
     },
     {
       "name": "Iceland",
-      "note": "European Economic Area ; ID card valid; 90days Freedom of movement."
+      "note": "European Economic Area ; ID card valid; 90 days Freedom of movement."
     },
     {
       "name": "Indonesia",
@@ -400,7 +400,7 @@
     },
     {
       "name": "Federated States of Micronesia",
-      "note": "30 days"
+      "note": "90 days"
     },
     {
       "name": "Moldova",
@@ -716,7 +716,8 @@
       "note": "7 days"
     },
     {
-      "name": "Uganda"
+      "name": "Uganda",
+      "note": "May apply online."
     },
     {
       "name": "Zambia",

@@ -202,13 +202,14 @@
     },
     {
       "name": "Poland",
-      "note": "30 days for residents of Kaliningrad Oblast with border traffic permit."
+      "note": "30 days for residents of Kaliningrad Oblast with border traffic permit. (temporarily suspended)"
     },
     {
       "name": "Portugal"
     },
     {
-      "name": "Qatar"
+      "name": "Qatar",
+      "note": "Visa on arrival to be introduced in October 2016"
     },
     {
       "name": "Romania"
@@ -256,7 +257,8 @@
       "name": "Switzerland"
     },
     {
-      "name": "Syria"
+      "name": "Syria",
+      "note": "According to the IATA database, visa may be obtained on arrival and is valid for 15 days. According to the media, Syria passed a new law that requires all foreign citizens to obtain a visa in advance."
     },
     {
       "name": "Turkmenistan",
@@ -291,7 +293,7 @@
     },
     {
       "name": "Argentina",
-      "note": "90 days within 180 days"
+      "note": "90 days within any 180 day period"
     },
     {
       "name": "Armenia"
@@ -311,6 +313,10 @@
     {
       "name": "Belarus",
       "note": "Freedom of movement. Use of internal passport allowed."
+    },
+    {
+      "name": "Bolivia",
+      "note": "90 days within any 180 day period"
     },
     {
       "name": "Bosnia and Herzegovina",
@@ -526,7 +532,7 @@
     },
     {
       "name": "Ukraine",
-      "note": "90 days within 180 days"
+      "note": "90 days within 180 days. Internal passports are not accepted for border crossing."
     },
     {
       "name": "Uruguay",
@@ -575,7 +581,7 @@
     },
     {
       "name": "Kenya",
-      "note": "3 months"
+      "note": "3 months. Can also be entered on an East Africa Tourist Visa issued by Rwanda or Uganda."
     },
     {
       "name": "Mexico",
@@ -583,11 +589,11 @@
     },
     {
       "name": "Myanmar",
-      "note": "28 days. eVisa holders must arrive via Yangon, Nay Pyi Taw or Mandalay airports."
+      "note": "28 days. eVisa holders must arrive via Yangon, Nay Pyi Taw or Mandalay airports or via land border crossings with Thailand — Tachileik, Myawaddy and Kawthaung."
     },
     {
       "name": "Rwanda",
-      "note": "90 days"
+      "note": "90 days. Can also be entered on an East Africa Tourist Visa issued by Kenya or Uganda."
     },
     {
       "name": "São Tomé and Príncipe",
@@ -612,10 +618,6 @@
       "note": "30 days"
     },
     {
-      "name": "Bolivia",
-      "note": "90 days. Visa-free agreement was signed on 12 April 2016 but it is not yet ratified."
-    },
-    {
       "name": "Burundi",
       "note": "3 months"
     },
@@ -634,7 +636,8 @@
       "name": "Djibouti"
     },
     {
-      "name": "Egypt"
+      "name": "Egypt",
+      "note": "Visa not required for tourists arriving at Sharm El Sheik (SSH), Saint Catherine (SKV) or Taba (TCP) airports and remaining in the Sinai resorts for a maximum stay of 15 days."
     },
     {
       "name": "Ethiopia"
@@ -702,7 +705,8 @@
       "note": "1 month"
     },
     {
-      "name": "Uganda"
+      "name": "Uganda",
+      "note": "May apply online.\nCan also be entered on an East Africa Tourist Visa issued by Kenya or Rwanda."
     },
     {
       "name": "Zambia",

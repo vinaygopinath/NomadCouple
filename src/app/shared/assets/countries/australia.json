@@ -20,26 +20,34 @@
       "name": "Benin"
     },
     {
-      "name": "Bhutan"
+      "name": "Bhutan",
+      "note": "Visa approved via tour operators only"
+    },
+    {
+      "name": "Brazil",
+      "note": "Tourist visa is issued for a maximum stay of 90 days."
     },
     {
       "name": "Cameroon"
     },
     {
-      "name": "Central African Republic"
+      "name": "Central African Republic",
+      "note": "Visa can be issued at the Consulate General of France."
     },
     {
-      "name": "Chad"
+      "name": "Chad",
+      "note": "Letter of invitation required"
     },
     {
       "name": "China",
-      "note": "72-hours visa free visit when in transit at Beijing, Chengdu, Chongqing, Dalian, Guangzhou, Guilin, Shanghai, Shenyang, Xi'an, Nanjing and Wuhan."
+      "note": "72-hours visa free visit when in transit at Beijing, Chengdu, Chongqing, Dalian, Guangzhou, Guilin, Shenyang, Xi'an, Nanjing and Wuhan.\n144-hours (6 days) visa free transit in Shanghai, Jiangsu and Zhejiang."
     },
     {
       "name": "Republic of the Congo"
     },
     {
-      "name": "Democratic Republic of the Congo"
+      "name": "Democratic Republic of the Congo",
+      "note": "Visa not required for Congolese-born visitors"
     },
     {
       "name": "Cuba"
@@ -72,7 +80,8 @@
       "name": "Mali"
     },
     {
-      "name": "Mongolia"
+      "name": "Mongolia",
+      "note": "Registration required for 30 days"
     },
     {
       "name": "Nauru",
@@ -82,14 +91,12 @@
       "name": "Niger"
     },
     {
-      "name": "Nigeria"
+      "name": "Nigeria",
+      "note": "Visa not required for Nigerian-born citizens"
     },
     {
       "name": "Pakistan",
       "note": "Visa on arrival when travelling on business valid for 30 days. Conditions apply."
-    },
-    {
-      "name": "Papua New Guinea"
     },
     {
       "name": "Russia"
@@ -104,7 +111,8 @@
       "name": "South Sudan"
     },
     {
-      "name": "Sudan"
+      "name": "Sudan",
+      "note": "Visa not required for Sudanese-born citizens"
     },
     {
       "name": "Suriname"
@@ -113,10 +121,12 @@
       "name": "Syria"
     },
     {
-      "name": "Turkmenistan"
+      "name": "Turkmenistan",
+      "note": "Transit visa is required."
     },
     {
-      "name": "Uzbekistan"
+      "name": "Uzbekistan",
+      "note": "Pre-arranged visa can be obtained on arrival for a maximum of 7 days."
     },
     {
       "name": "Vietnam",
@@ -144,7 +154,7 @@
     },
     {
       "name": "Austria",
-      "note": "90 days within 180 days in the Schengen area"
+      "note": "90 days within any 180 day period in the Schengen area"
     },
     {
       "name": "The Bahamas",
@@ -156,7 +166,7 @@
     },
     {
       "name": "Belgium",
-      "note": "90 days within 180 days in the Schengen area"
+      "note": "90 days within any 180 day period in the Schengen area"
     },
     {
       "name": "Belize",
@@ -168,19 +178,15 @@
     },
     {
       "name": "Bosnia and Herzegovina",
-      "note": "90 days within 180 days"
+      "note": "90 days within any 180 day period"
     },
     {
       "name": "Botswana",
       "note": "90 days per year"
     },
     {
-      "name": "Brazil",
-      "note": "Temporary visa waiver, for a stay up to 90 days, is in place in 2016 between June 1 and September 18."
-    },
-    {
       "name": "Bulgaria",
-      "note": "90 days within 180 days"
+      "note": "90 days within any 180 day period"
     },
     {
       "name": "Canada",
@@ -200,19 +206,19 @@
     },
     {
       "name": "Croatia",
-      "note": "90 days within 180 days"
+      "note": "90 days within any 180 day period"
     },
     {
       "name": "Cyprus",
-      "note": "90 days within 180 days"
+      "note": "90 days within any 180 day period"
     },
     {
       "name": "Czech Republic",
-      "note": "90 days within 180 days in the Schengen area"
+      "note": "90 days within any 180 day period in the Schengen area"
     },
     {
       "name": "Denmark",
-      "note": "90 days within 180 days in the Schengen area"
+      "note": "90 days within any 180 day period regardless of previous time spent in other Schengen countries"
     },
     {
       "name": "Dominica",
@@ -232,7 +238,7 @@
     },
     {
       "name": "Estonia",
-      "note": "90 days within 180 days in the Schengen area"
+      "note": "90 days within any 180 day period in the Schengen area"
     },
     {
       "name": "Fiji",
@@ -240,11 +246,11 @@
     },
     {
       "name": "Finland",
-      "note": "90 days within 180 days in the Schengen area"
+      "note": "90 days within any 180 day period in the Schengen area"
     },
     {
       "name": "France",
-      "note": "90 days within 180 days in the Schengen area (in Regions of France)"
+      "note": "90 days within any 180 day period in the Schengen area (in Regions of France)"
     },
     {
       "name": "The Gambia",
@@ -256,11 +262,11 @@
     },
     {
       "name": "Germany",
-      "note": "90 days within 180 days in the Schengen area"
+      "note": "90 days within any 180 day period regardless of previous time spent in Schengen countries"
     },
     {
       "name": "Greece",
-      "note": "90 days within 180 days in the Schengen area"
+      "note": "90 days within any 180 day period in the Schengen area"
     },
     {
       "name": "Grenada",
@@ -284,11 +290,11 @@
     },
     {
       "name": "Hungary",
-      "note": "90 days within 180 days in the Schengen area"
+      "note": "90 days within any 180 day period in the Schengen area"
     },
     {
       "name": "Iceland",
-      "note": "90 days within 180 days in the Schengen area"
+      "note": "90 days within any 180 day period in the Schengen area"
     },
     {
       "name": "Indonesia",
@@ -304,7 +310,7 @@
     },
     {
       "name": "Italy",
-      "note": "90 days within 180 days in the Schengen area"
+      "note": "90 days within any 180 day period in the Schengen area"
     },
     {
       "name": "Jamaica"
@@ -315,7 +321,7 @@
     },
     {
       "name": "Kazakhstan",
-      "note": "15 days; effective 15 July 2015"
+      "note": "15 days"
     },
     {
       "name": "Kiribati",
@@ -331,7 +337,7 @@
     },
     {
       "name": "Latvia",
-      "note": "90 days within 180 days in the Schengen area"
+      "note": "90 days within any 180 day period in the Schengen area"
     },
     {
       "name": "Lesotho",
@@ -339,19 +345,19 @@
     },
     {
       "name": "Liechtenstein",
-      "note": "90 days within 180 days in the Schengen area"
+      "note": "90 days within any 180 day period in the Schengen area"
     },
     {
       "name": "Lithuania",
-      "note": "90 days within 180 days in the Schengen area"
+      "note": "90 days within any 180 day period in the Schengen area"
     },
     {
       "name": "Luxembourg",
-      "note": "90 days within 180 days in the Schengen area"
+      "note": "90 days within any 180 day period in the Schengen area"
     },
     {
       "name": "Republic of Macedonia",
-      "note": "90 days within 180 days"
+      "note": "90 days within any 180 day period"
     },
     {
       "name": "Malaysia",
@@ -359,7 +365,7 @@
     },
     {
       "name": "Malta",
-      "note": "90 days within 180 days"
+      "note": "90 days within any 180 day period in the Schengen area"
     },
     {
       "name": "Mauritius",
@@ -375,14 +381,14 @@
     },
     {
       "name": "Moldova",
-      "note": "90 days within 180 days"
+      "note": "90 days within any 180 day period"
     },
     {
       "name": "Monaco"
     },
     {
       "name": "Montenegro",
-      "note": "90 days within 180 days"
+      "note": "90 days within any 180 day period"
     },
     {
       "name": "Morocco",
@@ -394,7 +400,7 @@
     },
     {
       "name": "Netherlands",
-      "note": "90 days within 180 days in the Schengen area (European Netherlands)"
+      "note": "90 days within any 180 day period in the Schengen area (European Netherlands)"
     },
     {
       "name": "New Zealand",
@@ -406,7 +412,7 @@
     },
     {
       "name": "Norway",
-      "note": "90 days within 180 days in the Schengen area"
+      "note": "90 days within any 180 day period in the Schengen area"
     },
     {
       "name": "Panama",
@@ -422,15 +428,15 @@
     },
     {
       "name": "Poland",
-      "note": "90 days within 180 days in the Schengen area"
+      "note": "90 days within any 180 day period in the Schengen area"
     },
     {
       "name": "Portugal",
-      "note": "90 days within 180 days in the Schengen area"
+      "note": "90 days within any 180 day period in the Schengen area"
     },
     {
       "name": "Romania",
-      "note": "90 days within 180 days"
+      "note": "90 days within any 180 day period"
     },
     {
       "name": "Saint Kitts and Nevis",
@@ -452,19 +458,19 @@
     },
     {
       "name": "Serbia",
-      "note": "90 days within 180 days"
+      "note": "90 days within any 180 day period"
     },
     {
       "name": "Singapore",
-      "note": "30 days"
+      "note": "90 days"
     },
     {
       "name": "Slovakia",
-      "note": "90 days within 180 days in the Schengen area"
+      "note": "90 days within any 180 day period in the Schengen area"
     },
     {
       "name": "Slovenia",
-      "note": "90 days within 180 days in the Schengen area"
+      "note": "90 days within any 180 day period in the Schengen area"
     },
     {
       "name": "South Africa",
@@ -472,7 +478,7 @@
     },
     {
       "name": "Spain",
-      "note": "90 days within 180 days in the Schengen area"
+      "note": "90 days within any 180 day period in the Schengen area"
     },
     {
       "name": "Swaziland",
@@ -480,11 +486,11 @@
     },
     {
       "name": "Sweden",
-      "note": "90 days within 180 days in the Schengen area"
+      "note": "90 days within any 180 day period in the Schengen area"
     },
     {
       "name": "Switzerland",
-      "note": "90 days within 180 days in the Schengen area"
+      "note": "90 days within any 180 day period in the Schengen area"
     },
     {
       "name": "Thailand",
@@ -537,7 +543,11 @@
     },
     {
       "name": "Kenya",
-      "note": "3 months; also visa on arrival until 1 September 2015"
+      "note": "3 months"
+    },
+    {
+      "name": "Kuwait",
+      "note": "3 months"
     },
     {
       "name": "Myanmar",
@@ -616,10 +626,6 @@
       "note": "Conditions apply. Not available at all entry points."
     },
     {
-      "name": "Kuwait",
-      "note": "3 months"
-    },
-    {
       "name": "Laos",
       "note": "30 days. Not available at all entry points."
     },
@@ -663,6 +669,10 @@
       "note": "30 days"
     },
     {
+      "name": "Papua New Guinea",
+      "note": "30 days, available at Gurney Airport (Alotau), Mount Hagen Airport, Port Moresby Airport and Tokua Airport (Rabaul)."
+    },
+    {
       "name": "Paraguay",
       "note": "90 days, only available at Silvio Pettirossi International Airport in Luque. Reciprocity fee applies."
     },
@@ -680,7 +690,7 @@
     },
     {
       "name": "Seychelles",
-      "note": "1 month"
+      "note": "3 months"
     },
     {
       "name": "Solomon Islands",
@@ -719,7 +729,7 @@
     },
     {
       "name": "Uganda",
-      "note": "Determined at the port of entry."
+      "note": "Determined at the port of entry. May apply online."
     },
     {
       "name": "Ukraine",

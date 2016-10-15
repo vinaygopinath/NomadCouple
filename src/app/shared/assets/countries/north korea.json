@@ -365,6 +365,9 @@
       "name": "Sierra Leone"
     },
     {
+      "name": "Singapore"
+    },
+    {
       "name": "Slovakia"
     },
     {
@@ -488,10 +491,6 @@
     {
       "name": "Saint Vincent and the Grenadines",
       "note": "1 month"
-    },
-    {
-      "name": "Singapore",
-      "note": "30 days"
     },
     {
       "name": "North Korea",
@@ -623,7 +622,8 @@
       "note": "1 month"
     },
     {
-      "name": "Uganda"
+      "name": "Uganda",
+      "note": "May apply online."
     }
   ],
   "refused": [],

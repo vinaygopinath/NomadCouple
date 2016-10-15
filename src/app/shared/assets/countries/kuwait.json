@@ -16,10 +16,6 @@
       "name": "Argentina"
     },
     {
-      "name": "Australia",
-      "note": "May apply online."
-    },
-    {
       "name": "Austria"
     },
     {
@@ -264,10 +260,6 @@
       "name": "Russia"
     },
     {
-      "name": "Rwanda",
-      "note": "Visa is obtained online."
-    },
-    {
       "name": "San Marino"
     },
     {
@@ -341,9 +333,6 @@
     },
     {
       "name": "Vietnam"
-    },
-    {
-      "name": "Zambia"
     }
   ],
   "not-required": [
@@ -464,6 +453,10 @@
       "note": "Freedom of movement; ID card valid"
     },
     {
+      "name": "Saint Kitts and Nevis",
+      "note": "3 months"
+    },
+    {
       "name": "Saint Lucia",
       "note": "6 weeks"
     },
@@ -513,19 +506,23 @@
       "name": "Antigua and Barbuda"
     },
     {
+      "name": "Australia",
+      "note": "May apply online."
+    },
+    {
       "name": "Gabon",
       "note": "Electronic visa holders must arrive via Libreville International Airport."
     },
     {
       "name": "Kenya",
-      "note": "3 months; also visa on arrival until 1 September 2015"
+      "note": "3 months"
     },
     {
       "name": "Myanmar",
       "note": "28 days"
     },
     {
-      "name": "Saint Kitts and Nevis"
+      "name": "Rwanda"
     },
     {
       "name": "Sri Lanka",
@@ -537,6 +534,9 @@
     },
     {
       "name": "United Kingdom"
+    },
+    {
+      "name": "Zambia"
     }
   ],
   "on-arrival": [
@@ -628,7 +628,7 @@
     },
     {
       "name": "Seychelles",
-      "note": "1 month"
+      "note": "3 months"
     },
     {
       "name": "Solomon Islands"
@@ -654,7 +654,8 @@
       "note": "1 month"
     },
     {
-      "name": "Uganda"
+      "name": "Uganda",
+      "note": "May apply online."
     },
     {
       "name": "Yemen",

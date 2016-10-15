@@ -142,7 +142,8 @@
       "name": "Nauru"
     },
     {
-      "name": "New Zealand"
+      "name": "New Zealand",
+      "note": "Visa waiver for 3 months from 21 Nov 2016."
     },
     {
       "name": "Niger"
@@ -475,7 +476,7 @@
     },
     {
       "name": "Russia",
-      "note": "60 days"
+      "note": "60 days, for a maximum total stay of 90 days within any 180 day period."
     },
     {
       "name": "Rwanda",
@@ -495,10 +496,6 @@
     {
       "name": "Senegal",
       "note": "3 months"
-    },
-    {
-      "name": "Seychelles",
-      "note": "90 days"
     },
     {
       "name": "Singapore",
@@ -674,6 +671,10 @@
     {
       "name": "Samoa",
       "note": "60 days"
+    },
+    {
+      "name": "Seychelles",
+      "note": "3 months"
     },
     {
       "name": "Somalia",
