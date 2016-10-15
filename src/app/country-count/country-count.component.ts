@@ -3,11 +3,10 @@ import { Visa } from '../visa.enum';
 declare var componentHandler: any;
 
 @Component({
-  moduleId: module.id,
   selector: 'nomad-country-count',
   templateUrl: 'country-count.component.html',
   encapsulation: ViewEncapsulation.None,
-  styleUrls: ['country-count.component.css']
+  styleUrls: ['country-count.component.scss']
 })
 export class CountryCountComponent implements AfterViewInit {
   @Input('array')

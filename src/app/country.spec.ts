@@ -1,11 +1,5 @@
-/* tslint:disable:no-unused-variable */
+import { inject } from '@angular/core/testing';
 
-import {
-  beforeEach, beforeEachProviders,
-  describe, xdescribe,
-  expect, it, xit,
-  async, inject
-} from '@angular/core/testing';
 import {Country} from './country';
 
 describe('Country', () => {

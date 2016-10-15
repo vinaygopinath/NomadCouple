@@ -1,6 +1,4 @@
-import { browser, element, by } from 'protractor';
-
-export class NomadCouplePage {
+export class WebsitePage {
   navigateTo() {
     return browser.get('/');
   }

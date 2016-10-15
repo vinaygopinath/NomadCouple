@@ -1,9 +1,8 @@
-import { provideRouter, RouterConfig }  from '@angular/router';
+import { Routes }  from '@angular/router';
 import { HomeComponent } from './home';
 import { SearchComponent } from './search';
-import { MetaService } from 'ng2-meta';
 
-const routes: RouterConfig = [
+export const routes: Routes = [
   {
     path: 'start',
     component: HomeComponent,
@@ -16,16 +15,12 @@ const routes: RouterConfig = [
     }
   },
   {
-    path: '',
-    redirectTo: '/start',
-    terminal: true
-  },
-  {
     path: 'search/:nationalities',
     component: SearchComponent
+  },
+  {
+    path: '',
+    redirectTo: '/start',
+    pathMatch: 'full'
   }
-];
-
-export const APP_ROUTER_PROVIDERS = [
-  provideRouter(routes)
 ];

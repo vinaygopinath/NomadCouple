@@ -1,11 +1,9 @@
 import { Component, OnInit, Input, trigger, state, transition, style, animate } from '@angular/core';
 import { CountryCardComponent } from '../country-card';
 @Component({
-  moduleId: module.id,
   selector: 'nomad-results',
   templateUrl: 'results.component.html',
-  styleUrls: ['results.component.css'],
-  directives: [CountryCardComponent],
+  styleUrls: ['results.component.scss'],
   animations: [
   trigger('flyInOut', [
     state('in', style({transform: 'translateX(0)'})),

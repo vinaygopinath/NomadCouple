@@ -1,10 +1,9 @@
 import { Component, Input, Output, EventEmitter, HostListener } from '@angular/core';
 
 @Component({
-  moduleId: module.id,
   selector: 'material-select',
   templateUrl: 'material-select.component.html',
-  styleUrls: ['material-select.component.css']
+  styleUrls: ['material-select.component.scss']
 })
 export class MaterialSelectComponent {
   @Input()

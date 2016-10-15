@@ -8,12 +8,10 @@ import { Person } from '../person.enum';
 declare var componentHandler: any;
 
 @Component({
-  moduleId: module.id,
   selector: 'nomad-drawer',
   templateUrl: 'drawer.component.html',
-  styleUrls: ['drawer.component.css'],
-  encapsulation: ViewEncapsulation.None,
-  directives: [CountryCountComponent]
+  styleUrls: ['drawer.component.scss'],
+  encapsulation: ViewEncapsulation.None
 })
 export class DrawerComponent implements OnInit {
   private selectedTab: Person = Person.BOTH;

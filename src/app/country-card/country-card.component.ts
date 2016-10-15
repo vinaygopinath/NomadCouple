@@ -5,10 +5,9 @@ import { Visa } from '../visa.enum';
 import { StringUtils } from '../utils/string';
 
 @Component({
-  moduleId: module.id,
   selector: 'nomad-country-card',
   templateUrl: 'country-card.component.html',
-  styleUrls: ['country-card.component.css']
+  styleUrls: ['country-card.component.scss']
 })
 export class CountryCardComponent implements OnInit {
   @Input()

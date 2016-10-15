@@ -8,11 +8,9 @@ import { StringUtils } from '../utils/string';
 const BACKGROUND_TYPE = ['bg-payir','bg-hike','bg-kayak','bg-woods'];
 
 @Component({
-  moduleId: module.id,
   selector: 'app-home',
   templateUrl: 'home.component.html',
-  styleUrls: ['home.component.css'],
-  directives: [MaterialSelectComponent],
+  styleUrls: ['home.component.scss'],
   providers: [VisaService]
 })
 export class HomeComponent implements OnInit {
@@ -44,6 +42,6 @@ export class HomeComponent implements OnInit {
   showResults(event) {
     let formattedUserCountry = StringUtils.getUrlFriendlyName(this.userNationality);
     let formattedPartnerCountry = StringUtils.getUrlFriendlyName(this.partnerNationality);
-    this.router.navigate(['/search', formattedUserCountry + '+' + formattedPartnerCountry]);
+    this.router.navigate(['/search', `${formattedUserCountry}+${formattedPartnerCountry}`]);
   }
 }

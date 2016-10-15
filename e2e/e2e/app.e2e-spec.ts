@@ -1,10 +1,10 @@
-import { NomadCouplePage } from './app.po';
+import { WebsitePage } from './app.po';
 
-describe('nomad-couple App', function() {
-  let page: NomadCouplePage;
+describe('website App', function() {
+  let page: WebsitePage;
 
   beforeEach(() => {
-    page = new NomadCouplePage();
+    page = new WebsitePage();
   });
 
   it('should display message saying app works', () => {
