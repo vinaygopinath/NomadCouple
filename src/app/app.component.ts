@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { VisaService } from './visa.service';
 import { HomeComponent } from './home';
 import { SearchComponent } from './search';
-// import { MetaService } from 'ng2-meta';
+import { MetaService } from 'ng2-meta';
 
 @Component({
   selector: 'app-root',
@@ -10,8 +10,6 @@ import { SearchComponent } from './search';
   styleUrls: ['app.component.scss']
 })
 export class AppComponent {
-// private metaService: MetaService
-  constructor(private visaService: VisaService) {
-    // console.log('MetaService = ', metaService);
+  constructor(private visaService: VisaService, private metaService: MetaService) {
   }
 }
