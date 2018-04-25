@@ -1,5 +1,7 @@
-<div [@flyInOut]="true" *ngIf="countries">
+<!-- [@flyInOut]="true" -->
+<div *ngIf="countries">
   <div *ngIf="countries.length" class="countries">
-    <nomad-country-card [@zoomInOut]="true" [country]="country" *ngFor="let country of countries"></nomad-country-card>
+    <!-- [@zoomInOut]="true" -->
+    <nomad-country-card [country]="country" *ngFor="let country of countries"></nomad-country-card>
   </div>
 </div>

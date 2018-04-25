@@ -1,5 +1,6 @@
 import { Component, ViewEncapsulation, Input, AfterViewInit } from '@angular/core';
 import { Visa } from '../visa.enum';
+import { Country } from '../country';
 declare var componentHandler: any;
 
 @Component({
@@ -9,16 +10,18 @@ declare var componentHandler: any;
   styleUrls: ['country-count.component.scss']
 })
 export class CountryCountComponent implements AfterViewInit {
-  @Input('array')
-  arr: Array<any> = [1,2,3];
-  @Input()
-  type: Visa;
-  @Input()
-  selected: boolean;
-  //Make Visa enum available in template
-  Visa = Visa;
 
-  ngAfterViewInit() {
+  @Input('array')
+  public arr: Country[] = [];
+
+  @Input()
+  public type: Visa;
+  @Input()
+  public selected: boolean;
+  // Make Visa enum available in template
+  public Visa = Visa;
+
+  public ngAfterViewInit() {
     componentHandler.upgradeAllRegistered();
   }
 }

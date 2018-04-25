@@ -1,144 +1,145 @@
 {
-  "rulesDirectory": [
-    "node_modules/codelyzer"
-  ],
   "rules": {
-    "class-name": true,
-    "comment-format": [
+    "member-access": [
       true,
-      "check-space"
+      "check-constructor",
+      "check-parameter-property"
     ],
-    "curly": true,
-    "eofline": true,
-    "forin": true,
-    "indent": [
-      true,
-      "spaces"
-    ],
-    "label-position": true,
-    "label-undefined": true,
-    "max-line-length": [
-      true,
-      140
-    ],
-    "member-access": false,
     "member-ordering": [
       true,
-      "static-before-instance",
-      "variables-before-functions"
-    ],
-    "no-arg": true,
-    "no-bitwise": true,
-    "no-console": [
-      true,
-      "debug",
-      "info",
-      "time",
-      "timeEnd",
-      "trace"
-    ],
-    "no-construct": true,
-    "no-debugger": true,
-    "no-duplicate-key": true,
-    "no-duplicate-variable": true,
-    "no-empty": false,
-    "no-eval": true,
-    "no-inferrable-types": [
-      true,
-      "ignore-params"
-    ],
-    "no-shadowed-variable": true,
-    "no-string-literal": false,
-    "no-switch-case-fall-through": true,
-    "no-trailing-whitespace": true,
-    "no-unused-expression": true,
-    "no-unused-variable": true,
-    "no-unreachable": true,
-    "no-use-before-declare": true,
-    "no-var-keyword": true,
-    "object-literal-sort-keys": false,
-    "one-line": [
-      true,
-      "check-open-brace",
-      "check-catch",
-      "check-else",
-      "check-whitespace"
-    ],
-    "quotemark": [
-      true,
-      "single"
-    ],
-    "radix": true,
-    "semicolon": [
-      "always"
-    ],
-    "triple-equals": [
-      true,
-      "allow-null-check"
-    ],
-    "typedef-whitespace": [
-      true,
       {
-        "call-signature": "nospace",
-        "index-signature": "nospace",
-        "parameter": "nospace",
-        "property-declaration": "nospace",
-        "variable-declaration": "nospace"
+        "order": [
+          "public-static-field",
+          "public-instance-field",
+          "public-constructor",
+          "private-static-field",
+          "private-instance-field",
+          "private-constructor",
+          "public-instance-method",
+          "protected-instance-method",
+          "private-instance-method"
+        ]
       }
     ],
-    "variable-name": false,
-    "whitespace": [
-      true,
-      "check-branch",
-      "check-decl",
-      "check-operator",
-      "check-separator",
-      "check-type"
-    ],
-    "directive-selector-prefix": [
-      true,
-      "app"
-    ],
-    "component-selector-prefix": [
-      true,
-      "app"
-    ],
-    "directive-selector-name": [
-      true,
-      "camelCase"
-    ],
-    "component-selector-name": [
-      true,
-      "kebab-case"
-    ],
-    "directive-selector-type": [
-      true,
-      "attribute"
-    ],
-    "component-selector-type": [
-      true,
-      "element"
-    ],
-    "use-input-property-decorator": true,
-    "use-output-property-decorator": true,
-    "use-host-property-decorator": true,
-    "no-input-rename": true,
-    "no-output-rename": true,
-    "use-life-cycle-interface": true,
-    "use-pipe-transform-interface": true,
-    "component-class-suffix": true,
-    "directive-class-suffix": true,
-    "callable-types": true,
-    "import-blacklist": [
-      true,
-      "rxjs"
-    ],
-    "import-spacing": true,
-    "interface-over-type-literal": true,
     "no-empty-interface": true,
+    "no-unnecessary-type-assertion": true,
+    "no-var-requires": true,
+    "curly": true,
+    "no-bitwise": true,
+    "no-console": {
+      "options": "log",
+      "severity": "warning"
+    },
+    "no-construct": true,
+    "no-duplicate-variable": true,
+    "no-empty": true,
+    "no-eval": true,
+    "no-invalid-template-strings": true,
+    "no-invalid-this": true,
+    "no-misused-new": true,
+    "no-shadowed-variable": true,
+    "no-sparse-arrays": true,
+    "no-string-literal": true,
     "no-string-throw": true,
+    "no-switch-case-fall-through": true,
+    "no-unbound-method": true,
+    "no-unsafe-finally": true,
+    "no-unused-expression": [
+      true,
+      "allow-fast-null-checks",
+      "allow-new"
+    ],
+    "no-unused-variable": [
+      true,
+      "check-parameters"
+    ],
+    "no-use-before-declare": true,
+    "no-var-keyword": true,
+    "no-void-expression": [
+      true,
+      "ignore-arrow-function-shorthand"
+    ],
+    "prefer-conditional-expression": true,
+    "radix": {
+      "severity": "warning"
+    },
+    "restrict-plus-operands": true,
+    "triple-equals": [
+      true,
+      "allow-null-check",
+      "allow-undefined-check"
+    ],
+    "cyclomatic-complexity": {
+      "severity": "warning"
+    },
+    "deprecation": {
+      "severity": "warning"
+    },
+    "indent": {
+      "options": [
+        "spaces",
+        2
+      ],
+      "severity": "warning"
+    },
+    "linebreak-style": [
+      false,
+      "LF"
+    ],
+    "max-file-line-count": {
+      "options": 3000,
+      "severity": "warning"
+    },
+    "max-line-length": {
+      "options": 200,
+      "severity": "warning"
+    },
+    "no-default-export": {
+      "severity": "warning"
+    },
+    "no-duplicate-imports": true,
+    "no-mergeable-namespace": true,
     "prefer-const": true,
-    "typeof-compare": true,
-    "unified-signatures": true,
+    "trailing-comma": {
+      "severity": "warning"
+    },
+    "array-type": {
+      "options": "array",
+      "severity": "warning"
+    },
+    "arrow-return-shorthand": {
+      "severity": "warning"
+    },
+    "class-name": true,
+    "import-spacing": true,
+    "interface-name": true,
+    "newline-before-return": {
+      "severity": "warning"
+    },
+    "new-parens": true,
+    "no-boolean-literal-compare": true,
+    "no-consecutive-blank-lines": {
+      "severity": "warning"
+    },
+    "no-irregular-whitespace": {
+      "severity": "warning"
+    },
+    "one-variable-per-declaration": true,
+    "prefer-template": [
+      true,
+      "allow-single-concat"
+    ],
+    "quotemark": {
+      "options": "single",
+      "severity": "warning"
+    },
+    "semicolon": {
+      "options": "always",
+      "severity": "warning"
+    },
+    "variable-name": {
+      "options": "check-format",
+      "severity": "warning"
+    }
   }
 }

@@ -1,11 +1,10 @@
 import { Component, OnInit, HostBinding } from '@angular/core';
-import { MaterialSelectComponent } from '../material-select';
 import { VisaService } from '../visa.service';
 import { Router } from '@angular/router';
 import { StringUtils } from '../utils/string';
 
 //TODO Optimize images
-const BACKGROUND_TYPE = ['bg-payir','bg-hike','bg-kayak','bg-woods'];
+const BACKGROUND_TYPE = ['bg-payir', 'bg-hike', 'bg-kayak', 'bg-woods'];
 
 @Component({
   selector: 'app-home',
@@ -14,34 +13,34 @@ const BACKGROUND_TYPE = ['bg-payir','bg-hike','bg-kayak','bg-woods'];
   providers: [VisaService]
 })
 export class HomeComponent implements OnInit {
-  userNationality: string;
-  partnerNationality: string;
-  countries: any[] = [];
+  public userNationality: string;
+  public partnerNationality: string;
+  public countries: string[] = [];
 
   @HostBinding('class')
-  backgroundType: string = BACKGROUND_TYPE[Math.floor(Math.random() * BACKGROUND_TYPE.length)];
+  public backgroundType: string = BACKGROUND_TYPE[Math.floor(Math.random() * BACKGROUND_TYPE.length)];
 
-  constructor(private visaService: VisaService, private router: Router) {}
+  public constructor(private visaService: VisaService, private router: Router) { }
 
-  ngOnInit() {
+  public ngOnInit() {
     this.visaService.getDropdownCountries()
-    .subscribe(
-      data => this.countries = data,
-      err => console.log(err)
-    );
+      .subscribe(
+        data => this.countries = data,
+        err => console.error(err)
+      );
   }
 
-  setCountrySelection(item, index) {
+  public setCountrySelection(country: string, index: number) {
     if (index === 0) {
-      this.userNationality = item;
+      this.userNationality = country;
     } else {
-      this.partnerNationality = item;
+      this.partnerNationality = country;
     }
   }
 
-  showResults(event) {
-    let formattedUserCountry = StringUtils.getUrlFriendlyName(this.userNationality);
-    let formattedPartnerCountry = StringUtils.getUrlFriendlyName(this.partnerNationality);
+  public showResults() {
+    const formattedUserCountry = StringUtils.getUrlFriendlyName(this.userNationality);
+    const formattedPartnerCountry = StringUtils.getUrlFriendlyName(this.partnerNationality);
     this.router.navigate(['/search', `${formattedUserCountry}+${formattedPartnerCountry}`]);
   }
 }

@@ -1,6 +1,6 @@
 /* tslint:disable:no-unused-variable */
 
-import { By }           from '@angular/platform-browser';
+import { By } from '@angular/platform-browser';
 import { DebugElement, EventEmitter } from '@angular/core';
 
 import { inject } from '@angular/core/testing';
@@ -11,7 +11,7 @@ const DEFAULT_PLACEHOLDER = 'Choose an option';
 const SOME_ITEMS = ['ABC', 'DEF', 'GHI'];
 
 describe('Component: MaterialSelect', () => {
-  let component;
+  let component: MaterialSelectComponent;
 
   beforeEach(() => {
     component = new MaterialSelectComponent();
@@ -27,7 +27,7 @@ describe('Component: MaterialSelect', () => {
       expect(component.isActive).toBeFalsy();
     });
 
-    it('should use ' + DEFAULT_PLACEHOLDER + ' as the default placeholder text', () => {
+    it(`should use ${DEFAULT_PLACEHOLDER} as the default placeholder text`, () => {
       expect(component.placeholderText).toBe(DEFAULT_PLACEHOLDER);
     });
 
@@ -48,7 +48,7 @@ describe('Component: MaterialSelect', () => {
     });
 
     it('should toggle the dropdown', () => {
-      let mockEvent = new Event('click');
+      const mockEvent = new Event('click');
 
       component.toggleDropdownState(mockEvent);
 
@@ -56,7 +56,7 @@ describe('Component: MaterialSelect', () => {
     });
 
     it('should prevent event propagation', () => {
-      let mockEvent = new Event('click');
+      const mockEvent = new Event('click');
       spyOn(mockEvent, 'stopPropagation');
 
       component.toggleDropdownState(mockEvent);
@@ -87,7 +87,7 @@ describe('Component: MaterialSelect', () => {
 
     it('should save the selected item', () => {
       component.items = SOME_ITEMS;
-      let someItem = SOME_ITEMS[0];
+      const someItem = SOME_ITEMS[0];
 
       component.notifyItemSelection(someItem);
 
@@ -96,7 +96,7 @@ describe('Component: MaterialSelect', () => {
 
     it('should notify the parent component with the selected item', () => {
       component.items = SOME_ITEMS;
-      let someItem = SOME_ITEMS[0];
+      const someItem = SOME_ITEMS[0];
       spyOn(component.onItemSelected, 'emit');
       component.notifyItemSelection(someItem);
 

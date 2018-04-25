@@ -1,8 +1,8 @@
 export class Country {
-  name: string;
-  note: string;
+  public name: string;
+  public note: string | undefined;
 
-  constructor(name: string, note: string) {
+  public constructor(name: string, note: string | undefined) {
     this.name = name;
     this.note = note;
   }

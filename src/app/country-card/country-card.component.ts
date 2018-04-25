@@ -10,29 +10,30 @@ import { StringUtils } from '../utils/string';
   styleUrls: ['country-card.component.scss']
 })
 export class CountryCardComponent implements OnInit {
+
   @Input()
-  country: Country;
+  public country: Country;
 
-  userVisaStatus: Visa;
-  partnerVisaStatus: Visa;
+  public userVisaStatus: Visa;
+  public partnerVisaStatus: Visa;
 
-  userVisaClass: string;
-  partnerVisaClass: string;
+  public userVisaClass: string;
+  public partnerVisaClass: string;
 
-  wikiUrl: string;
+  public wikiUrl: string;
 
-  Visa = Visa;
+  public Visa = Visa;
+
+  @HostBinding('class')
+  public cardClass: string = 'country-card mdl-card mdl-shadow--2dp';
+  public flagClass: string;
+
+  public constructor(public visaService: VisaService) { }
 
   //TODO Set up HTTP call to Wikipedia
   //Example: https://en.wikipedia.org/w/api.php?format=jsonfm&action=query&prop=extracts&exlimit=max&explaintext&exintro&titles=China&redirects=
 
-  @HostBinding('class')
-  cardClass: string = 'country-card mdl-card mdl-shadow--2dp';
-  flagClass: string;
-
-  constructor(private visaService: VisaService) {}
-
-  getCountryFlagClass(countryName) {
+  public getCountryFlagClass(countryName: string) {
     if (!countryName) {
       throw new Error('Undefined/null country name. Cannot find country flag class');
     }
@@ -50,15 +51,16 @@ export class CountryCardComponent implements OnInit {
       case 'são tomé and príncipe': countryStr = 'sao-tome-and-principe'; break;
       case 'georgia (country)': countryStr = 'georgia'; break;
     }
+
     return countryStr.replace(/ /g, '-');
   }
 
-  ngOnInit() {
+  public ngOnInit() {
     this.userVisaStatus = this.visaService.getUserVisaStatus(this.country.name);
     this.partnerVisaStatus = this.visaService.getPartnerVisaStatus(this.country.name);
 
-    this.userVisaClass = Visa.toString(this.userVisaStatus);
-    this.partnerVisaClass = Visa.toString(this.partnerVisaStatus);
+    this.userVisaClass = Visa.toCSSClass(this.userVisaStatus);
+    this.partnerVisaClass = Visa.toCSSClass(this.partnerVisaStatus);
     this.flagClass = this.getCountryFlagClass(this.country.name);
     this.wikiUrl = StringUtils.getWikiUrl(this.country.name);
   }

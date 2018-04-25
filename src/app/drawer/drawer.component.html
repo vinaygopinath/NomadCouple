@@ -36,89 +36,105 @@
     <a href="#fixed-tab-2" class="mdl-layout__tab">You</a>
     <a href="#fixed-tab-3" class="mdl-layout__tab">Your Partner</a>
   </div> -->
-</header>
-<div class="mdl-layout__content">
-  <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
-    <div class="mdl-tabs__tab-bar">
-      <a href="#together-panel" class="mdl-tabs__tab is-active">Together</a>
-      <a href="#you-panel" class="mdl-tabs__tab" *ngIf="user !== partner">You</a>
-      <a href="#partner-panel" class="mdl-tabs__tab" *ngIf="user !== partner">Partner</a>
-    </div>
+  </header>
+  <div class="mdl-layout__content">
+    <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+      <div class="mdl-tabs__tab-bar">
+        <a href="#together-panel" class="mdl-tabs__tab is-active">Together</a>
+        <a href="#you-panel" class="mdl-tabs__tab" *ngIf="user !== partner">You</a>
+        <a href="#partner-panel" class="mdl-tabs__tab" *ngIf="user !== partner">Partner</a>
+      </div>
 
-    <div class="mdl-tabs__panel is-active" id="together-panel">
-      <h4>Together</h4>
-      <div *ngIf="visaData">
-        <div>
-          <nomad-country-count [type]="Visa.NOT_REQUIRED" [array]="visaData.bothNotRequired" (click)="emitCountClick(Person.BOTH, Visa.NOT_REQUIRED)" [selected]="selectedTab === Person.BOTH && selectedVisaSection === Visa.NOT_REQUIRED">
-          </nomad-country-count>
-          <nomad-country-count [type]="Visa.ON_ARRIVAL" [array]="visaData.bothOnArrival" (click)="emitCountClick(Person.BOTH, Visa.ON_ARRIVAL)" [selected]="selectedTab === Person.BOTH && selectedVisaSection === Visa.ON_ARRIVAL">
-          </nomad-country-count>
+      <div class="mdl-tabs__panel is-active" id="together-panel">
+        <h4>Together</h4>
+        <div *ngIf="visaData">
+          <div>
+            <nomad-country-count [type]="Visa.NOT_REQUIRED" [array]="visaData.bothNotRequired" (click)="emitCountClick(Person.BOTH, Visa.NOT_REQUIRED)"
+              [selected]="selectedTab === Person.BOTH && selectedVisaSection === Visa.NOT_REQUIRED">
+            </nomad-country-count>
+            <nomad-country-count [type]="Visa.ON_ARRIVAL" [array]="visaData.bothOnArrival" (click)="emitCountClick(Person.BOTH, Visa.ON_ARRIVAL)"
+              [selected]="selectedTab === Person.BOTH && selectedVisaSection === Visa.ON_ARRIVAL">
+            </nomad-country-count>
+          </div>
+          <div>
+            <nomad-country-count [type]="Visa.EVISA" [array]="visaData.bothEvisa" (click)="emitCountClick(Person.BOTH, Visa.EVISA)" [selected]="selectedTab === Person.BOTH && selectedVisaSection === Visa.EVISA">
+            </nomad-country-count>
+            <nomad-country-count [type]="Visa.REQUIRED" [array]="visaData.bothRequired" (click)="emitCountClick(Person.BOTH, Visa.REQUIRED)"
+              [selected]="selectedTab === Person.BOTH && selectedVisaSection === Visa.REQUIRED">
+            </nomad-country-count>
+          </div>
+          <div *ngIf="visaData.bothRefused.length > 0 || visaData.bothUnknown.length > 0">
+            <nomad-country-count *ngIf="visaData.bothRefused.length > 0" [type]="Visa.REFUSED" [array]="visaData.bothRefused" (click)="emitCountClick(Person.BOTH, Visa.REFUSED)"
+              [selected]="selectedTab === Person.BOTH && selectedVisaSection === Visa.REFUSED">
+            </nomad-country-count>
+            <nomad-country-count *ngIf="visaData.bothUnknown.length > 0" [type]="Visa.UNKNOWN" [array]="visaData.bothUnknown" (click)="emitCountClick(Person.BOTH, Visa.UNKNOWN)"
+              [selected]="selectedTab === Person.BOTH && selectedVisaSection === Visa.UNKNOWN">
+            </nomad-country-count>
+          </div>
         </div>
-        <div>
-          <nomad-country-count [type]="Visa.EVISA" [array]="visaData.bothEvisa" (click)="emitCountClick(Person.BOTH, Visa.EVISA)" [selected]="selectedTab === Person.BOTH && selectedVisaSection === Visa.EVISA">
-          </nomad-country-count>
-          <nomad-country-count [type]="Visa.REQUIRED" [array]="visaData.bothRequired" (click)="emitCountClick(Person.BOTH, Visa.REQUIRED)" [selected]="selectedTab === Person.BOTH && selectedVisaSection === Visa.REQUIRED">
-          </nomad-country-count>
+      </div>
+      <div class="mdl-tabs__panel" id="you-panel">
+        <h4>You</h4>
+        <div *ngIf="visaData">
+          <div>
+            <nomad-country-count [type]="Visa.NOT_REQUIRED" [array]="visaData.userNotRequired" (click)="emitCountClick(Person.USER, Visa.NOT_REQUIRED)"
+              [selected]="selectedTab === Person.USER && selectedVisaSection === Visa.NOT_REQUIRED">
+            </nomad-country-count>
+            <nomad-country-count [type]="Visa.ON_ARRIVAL" [array]="visaData.userOnArrival" (click)="emitCountClick(Person.USER, Visa.ON_ARRIVAL)"
+              [selected]="selectedTab === Person.USER && selectedVisaSection === Visa.ON_ARRIVAL">
+            </nomad-country-count>
+          </div>
+          <div>
+            <nomad-country-count [type]="Visa.EVISA" [array]="visaData.userEvisa" (click)="emitCountClick(Person.USER, Visa.EVISA)" [selected]="selectedTab === Person.USER && selectedVisaSection === Visa.EVISA">
+            </nomad-country-count>
+            <nomad-country-count [type]="Visa.REQUIRED" [array]="visaData.userRequired" (click)="emitCountClick(Person.USER, Visa.REQUIRED)"
+              [selected]="selectedTab === Person.USER && selectedVisaSection === Visa.REQUIRED">
+            </nomad-country-count>
+          </div>
+          <div *ngIf="visaData.userRefused.length > 0 || visaData.userUnknown.length > 0">
+            <nomad-country-count *ngIf="visaData.userRefused.length > 0" [type]="Visa.REFUSED" [array]="visaData.userRefused" (click)="emitCountClick(Person.USER, Visa.REFUSED)"
+              [selected]="selectedTab === Person.USER && selectedVisaSection === Visa.REFUSED">
+            </nomad-country-count>
+            <nomad-country-count *ngIf="visaData.userUnknown.length > 0" [type]="Visa.UNKNOWN" [array]="visaData.userUnknown" (click)="emitCountClick(Person.USER, Visa.UNKNOWN)"
+              [selected]="selectedTab === Person.USER && selectedVisaSection === Visa.UNKNOWN">
+            </nomad-country-count>
+          </div>
         </div>
-        <div *ngIf="visaData.bothRefused.length > 0 || visaData.bothUnknown.length > 0">
-          <nomad-country-count *ngIf="visaData.bothRefused.length > 0" [type]="Visa.REFUSED" [array]="visaData.bothRefused" (click)="emitCountClick(Person.BOTH, Visa.REFUSED)" [selected]="selectedTab === Person.BOTH && selectedVisaSection === Visa.REFUSED">
-          </nomad-country-count>
-          <nomad-country-count *ngIf="visaData.bothUnknown.length > 0" [type]="Visa.UNKNOWN" [array]="visaData.bothUnknown" (click)="emitCountClick(Person.BOTH, Visa.UNKNOWN)" [selected]="selectedTab === Person.BOTH && selectedVisaSection === Visa.UNKNOWN">
-          </nomad-country-count>
+      </div>
+      <div class="mdl-tabs__panel" id="partner-panel">
+        <h4>Your partner</h4>
+        <div *ngIf="visaData">
+          <div>
+            <nomad-country-count [type]="Visa.NOT_REQUIRED" [array]="visaData.partnerNotRequired" (click)="emitCountClick(Person.PARTNER, Visa.NOT_REQUIRED)"
+              [selected]="selectedTab === Person.PARTNER && selectedVisaSection === Visa.NOT_REQUIRED">
+            </nomad-country-count>
+            <nomad-country-count [type]="Visa.ON_ARRIVAL" [array]="visaData.partnerOnArrival" (click)="emitCountClick(Person.PARTNER, Visa.ON_ARRIVAL)"
+              [selected]="selectedTab === Person.PARTNER && selectedVisaSection === Visa.ON_ARRIVAL">
+            </nomad-country-count>
+          </div>
+          <div>
+            <nomad-country-count [type]="Visa.EVISA" [array]="visaData.partnerEvisa" (click)="emitCountClick(Person.PARTNER, Visa.EVISA)"
+              [selected]="selectedTab === Person.PARTNER && selectedVisaSection === Visa.EVISA">
+            </nomad-country-count>
+            <nomad-country-count [type]="Visa.REQUIRED" [array]="visaData.partnerRequired" (click)="emitCountClick(Person.PARTNER, Visa.REQUIRED)"
+              [selected]="selectedTab === Person.PARTNER && selectedVisaSection === Visa.REQUIRED">
+            </nomad-country-count>
+          </div>
+          <div *ngIf="visaData.partnerRefused.length > 0 || visaData.partnerUnknown.length > 0">
+            <nomad-country-count *ngIf="visaData.partnerRefused.length > 0" [type]="Visa.REFUSED" [array]="visaData.partnerRefused" (click)="emitCountClick(Person.PARTNER, Visa.REFUSED)"
+              [selected]="selectedTab === Person.PARTNER && selectedVisaSection === Visa.REFUSED">
+            </nomad-country-count>
+            <nomad-country-count *ngIf="visaData.partnerUnknown.length > 0" [type]="Visa.UNKNOWN" [array]="visaData.partnerUnknown" (click)="emitCountClick(Person.PARTNER, Visa.UNKNOWN)"
+              [selected]="selectedTab === Person.PARTNER && selectedVisaSection === Visa.UNKNOWN">
+            </nomad-country-count>
+          </div>
         </div>
       </div>
     </div>
-    <div class="mdl-tabs__panel" id="you-panel">
-      <h4>You</h4>
-      <div *ngIf="visaData">
-        <div>
-          <nomad-country-count [type]="Visa.NOT_REQUIRED" [array]="visaData.userNotRequired" (click)="emitCountClick(Person.USER, Visa.NOT_REQUIRED)" [selected]="selectedTab === Person.USER && selectedVisaSection === Visa.NOT_REQUIRED">
-          </nomad-country-count>
-          <nomad-country-count [type]="Visa.ON_ARRIVAL" [array]="visaData.userOnArrival" (click)="emitCountClick(Person.USER, Visa.ON_ARRIVAL)" [selected]="selectedTab === Person.USER && selectedVisaSection === Visa.ON_ARRIVAL">
-          </nomad-country-count>
-        </div>
-        <div>
-          <nomad-country-count [type]="Visa.EVISA" [array]="visaData.userEvisa" (click)="emitCountClick(Person.USER, Visa.EVISA)" [selected]="selectedTab === Person.USER && selectedVisaSection === Visa.EVISA">
-          </nomad-country-count>
-          <nomad-country-count [type]="Visa.REQUIRED" [array]="visaData.userRequired" (click)="emitCountClick(Person.USER, Visa.REQUIRED)" [selected]="selectedTab === Person.USER && selectedVisaSection === Visa.REQUIRED">
-          </nomad-country-count>
-        </div>
-        <div *ngIf="visaData.userRefused.length > 0 || visaData.userUnknown.length > 0">
-          <nomad-country-count *ngIf="visaData.userRefused.length > 0" [type]="Visa.REFUSED" [array]="visaData.userRefused" (click)="emitCountClick(Person.USER, Visa.REFUSED)" [selected]="selectedTab === Person.USER && selectedVisaSection === Visa.REFUSED">
-          </nomad-country-count>
-          <nomad-country-count *ngIf="visaData.userUnknown.length > 0" [type]="Visa.UNKNOWN" [array]="visaData.userUnknown" (click)="emitCountClick(Person.USER, Visa.UNKNOWN)" [selected]="selectedTab === Person.USER && selectedVisaSection === Visa.UNKNOWN">
-          </nomad-country-count>
-        </div>
-      </div>
-    </div>
-    <div class="mdl-tabs__panel" id="partner-panel">
-      <h4>Your partner</h4>
-      <div *ngIf="visaData">
-        <div>
-          <nomad-country-count [type]="Visa.NOT_REQUIRED" [array]="visaData.partnerNotRequired" (click)="emitCountClick(Person.PARTNER, Visa.NOT_REQUIRED)" [selected]="selectedTab === Person.PARTNER && selectedVisaSection === Visa.NOT_REQUIRED">
-          </nomad-country-count>
-          <nomad-country-count [type]="Visa.ON_ARRIVAL" [array]="visaData.partnerOnArrival" (click)="emitCountClick(Person.PARTNER, Visa.ON_ARRIVAL)" [selected]="selectedTab === Person.PARTNER && selectedVisaSection === Visa.ON_ARRIVAL">
-          </nomad-country-count>
-        </div>
-        <div>
-          <nomad-country-count [type]="Visa.EVISA" [array]="visaData.partnerEvisa" (click)="emitCountClick(Person.PARTNER, Visa.EVISA)" [selected]="selectedTab === Person.PARTNER && selectedVisaSection === Visa.EVISA">
-          </nomad-country-count>
-          <nomad-country-count [type]="Visa.REQUIRED" [array]="visaData.partnerRequired" (click)="emitCountClick(Person.PARTNER, Visa.REQUIRED)" [selected]="selectedTab === Person.PARTNER && selectedVisaSection === Visa.REQUIRED">
-          </nomad-country-count>
-        </div>
-        <div *ngIf="visaData.partnerRefused.length > 0 || visaData.partnerUnknown.length > 0">
-          <nomad-country-count *ngIf="visaData.partnerRefused.length > 0" [type]="Visa.REFUSED" [array]="visaData.partnerRefused" (click)="emitCountClick(Person.PARTNER, Visa.REFUSED)" [selected]="selectedTab === Person.PARTNER && selectedVisaSection === Visa.REFUSED">
-          </nomad-country-count>
-          <nomad-country-count *ngIf="visaData.partnerUnknown.length > 0" [type]="Visa.UNKNOWN" [array]="visaData.partnerUnknown" (click)="emitCountClick(Person.PARTNER, Visa.UNKNOWN)" [selected]="selectedTab === Person.PARTNER && selectedVisaSection === Visa.UNKNOWN">
-          </nomad-country-count>
-        </div>
-      </div>
-    </div>
-  </div>
 
 
 
-  <!-- <main class="mdl-layout__content">
+    <!-- <main class="mdl-layout__content">
 
   <section class="mdl-layout__tab-panel is-active" id="fixed-tab-1">
   <div class="page-content">
@@ -140,5 +156,5 @@ content panel 3
 
 </main> -->
 
-</div>
-<!-- /.mdl-layout -->
+  </div>
+  <!-- /.mdl-layout -->

@@ -7,21 +7,21 @@ import { Component, Input, Output, EventEmitter, HostListener } from '@angular/c
 })
 export class MaterialSelectComponent {
   @Input()
-  placeholderText: string = 'Choose an option';
+  public placeholderText: string = 'Choose an option';
   @Input()
-  items: any[] = [];
+  public items: string[] = [];
   @Output()
-  onItemSelected: EventEmitter<any> = new EventEmitter();
+  public onItemSelected: EventEmitter<string> = new EventEmitter();
 
-  isActive = false;
-  selectedItem: any;
+  public isActive = false;
+  public selectedItem: string;
 
-  toggleDropdownState(event) {
+  public toggleDropdownState(event: Event) {
     this.isActive = !this.isActive;
     event.stopPropagation();
   }
 
-  notifyItemSelection(item) {
+  public notifyItemSelection(item: string) {
     this.selectedItem = item;
     this.onItemSelected.emit(item);
   }
@@ -31,7 +31,7 @@ export class MaterialSelectComponent {
   other than the dropdown
   */
   @HostListener('document:click')
-  closeDropdown() {
+  public closeDropdown() {
     this.isActive = false;
   }
 }

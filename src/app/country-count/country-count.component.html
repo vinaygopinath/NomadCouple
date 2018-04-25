@@ -1,12 +1,13 @@
-<div class="nomad-country-count mdl-js-ripple-effect" [ngClass]="Visa.toString(type)" *ngIf="arr" [class.selected]="selected">
+<div class="nomad-country-count mdl-js-ripple-effect" [ngClass]="Visa.toCSSClass(type)" *ngIf="arr" [class.selected]="selected">
   <h1 class="number">{{arr.length}}</h1>
   <h6 class="text" [ngSwitch]="type">
-    <template [ngSwitchCase]="Visa.ON_ARRIVAL">Visa on arrival</template>
-    <template [ngSwitchCase]="Visa.REQUIRED">Visa required</template>
-    <template [ngSwitchCase]="Visa.NOT_REQUIRED">Visa not required</template>
-    <template [ngSwitchCase]="Visa.EVISA">E-visa</template>
-    <template [ngSwitchCase]="Visa.REFUSED">Travel banned</template>
-    <template [ngSwitchCase]="Visa.UNKNOWN">Visa unknown</template>
+    <span *ngSwitchCase="Visa.ON_ARRIVAL">Visa on arrival</span>
+    <span *ngSwitchCase="Visa.REQUIRED">Visa required</span>
+    <span *ngSwitchCase="Visa.NOT_REQUIRED">Visa not required</span>
+    <span *ngSwitchCase="Visa.EVISA">E-visa</span>
+    <span *ngSwitchCase="Visa.REFUSED">Travel banned</span>
+    <span *ngSwitchCase="Visa.UNKNOWN">Visa unknown</span>
+    <span *ngSwitchDefault>Unrecognised type {{type}}</span>
   </h6>
   <span class="mdl-ripple is-animating ripple-workaround"></span>
 </div>

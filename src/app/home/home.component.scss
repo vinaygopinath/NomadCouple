@@ -51,19 +51,19 @@
   @media screen and (min-width: $screen-tablet-min) {
     //TODO Co-ordinate text/input/button colors based on image
     &.bg-payir {
-      background-image: url('app/shared/images/home/bg-payir.jpg');
+      background-image: url('../../assets/images/home/bg-payir.jpg');
       background-size: cover;
     }
     &.bg-woods {
-      background-image: url('app/shared/images/home/bg-woods.jpg');
+      background-image: url('../../assets/images/home/bg-woods.jpg');
       background-size: cover;
     }
     &.bg-kayak {
-      background-image: url('app/shared/images/home/bg-kayak.jpg');
+      background-image: url('../../assets/images/home/bg-kayak.jpg');
       background-size: cover;
     }
     &.bg-hike {
-      background-image: url('app/shared/images/home/bg-hike.jpg');
+      background-image: url('../../assets/images/home/bg-hike.jpg');
       background-size: cover;
     }
   }

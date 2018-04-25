@@ -1,7 +1,6 @@
 import { Component, OnInit, ViewEncapsulation, Input, EventEmitter, Output } from '@angular/core';
 import { VisaService } from '../visa.service';
 import { VisaData } from '../visa-data';
-import { CountryCountComponent } from '../country-count';
 import { Visa } from '../visa.enum';
 import { Person } from '../person.enum';
 
@@ -14,39 +13,41 @@ declare var componentHandler: any;
   encapsulation: ViewEncapsulation.None
 })
 export class DrawerComponent implements OnInit {
-  private selectedTab: Person = Person.BOTH;
-  private selectedVisaSection: Visa = Visa.NOT_REQUIRED;
+
+  public selectedTab: Person = Person.BOTH;
+  public selectedVisaSection: Visa = Visa.NOT_REQUIRED;
 
   @Input()
-  private user: string;
+  public user: string;
   @Input()
-  private partner: string;
+  public partner: string;
   @Output('on-filter')
-  private onCountClick: EventEmitter<any> = new EventEmitter();
+  public onCountClick: EventEmitter<any> = new EventEmitter();
 
-  private visaData: VisaData;
+  public visaData: VisaData;
+
   //Make Visa and Person enums available in template
-  Visa = Visa;
-  Person = Person;
+  public Visa = Visa;
+  public Person = Person;
 
-  constructor(private visaService: VisaService) {
+  public constructor(private visaService: VisaService) {
   }
 
-  ngAfterViewInit() {
+  public ngAfterViewInit() {
     componentHandler.upgradeDom();
   }
 
-  ngOnInit() {
+  public ngOnInit() {
     this.visaService.getVisaCountries(this.user, this.partner)
-    .subscribe(
-      data => {
-        this.visaData = data;
-      },
-      err => console.error('getVisaCountries error = ',err)
-    );
+      .subscribe(
+        data => {
+          this.visaData = data;
+        },
+        err => console.error('getVisaCountries error = ', err)
+      );
   }
 
-  emitCountClick(person: Person, visa: Visa) {
+  public emitCountClick(person: Person, visa: Visa) {
     this.selectedTab = person;
     this.selectedVisaSection = visa;
     this.onCountClick.emit({

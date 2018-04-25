@@ -6,7 +6,8 @@
     </material-select>
     <material-select placeholderText="Your partner's country" [items]="countries" (onItemSelected)="setCountrySelection($event, 1)">
     </material-select>
-    <button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect home-button" [class.mdl-button--colored]="userNationality && partnerNationality" [disabled]="!(userNationality && partnerNationality)">
+    <button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect home-button" [class.mdl-button--colored]="userNationality && partnerNationality"
+      [disabled]="!(userNationality && partnerNationality)">
       Let's Go!
     </button>
   </form>

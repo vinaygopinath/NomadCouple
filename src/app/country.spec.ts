@@ -1,6 +1,6 @@
-import { inject } from '@angular/core/testing';
+// import { inject } from '@angular/core/testing';
 
-import {Country} from './country';
+import { Country } from './country';
 
 describe('Country', () => {
 
