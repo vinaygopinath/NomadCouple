@@ -32,24 +32,16 @@ export class SearchComponent implements OnInit, AfterViewInit, OnDestroy {
   public constructor(private element: ElementRef, private visaService: VisaService, private route: ActivatedRoute) { }
 
   public ngOnInit() {
-    this.paramSub = this.route.params.subscribe((params: { nationalities?: string }) => {
-      const nationalities = params.nationalities;
-      if (!nationalities) {
-        // TODO: Log error to console, or show an error to the user
-        return;
-      }
-      const nationalityArr = nationalities.split('+');
-      if (nationalityArr.length !== 2) {
-        // TODO: Log error to console, or show an error to the user
-        return;
-      }
-      this.userNationality = StringUtils.getUserFriendlyName(nationalityArr[0]);
-      this.partnerNationality = StringUtils.getUserFriendlyName(nationalityArr[1]);
-      this.visaService.getVisaCountries(nationalityArr[0], nationalityArr[1])
+    this.paramSub = this.route.params.subscribe((params: { userNationality: string; partnerNationality: string }) => {
+      const { userNationality, partnerNationality } = params;
+
+      this.userNationality = StringUtils.getUserFriendlyName(userNationality);
+      this.partnerNationality = StringUtils.getUserFriendlyName(partnerNationality);
+      this.visaService.getVisaCountries(this.userNationality, this.partnerNationality)
         .subscribe(
           data => {
             this.visaData = data;
-            this.results = this.visaData.bothNotRequired;
+            this.results = this.visaData[VisaDataType.BOTH_NOT_REQUIRED];
             this.pageTitle = `${Person.toDescriptionString(Person.BOTH)} - ${Visa.toDescriptionString(Visa.NOT_REQUIRED)}`;
             // this.metaService.setTitle(`${this.userNationality} and ${this.partnerNationality} - Visa requirements`);
             // this.metaService.setTag('description', `Couples from ${this.userNationality} and ${this.partnerNationality}

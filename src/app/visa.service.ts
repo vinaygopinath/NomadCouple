@@ -32,9 +32,10 @@ export class VisaService {
   private countries: string[];
   private visaData: VisaData;
   private visaDataObservable: Observable<VisaData> | null;
-  private visaDataCountries: string[] = ['', ''];
+  private userCountry: string;
+  private partnerCountry: string;
   private observable: Observable<string[]> | null;
-  private userVisas: CountryWithVisa[] = []; // TODO: Should be country with visas // CountryWithVisa[]
+  private userVisas: CountryWithVisa[] = [];
   private partnerVisas: CountryWithVisa[] = [];
 
   // Credit: http://stackoverflow.com/a/36294012/293847
@@ -61,16 +62,16 @@ export class VisaService {
   }
 
   public getVisaCountries(userCountry: string, partnerCountry: string): Observable<VisaData> {
-    // console.log('getVisaCountries called with %s and %s',userCountry, partnerCountry);
-    if (this.visaData && !(this.visaDataCountries[0] === userCountry && this.visaDataCountries[1] === partnerCountry)) {
+    // console.log('getVisaCountries called with %s and %s', userCountry, partnerCountry);
+    if (this.visaData && (this.userCountry === userCountry && this.partnerCountry === partnerCountry)) {
       // console.log('Returning cached data');
       return Observable.of(this.visaData);
     } else if (this.visaDataObservable) {
       // console.log('Returning cached observable');
       return this.visaDataObservable;
     } else {
-      this.visaDataCountries[0] = userCountry;
-      this.visaDataCountries[1] = partnerCountry;
+      this.userCountry = userCountry;
+      this.partnerCountry = partnerCountry;
       const userCountryURL = this._getCountryURL(userCountry);
       const partnerCountryURL = this._getCountryURL(partnerCountry);
       const userCountryHttp = this.http.get(userCountryURL).map((res: Response) => res.json());

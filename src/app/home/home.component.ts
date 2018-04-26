@@ -41,6 +41,6 @@ export class HomeComponent implements OnInit {
   public showResults() {
     const formattedUserCountry = StringUtils.getUrlFriendlyName(this.userNationality);
     const formattedPartnerCountry = StringUtils.getUrlFriendlyName(this.partnerNationality);
-    this.router.navigate(['/search', `${formattedUserCountry}+${formattedPartnerCountry}`]);
+    this.router.navigate(['/search', formattedUserCountry, formattedPartnerCountry]);
   }
 }

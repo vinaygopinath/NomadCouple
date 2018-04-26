@@ -4,7 +4,11 @@ import { SearchComponent } from './search';
 
 export const routes: Routes = [
   {
-    path: 'start',
+    path: 'search/:userNationality/:partnerNationality',
+    component: SearchComponent
+  },
+  {
+    path: '',
     component: HomeComponent,
     data: {
       meta: {
@@ -15,12 +19,8 @@ export const routes: Routes = [
     }
   },
   {
-    path: 'search/:nationalities',
-    component: SearchComponent
-  },
-  {
-    path: '',
-    redirectTo: '/start',
-    pathMatch: 'full'
+    path: '**',
+    redirectTo: '',
+    pathMatch: 'prefix'
   }
 ];
