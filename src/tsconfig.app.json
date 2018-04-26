@@ -17,6 +17,12 @@
     "baseUrl": "",
     "types": []
   },
+  "angularCompilerOptions": {
+    "preserveWhitespaces": false,
+    "fullTemplateTypeCheck": true,
+    "strictMetadataEmit": true,
+    "strictInjectionParameters": true
+  },
   "exclude": [
     "test.ts",
     "**/*.spec.ts"
