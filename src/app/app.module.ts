@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { NgSelectModule } from '@ng-select/ng-select';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 // import { MetaConfig, MetaModule } from 'ng2-meta';
@@ -9,7 +10,6 @@ import { CountryCardComponent } from './country-card';
 import { CountryCountComponent } from './country-count';
 import { DrawerComponent } from './drawer';
 import { HomeComponent } from './home';
-import { MaterialSelectComponent } from './material-select';
 import { ResultsComponent } from './results';
 import { SearchComponent } from './search';
 import { routes } from './app.routes';
@@ -32,14 +32,15 @@ import { VisaService } from './visa.service';
     CountryCountComponent,
     DrawerComponent,
     HomeComponent,
-    MaterialSelectComponent,
     ResultsComponent,
     SearchComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
+    ReactiveFormsModule,
     HttpModule,
+    NgSelectModule,
     RouterModule.forRoot(routes),
     // MetaModule.forRoot(metaConfig)
   ],

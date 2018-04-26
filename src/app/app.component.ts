@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-// import { VisaService } from './visa.service';
 // import { MetaService } from 'ng2-meta';
 
 @Component({

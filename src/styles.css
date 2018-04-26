@@ -1,1 +1,44 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~@ng-select/ng-select/themes/material.theme.css";
+
+.ng-select.ng-select-single .ng-select-container .ng-clear-wrapper {
+  bottom: 13px;
+}
+.ng-select.ng-select-single .ng-select-container .ng-arrow-wrapper {
+  bottom: 17px;
+}
+
+.ng-select-container {
+  background-color: #fff;
+}
+
+.ng-value-container {
+  padding-top: 4px;
+}
+
+.ng-select.ng-invalid .ng-select-container .ng-value-container .ng-placeholder {
+  margin-top: -4px;
+  font-size: 16px;
+  padding-left: 10px;
+}
+
+.ng-select .ng-select-container .ng-value-container .ng-placeholder,
+.ng-select.ng-invalid.ng-select-focused .ng-select-container .ng-value-container .ng-placeholder,
+.ng-select.ng-select-opened .ng-select-container .ng-value-container .ng-placeholder {
+  margin-top: 0;
+  font-size: 16px;
+  padding-left: 10px;
+  padding-top: 4px;
+  text-align: left;
+}
+
+.ng-select.ng-select-single .ng-select-container .ng-value-container .ng-value {
+  font-size: 16px;
+  padding-left: 10px;
+}
+
+.ng-select .ng-select-container .ng-value-container .ng-input>input {
+  padding-left: 10px;
+  padding-bottom: 8px;
+  font-size: 16px;
+}

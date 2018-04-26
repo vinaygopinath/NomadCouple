@@ -1,5 +1,6 @@
 import { Component, OnInit, HostBinding } from '@angular/core';
 import { VisaService } from '../visa.service';
+import { Observable } from 'rxjs/Rx';
 import { Router } from '@angular/router';
 import { StringUtils } from '../utils/string';
 
@@ -15,7 +16,7 @@ const BACKGROUND_TYPE = ['bg-payir', 'bg-hike', 'bg-kayak', 'bg-woods'];
 export class HomeComponent implements OnInit {
   public userNationality: string;
   public partnerNationality: string;
-  public countries: string[] = [];
+  public countries: Observable<string[]>
 
   @HostBinding('class')
   public backgroundType: string = BACKGROUND_TYPE[Math.floor(Math.random() * BACKGROUND_TYPE.length)];
@@ -23,19 +24,7 @@ export class HomeComponent implements OnInit {
   public constructor(private visaService: VisaService, private router: Router) { }
 
   public ngOnInit() {
-    this.visaService.getDropdownCountries()
-      .subscribe(
-        data => this.countries = data,
-        err => console.error(err)
-      );
-  }
-
-  public setCountrySelection(country: string, index: number) {
-    if (index === 0) {
-      this.userNationality = country;
-    } else {
-      this.partnerNationality = country;
-    }
+    this.countries = this.visaService.getDropdownCountries();
   }
 
   public showResults() {
