@@ -11,6 +11,10 @@
         "assets",
         "favicon.ico",
         {
+          "glob": "_redirects",
+          "input": "../"
+        },
+        {
           "glob": "**/*",
           "input": "../node_modules/nomad-couple-scraper/dist/output",
           "output": "assets/countries"
@@ -60,6 +64,9 @@
     "component": {
       "inlineTemplate": false,
       "spec": true
+    },
+    "build": {
+      "preserveSymlinks": true
     }
   }
 }
