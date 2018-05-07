@@ -3,7 +3,12 @@ import { Http, Response } from '@angular/http';
 import { Country } from './country';
 import { WikiData, RawWikiDataJSON } from './wiki-data';
 import { VisaData, RawVisaDataJSON } from './visa-data';
-import { Observable } from 'rxjs/Rx';
+import { Observable } from 'rxjs/Observable';
+import 'rxjs/add/operator/map';
+import 'rxjs/add/operator/do';
+import 'rxjs/add/operator/share';
+import 'rxjs/add/observable/forkJoin';
+import 'rxjs/add/observable/of';
 import { Person } from './person.enum';
 import { Visa } from './visa.enum';
 
@@ -45,11 +50,11 @@ export class VisaService {
     } else if (this.observable) {
       return this.observable;
     } else {
-      this.observable = this.http.get(this.BASE_URL + '/countries.json')
-        .map((res: Response) => {
+      this.observable = (<any>this.http.get(this.BASE_URL + '/countries.json'))
+        .map((res: Response): string[] => {
           return res.json() || [];
         })
-        .do((countries: string[]) => {
+        .do((countries: string[]): string[] => {
           this.countries = countries;
           this.observable = null;
 
@@ -57,7 +62,7 @@ export class VisaService {
         })
         .share();
 
-      return this.observable;
+      return this.observable as Observable<string[]>;
     }
   }
 
@@ -74,9 +79,9 @@ export class VisaService {
       this.partnerCountry = partnerCountry;
       const userCountryURL = this._getCountryURL(userCountry);
       const partnerCountryURL = this._getCountryURL(partnerCountry);
-      const userCountryHttp = this.http.get(userCountryURL).map((res: Response) => res.json());
-      const partnerCountryHttp = this.http.get(partnerCountryURL).map((res: Response) => res.json());
-      this.visaDataObservable = Observable.forkJoin(userCountryHttp, partnerCountryHttp)
+      const userCountryHttp: Observable<RawWikiDataJSON> = (<any>this.http.get(userCountryURL)).map((res: Response) => res.json()) as Observable<RawWikiDataJSON>;
+      const partnerCountryHttp = (<any>this.http.get(partnerCountryURL)).map((res: Response) => res.json());
+      this.visaDataObservable = (<any>Observable.forkJoin(userCountryHttp, partnerCountryHttp))
         .map(
           (data: RawWikiDataJSON[]) => {
             const [rawUserData, rawPartnerData] = data;
@@ -87,9 +92,9 @@ export class VisaService {
           }
         )
         .map(
-          wikiArr => this._getVisaData(wikiArr[0], wikiArr[1])
+          (wikiArr: WikiData[]) => this._getVisaData(wikiArr[0], wikiArr[1])
         )
-        .do(visaData => {
+        .do((visaData: VisaData) => {
           this.visaData = visaData;
           this.visaDataObservable = null;
 
@@ -97,7 +102,7 @@ export class VisaService {
         })
         .share();
 
-      return this.visaDataObservable;
+      return this.visaDataObservable as Observable<VisaData>;
     }
   }
 

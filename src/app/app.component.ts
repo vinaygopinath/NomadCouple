@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-// import { MetaService } from 'ng2-meta';
+import { MetaService } from 'ng2-meta';
 
 @Component({
   selector: 'app-root',
@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['app.component.scss']
 })
 export class AppComponent {
-  // public constructor(private visaService: VisaService, private metaService: MetaService) {
+  public constructor(private metaService: MetaService) { }
 }

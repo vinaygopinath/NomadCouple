@@ -16,7 +16,7 @@ const BACKGROUND_TYPE = ['bg-payir', 'bg-hike', 'bg-kayak', 'bg-woods'];
 export class HomeComponent implements OnInit {
   public userNationality: string;
   public partnerNationality: string;
-  public countries: Observable<string[]>
+  public countries: Observable<string[]>;
 
   @HostBinding('class')
   public backgroundType: string = BACKGROUND_TYPE[Math.floor(Math.random() * BACKGROUND_TYPE.length)];

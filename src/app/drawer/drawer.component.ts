@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewEncapsulation, Input, EventEmitter, Output } from '@angular/core';
+import { Component, ViewEncapsulation, Input, EventEmitter, Output, OnChanges, SimpleChanges } from '@angular/core';
 import { VisaService } from '../visa.service';
 import { VisaData } from '../visa-data';
 import { Visa } from '../visa.enum';
@@ -12,7 +12,7 @@ declare var componentHandler: any;
   styleUrls: ['drawer.component.scss'],
   encapsulation: ViewEncapsulation.None
 })
-export class DrawerComponent implements OnInit {
+export class DrawerComponent implements OnChanges {
 
   public selectedTab: Person = Person.BOTH;
   public selectedVisaSection: Visa = Visa.NOT_REQUIRED;
@@ -37,14 +37,10 @@ export class DrawerComponent implements OnInit {
     componentHandler.upgradeDom();
   }
 
-  public ngOnInit() {
-    this.visaService.getVisaCountries(this.user, this.partner)
-      .subscribe(
-        data => {
-          this.visaData = data;
-        },
-        err => console.error('getVisaCountries error = ', err)
-      );
+  public ngOnChanges(changes: SimpleChanges): void {
+    if (changes.user || changes.partner) {
+      this.updateVisaData();
+    }
   }
 
   public emitCountClick(person: Person, visa: Visa) {
@@ -54,6 +50,16 @@ export class DrawerComponent implements OnInit {
       person,
       visa
     });
+  }
+
+  private updateVisaData() {
+    this.visaService.getVisaCountries(this.user, this.partner)
+      .subscribe(
+        (data: VisaData) => {
+          this.visaData = data;
+        },
+        (err: Error) => console.error('getVisaCountries error = ', err)
+      );
   }
 
 }

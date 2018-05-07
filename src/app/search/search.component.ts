@@ -7,7 +7,7 @@ import { Person } from '../person.enum';
 import { StringUtils } from '../utils/string';
 import { VisaDataType } from '../visa-data-type.enum';
 import { Country } from '../country';
-// import { MetaService } from 'ng2-meta';
+import { MetaService } from 'ng2-meta';
 declare const window: Window;
 
 @Component({
@@ -28,8 +28,12 @@ export class SearchComponent implements OnInit, AfterViewInit, OnDestroy {
   public pageTitle: string = 'Loading...';
   public width: number;
 
-  // constructor(private element: ElementRef, private visaService: VisaService, private route: ActivatedRoute, private metaService: MetaService) { }
-  public constructor(private element: ElementRef, private visaService: VisaService, private route: ActivatedRoute) { }
+  public constructor(
+    private element: ElementRef,
+    private visaService: VisaService,
+    private route: ActivatedRoute,
+    private metaService: MetaService
+  ) { }
 
   public ngOnInit() {
     this.paramSub = this.route.params.subscribe((params: { userNationality: string; partnerNationality: string }) => {
@@ -39,15 +43,13 @@ export class SearchComponent implements OnInit, AfterViewInit, OnDestroy {
       this.partnerNationality = StringUtils.getUserFriendlyName(partnerNationality);
       this.visaService.getVisaCountries(this.userNationality, this.partnerNationality)
         .subscribe(
-          data => {
+          (data: VisaData) => {
             this.visaData = data;
             this.results = this.visaData[VisaDataType.BOTH_NOT_REQUIRED];
             this.pageTitle = `${Person.toDescriptionString(Person.BOTH)} - ${Visa.toDescriptionString(Visa.NOT_REQUIRED)}`;
-            // this.metaService.setTitle(`${this.userNationality} and ${this.partnerNationality} - Visa requirements`);
-            // this.metaService.setTag('description', `Couples from ${this.userNationality} and ${this.partnerNationality}
-            // can visit ${this.visaData.bothNotRequired.length} countries visa-free and ${this.visaData.bothOnArrival.length} countries with visa on arrival. Find out more!`)
+            this.setMetaTags();
           },
-          err => console.error('getVisaCountries error = ', err)
+          (err: Error) => console.error('getVisaCountries error = ', err)
         );
     });
   }
@@ -75,5 +77,41 @@ export class SearchComponent implements OnInit, AfterViewInit, OnDestroy {
 
   public updateScreenWidth(event: any) {
     this.width = event.target && event.target.innerWidth;
+  }
+
+  private setMetaTags() {
+    this.metaService.setTitle(`${this.userNationality} and ${this.partnerNationality} - Visa requirements`);
+    const bothNotRequiredCountryNames = this.getCountryNamesForMeta(this.visaData.bothNotRequired);
+    const bothOnArrivalCountryNames = this.getCountryNamesForMeta(this.visaData.bothOnArrival);
+    const bothNotRequiredExamples = bothNotRequiredCountryNames ? ` (including ${bothNotRequiredCountryNames})` : '';
+    const bothOnArrivalExamples = bothOnArrivalCountryNames ? ` (including ${bothOnArrivalCountryNames})` : '';
+    const descriptionText = `Couples from ${this.userNationality} and ${this.partnerNationality} \
+    can travel to ${this.visaData.bothNotRequired.length} countries visa-free/without a visa${bothNotRequiredExamples} and ${this.visaData.bothOnArrival.length} \
+    countries with visa on arrival${bothOnArrivalExamples}. Find out more and plan your travel together!`;
+    this.metaService.setTag('description', descriptionText);
+  }
+
+  private getCountryNamesForMeta(countries: Country[]): string | null {
+    if (!countries || !countries.length) {
+      return null;
+    }
+
+    if (countries.length === 3) {
+      return `${countries[0].name}, ${countries[1].name}, and ${countries[2].name}`;
+    } else if (countries.length === 2) {
+      return `${countries[0].name} and ${countries[1].name}`;
+    } else {
+      const countryNames: string[] = [];
+      while (countryNames.length < 3) {
+        const randomCountry = countries[Math.floor(Math.random() * countries.length)].name;
+        if (countryNames.includes(randomCountry)) {
+          continue;
+        }
+        countryNames.push(randomCountry);
+      }
+
+      return `${countryNames[0]}, ${countryNames[1]}, and ${countryNames[2]}`;
+    }
+
   }
 }

@@ -16,6 +16,10 @@
           "input": "../"
         },
         {
+          "glob": "sitemap.xml",
+          "input": "../"
+        },
+        {
           "glob": "**/*",
           "input": "../node_modules/nomad-couple-scraper/dist/output",
           "output": "assets/countries"
