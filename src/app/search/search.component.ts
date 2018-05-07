@@ -86,8 +86,8 @@ export class SearchComponent implements OnInit, AfterViewInit, OnDestroy {
     const bothNotRequiredExamples = bothNotRequiredCountryNames ? ` (including ${bothNotRequiredCountryNames})` : '';
     const bothOnArrivalExamples = bothOnArrivalCountryNames ? ` (including ${bothOnArrivalCountryNames})` : '';
     const descriptionText = `Couples from ${this.userNationality} and ${this.partnerNationality} \
-    can travel to ${this.visaData.bothNotRequired.length} countries visa-free/without a visa${bothNotRequiredExamples} and ${this.visaData.bothOnArrival.length} \
-    countries with visa on arrival${bothOnArrivalExamples}. Find out more and plan your travel together!`;
+can travel to ${this.visaData.bothNotRequired.length} countries visa-free/without a visa${bothNotRequiredExamples} and ${this.visaData.bothOnArrival.length} \
+countries with visa on arrival${bothOnArrivalExamples}. Find out more and plan your travel together!`;
     this.metaService.setTag('description', descriptionText);
   }
 
