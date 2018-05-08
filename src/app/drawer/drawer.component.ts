@@ -53,7 +53,7 @@ export class DrawerComponent implements OnChanges {
   }
 
   private updateVisaData() {
-    this.visaService.getVisaCountries(this.user, this.partner)
+    this.visaService.getVisaData(this.user, this.partner)
       .subscribe(
         (data: VisaData) => {
           this.visaData = data;

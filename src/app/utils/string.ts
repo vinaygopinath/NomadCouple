@@ -8,7 +8,7 @@ export class StringUtils {
     }
   }
 
-  public static getUserFriendlyName(input: string): string {
+  public static getUserFriendlyName(input: string | null): string {
     if (!input) {
       throw new Error('Invalid input - Cannot format undefined/null country string');
     } else {

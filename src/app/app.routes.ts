@@ -1,15 +1,21 @@
 import { Routes } from '@angular/router';
 import { HomeComponent } from './home';
-import { SearchComponent } from './search';
+import { SearchComponent, VisaDataResolver } from './search';
+import { MetaGuard } from 'ng2-meta';
 
 export const routes: Routes = [
   {
     path: 'search/:userNationality/:partnerNationality',
-    component: SearchComponent
+    canActivate: [MetaGuard],
+    component: SearchComponent,
+    resolve: {
+      visaData: VisaDataResolver
+    }
   },
   {
     path: '',
     component: HomeComponent,
+    canActivate: [MetaGuard],
     data: {
       meta: {
         title: 'Nomad Couple',

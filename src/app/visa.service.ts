@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Http, Response } from '@angular/http';
+import { HttpClient } from '@angular/common/http';
 import { Country } from './country';
 import { WikiData, RawWikiDataJSON } from './wiki-data';
 import { VisaData, RawVisaDataJSON } from './visa-data';
@@ -30,7 +30,7 @@ class CountryGroupPerPerson {
 @Injectable()
 export class VisaService {
 
-  public constructor(private http: Http) { }
+  public constructor(private http: HttpClient) { }
 
   private BASE_URL = 'assets';
   private COUNTRY_URL = this.BASE_URL + '/countries/';
@@ -50,23 +50,18 @@ export class VisaService {
     } else if (this.observable) {
       return this.observable;
     } else {
-      this.observable = (<any>this.http.get(this.BASE_URL + '/countries.json'))
-        .map((res: Response): string[] => {
-          return res.json() || [];
-        })
-        .do((countries: string[]): string[] => {
+      this.observable = this.http.get<string[]>(this.BASE_URL + '/countries.json')
+        .do((countries: string[]) => {
           this.countries = countries;
           this.observable = null;
-
-          return this.countries;
         })
         .share();
 
-      return this.observable as Observable<string[]>;
+      return this.observable;
     }
   }
 
-  public getVisaCountries(userCountry: string, partnerCountry: string): Observable<VisaData> {
+  public getVisaData(userCountry: string, partnerCountry: string): Observable<VisaData> {
     // console.log('getVisaCountries called with %s and %s', userCountry, partnerCountry);
     if (this.visaData && (this.userCountry === userCountry && this.partnerCountry === partnerCountry)) {
       // console.log('Returning cached data');
@@ -77,11 +72,11 @@ export class VisaService {
     } else {
       this.userCountry = userCountry;
       this.partnerCountry = partnerCountry;
-      const userCountryURL = this._getCountryURL(userCountry);
-      const partnerCountryURL = this._getCountryURL(partnerCountry);
-      const userCountryHttp: Observable<RawWikiDataJSON> = (<any>this.http.get(userCountryURL)).map((res: Response) => res.json()) as Observable<RawWikiDataJSON>;
-      const partnerCountryHttp = (<any>this.http.get(partnerCountryURL)).map((res: Response) => res.json());
-      this.visaDataObservable = (<any>Observable.forkJoin(userCountryHttp, partnerCountryHttp))
+
+      const userCountryHttp = this.http.get<RawWikiDataJSON>(this._getCountryURL(userCountry));
+      const partnerCountryHttp = this.http.get<RawWikiDataJSON>(this._getCountryURL(partnerCountry));
+
+      this.visaDataObservable = Observable.forkJoin(userCountryHttp, partnerCountryHttp)
         .map(
           (data: RawWikiDataJSON[]) => {
             const [rawUserData, rawPartnerData] = data;
@@ -97,8 +92,6 @@ export class VisaService {
         .do((visaData: VisaData) => {
           this.visaData = visaData;
           this.visaDataObservable = null;
-
-          return this.visaData;
         })
         .share();
 
