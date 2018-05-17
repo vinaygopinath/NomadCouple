@@ -45,7 +45,7 @@ const metaConfig: MetaConfig = {
     NgSelectModule,
     RouterModule.forRoot(routes),
     MetaModule.forRoot(metaConfig),
-    environment.production ? ServiceWorkerModule.register('/ngsw-worker.js') : []
+    ServiceWorkerModule.register('/combined-worker.js', { enabled: environment.production })
   ],
   providers: [VisaService, VisaDataResolver],
   bootstrap: [AppComponent]

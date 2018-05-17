@@ -5,7 +5,7 @@
   "background_color": "#e4d589",
   "display": "standalone",
   "scope": "/",
-  "start_url": "/",
+  "start_url": "/?utm_source=homescreen",
   "icons": [
     {
       "src": "/assets/icons/android-chrome-192x192.png",
