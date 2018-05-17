@@ -1,0 +1,36 @@
+{
+  "index": "/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "resources": {
+        "files": [
+          "/index.html",
+          "/assets/countries.json",
+          "/assets/countries/**"
+        ],
+        "versionedFiles": [
+          "/*.bundle.css",
+          "/*.bundle.js",
+          "/*.chunk.js"
+        ],
+        "urls": [
+          "https://fonts.googleapis.com/css?family=Francois+One|Roboto:300|Material+Icons",
+          "https://code.getmdl.io/1.1.3/material.red-light_green.min.css",
+          "https://code.getmdl.io/1.1.3/material.min.js"
+        ]
+      }
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "resources": {
+        "files": [
+          "/assets/images/**"
+        ]
+      }
+    }
+  ]
+}

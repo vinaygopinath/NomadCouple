@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
+import { ServiceWorkerModule } from '@angular/service-worker';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { NgSelectModule } from '@ng-select/ng-select';
 import { RouterModule } from '@angular/router';
@@ -14,6 +15,7 @@ import { ResultsComponent } from './results';
 import { SearchComponent, VisaDataResolver } from './search';
 import { routes } from './app.routes';
 import { VisaService } from './visa.service';
+import { environment } from '../environments/environment';
 
 const metaConfig: MetaConfig = {
   //Append a title suffix such as a site name to all titles
@@ -42,7 +44,8 @@ const metaConfig: MetaConfig = {
     HttpClientModule,
     NgSelectModule,
     RouterModule.forRoot(routes),
-    MetaModule.forRoot(metaConfig)
+    MetaModule.forRoot(metaConfig),
+    environment.production ? ServiceWorkerModule.register('/ngsw-worker.js') : []
   ],
   providers: [VisaService, VisaDataResolver],
   bootstrap: [AppComponent]
