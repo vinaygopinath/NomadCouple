@@ -16,12 +16,11 @@ declare const window: Window;
     '(window:resize)': 'updateScreenWidth($event)'
   }
 })
-export class SearchComponent implements OnInit, AfterViewInit, OnDestroy {
+export class SearchComponent implements OnInit, AfterViewInit {
 
   public visaData: VisaData;
   public userNationality: string;
   public partnerNationality: string;
-  public paramSub: any;
   public results: Country[];
   public pageTitle: string = 'Loading...';
   public width: number;
@@ -49,10 +48,6 @@ export class SearchComponent implements OnInit, AfterViewInit, OnDestroy {
 
   public ngAfterViewInit() {
     this.width = window.innerWidth;
-  }
-
-  public ngOnDestroy() {
-    this.paramSub.unsubscribe();
   }
 
   public onFilter(filter: { visa: Visa, person: Person }) {
