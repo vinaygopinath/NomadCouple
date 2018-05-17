@@ -35,7 +35,7 @@ const sitemapTop = `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://nomadcouple.vinaygopinath.me/</loc>
-    <lastmod>2018-05-07</lastmod>
+    <lastmod>${getDateString()}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1</priority>
   </url>`;
