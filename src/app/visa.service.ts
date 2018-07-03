@@ -3,12 +3,8 @@ import { HttpClient } from '@angular/common/http';
 import { Country } from './country';
 import { WikiData, RawWikiDataJSON } from './wiki-data';
 import { VisaData, RawVisaDataJSON } from './visa-data';
-import { Observable } from 'rxjs/Observable';
-import 'rxjs/add/operator/map';
-import 'rxjs/add/operator/do';
-import 'rxjs/add/operator/share';
-import 'rxjs/add/observable/forkJoin';
-import 'rxjs/add/observable/of';
+import { Observable, forkJoin, of } from 'rxjs';
+import { map, tap, share } from 'rxjs/operators';
 import { Person } from './person.enum';
 import { Visa } from './visa.enum';
 
@@ -46,16 +42,18 @@ export class VisaService {
   // Credit: http://stackoverflow.com/a/36294012/293847
   public getDropdownCountries(): Observable<string[]> {
     if (this.countries) {
-      return Observable.of(this.countries);
+      return of(this.countries);
     } else if (this.observable) {
       return this.observable;
     } else {
       this.observable = this.http.get<string[]>(this.BASE_URL + '/countries.json')
-        .do((countries: string[]) => {
-          this.countries = countries;
-          this.observable = null;
-        })
-        .share();
+        .pipe(
+          tap((countries: string[]) => {
+            this.countries = countries;
+            this.observable = null;
+          }),
+          share()
+        );
 
       return this.observable;
     }
@@ -65,7 +63,7 @@ export class VisaService {
     // console.log('getVisaCountries called with %s and %s', userCountry, partnerCountry);
     if (this.visaData && (this.userCountry === userCountry && this.partnerCountry === partnerCountry)) {
       // console.log('Returning cached data');
-      return Observable.of(this.visaData);
+      return of(this.visaData);
     } else if (this.visaDataObservable) {
       // console.log('Returning cached observable');
       return this.visaDataObservable;
@@ -76,26 +74,22 @@ export class VisaService {
       const userCountryHttp = this.http.get<RawWikiDataJSON>(this._getCountryURL(userCountry));
       const partnerCountryHttp = this.http.get<RawWikiDataJSON>(this._getCountryURL(partnerCountry));
 
-      this.visaDataObservable = Observable.forkJoin(userCountryHttp, partnerCountryHttp)
-        .map(
-          (data: RawWikiDataJSON[]) => {
-            const [rawUserData, rawPartnerData] = data;
-            this.userVisas = this._getCountriesWithVisa(rawUserData);
-            this.partnerVisas = this._getCountriesWithVisa(rawPartnerData);
+      this.visaDataObservable = forkJoin(userCountryHttp, partnerCountryHttp)
+        .pipe(map((data: RawWikiDataJSON[]) => {
+          const [rawUserData, rawPartnerData] = data;
+          this.userVisas = this._getCountriesWithVisa(rawUserData);
+          this.partnerVisas = this._getCountriesWithVisa(rawPartnerData);
 
-            return [new WikiData(rawUserData), new WikiData(rawPartnerData)];
-          }
-        )
-        .map(
+          return [new WikiData(rawUserData), new WikiData(rawPartnerData)];
+        }))
+        .pipe(map(
           (wikiArr: WikiData[]) => this._getVisaData(wikiArr[0], wikiArr[1])
-        )
-        .do((visaData: VisaData) => {
+        ), tap((visaData: VisaData) => {
           this.visaData = visaData;
           this.visaDataObservable = null;
-        })
-        .share();
+        }), share());
 
-      return this.visaDataObservable as Observable<VisaData>;
+      return this.visaDataObservable;
     }
   }
 

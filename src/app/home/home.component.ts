@@ -1,6 +1,6 @@
 import { Component, OnInit, HostBinding } from '@angular/core';
 import { VisaService } from '../visa.service';
-import { Observable } from 'rxjs/Rx';
+import { Observable } from 'rxjs';
 import { Router } from '@angular/router';
 import { StringUtils } from '../utils/string';
 

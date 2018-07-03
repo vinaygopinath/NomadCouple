@@ -1,4 +1,5 @@
-import { Component, OnInit, Input, trigger, state, transition, style, animate } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { trigger, state, transition, style, animate } from '@angular/animations';
 import { Country } from '../country';
 @Component({
   selector: 'nomad-results',

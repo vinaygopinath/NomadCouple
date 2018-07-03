@@ -1,7 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Resolve, ActivatedRouteSnapshot } from '@angular/router';
 import { MetaService } from 'ng2-meta';
-import { Observable } from 'rxjs/Observable';
+import { Observable } from 'rxjs';
+import { tap } from 'rxjs/operators';
 
 import { VisaService } from '../visa.service';
 import { VisaData } from '../visa-data';
@@ -19,7 +20,9 @@ export class VisaDataResolver implements Resolve<VisaData> {
     const partnerNationality = StringUtils.getUserFriendlyName(route.paramMap.get('partnerNationality'));
 
     return this.visaService.getVisaData(userNationality, partnerNationality)
-      .do((visaData: VisaData) => this._setMetaTags(visaData, userNationality, partnerNationality));
+      .pipe(
+        tap((visaData: VisaData) => this._setMetaTags(visaData, userNationality, partnerNationality))
+      );
   }
 
   private _getCountryNamesForMeta(countries: Country[]): string | null {
