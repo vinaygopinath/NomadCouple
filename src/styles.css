@@ -1,6 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~@ng-select/ng-select/themes/material.theme.css";
 
+body {
+  margin: 0;
+}
+
 .ng-select.ng-select-single .ng-select-container .ng-clear-wrapper {
   bottom: 13px;
 }
